@@ -84,7 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="image\" />
-    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
