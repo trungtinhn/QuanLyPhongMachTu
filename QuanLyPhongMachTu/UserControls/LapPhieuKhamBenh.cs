@@ -16,5 +16,10 @@ namespace QuanLyPhongMachTu.UserControls
         {
             InitializeComponent();
         }
+
+        private void Title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
