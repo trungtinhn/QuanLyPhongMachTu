@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongMachTu.UserControls
 {
-    partial class LapPhieuKhamBenh
+    partial class DanhSachKhamBenh
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // LapPhieuKhamBenh
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox1.Location = new System.Drawing.Point(196, 117);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Hello world";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // DanhSachKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "LapPhieuKhamBenh";
-            this.Size = new System.Drawing.Size(818, 495);
+            this.Controls.Add(this.textBox1);
+            this.Name = "DanhSachKhamBenh";
+            this.Size = new System.Drawing.Size(416, 331);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

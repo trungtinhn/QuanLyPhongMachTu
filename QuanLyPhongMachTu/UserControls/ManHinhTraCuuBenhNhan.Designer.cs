@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongMachTu.UserControls
 {
-    partial class LapPhieuKhamBenh
+    partial class ManHinhTraCuuBenhNhan
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,11 @@
         {
             this.SuspendLayout();
             // 
-            // LapPhieuKhamBenh
+            // ManHinhTraCuuBenhNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "LapPhieuKhamBenh";
+            this.Name = "ManHinhTraCuuBenhNhan";
             this.Size = new System.Drawing.Size(818, 495);
             this.ResumeLayout(false);
 
