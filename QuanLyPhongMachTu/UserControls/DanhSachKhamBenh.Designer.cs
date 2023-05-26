@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.Title = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxThontinBN = new System.Windows.Forms.ListBox();
             this.txtHotenBN = new System.Windows.Forms.TextBox();
             this.txtDayBN = new System.Windows.Forms.TextBox();
             this.txtDiachiBN = new System.Windows.Forms.TextBox();
@@ -70,15 +70,15 @@
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Title.Click += new System.EventHandler(this.label1_Click);
             // 
-            // listBox1
+            // lbxThontinBN
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(15, 330);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(689, 164);
-            this.listBox1.TabIndex = 2;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lbxThontinBN.FormattingEnabled = true;
+            this.lbxThontinBN.ItemHeight = 16;
+            this.lbxThontinBN.Location = new System.Drawing.Point(15, 330);
+            this.lbxThontinBN.Name = "lbxThontinBN";
+            this.lbxThontinBN.Size = new System.Drawing.Size(689, 164);
+            this.lbxThontinBN.TabIndex = 2;
+            this.lbxThontinBN.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // txtHotenBN
             // 
@@ -318,7 +318,7 @@
             this.Controls.Add(this.txtDiachiBN);
             this.Controls.Add(this.txtDayBN);
             this.Controls.Add(this.txtHotenBN);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxThontinBN);
             this.Controls.Add(this.Title);
             this.Name = "DanhSachKhamBenh";
             this.Size = new System.Drawing.Size(818, 495);
@@ -330,7 +330,7 @@
         #endregion
         private System.Windows.Forms.Label Title;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxThontinBN;
         private System.Windows.Forms.TextBox txtHotenBN;
         private System.Windows.Forms.TextBox txtDayBN;
         private System.Windows.Forms.TextBox txtDiachiBN;
