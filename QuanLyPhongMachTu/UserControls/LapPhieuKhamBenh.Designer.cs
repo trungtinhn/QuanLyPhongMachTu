@@ -50,6 +50,8 @@
             this.txtYearKB = new System.Windows.Forms.TextBox();
             this.txtMonthKB = new System.Windows.Forms.TextBox();
             this.txtDayKB = new System.Windows.Forms.TextBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.lbxThongtinKB = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // Title
@@ -257,11 +259,29 @@
             this.txtDayKB.Size = new System.Drawing.Size(26, 22);
             this.txtDayKB.TabIndex = 59;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(696, 330);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(20, 162);
+            this.vScrollBar1.TabIndex = 65;
+            // 
+            // lbxThongtinKB
+            // 
+            this.lbxThongtinKB.FormattingEnabled = true;
+            this.lbxThongtinKB.ItemHeight = 16;
+            this.lbxThongtinKB.Location = new System.Drawing.Point(27, 328);
+            this.lbxThongtinKB.Name = "lbxThongtinKB";
+            this.lbxThongtinKB.Size = new System.Drawing.Size(689, 164);
+            this.lbxThongtinKB.TabIndex = 64;
+            // 
             // LapPhieuKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.lbxThongtinKB);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtYearKB);
@@ -315,5 +335,7 @@
         private System.Windows.Forms.TextBox txtYearKB;
         private System.Windows.Forms.TextBox txtMonthKB;
         private System.Windows.Forms.TextBox txtDayKB;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.ListBox lbxThongtinKB;
     }
 }
