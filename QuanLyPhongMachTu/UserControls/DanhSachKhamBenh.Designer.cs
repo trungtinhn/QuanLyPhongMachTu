@@ -50,8 +50,8 @@
             this.txtMonthKB = new System.Windows.Forms.TextBox();
             this.txtDayKB = new System.Windows.Forms.TextBox();
             this.btnThemBN = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.btnNamBN = new System.Windows.Forms.CheckBox();
+            this.btnNuBN = new System.Windows.Forms.CheckBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.label10 = new System.Windows.Forms.Label();
             this.txtMaBN = new System.Windows.Forms.TextBox();
@@ -68,7 +68,6 @@
             this.Title.TabIndex = 1;
             this.Title.Text = "DANH SÁCH KHÁM BỆNH";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Title.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbxThongtinBN
             // 
@@ -124,7 +123,6 @@
             this.label2.Size = new System.Drawing.Size(146, 16);
             this.label2.TabIndex = 8;
             this.label2.Text = "Ngày/Tháng/Năm sinh:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -245,25 +243,26 @@
             this.btnThemBN.Text = "Thêm";
             this.btnThemBN.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // btnNamBN
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(194, 204);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 20);
-            this.checkBox1.TabIndex = 22;
-            this.checkBox1.Text = "Nam";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.btnNamBN.AutoSize = true;
+            this.btnNamBN.Location = new System.Drawing.Point(194, 204);
+            this.btnNamBN.Name = "btnNamBN";
+            this.btnNamBN.Size = new System.Drawing.Size(55, 20);
+            this.btnNamBN.TabIndex = 22;
+            this.btnNamBN.Text = "Nam";
+            this.btnNamBN.UseVisualStyleBackColor = true;
+            this.btnNamBN.CheckedChanged += new System.EventHandler(this.btnNamBN_CheckedChanged);
             // 
-            // checkBox2
+            // btnNuBN
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(281, 204);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(43, 20);
-            this.checkBox2.TabIndex = 23;
-            this.checkBox2.Text = "Nữ";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.btnNuBN.AutoSize = true;
+            this.btnNuBN.Location = new System.Drawing.Point(281, 204);
+            this.btnNuBN.Name = "btnNuBN";
+            this.btnNuBN.Size = new System.Drawing.Size(43, 20);
+            this.btnNuBN.TabIndex = 23;
+            this.btnNuBN.Text = "Nữ";
+            this.btnNuBN.UseVisualStyleBackColor = true;
             // 
             // vScrollBar1
             // 
@@ -298,8 +297,8 @@
             this.Controls.Add(this.txtMaBN);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.btnNuBN);
+            this.Controls.Add(this.btnNamBN);
             this.Controls.Add(this.btnThemBN);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -349,8 +348,8 @@
         private System.Windows.Forms.TextBox txtMonthKB;
         private System.Windows.Forms.TextBox txtDayKB;
         private System.Windows.Forms.Button btnThemBN;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox btnNamBN;
+        private System.Windows.Forms.CheckBox btnNuBN;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtMaBN;
