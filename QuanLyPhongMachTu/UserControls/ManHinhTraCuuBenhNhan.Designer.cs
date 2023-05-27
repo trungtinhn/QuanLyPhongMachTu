@@ -54,9 +54,9 @@
             this.Title.ForeColor = System.Drawing.Color.Salmon;
             this.Title.Location = new System.Drawing.Point(223, 30);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(436, 39);
+            this.Title.Size = new System.Drawing.Size(399, 39);
             this.Title.TabIndex = 3;
-            this.Title.Text = "THÔNG TIN BỆNH NHÂN";
+            this.Title.Text = "TRA CỨU BỆNH NHÂN";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Title.Click += new System.EventHandler(this.Title_Click);
             // 

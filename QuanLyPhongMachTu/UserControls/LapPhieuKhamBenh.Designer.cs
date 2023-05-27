@@ -69,7 +69,7 @@
             // 
             // txtMaBN
             // 
-            this.txtMaBN.Location = new System.Drawing.Point(155, 120);
+            this.txtMaBN.Location = new System.Drawing.Point(155, 103);
             this.txtMaBN.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaBN.Name = "txtMaBN";
             this.txtMaBN.Size = new System.Drawing.Size(164, 22);
@@ -79,7 +79,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(43, 120);
+            this.label10.Location = new System.Drawing.Point(43, 103);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 16);
             this.label10.TabIndex = 47;
@@ -87,7 +87,7 @@
             // 
             // btnThemPKB
             // 
-            this.btnThemPKB.Location = new System.Drawing.Point(679, 120);
+            this.btnThemPKB.Location = new System.Drawing.Point(679, 103);
             this.btnThemPKB.Name = "btnThemPKB";
             this.btnThemPKB.Size = new System.Drawing.Size(75, 23);
             this.btnThemPKB.TabIndex = 44;
@@ -98,7 +98,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 154);
+            this.label1.Location = new System.Drawing.Point(70, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 30;
@@ -106,7 +106,7 @@
             // 
             // txtHotenBN
             // 
-            this.txtHotenBN.Location = new System.Drawing.Point(155, 154);
+            this.txtHotenBN.Location = new System.Drawing.Point(155, 137);
             this.txtHotenBN.Margin = new System.Windows.Forms.Padding(1);
             this.txtHotenBN.Name = "txtHotenBN";
             this.txtHotenBN.Size = new System.Drawing.Size(164, 22);
@@ -114,7 +114,7 @@
             // 
             // txtTrieuchungBenh
             // 
-            this.txtTrieuchungBenh.Location = new System.Drawing.Point(155, 228);
+            this.txtTrieuchungBenh.Location = new System.Drawing.Point(155, 211);
             this.txtTrieuchungBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtTrieuchungBenh.Multiline = true;
             this.txtTrieuchungBenh.Name = "txtTrieuchungBenh";
@@ -125,7 +125,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 228);
+            this.label2.Location = new System.Drawing.Point(24, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(113, 16);
             this.label2.TabIndex = 49;
@@ -133,7 +133,7 @@
             // 
             // txtDudoanBenh
             // 
-            this.txtDudoanBenh.Location = new System.Drawing.Point(155, 285);
+            this.txtDudoanBenh.Location = new System.Drawing.Point(155, 268);
             this.txtDudoanBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtDudoanBenh.Name = "txtDudoanBenh";
             this.txtDudoanBenh.Size = new System.Drawing.Size(164, 22);
@@ -143,7 +143,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(43, 285);
+            this.label3.Location = new System.Drawing.Point(43, 268);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 51;
@@ -151,7 +151,7 @@
             // 
             // txtDsThuoc
             // 
-            this.txtDsThuoc.Location = new System.Drawing.Point(468, 123);
+            this.txtDsThuoc.Location = new System.Drawing.Point(468, 106);
             this.txtDsThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtDsThuoc.Multiline = true;
             this.txtDsThuoc.Name = "txtDsThuoc";
@@ -162,7 +162,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(355, 123);
+            this.label4.Location = new System.Drawing.Point(355, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 16);
             this.label4.TabIndex = 53;
@@ -170,7 +170,7 @@
             // 
             // txtDonviThuoc
             // 
-            this.txtDonviThuoc.Location = new System.Drawing.Point(468, 189);
+            this.txtDonviThuoc.Location = new System.Drawing.Point(468, 172);
             this.txtDonviThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtDonviThuoc.Name = "txtDonviThuoc";
             this.txtDonviThuoc.Size = new System.Drawing.Size(164, 22);
@@ -180,7 +180,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(404, 192);
+            this.label6.Location = new System.Drawing.Point(404, 175);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 16);
             this.label6.TabIndex = 55;
@@ -188,7 +188,7 @@
             // 
             // txtCachdungThuoc
             // 
-            this.txtCachdungThuoc.Location = new System.Drawing.Point(468, 228);
+            this.txtCachdungThuoc.Location = new System.Drawing.Point(468, 211);
             this.txtCachdungThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtCachdungThuoc.Multiline = true;
             this.txtCachdungThuoc.Name = "txtCachdungThuoc";
@@ -199,7 +199,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(377, 227);
+            this.label7.Location = new System.Drawing.Point(377, 210);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 16);
             this.label7.TabIndex = 57;
@@ -209,7 +209,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 192);
+            this.label5.Location = new System.Drawing.Point(25, 175);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 16);
             this.label5.TabIndex = 34;
@@ -219,7 +219,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(237, 192);
+            this.label8.Location = new System.Drawing.Point(237, 175);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 25);
             this.label8.TabIndex = 63;
@@ -229,7 +229,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(185, 192);
+            this.label9.Location = new System.Drawing.Point(185, 175);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(18, 25);
             this.label9.TabIndex = 62;
@@ -237,7 +237,7 @@
             // 
             // txtYearKB
             // 
-            this.txtYearKB.Location = new System.Drawing.Point(259, 192);
+            this.txtYearKB.Location = new System.Drawing.Point(259, 175);
             this.txtYearKB.Margin = new System.Windows.Forms.Padding(1);
             this.txtYearKB.Name = "txtYearKB";
             this.txtYearKB.Size = new System.Drawing.Size(60, 22);
@@ -245,7 +245,7 @@
             // 
             // txtMonthKB
             // 
-            this.txtMonthKB.Location = new System.Drawing.Point(207, 192);
+            this.txtMonthKB.Location = new System.Drawing.Point(207, 175);
             this.txtMonthKB.Margin = new System.Windows.Forms.Padding(1);
             this.txtMonthKB.Name = "txtMonthKB";
             this.txtMonthKB.Size = new System.Drawing.Size(26, 22);
@@ -253,7 +253,7 @@
             // 
             // txtDayKB
             // 
-            this.txtDayKB.Location = new System.Drawing.Point(155, 192);
+            this.txtDayKB.Location = new System.Drawing.Point(155, 175);
             this.txtDayKB.Margin = new System.Windows.Forms.Padding(1);
             this.txtDayKB.Name = "txtDayKB";
             this.txtDayKB.Size = new System.Drawing.Size(26, 22);
