@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongMachTu.UserControls
 {
-    public partial class TraCuuBenh : UserControl
+    public partial class LapPhieuKhamBenh : UserControl
     {
-        public TraCuuBenh()
+        public LapPhieuKhamBenh()
         {
             InitializeComponent();
         }

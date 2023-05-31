@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongMachTu.UserControls
 {
-    partial class TraCuuBenh
+    partial class LapPhieuKhamBenh
     {
         /// <summary> 
         /// Required designer variable.
@@ -33,9 +33,9 @@
             this.txtThanhtien = new System.Windows.Forms.TextBox();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvKB = new System.Windows.Forms.DataGridView();
             this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvThuoc = new System.Windows.Forms.DataGridView();
             this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuongThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +62,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtHotenBN = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThuoc)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -105,21 +105,21 @@
             this.MaBN.Name = "MaBN";
             this.MaBN.Width = 180;
             // 
-            // dataGridView2
+            // dgvKB
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvKB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
             this.NgayKB,
             this.MaBN,
             this.MaBenh});
-            this.dataGridView2.Location = new System.Drawing.Point(82, 337);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 49;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(635, 150);
-            this.dataGridView2.TabIndex = 95;
+            this.dgvKB.Location = new System.Drawing.Point(82, 337);
+            this.dgvKB.Name = "dgvKB";
+            this.dgvKB.RowHeadersVisible = false;
+            this.dgvKB.RowHeadersWidth = 49;
+            this.dgvKB.RowTemplate.Height = 24;
+            this.dgvKB.Size = new System.Drawing.Size(635, 158);
+            this.dgvKB.TabIndex = 95;
             // 
             // MaBenh
             // 
@@ -128,20 +128,20 @@
             this.MaBenh.Name = "MaBenh";
             this.MaBenh.Width = 180;
             // 
-            // dataGridView1
+            // dgvThuoc
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaThuoc,
             this.TenThuoc,
             this.SoLuongThuoc});
-            this.dataGridView1.Location = new System.Drawing.Point(599, 80);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 49;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(203, 193);
-            this.dataGridView1.TabIndex = 94;
+            this.dgvThuoc.Location = new System.Drawing.Point(599, 80);
+            this.dgvThuoc.Name = "dgvThuoc";
+            this.dgvThuoc.RowHeadersVisible = false;
+            this.dgvThuoc.RowHeadersWidth = 49;
+            this.dgvThuoc.RowTemplate.Height = 24;
+            this.dgvThuoc.Size = new System.Drawing.Size(203, 193);
+            this.dgvThuoc.TabIndex = 94;
             // 
             // MaThuoc
             // 
@@ -377,13 +377,15 @@
             this.Title.Text = "PHIẾU KHÁM BỆNH";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // TraCuuBenh
+            // LapPhieuKhamBenh
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtThanhtien);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvKB);
+            this.Controls.Add(this.dgvThuoc);
             this.Controls.Add(this.lbDanhSachThuoc);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -407,10 +409,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtHotenBN);
             this.Controls.Add(this.Title);
-            this.Name = "TraCuuBenh";
+            this.Name = "LapPhieuKhamBenh";
             this.Size = new System.Drawing.Size(818, 495);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvThuoc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -423,9 +425,9 @@
         private System.Windows.Forms.TextBox txtThanhtien;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvKB;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBenh;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongThuoc;
