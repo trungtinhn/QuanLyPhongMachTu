@@ -61,7 +61,7 @@ namespace QuanLyPhongMachTu
             this.lbl_QuanLyPhongMachTu.AutoSize = true;
             this.lbl_QuanLyPhongMachTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.02985F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QuanLyPhongMachTu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(732, 9);
+            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(599, 9);
             this.lbl_QuanLyPhongMachTu.Name = "lbl_QuanLyPhongMachTu";
             this.lbl_QuanLyPhongMachTu.Size = new System.Drawing.Size(560, 47);
             this.lbl_QuanLyPhongMachTu.TabIndex = 0;

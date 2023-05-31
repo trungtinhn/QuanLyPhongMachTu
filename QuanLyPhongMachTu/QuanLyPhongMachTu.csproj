@@ -74,6 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DanhSachKB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DanhSachKB.Designer.cs">
+      <DependentUpon>DanhSachKB.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\DonViCachDung.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="UserControls\HoaDonThanhToan.Designer.cs">
       <DependentUpon>HoaDonThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LapPhieuKhamBenh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LapPhieuKhamBenh.Designer.cs">
+      <DependentUpon>LapPhieuKhamBenh.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LoaiThuocThuoc.cs">
       <SubType>UserControl</SubType>
@@ -104,6 +116,12 @@
     <Compile Include="UserControls\ThayDoiQuiDinh.Designer.cs">
       <DependentUpon>ThayDoiQuiDinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\TraCuuBenh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TraCuuBenh.Designer.cs">
+      <DependentUpon>TraCuuBenh.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,11 +130,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DanhSachKB.resx">
+      <DependentUpon>DanhSachKB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DonViCachDung.resx">
       <DependentUpon>DonViCachDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HoaDonThanhToan.resx">
       <DependentUpon>HoaDonThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LapPhieuKhamBenh.resx">
+      <DependentUpon>LapPhieuKhamBenh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LoaiThuocThuoc.resx">
       <DependentUpon>LoaiThuocThuoc.cs</DependentUpon>
@@ -126,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ThayDoiQuiDinh.resx">
       <DependentUpon>ThayDoiQuiDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TraCuuBenh.resx">
+      <DependentUpon>TraCuuBenh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
