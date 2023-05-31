@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvBenh = new System.Windows.Forms.DataGridView();
             this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrieuChungBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,24 +41,24 @@
             this.txtTrieuChungBenh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLuuBenh = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBenh)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvBenh
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBenh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBenh,
             this.TenBenh,
             this.TrieuChungBenh});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView1.Location = new System.Drawing.Point(147, 338);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 49;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(525, 150);
-            this.dataGridView1.TabIndex = 68;
+            this.dgvBenh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dgvBenh.Location = new System.Drawing.Point(147, 338);
+            this.dgvBenh.Name = "dgvBenh";
+            this.dgvBenh.RowHeadersVisible = false;
+            this.dgvBenh.RowHeadersWidth = 49;
+            this.dgvBenh.RowTemplate.Height = 24;
+            this.dgvBenh.Size = new System.Drawing.Size(525, 150);
+            this.dgvBenh.TabIndex = 68;
             // 
             // MaBenh
             // 
@@ -171,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvBenh);
             this.Controls.Add(this.btnTraCuuBenh);
             this.Controls.Add(this.txtMaBN);
             this.Controls.Add(this.label10);
@@ -183,7 +183,7 @@
             this.Controls.Add(this.btnLuuBenh);
             this.Name = "TraCuuBenh";
             this.Size = new System.Drawing.Size(818, 495);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBenh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +191,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrieuChungBenh;
