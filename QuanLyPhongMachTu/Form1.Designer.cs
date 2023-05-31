@@ -33,6 +33,7 @@ namespace QuanLyPhongMachTu
             this.panel_top = new System.Windows.Forms.Panel();
             this.lbl_QuanLyPhongMachTu = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Taikhoan = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Quidinh = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Baocao = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Nhapthuoc = new Guna.UI2.WinForms.Guna2TileButton();
@@ -41,7 +42,6 @@ namespace QuanLyPhongMachTu
             this.btn_Benh_LoaiBenh = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Phieukhambenh = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Benhnhan = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Taikhoan = new Guna.UI2.WinForms.Guna2TileButton();
             this.panel_top.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,28 @@ namespace QuanLyPhongMachTu
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(262, 978);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_Taikhoan
+            // 
+            this.btn_Taikhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Taikhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Taikhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Taikhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Taikhoan.FillColor = System.Drawing.Color.PeachPuff;
+            this.btn_Taikhoan.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Taikhoan.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Taikhoan.Image = global::QuanLyPhongMachTu.Properties.Resources.profile;
+            this.btn_Taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Taikhoan.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Taikhoan.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Taikhoan.Location = new System.Drawing.Point(12, 671);
+            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Taikhoan.Name = "btn_Taikhoan";
+            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
+            this.btn_Taikhoan.Size = new System.Drawing.Size(247, 73);
+            this.btn_Taikhoan.TabIndex = 19;
+            this.btn_Taikhoan.Text = "Tài Khoản";
+            this.btn_Taikhoan.Click += new System.EventHandler(this.btn_Taikhoan_Click);
             // 
             // btn_Quidinh
             // 
@@ -264,28 +286,6 @@ namespace QuanLyPhongMachTu
             this.btn_Benhnhan.TabIndex = 2;
             this.btn_Benhnhan.Text = "Bệnh Nhân";
             this.btn_Benhnhan.Click += new System.EventHandler(this.btn_Benhnhan_Click);
-            // 
-            // btn_Taikhoan
-            // 
-            this.btn_Taikhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Taikhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Taikhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Taikhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Taikhoan.FillColor = System.Drawing.Color.PeachPuff;
-            this.btn_Taikhoan.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Taikhoan.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Taikhoan.Image = global::QuanLyPhongMachTu.Properties.Resources.regulation;
-            this.btn_Taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Taikhoan.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Taikhoan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Taikhoan.Location = new System.Drawing.Point(12, 671);
-            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
-            this.btn_Taikhoan.Name = "btn_Taikhoan";
-            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Taikhoan.Size = new System.Drawing.Size(247, 73);
-            this.btn_Taikhoan.TabIndex = 19;
-            this.btn_Taikhoan.Text = "Tài Khoản";
-            this.btn_Taikhoan.Click += new System.EventHandler(this.btn_Taikhoan_Click);
             // 
             // Form1
             // 

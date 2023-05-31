@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongMachTu
+namespace QuanLyPhongMachTu.UserControls
 {
-    public partial class fDonViCachDung : Form
+    public partial class LoaiThuocThuoc : UserControl
     {
-        public fDonViCachDung()
+        public LoaiThuocThuoc()
         {
             InitializeComponent();
-        }
-
-        private void guna2Button12_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
