@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongMachTu
+namespace QuanLyPhongMachTu.UserControls
 {
-    public partial class fNhapThuoc : Form
+    public partial class DonViCachDung : UserControl
     {
-        public fNhapThuoc()
+        public DonViCachDung()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

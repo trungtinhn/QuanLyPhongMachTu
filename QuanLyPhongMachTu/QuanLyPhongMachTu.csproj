@@ -61,24 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fDonViCachDung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fDonViCachDung.Designer.cs">
-      <DependentUpon>fDonViCachDung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fLoaiThuoc&amp;Thuoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fLoaiThuoc&amp;Thuoc.Designer.cs">
-      <DependentUpon>fLoaiThuoc&amp;Thuoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="fNhapThuoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fNhapThuoc.Designer.cs">
-      <DependentUpon>fNhapThuoc.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +74,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\DonViCachDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\DonViCachDung.Designer.cs">
+      <DependentUpon>DonViCachDung.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\HoaDonThanhToan.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\HoaDonThanhToan.Designer.cs">
       <DependentUpon>HoaDonThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoaiThuocThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoaiThuocThuoc.Designer.cs">
+      <DependentUpon>LoaiThuocThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NhapThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NhapThuoc.Designer.cs">
+      <DependentUpon>NhapThuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\ThayDoiQuiDinh.cs">
       <SubType>UserControl</SubType>
@@ -104,15 +104,6 @@
     <Compile Include="UserControls\ThayDoiQuiDinh.Designer.cs">
       <DependentUpon>ThayDoiQuiDinh.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fDonViCachDung.resx">
-      <DependentUpon>fDonViCachDung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fLoaiThuoc&amp;Thuoc.resx">
-      <DependentUpon>fLoaiThuoc&amp;Thuoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fNhapThuoc.resx">
-      <DependentUpon>fNhapThuoc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,8 +112,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DonViCachDung.resx">
+      <DependentUpon>DonViCachDung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\HoaDonThanhToan.resx">
       <DependentUpon>HoaDonThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoaiThuocThuoc.resx">
+      <DependentUpon>LoaiThuocThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NhapThuoc.resx">
+      <DependentUpon>NhapThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ThayDoiQuiDinh.resx">
       <DependentUpon>ThayDoiQuiDinh.cs</DependentUpon>

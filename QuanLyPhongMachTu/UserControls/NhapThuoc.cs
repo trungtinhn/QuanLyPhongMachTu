@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyPhongMachTu
+namespace QuanLyPhongMachTu.UserControls
 {
-    public partial class fLoaiThuoc_Thuoc : Form
+    public partial class NhapThuoc : UserControl
     {
-        public fLoaiThuoc_Thuoc()
+        public NhapThuoc()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
