@@ -66,11 +66,11 @@
     <Compile Include="UserControls\LapPhieuKhamBenh.Designer.cs">
       <DependentUpon>LapPhieuKhamBenh.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ManHinhTraCuuBenhNhan.cs">
+    <Compile Include="UserControls\TraCuuBenh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ManHinhTraCuuBenhNhan.Designer.cs">
-      <DependentUpon>ManHinhTraCuuBenhNhan.cs</DependentUpon>
+    <Compile Include="UserControls\TraCuuBenh.Designer.cs">
+      <DependentUpon>TraCuuBenh.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -90,8 +90,8 @@
     <EmbeddedResource Include="UserControls\LapPhieuKhamBenh.resx">
       <DependentUpon>LapPhieuKhamBenh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ManHinhTraCuuBenhNhan.resx">
-      <DependentUpon>ManHinhTraCuuBenhNhan.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\TraCuuBenh.resx">
+      <DependentUpon>TraCuuBenh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

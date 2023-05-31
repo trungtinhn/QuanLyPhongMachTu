@@ -50,8 +50,20 @@
             this.txtYearKB = new System.Windows.Forms.TextBox();
             this.txtMonthKB = new System.Windows.Forms.TextBox();
             this.txtDayKB = new System.Windows.Forms.TextBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.lbxThongtinKB = new System.Windows.Forms.ListBox();
+            this.lbDanhSachThuoc = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.txtThanhtien = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // Title
@@ -87,7 +99,7 @@
             // 
             // btnThemPKB
             // 
-            this.btnThemPKB.Location = new System.Drawing.Point(573, 103);
+            this.btnThemPKB.Location = new System.Drawing.Point(415, 258);
             this.btnThemPKB.Name = "btnThemPKB";
             this.btnThemPKB.Size = new System.Drawing.Size(75, 23);
             this.btnThemPKB.TabIndex = 44;
@@ -118,7 +130,7 @@
             this.txtTrieuchungBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtTrieuchungBenh.Multiline = true;
             this.txtTrieuchungBenh.Name = "txtTrieuchungBenh";
-            this.txtTrieuchungBenh.Size = new System.Drawing.Size(141, 41);
+            this.txtTrieuchungBenh.Size = new System.Drawing.Size(141, 26);
             this.txtTrieuchungBenh.TabIndex = 50;
             // 
             // label2
@@ -155,7 +167,7 @@
             this.txtDsThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtDsThuoc.Multiline = true;
             this.txtDsThuoc.Name = "txtDsThuoc";
-            this.txtDsThuoc.Size = new System.Drawing.Size(135, 53);
+            this.txtDsThuoc.Size = new System.Drawing.Size(106, 23);
             this.txtDsThuoc.TabIndex = 54;
             // 
             // label4
@@ -171,36 +183,36 @@
             // 
             // txtDonviThuoc
             // 
-            this.txtDonviThuoc.Location = new System.Drawing.Point(415, 169);
+            this.txtDonviThuoc.Location = new System.Drawing.Point(415, 137);
             this.txtDonviThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtDonviThuoc.Name = "txtDonviThuoc";
-            this.txtDonviThuoc.Size = new System.Drawing.Size(135, 22);
+            this.txtDonviThuoc.Size = new System.Drawing.Size(106, 22);
             this.txtDonviThuoc.TabIndex = 56;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(351, 172);
+            this.label6.Location = new System.Drawing.Point(344, 140);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.Size = new System.Drawing.Size(67, 16);
             this.label6.TabIndex = 55;
-            this.label6.Text = "Đơn vị:";
+            this.label6.Text = "Số Lượng:";
             // 
             // txtCachdungThuoc
             // 
-            this.txtCachdungThuoc.Location = new System.Drawing.Point(415, 208);
+            this.txtCachdungThuoc.Location = new System.Drawing.Point(415, 211);
             this.txtCachdungThuoc.Margin = new System.Windows.Forms.Padding(1);
             this.txtCachdungThuoc.Multiline = true;
             this.txtCachdungThuoc.Name = "txtCachdungThuoc";
-            this.txtCachdungThuoc.Size = new System.Drawing.Size(135, 22);
+            this.txtCachdungThuoc.Size = new System.Drawing.Size(106, 22);
             this.txtCachdungThuoc.TabIndex = 58;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(324, 207);
+            this.label7.Location = new System.Drawing.Point(337, 211);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(74, 16);
             this.label7.TabIndex = 57;
@@ -220,7 +232,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(225, 172);
+            this.label8.Location = new System.Drawing.Point(220, 170);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(18, 25);
             this.label8.TabIndex = 63;
@@ -228,17 +240,16 @@
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(173, 169);
+            this.label9.Location = new System.Drawing.Point(170, 170);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 25);
+            this.label9.Size = new System.Drawing.Size(15, 25);
             this.label9.TabIndex = 62;
             this.label9.Text = "/";
             // 
             // txtYearKB
             // 
-            this.txtYearKB.Location = new System.Drawing.Point(247, 172);
+            this.txtYearKB.Location = new System.Drawing.Point(239, 172);
             this.txtYearKB.Margin = new System.Windows.Forms.Padding(1);
             this.txtYearKB.Name = "txtYearKB";
             this.txtYearKB.Size = new System.Drawing.Size(37, 22);
@@ -246,7 +257,7 @@
             // 
             // txtMonthKB
             // 
-            this.txtMonthKB.Location = new System.Drawing.Point(195, 172);
+            this.txtMonthKB.Location = new System.Drawing.Point(192, 172);
             this.txtMonthKB.Margin = new System.Windows.Forms.Padding(1);
             this.txtMonthKB.Name = "txtMonthKB";
             this.txtMonthKB.Size = new System.Drawing.Size(26, 22);
@@ -260,29 +271,126 @@
             this.txtDayKB.Size = new System.Drawing.Size(26, 22);
             this.txtDayKB.TabIndex = 59;
             // 
-            // vScrollBar1
+            // lbDanhSachThuoc
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(696, 330);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(20, 162);
-            this.vScrollBar1.TabIndex = 65;
+            this.lbDanhSachThuoc.AutoSize = true;
+            this.lbDanhSachThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDanhSachThuoc.Location = new System.Drawing.Point(646, 58);
+            this.lbDanhSachThuoc.Name = "lbDanhSachThuoc";
+            this.lbDanhSachThuoc.Size = new System.Drawing.Size(106, 16);
+            this.lbDanhSachThuoc.TabIndex = 66;
+            this.lbDanhSachThuoc.Text = "Danh sách thuốc";
+            this.lbDanhSachThuoc.Click += new System.EventHandler(this.label11_Click);
             // 
-            // lbxThongtinKB
+            // dataGridView1
             // 
-            this.lbxThongtinKB.FormattingEnabled = true;
-            this.lbxThongtinKB.ItemHeight = 16;
-            this.lbxThongtinKB.Location = new System.Drawing.Point(27, 328);
-            this.lbxThongtinKB.Name = "lbxThongtinKB";
-            this.lbxThongtinKB.Size = new System.Drawing.Size(689, 164);
-            this.lbxThongtinKB.TabIndex = 64;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaThuoc,
+            this.TenThuoc,
+            this.SoLuongThuoc});
+            this.dataGridView1.Location = new System.Drawing.Point(594, 88);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 49;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(203, 193);
+            this.dataGridView1.TabIndex = 67;
+            // 
+            // MaThuoc
+            // 
+            this.MaThuoc.HeaderText = "Mã Thuốc";
+            this.MaThuoc.MinimumWidth = 6;
+            this.MaThuoc.Name = "MaThuoc";
+            this.MaThuoc.Width = 50;
+            // 
+            // TenThuoc
+            // 
+            this.TenThuoc.HeaderText = "Tên thuốc";
+            this.TenThuoc.MinimumWidth = 6;
+            this.TenThuoc.Name = "TenThuoc";
+            this.TenThuoc.Width = 90;
+            // 
+            // SoLuongThuoc
+            // 
+            this.SoLuongThuoc.HeaderText = "Số Lượng";
+            this.SoLuongThuoc.MinimumWidth = 6;
+            this.SoLuongThuoc.Name = "SoLuongThuoc";
+            this.SoLuongThuoc.Width = 60;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.NgayKB,
+            this.MaBN,
+            this.MaBenh});
+            this.dataGridView2.Location = new System.Drawing.Point(77, 345);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidth = 49;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(635, 150);
+            this.dataGridView2.TabIndex = 68;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // txtThanhtien
+            // 
+            this.txtThanhtien.Location = new System.Drawing.Point(415, 176);
+            this.txtThanhtien.Margin = new System.Windows.Forms.Padding(1);
+            this.txtThanhtien.Name = "txtThanhtien";
+            this.txtThanhtien.Size = new System.Drawing.Size(106, 22);
+            this.txtThanhtien.TabIndex = 70;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(339, 179);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 16);
+            this.label11.TabIndex = 69;
+            this.label11.Text = "Thành tiền:";
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.Width = 70;
+            // 
+            // NgayKB
+            // 
+            this.NgayKB.HeaderText = "Ngày khám bệnh";
+            this.NgayKB.MinimumWidth = 6;
+            this.NgayKB.Name = "NgayKB";
+            this.NgayKB.Width = 200;
+            // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            this.MaBN.Width = 180;
+            // 
+            // MaBenh
+            // 
+            this.MaBenh.HeaderText = "Mã Bệnh";
+            this.MaBenh.MinimumWidth = 6;
+            this.MaBenh.Name = "MaBenh";
+            this.MaBenh.Width = 180;
             // 
             // LapPhieuKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.lbxThongtinKB);
+            this.Controls.Add(this.txtThanhtien);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lbDanhSachThuoc);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtYearKB);
@@ -307,6 +415,8 @@
             this.Controls.Add(this.Title);
             this.Name = "LapPhieuKhamBenh";
             this.Size = new System.Drawing.Size(818, 495);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,7 +446,17 @@
         private System.Windows.Forms.TextBox txtYearKB;
         private System.Windows.Forms.TextBox txtMonthKB;
         private System.Windows.Forms.TextBox txtDayKB;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.ListBox lbxThongtinKB;
+        private System.Windows.Forms.Label lbDanhSachThuoc;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongThuoc;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox txtThanhtien;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBenh;
     }
 }

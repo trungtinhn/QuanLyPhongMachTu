@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.Title = new System.Windows.Forms.Label();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.lbxThongtinBN = new System.Windows.Forms.ListBox();
             this.txtHotenBN = new System.Windows.Forms.TextBox();
             this.txtDayBN = new System.Windows.Forms.TextBox();
             this.txtDiachiBN = new System.Windows.Forms.TextBox();
@@ -52,7 +51,6 @@
             this.btnThemBN = new System.Windows.Forms.Button();
             this.btnNamBN = new System.Windows.Forms.CheckBox();
             this.btnNuBN = new System.Windows.Forms.CheckBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.label10 = new System.Windows.Forms.Label();
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -63,6 +61,13 @@
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.btnNapDanhSach = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HotenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinhBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaysinhBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChiBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Title
@@ -76,16 +81,6 @@
             this.Title.TabIndex = 1;
             this.Title.Text = "DANH SÁCH KHÁM BỆNH";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lbxThongtinBN
-            // 
-            this.lbxThongtinBN.FormattingEnabled = true;
-            this.lbxThongtinBN.ItemHeight = 16;
-            this.lbxThongtinBN.Location = new System.Drawing.Point(15, 330);
-            this.lbxThongtinBN.Name = "lbxThongtinBN";
-            this.lbxThongtinBN.Size = new System.Drawing.Size(689, 164);
-            this.lbxThongtinBN.TabIndex = 2;
-            this.lbxThongtinBN.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // txtHotenBN
             // 
@@ -272,13 +267,6 @@
             this.btnNuBN.Text = "Nữ";
             this.btnNuBN.UseVisualStyleBackColor = true;
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(684, 331);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(20, 164);
-            this.vScrollBar1.TabIndex = 24;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -374,11 +362,63 @@
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaBN,
+            this.HotenBN,
+            this.GioiTinhBN,
+            this.NgaysinhBN,
+            this.DiaChiBN});
+            this.dataGridView1.Location = new System.Drawing.Point(98, 348);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 49;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(645, 147);
+            this.dataGridView1.TabIndex = 35;
+            // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            // 
+            // HotenBN
+            // 
+            this.HotenBN.HeaderText = "Họ và tên";
+            this.HotenBN.MinimumWidth = 6;
+            this.HotenBN.Name = "HotenBN";
+            this.HotenBN.Width = 120;
+            // 
+            // GioiTinhBN
+            // 
+            this.GioiTinhBN.HeaderText = "Giới tính";
+            this.GioiTinhBN.MinimumWidth = 6;
+            this.GioiTinhBN.Name = "GioiTinhBN";
+            this.GioiTinhBN.Width = 60;
+            // 
+            // NgaysinhBN
+            // 
+            this.NgaysinhBN.HeaderText = "Ngày sinh";
+            this.NgaysinhBN.MinimumWidth = 6;
+            this.NgaysinhBN.Name = "NgaysinhBN";
+            this.NgaysinhBN.Width = 120;
+            // 
+            // DiaChiBN
+            // 
+            this.DiaChiBN.HeaderText = "Địa chỉ";
+            this.DiaChiBN.MinimumWidth = 6;
+            this.DiaChiBN.Name = "DiaChiBN";
+            this.DiaChiBN.Width = 250;
+            // 
             // DanhSachKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnCapNhat);
             this.Controls.Add(this.btnNapDanhSach);
             this.Controls.Add(this.btnTraCuu);
@@ -389,7 +429,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtMaBN);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.btnNuBN);
             this.Controls.Add(this.btnNamBN);
             this.Controls.Add(this.btnThemBN);
@@ -410,10 +449,10 @@
             this.Controls.Add(this.txtDiachiBN);
             this.Controls.Add(this.txtDayBN);
             this.Controls.Add(this.txtHotenBN);
-            this.Controls.Add(this.lbxThongtinBN);
             this.Controls.Add(this.Title);
             this.Name = "DanhSachKhamBenh";
             this.Size = new System.Drawing.Size(818, 495);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,7 +461,6 @@
         #endregion
         private System.Windows.Forms.Label Title;
         private System.IO.Ports.SerialPort serialPort1;
-        private System.Windows.Forms.ListBox lbxThongtinBN;
         private System.Windows.Forms.TextBox txtHotenBN;
         private System.Windows.Forms.TextBox txtDayBN;
         private System.Windows.Forms.TextBox txtDiachiBN;
@@ -443,7 +481,6 @@
         private System.Windows.Forms.Button btnThemBN;
         private System.Windows.Forms.CheckBox btnNamBN;
         private System.Windows.Forms.CheckBox btnNuBN;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.Label label11;
@@ -454,5 +491,11 @@
         private System.Windows.Forms.Button btnTraCuu;
         private System.Windows.Forms.Button btnNapDanhSach;
         private System.Windows.Forms.Button btnCapNhat;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HotenBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinhBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaysinhBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiBN;
     }
 }

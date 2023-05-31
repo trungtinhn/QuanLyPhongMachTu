@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace QuanLyPhongMachTu.UserControls
 {
@@ -15,6 +16,7 @@ namespace QuanLyPhongMachTu.UserControls
         public LapPhieuKhamBenh()
         {
             InitializeComponent();
+
         }
 
         private void Title_Click(object sender, EventArgs e)
@@ -23,6 +25,21 @@ namespace QuanLyPhongMachTu.UserControls
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvDanhSachThuoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
