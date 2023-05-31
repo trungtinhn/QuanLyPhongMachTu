@@ -57,6 +57,12 @@
             this.txtMaBN = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtSoBNtiepnhan = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtMaBNDK = new System.Windows.Forms.TextBox();
+            this.btnDangKy = new System.Windows.Forms.Button();
+            this.btnTraCuu = new System.Windows.Forms.Button();
+            this.btnNapDanhSach = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Title
@@ -64,7 +70,7 @@
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Bold);
             this.Title.ForeColor = System.Drawing.Color.Salmon;
-            this.Title.Location = new System.Drawing.Point(196, 30);
+            this.Title.Location = new System.Drawing.Point(196, 15);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(452, 39);
             this.Title.TabIndex = 1;
@@ -238,9 +244,9 @@
             // 
             // btnThemBN
             // 
-            this.btnThemBN.Location = new System.Drawing.Point(381, 99);
+            this.btnThemBN.Location = new System.Drawing.Point(355, 99);
             this.btnThemBN.Name = "btnThemBN";
-            this.btnThemBN.Size = new System.Drawing.Size(75, 23);
+            this.btnThemBN.Size = new System.Drawing.Size(69, 23);
             this.btnThemBN.TabIndex = 21;
             this.btnThemBN.Text = "Thêm";
             this.btnThemBN.UseVisualStyleBackColor = true;
@@ -295,7 +301,7 @@
             // 
             this.label11.AllowDrop = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label11.Location = new System.Drawing.Point(473, 112);
+            this.label11.Location = new System.Drawing.Point(486, 92);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(303, 57);
             this.label11.TabIndex = 27;
@@ -308,17 +314,77 @@
             this.txtSoBNtiepnhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtSoBNtiepnhan.CausesValidation = false;
             this.txtSoBNtiepnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.txtSoBNtiepnhan.Location = new System.Drawing.Point(555, 172);
+            this.txtSoBNtiepnhan.Location = new System.Drawing.Point(573, 150);
             this.txtSoBNtiepnhan.Name = "txtSoBNtiepnhan";
             this.txtSoBNtiepnhan.ReadOnly = true;
             this.txtSoBNtiepnhan.Size = new System.Drawing.Size(131, 35);
             this.txtSoBNtiepnhan.TabIndex = 28;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(469, 239);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 16);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Mã bệnh nhân:";
+            // 
+            // txtMaBNDK
+            // 
+            this.txtMaBNDK.Location = new System.Drawing.Point(567, 239);
+            this.txtMaBNDK.Margin = new System.Windows.Forms.Padding(1);
+            this.txtMaBNDK.Name = "txtMaBNDK";
+            this.txtMaBNDK.Size = new System.Drawing.Size(137, 22);
+            this.txtMaBNDK.TabIndex = 30;
+            // 
+            // btnDangKy
+            // 
+            this.btnDangKy.Location = new System.Drawing.Point(472, 288);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(73, 23);
+            this.btnDangKy.TabIndex = 31;
+            this.btnDangKy.Text = "Đăng ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
+            // 
+            // btnTraCuu
+            // 
+            this.btnTraCuu.Location = new System.Drawing.Point(575, 288);
+            this.btnTraCuu.Name = "btnTraCuu";
+            this.btnTraCuu.Size = new System.Drawing.Size(73, 23);
+            this.btnTraCuu.TabIndex = 32;
+            this.btnTraCuu.Text = "Tra cứu";
+            this.btnTraCuu.UseVisualStyleBackColor = true;
+            // 
+            // btnNapDanhSach
+            // 
+            this.btnNapDanhSach.Location = new System.Drawing.Point(684, 288);
+            this.btnNapDanhSach.Name = "btnNapDanhSach";
+            this.btnNapDanhSach.Size = new System.Drawing.Size(73, 23);
+            this.btnNapDanhSach.TabIndex = 33;
+            this.btnNapDanhSach.Text = "Nạp danh sách";
+            this.btnNapDanhSach.UseVisualStyleBackColor = true;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.Location = new System.Drawing.Point(355, 133);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(69, 23);
+            this.btnCapNhat.TabIndex = 34;
+            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
             // 
             // DanhSachKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btnCapNhat);
+            this.Controls.Add(this.btnNapDanhSach);
+            this.Controls.Add(this.btnTraCuu);
+            this.Controls.Add(this.btnDangKy);
+            this.Controls.Add(this.txtMaBNDK);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.txtSoBNtiepnhan);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtMaBN);
@@ -382,5 +448,11 @@
         private System.Windows.Forms.TextBox txtMaBN;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtSoBNtiepnhan;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtMaBNDK;
+        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.Button btnTraCuu;
+        private System.Windows.Forms.Button btnNapDanhSach;
+        private System.Windows.Forms.Button btnCapNhat;
     }
 }
