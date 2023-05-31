@@ -28,138 +28,138 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.siticoneHtmlLabel1 = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
-            this.metroSetLabel1 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.metroSetLabel2 = new MetroSet_UI.Controls.MetroSetLabel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_Thaydoiquidinh = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
+            this.lbl_Tienkham = new MetroSet_UI.Controls.MetroSetLabel();
+            this.lbl_Sobenhnhantoida = new MetroSet_UI.Controls.MetroSetLabel();
+            this.txt_Sobenhnhantoida = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Tienkham = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_Dongy = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Huybo = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // siticoneHtmlLabel1
+            // lbl_Thaydoiquidinh
             // 
-            this.siticoneHtmlLabel1.AutoSize = false;
-            this.siticoneHtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneHtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneHtmlLabel1.ForeColor = System.Drawing.Color.Red;
-            this.siticoneHtmlLabel1.Location = new System.Drawing.Point(167, 69);
-            this.siticoneHtmlLabel1.Name = "siticoneHtmlLabel1";
-            this.siticoneHtmlLabel1.Size = new System.Drawing.Size(394, 49);
-            this.siticoneHtmlLabel1.TabIndex = 1;
-            this.siticoneHtmlLabel1.Text = "THAY ĐỔI QUI ĐỊNH";
+            this.lbl_Thaydoiquidinh.AutoSize = false;
+            this.lbl_Thaydoiquidinh.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Thaydoiquidinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Thaydoiquidinh.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Thaydoiquidinh.Location = new System.Drawing.Point(167, 69);
+            this.lbl_Thaydoiquidinh.Name = "lbl_Thaydoiquidinh";
+            this.lbl_Thaydoiquidinh.Size = new System.Drawing.Size(394, 49);
+            this.lbl_Thaydoiquidinh.TabIndex = 1;
+            this.lbl_Thaydoiquidinh.Text = "THAY ĐỔI QUI ĐỊNH";
             // 
-            // metroSetLabel1
+            // lbl_Tienkham
             // 
-            this.metroSetLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel1.IsDerivedStyle = true;
-            this.metroSetLabel1.Location = new System.Drawing.Point(147, 253);
-            this.metroSetLabel1.Name = "metroSetLabel1";
-            this.metroSetLabel1.Size = new System.Drawing.Size(111, 23);
-            this.metroSetLabel1.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel1.StyleManager = null;
-            this.metroSetLabel1.TabIndex = 2;
-            this.metroSetLabel1.Text = "Tiền Khám";
-            this.metroSetLabel1.ThemeAuthor = "Narwin";
-            this.metroSetLabel1.ThemeName = "MetroLite";
+            this.lbl_Tienkham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_Tienkham.IsDerivedStyle = true;
+            this.lbl_Tienkham.Location = new System.Drawing.Point(147, 253);
+            this.lbl_Tienkham.Name = "lbl_Tienkham";
+            this.lbl_Tienkham.Size = new System.Drawing.Size(111, 23);
+            this.lbl_Tienkham.Style = MetroSet_UI.Enums.Style.Light;
+            this.lbl_Tienkham.StyleManager = null;
+            this.lbl_Tienkham.TabIndex = 2;
+            this.lbl_Tienkham.Text = "Tiền Khám";
+            this.lbl_Tienkham.ThemeAuthor = "Narwin";
+            this.lbl_Tienkham.ThemeName = "MetroLite";
             // 
-            // metroSetLabel2
+            // lbl_Sobenhnhantoida
             // 
-            this.metroSetLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.metroSetLabel2.IsDerivedStyle = true;
-            this.metroSetLabel2.Location = new System.Drawing.Point(147, 169);
-            this.metroSetLabel2.Name = "metroSetLabel2";
-            this.metroSetLabel2.Size = new System.Drawing.Size(196, 23);
-            this.metroSetLabel2.Style = MetroSet_UI.Enums.Style.Light;
-            this.metroSetLabel2.StyleManager = null;
-            this.metroSetLabel2.TabIndex = 3;
-            this.metroSetLabel2.Text = "Số bệnh nhân tối đa";
-            this.metroSetLabel2.ThemeAuthor = "Narwin";
-            this.metroSetLabel2.ThemeName = "MetroLite";
+            this.lbl_Sobenhnhantoida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_Sobenhnhantoida.IsDerivedStyle = true;
+            this.lbl_Sobenhnhantoida.Location = new System.Drawing.Point(147, 169);
+            this.lbl_Sobenhnhantoida.Name = "lbl_Sobenhnhantoida";
+            this.lbl_Sobenhnhantoida.Size = new System.Drawing.Size(196, 23);
+            this.lbl_Sobenhnhantoida.Style = MetroSet_UI.Enums.Style.Light;
+            this.lbl_Sobenhnhantoida.StyleManager = null;
+            this.lbl_Sobenhnhantoida.TabIndex = 3;
+            this.lbl_Sobenhnhantoida.Text = "Số bệnh nhân tối đa";
+            this.lbl_Sobenhnhantoida.ThemeAuthor = "Narwin";
+            this.lbl_Sobenhnhantoida.ThemeName = "MetroLite";
             // 
-            // guna2TextBox1
+            // txt_Sobenhnhantoida
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(364, 156);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(257, 55);
-            this.guna2TextBox1.TabIndex = 4;
+            this.txt_Sobenhnhantoida.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Sobenhnhantoida.DefaultText = "";
+            this.txt_Sobenhnhantoida.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Sobenhnhantoida.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Sobenhnhantoida.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Sobenhnhantoida.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Sobenhnhantoida.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Sobenhnhantoida.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Sobenhnhantoida.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Sobenhnhantoida.Location = new System.Drawing.Point(364, 156);
+            this.txt_Sobenhnhantoida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Sobenhnhantoida.Name = "txt_Sobenhnhantoida";
+            this.txt_Sobenhnhantoida.PasswordChar = '\0';
+            this.txt_Sobenhnhantoida.PlaceholderText = "";
+            this.txt_Sobenhnhantoida.SelectedText = "";
+            this.txt_Sobenhnhantoida.Size = new System.Drawing.Size(257, 55);
+            this.txt_Sobenhnhantoida.TabIndex = 4;
             // 
-            // guna2TextBox2
+            // txt_Tienkham
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(364, 236);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(257, 55);
-            this.guna2TextBox2.TabIndex = 5;
+            this.txt_Tienkham.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Tienkham.DefaultText = "";
+            this.txt_Tienkham.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Tienkham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Tienkham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tienkham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Tienkham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tienkham.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Tienkham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Tienkham.Location = new System.Drawing.Point(364, 236);
+            this.txt_Tienkham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Tienkham.Name = "txt_Tienkham";
+            this.txt_Tienkham.PasswordChar = '\0';
+            this.txt_Tienkham.PlaceholderText = "";
+            this.txt_Tienkham.SelectedText = "";
+            this.txt_Tienkham.Size = new System.Drawing.Size(257, 55);
+            this.txt_Tienkham.TabIndex = 5;
             // 
-            // guna2Button1
+            // btn_Dongy
             // 
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.LightGray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(364, 345);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(98, 45);
-            this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Đồng Ý";
+            this.btn_Dongy.BorderThickness = 1;
+            this.btn_Dongy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dongy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Dongy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Dongy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Dongy.FillColor = System.Drawing.Color.LightGray;
+            this.btn_Dongy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Dongy.ForeColor = System.Drawing.Color.Black;
+            this.btn_Dongy.Location = new System.Drawing.Point(364, 345);
+            this.btn_Dongy.Name = "btn_Dongy";
+            this.btn_Dongy.Size = new System.Drawing.Size(98, 45);
+            this.btn_Dongy.TabIndex = 6;
+            this.btn_Dongy.Text = "Đồng Ý";
             // 
-            // guna2Button2
+            // btn_Huybo
             // 
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.LightGray;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button2.Location = new System.Drawing.Point(514, 345);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(98, 45);
-            this.guna2Button2.TabIndex = 7;
-            this.guna2Button2.Text = "Hủy Bỏ";
+            this.btn_Huybo.BorderThickness = 1;
+            this.btn_Huybo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Huybo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Huybo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Huybo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Huybo.FillColor = System.Drawing.Color.LightGray;
+            this.btn_Huybo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Huybo.ForeColor = System.Drawing.Color.Black;
+            this.btn_Huybo.Location = new System.Drawing.Point(514, 345);
+            this.btn_Huybo.Name = "btn_Huybo";
+            this.btn_Huybo.Size = new System.Drawing.Size(98, 45);
+            this.btn_Huybo.TabIndex = 7;
+            this.btn_Huybo.Text = "Hủy Bỏ";
             // 
             // ThayDoiQuiDinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.metroSetLabel2);
-            this.Controls.Add(this.metroSetLabel1);
-            this.Controls.Add(this.siticoneHtmlLabel1);
+            this.Controls.Add(this.btn_Huybo);
+            this.Controls.Add(this.btn_Dongy);
+            this.Controls.Add(this.txt_Tienkham);
+            this.Controls.Add(this.txt_Sobenhnhantoida);
+            this.Controls.Add(this.lbl_Sobenhnhantoida);
+            this.Controls.Add(this.lbl_Tienkham);
+            this.Controls.Add(this.lbl_Thaydoiquidinh);
             this.Name = "ThayDoiQuiDinh";
             this.Size = new System.Drawing.Size(777, 451);
             this.ResumeLayout(false);
@@ -168,12 +168,12 @@
 
         #endregion
 
-        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel siticoneHtmlLabel1;
-        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel1;
-        private MetroSet_UI.Controls.MetroSetLabel metroSetLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel lbl_Thaydoiquidinh;
+        private MetroSet_UI.Controls.MetroSetLabel lbl_Tienkham;
+        private MetroSet_UI.Controls.MetroSetLabel lbl_Sobenhnhantoida;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Sobenhnhantoida;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Tienkham;
+        private Guna.UI2.WinForms.Guna2Button btn_Dongy;
+        private Guna.UI2.WinForms.Guna2Button btn_Huybo;
     }
 }
