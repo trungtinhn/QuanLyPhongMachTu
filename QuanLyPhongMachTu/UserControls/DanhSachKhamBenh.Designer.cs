@@ -375,7 +375,7 @@
             // 
             this.dtbNgaySinhBN.Location = new System.Drawing.Point(180, 161);
             this.dtbNgaySinhBN.Name = "dtbNgaySinhBN";
-            this.dtbNgaySinhBN.Size = new System.Drawing.Size(141, 22);
+            this.dtbNgaySinhBN.Size = new System.Drawing.Size(164, 22);
             this.dtbNgaySinhBN.TabIndex = 99;
             this.dtbNgaySinhBN.Value = new System.DateTime(2023, 6, 1, 21, 30, 16, 0);
             // 

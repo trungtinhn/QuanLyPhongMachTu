@@ -31,7 +31,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtThanhtien = new System.Windows.Forms.TextBox();
             this.dgvKB = new System.Windows.Forms.DataGridView();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvThuoc = new System.Windows.Forms.DataGridView();
+            this.MaThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbDanhSachThuoc = new System.Windows.Forms.Label();
             this.txtCachdungThuoc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,19 +61,10 @@
             this.Title = new System.Windows.Forms.Label();
             this.dtbNgayKB = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.MaThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label9 = new System.Windows.Forms.Label();
             this.MaSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtDonGiaThuoc = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -106,13 +106,55 @@
             this.MaBenh,
             this.MaThuoc,
             this.SoLuong});
-            this.dgvKB.Location = new System.Drawing.Point(0, 337);
+            this.dgvKB.Location = new System.Drawing.Point(20, 337);
             this.dgvKB.Name = "dgvKB";
             this.dgvKB.RowHeadersVisible = false;
             this.dgvKB.RowHeadersWidth = 49;
             this.dgvKB.RowTemplate.Height = 24;
             this.dgvKB.Size = new System.Drawing.Size(785, 158);
             this.dgvKB.TabIndex = 95;
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.Width = 70;
+            // 
+            // NgayKB
+            // 
+            this.NgayKB.HeaderText = "Ngày khám bệnh";
+            this.NgayKB.MinimumWidth = 6;
+            this.NgayKB.Name = "NgayKB";
+            this.NgayKB.Width = 200;
+            // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            this.MaBN.Width = 180;
+            // 
+            // MaBenh
+            // 
+            this.MaBenh.HeaderText = "Mã Bệnh";
+            this.MaBenh.MinimumWidth = 6;
+            this.MaBenh.Name = "MaBenh";
+            this.MaBenh.Width = 150;
+            // 
+            // MaThuoc
+            // 
+            this.MaThuoc.HeaderText = "Thuốc";
+            this.MaThuoc.MinimumWidth = 6;
+            this.MaThuoc.Name = "MaThuoc";
+            this.MaThuoc.Width = 120;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 60;
             // 
             // dgvThuoc
             // 
@@ -128,6 +170,27 @@
             this.dgvThuoc.RowTemplate.Height = 24;
             this.dgvThuoc.Size = new System.Drawing.Size(203, 155);
             this.dgvThuoc.TabIndex = 94;
+            // 
+            // MaThuocKho
+            // 
+            this.MaThuocKho.HeaderText = "Mã Thuốc";
+            this.MaThuocKho.MinimumWidth = 6;
+            this.MaThuocKho.Name = "MaThuocKho";
+            this.MaThuocKho.Width = 50;
+            // 
+            // TenThuocKho
+            // 
+            this.TenThuocKho.HeaderText = "Tên thuốc";
+            this.TenThuocKho.MinimumWidth = 6;
+            this.TenThuocKho.Name = "TenThuocKho";
+            this.TenThuocKho.Width = 90;
+            // 
+            // SoLuongThuocKho
+            // 
+            this.SoLuongThuocKho.HeaderText = "Số Lượng";
+            this.SoLuongThuocKho.MinimumWidth = 6;
+            this.SoLuongThuocKho.Name = "SoLuongThuocKho";
+            this.SoLuongThuocKho.Width = 60;
             // 
             // lbDanhSachThuoc
             // 
@@ -316,92 +379,20 @@
             this.label8.TabIndex = 99;
             this.label8.Text = "Danh sách phiếu khám bệnh";
             // 
-            // MaThuocKho
-            // 
-            this.MaThuocKho.HeaderText = "Mã Thuốc";
-            this.MaThuocKho.MinimumWidth = 6;
-            this.MaThuocKho.Name = "MaThuocKho";
-            this.MaThuocKho.Width = 50;
-            // 
-            // TenThuocKho
-            // 
-            this.TenThuocKho.HeaderText = "Tên thuốc";
-            this.TenThuocKho.MinimumWidth = 6;
-            this.TenThuocKho.Name = "TenThuocKho";
-            this.TenThuocKho.Width = 90;
-            // 
-            // SoLuongThuocKho
-            // 
-            this.SoLuongThuocKho.HeaderText = "Số Lượng";
-            this.SoLuongThuocKho.MinimumWidth = 6;
-            this.SoLuongThuocKho.Name = "SoLuongThuocKho";
-            this.SoLuongThuocKho.Width = 60;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            this.STT.Width = 70;
-            // 
-            // NgayKB
-            // 
-            this.NgayKB.HeaderText = "Ngày khám bệnh";
-            this.NgayKB.MinimumWidth = 6;
-            this.NgayKB.Name = "NgayKB";
-            this.NgayKB.Width = 200;
-            // 
-            // MaBN
-            // 
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.MinimumWidth = 6;
-            this.MaBN.Name = "MaBN";
-            this.MaBN.Width = 180;
-            // 
-            // MaBenh
-            // 
-            this.MaBenh.HeaderText = "Mã Bệnh";
-            this.MaBenh.MinimumWidth = 6;
-            this.MaBenh.Name = "MaBenh";
-            this.MaBenh.Width = 150;
-            // 
-            // MaThuoc
-            // 
-            this.MaThuoc.HeaderText = "Thuốc";
-            this.MaThuoc.MinimumWidth = 6;
-            this.MaThuoc.Name = "MaThuoc";
-            this.MaThuoc.Width = 120;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số lượng";
-            this.SoLuong.MinimumWidth = 6;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 60;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSo,
             this.HoTenBN});
-            this.dataGridView1.Location = new System.Drawing.Point(866, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(844, 86);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 49;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(181, 409);
             this.dataGridView1.TabIndex = 100;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(863, 67);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(122, 16);
-            this.label9.TabIndex = 101;
-            this.label9.Text = "Danh sách đăng ký";
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // MaSo
             // 
@@ -416,6 +407,16 @@
             this.HoTenBN.MinimumWidth = 6;
             this.HoTenBN.Name = "HoTenBN";
             this.HoTenBN.Width = 125;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(863, 67);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 16);
+            this.label9.TabIndex = 101;
+            this.label9.Text = "Danh sách đăng ký";
             // 
             // txtDonGiaThuoc
             // 
