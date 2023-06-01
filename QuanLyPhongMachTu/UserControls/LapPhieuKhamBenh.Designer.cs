@@ -29,22 +29,10 @@
         private void InitializeComponent()
         {
             this.label11 = new System.Windows.Forms.Label();
-            this.NgayKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtThanhtien = new System.Windows.Forms.TextBox();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvKB = new System.Windows.Forms.DataGridView();
-            this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvThuoc = new System.Windows.Forms.DataGridView();
-            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbDanhSachThuoc = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtYearKB = new System.Windows.Forms.TextBox();
-            this.txtMonthKB = new System.Windows.Forms.TextBox();
-            this.txtDayKB = new System.Windows.Forms.TextBox();
             this.txtCachdungThuoc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDonviThuoc = new System.Windows.Forms.TextBox();
@@ -62,8 +50,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtHotenBN = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
+            this.dtbNgayKB = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.MaThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongThuocKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.MaSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label11
@@ -76,13 +80,6 @@
             this.label11.TabIndex = 96;
             this.label11.Text = "Thành tiền:";
             // 
-            // NgayKB
-            // 
-            this.NgayKB.HeaderText = "Ngày khám bệnh";
-            this.NgayKB.MinimumWidth = 6;
-            this.NgayKB.Name = "NgayKB";
-            this.NgayKB.Width = 200;
-            // 
             // txtThanhtien
             // 
             this.txtThanhtien.Location = new System.Drawing.Point(420, 168);
@@ -91,20 +88,6 @@
             this.txtThanhtien.Size = new System.Drawing.Size(106, 22);
             this.txtThanhtien.TabIndex = 97;
             // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 6;
-            this.STT.Name = "STT";
-            this.STT.Width = 70;
-            // 
-            // MaBN
-            // 
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.MinimumWidth = 6;
-            this.MaBN.Name = "MaBN";
-            this.MaBN.Width = 180;
-            // 
             // dgvKB
             // 
             this.dgvKB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -112,29 +95,24 @@
             this.STT,
             this.NgayKB,
             this.MaBN,
-            this.MaBenh});
-            this.dgvKB.Location = new System.Drawing.Point(82, 337);
+            this.MaBenh,
+            this.MaThuoc,
+            this.SoLuong});
+            this.dgvKB.Location = new System.Drawing.Point(20, 337);
             this.dgvKB.Name = "dgvKB";
             this.dgvKB.RowHeadersVisible = false;
             this.dgvKB.RowHeadersWidth = 49;
             this.dgvKB.RowTemplate.Height = 24;
-            this.dgvKB.Size = new System.Drawing.Size(635, 158);
+            this.dgvKB.Size = new System.Drawing.Size(782, 158);
             this.dgvKB.TabIndex = 95;
-            // 
-            // MaBenh
-            // 
-            this.MaBenh.HeaderText = "Mã Bệnh";
-            this.MaBenh.MinimumWidth = 6;
-            this.MaBenh.Name = "MaBenh";
-            this.MaBenh.Width = 180;
             // 
             // dgvThuoc
             // 
             this.dgvThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaThuoc,
-            this.TenThuoc,
-            this.SoLuongThuoc});
+            this.MaThuocKho,
+            this.TenThuocKho,
+            this.SoLuongThuocKho});
             this.dgvThuoc.Location = new System.Drawing.Point(599, 80);
             this.dgvThuoc.Name = "dgvThuoc";
             this.dgvThuoc.RowHeadersVisible = false;
@@ -143,79 +121,15 @@
             this.dgvThuoc.Size = new System.Drawing.Size(203, 193);
             this.dgvThuoc.TabIndex = 94;
             // 
-            // MaThuoc
-            // 
-            this.MaThuoc.HeaderText = "Mã Thuốc";
-            this.MaThuoc.MinimumWidth = 6;
-            this.MaThuoc.Name = "MaThuoc";
-            this.MaThuoc.Width = 50;
-            // 
-            // TenThuoc
-            // 
-            this.TenThuoc.HeaderText = "Tên thuốc";
-            this.TenThuoc.MinimumWidth = 6;
-            this.TenThuoc.Name = "TenThuoc";
-            this.TenThuoc.Width = 90;
-            // 
-            // SoLuongThuoc
-            // 
-            this.SoLuongThuoc.HeaderText = "Số Lượng";
-            this.SoLuongThuoc.MinimumWidth = 6;
-            this.SoLuongThuoc.Name = "SoLuongThuoc";
-            this.SoLuongThuoc.Width = 60;
-            // 
             // lbDanhSachThuoc
             // 
             this.lbDanhSachThuoc.AutoSize = true;
             this.lbDanhSachThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDanhSachThuoc.Location = new System.Drawing.Point(651, 50);
+            this.lbDanhSachThuoc.Location = new System.Drawing.Point(655, 61);
             this.lbDanhSachThuoc.Name = "lbDanhSachThuoc";
             this.lbDanhSachThuoc.Size = new System.Drawing.Size(106, 16);
             this.lbDanhSachThuoc.TabIndex = 93;
             this.lbDanhSachThuoc.Text = "Danh sách thuốc";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(225, 162);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(18, 25);
-            this.label8.TabIndex = 92;
-            this.label8.Text = "/";
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(175, 162);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 25);
-            this.label9.TabIndex = 91;
-            this.label9.Text = "/";
-            // 
-            // txtYearKB
-            // 
-            this.txtYearKB.Location = new System.Drawing.Point(244, 164);
-            this.txtYearKB.Margin = new System.Windows.Forms.Padding(1);
-            this.txtYearKB.Name = "txtYearKB";
-            this.txtYearKB.Size = new System.Drawing.Size(37, 22);
-            this.txtYearKB.TabIndex = 90;
-            // 
-            // txtMonthKB
-            // 
-            this.txtMonthKB.Location = new System.Drawing.Point(197, 164);
-            this.txtMonthKB.Margin = new System.Windows.Forms.Padding(1);
-            this.txtMonthKB.Name = "txtMonthKB";
-            this.txtMonthKB.Size = new System.Drawing.Size(26, 22);
-            this.txtMonthKB.TabIndex = 89;
-            // 
-            // txtDayKB
-            // 
-            this.txtDayKB.Location = new System.Drawing.Point(148, 164);
-            this.txtDayKB.Margin = new System.Windows.Forms.Padding(1);
-            this.txtDayKB.Name = "txtDayKB";
-            this.txtDayKB.Size = new System.Drawing.Size(26, 22);
-            this.txtDayKB.TabIndex = 88;
             // 
             // txtCachdungThuoc
             // 
@@ -377,21 +291,138 @@
             this.Title.Text = "PHIẾU KHÁM BỆNH";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // dtbNgayKB
+            // 
+            this.dtbNgayKB.Location = new System.Drawing.Point(148, 164);
+            this.dtbNgayKB.Name = "dtbNgayKB";
+            this.dtbNgayKB.Size = new System.Drawing.Size(141, 22);
+            this.dtbNgayKB.TabIndex = 98;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(18, 318);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(176, 16);
+            this.label8.TabIndex = 99;
+            this.label8.Text = "Danh sách phiếu khám bệnh";
+            // 
+            // MaThuocKho
+            // 
+            this.MaThuocKho.HeaderText = "Mã Thuốc";
+            this.MaThuocKho.MinimumWidth = 6;
+            this.MaThuocKho.Name = "MaThuocKho";
+            this.MaThuocKho.Width = 50;
+            // 
+            // TenThuocKho
+            // 
+            this.TenThuocKho.HeaderText = "Tên thuốc";
+            this.TenThuocKho.MinimumWidth = 6;
+            this.TenThuocKho.Name = "TenThuocKho";
+            this.TenThuocKho.Width = 90;
+            // 
+            // SoLuongThuocKho
+            // 
+            this.SoLuongThuocKho.HeaderText = "Số Lượng";
+            this.SoLuongThuocKho.MinimumWidth = 6;
+            this.SoLuongThuocKho.Name = "SoLuongThuocKho";
+            this.SoLuongThuocKho.Width = 60;
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 6;
+            this.STT.Name = "STT";
+            this.STT.Width = 70;
+            // 
+            // NgayKB
+            // 
+            this.NgayKB.HeaderText = "Ngày khám bệnh";
+            this.NgayKB.MinimumWidth = 6;
+            this.NgayKB.Name = "NgayKB";
+            this.NgayKB.Width = 200;
+            // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            this.MaBN.Width = 180;
+            // 
+            // MaBenh
+            // 
+            this.MaBenh.HeaderText = "Mã Bệnh";
+            this.MaBenh.MinimumWidth = 6;
+            this.MaBenh.Name = "MaBenh";
+            this.MaBenh.Width = 150;
+            // 
+            // MaThuoc
+            // 
+            this.MaThuoc.HeaderText = "Thuốc";
+            this.MaThuoc.MinimumWidth = 6;
+            this.MaThuoc.Name = "MaThuoc";
+            this.MaThuoc.Width = 120;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 60;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSo,
+            this.HoTenBN});
+            this.dataGridView1.Location = new System.Drawing.Point(816, 86);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 49;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(181, 409);
+            this.dataGridView1.TabIndex = 100;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(846, 67);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(122, 16);
+            this.label9.TabIndex = 101;
+            this.label9.Text = "Danh sách đăng ký";
+            // 
+            // MaSo
+            // 
+            this.MaSo.HeaderText = "Mã số";
+            this.MaSo.MinimumWidth = 6;
+            this.MaSo.Name = "MaSo";
+            this.MaSo.Width = 50;
+            // 
+            // HoTenBN
+            // 
+            this.HoTenBN.HeaderText = "Họ tên";
+            this.HoTenBN.MinimumWidth = 6;
+            this.HoTenBN.Name = "HoTenBN";
+            this.HoTenBN.Width = 125;
+            // 
             // LapPhieuKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.dtbNgayKB);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtThanhtien);
             this.Controls.Add(this.dgvKB);
             this.Controls.Add(this.dgvThuoc);
             this.Controls.Add(this.lbDanhSachThuoc);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtYearKB);
-            this.Controls.Add(this.txtMonthKB);
-            this.Controls.Add(this.txtDayKB);
             this.Controls.Add(this.txtCachdungThuoc);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDonviThuoc);
@@ -410,9 +441,10 @@
             this.Controls.Add(this.txtHotenBN);
             this.Controls.Add(this.Title);
             this.Name = "LapPhieuKhamBenh";
-            this.Size = new System.Drawing.Size(818, 495);
+            this.Size = new System.Drawing.Size(1000, 495);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,22 +453,10 @@
         #endregion
 
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKB;
         private System.Windows.Forms.TextBox txtThanhtien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
         private System.Windows.Forms.DataGridView dgvKB;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaBenh;
         private System.Windows.Forms.DataGridView dgvThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongThuoc;
         private System.Windows.Forms.Label lbDanhSachThuoc;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtYearKB;
-        private System.Windows.Forms.TextBox txtMonthKB;
-        private System.Windows.Forms.TextBox txtDayKB;
         private System.Windows.Forms.TextBox txtCachdungThuoc;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDonviThuoc;
@@ -454,5 +474,20 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHotenBN;
         private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.DateTimePicker dtbNgayKB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaBenh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaThuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaThuocKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenThuocKho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongThuocKho;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTenBN;
     }
 }
