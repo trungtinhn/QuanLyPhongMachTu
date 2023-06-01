@@ -1,6 +1,6 @@
 ﻿namespace QuanLyPhongMachTu.UserControls
 {
-    partial class DanhSachKB
+    partial class DanhSachKhamBenh
     {
         /// <summary> 
         /// Required designer variable.
@@ -64,10 +64,12 @@
             this.Title = new System.Windows.Forms.Label();
             this.dtbNgaySinhBN = new System.Windows.Forms.DateTimePicker();
             this.dgvDanhSachHoaDon = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
             this.MaKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnKhongLuu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinBN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDon)).BeginInit();
             this.SuspendLayout();
@@ -81,12 +83,12 @@
             this.GioiTinhBN,
             this.NgaysinhBN,
             this.DiaChiBN});
-            this.dgvThongTinBN.Location = new System.Drawing.Point(133, 352);
+            this.dgvThongTinBN.Location = new System.Drawing.Point(108, 352);
             this.dgvThongTinBN.Name = "dgvThongTinBN";
             this.dgvThongTinBN.RowHeadersVisible = false;
             this.dgvThongTinBN.RowHeadersWidth = 49;
             this.dgvThongTinBN.RowTemplate.Height = 24;
-            this.dgvThongTinBN.Size = new System.Drawing.Size(645, 147);
+            this.dgvThongTinBN.Size = new System.Drawing.Size(670, 147);
             this.dgvThongTinBN.TabIndex = 67;
             // 
             // MaBN
@@ -128,7 +130,7 @@
             // 
             this.btnCapNhat.Location = new System.Drawing.Point(365, 125);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(69, 23);
+            this.btnCapNhat.Size = new System.Drawing.Size(79, 31);
             this.btnCapNhat.TabIndex = 66;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
@@ -278,7 +280,7 @@
             // 
             this.btnThemBN.Location = new System.Drawing.Point(365, 91);
             this.btnThemBN.Name = "btnThemBN";
-            this.btnThemBN.Size = new System.Drawing.Size(69, 23);
+            this.btnThemBN.Size = new System.Drawing.Size(79, 28);
             this.btnThemBN.TabIndex = 54;
             this.btnThemBN.Text = "Thêm";
             this.btnThemBN.UseVisualStyleBackColor = true;
@@ -384,23 +386,13 @@
             this.MaKB,
             this.HoTen,
             this.TongTien});
-            this.dgvDanhSachHoaDon.Location = new System.Drawing.Point(799, 50);
+            this.dgvDanhSachHoaDon.Location = new System.Drawing.Point(784, 50);
             this.dgvDanhSachHoaDon.Name = "dgvDanhSachHoaDon";
             this.dgvDanhSachHoaDon.RowHeadersVisible = false;
             this.dgvDanhSachHoaDon.RowHeadersWidth = 49;
             this.dgvDanhSachHoaDon.RowTemplate.Height = 24;
-            this.dgvDanhSachHoaDon.Size = new System.Drawing.Size(225, 450);
+            this.dgvDanhSachHoaDon.Size = new System.Drawing.Size(240, 450);
             this.dgvDanhSachHoaDon.TabIndex = 100;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(869, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 16);
-            this.label6.TabIndex = 101;
-            this.label6.Text = "Danh sách hóa đơn";
             // 
             // MaKB
             // 
@@ -423,11 +415,41 @@
             this.TongTien.Name = "TongTien";
             this.TongTien.Width = 80;
             // 
-            // DanhSachKB
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(869, 30);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(123, 16);
+            this.label6.TabIndex = 101;
+            this.label6.Text = "Danh sách hóa đơn";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Location = new System.Drawing.Point(365, 162);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(79, 31);
+            this.btnLuu.TabIndex = 102;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnKhongLuu
+            // 
+            this.btnKhongLuu.Location = new System.Drawing.Point(365, 199);
+            this.btnKhongLuu.Name = "btnKhongLuu";
+            this.btnKhongLuu.Size = new System.Drawing.Size(79, 31);
+            this.btnKhongLuu.TabIndex = 103;
+            this.btnKhongLuu.Text = "Không Lưu";
+            this.btnKhongLuu.UseVisualStyleBackColor = true;
+            // 
+            // DanhSachKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btnKhongLuu);
+            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgvDanhSachHoaDon);
             this.Controls.Add(this.dtbNgaySinhBN);
@@ -458,7 +480,7 @@
             this.Controls.Add(this.txtDiachiBN);
             this.Controls.Add(this.txtHotenBN);
             this.Controls.Add(this.Title);
-            this.Name = "DanhSachKB";
+            this.Name = "DanhSachKhamBenh";
             this.Size = new System.Drawing.Size(1100, 500);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinBN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDon)).EndInit();
@@ -508,5 +530,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKB;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnKhongLuu;
     }
 }

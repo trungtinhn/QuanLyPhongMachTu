@@ -61,6 +61,12 @@
             this.btnTraCuuBenh = new System.Windows.Forms.Button();
             this.btnCapNhatBenh = new System.Windows.Forms.Button();
             this.btnLuuBenh = new System.Windows.Forms.Button();
+            this.btnKhongLuu = new System.Windows.Forms.Button();
+            this.btnNapDS = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnNapDSBenh = new System.Windows.Forms.Button();
+            this.btnThemBenh = new System.Windows.Forms.Button();
+            this.btnKhongLuuBenh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBenh)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +78,7 @@
             this.MaLoaiBenh,
             this.TenLoaiBenh});
             this.dgvLoaiBenh.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dgvLoaiBenh.Location = new System.Drawing.Point(518, 66);
+            this.dgvLoaiBenh.Location = new System.Drawing.Point(587, 69);
             this.dgvLoaiBenh.Name = "dgvLoaiBenh";
             this.dgvLoaiBenh.RowHeadersVisible = false;
             this.dgvLoaiBenh.RowHeadersWidth = 49;
@@ -82,7 +88,7 @@
             // 
             // btnTraCuuLoaiBenh
             // 
-            this.btnTraCuuLoaiBenh.Location = new System.Drawing.Point(96, 165);
+            this.btnTraCuuLoaiBenh.Location = new System.Drawing.Point(414, 116);
             this.btnTraCuuLoaiBenh.Name = "btnTraCuuLoaiBenh";
             this.btnTraCuuLoaiBenh.Size = new System.Drawing.Size(82, 30);
             this.btnTraCuuLoaiBenh.TabIndex = 67;
@@ -141,7 +147,7 @@
             // 
             // btnLuuLoaiBenh
             // 
-            this.btnLuuLoaiBenh.Location = new System.Drawing.Point(347, 165);
+            this.btnLuuLoaiBenh.Location = new System.Drawing.Point(283, 165);
             this.btnLuuLoaiBenh.Name = "btnLuuLoaiBenh";
             this.btnLuuLoaiBenh.Size = new System.Drawing.Size(88, 30);
             this.btnLuuLoaiBenh.TabIndex = 69;
@@ -150,7 +156,7 @@
             // 
             // btnCapNhatLoaiBenh
             // 
-            this.btnCapNhatLoaiBenh.Location = new System.Drawing.Point(225, 165);
+            this.btnCapNhatLoaiBenh.Location = new System.Drawing.Point(185, 165);
             this.btnCapNhatLoaiBenh.Name = "btnCapNhatLoaiBenh";
             this.btnCapNhatLoaiBenh.Size = new System.Drawing.Size(82, 30);
             this.btnCapNhatLoaiBenh.TabIndex = 70;
@@ -345,7 +351,7 @@
             // 
             // btnTraCuuBenh
             // 
-            this.btnTraCuuBenh.Location = new System.Drawing.Point(710, 289);
+            this.btnTraCuuBenh.Location = new System.Drawing.Point(814, 327);
             this.btnTraCuuBenh.Name = "btnTraCuuBenh";
             this.btnTraCuuBenh.Size = new System.Drawing.Size(82, 30);
             this.btnTraCuuBenh.TabIndex = 85;
@@ -370,11 +376,71 @@
             this.btnLuuBenh.Text = "Lưu";
             this.btnLuuBenh.UseVisualStyleBackColor = true;
             // 
+            // btnKhongLuu
+            // 
+            this.btnKhongLuu.Location = new System.Drawing.Point(414, 80);
+            this.btnKhongLuu.Name = "btnKhongLuu";
+            this.btnKhongLuu.Size = new System.Drawing.Size(82, 30);
+            this.btnKhongLuu.TabIndex = 88;
+            this.btnKhongLuu.Text = "Không lưu";
+            this.btnKhongLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnNapDS
+            // 
+            this.btnNapDS.Location = new System.Drawing.Point(414, 152);
+            this.btnNapDS.Name = "btnNapDS";
+            this.btnNapDS.Size = new System.Drawing.Size(82, 43);
+            this.btnNapDS.TabIndex = 89;
+            this.btnNapDS.Text = "Nạp danh sách";
+            this.btnNapDS.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(88, 165);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(82, 30);
+            this.btnThem.TabIndex = 90;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // btnNapDSBenh
+            // 
+            this.btnNapDSBenh.Location = new System.Drawing.Point(814, 363);
+            this.btnNapDSBenh.Name = "btnNapDSBenh";
+            this.btnNapDSBenh.Size = new System.Drawing.Size(82, 43);
+            this.btnNapDSBenh.TabIndex = 91;
+            this.btnNapDSBenh.Text = "Nạp danh sách";
+            this.btnNapDSBenh.UseVisualStyleBackColor = true;
+            // 
+            // btnThemBenh
+            // 
+            this.btnThemBenh.Location = new System.Drawing.Point(710, 291);
+            this.btnThemBenh.Name = "btnThemBenh";
+            this.btnThemBenh.Size = new System.Drawing.Size(82, 30);
+            this.btnThemBenh.TabIndex = 92;
+            this.btnThemBenh.Text = "Thêm";
+            this.btnThemBenh.UseVisualStyleBackColor = true;
+            // 
+            // btnKhongLuuBenh
+            // 
+            this.btnKhongLuuBenh.Location = new System.Drawing.Point(814, 289);
+            this.btnKhongLuuBenh.Name = "btnKhongLuuBenh";
+            this.btnKhongLuuBenh.Size = new System.Drawing.Size(82, 30);
+            this.btnKhongLuuBenh.TabIndex = 93;
+            this.btnKhongLuuBenh.Text = "Không lưu";
+            this.btnKhongLuuBenh.UseVisualStyleBackColor = true;
+            // 
             // TraCuuBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.btnKhongLuuBenh);
+            this.Controls.Add(this.btnThemBenh);
+            this.Controls.Add(this.btnNapDSBenh);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.btnNapDS);
+            this.Controls.Add(this.btnKhongLuu);
             this.Controls.Add(this.btnLuuBenh);
             this.Controls.Add(this.btnCapNhatBenh);
             this.Controls.Add(this.btnTraCuuBenh);
@@ -445,5 +511,11 @@
         private System.Windows.Forms.Button btnTraCuuBenh;
         private System.Windows.Forms.Button btnCapNhatBenh;
         private System.Windows.Forms.Button btnLuuBenh;
+        private System.Windows.Forms.Button btnKhongLuu;
+        private System.Windows.Forms.Button btnNapDS;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnNapDSBenh;
+        private System.Windows.Forms.Button btnThemBenh;
+        private System.Windows.Forms.Button btnKhongLuuBenh;
     }
 }
