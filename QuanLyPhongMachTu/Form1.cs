@@ -16,8 +16,8 @@ namespace QuanLyPhongMachTu
         {
             InitializeComponent();
 
-            this.MinimumSize = new System.Drawing.Size(1900, 1100);
-            this.MaximumSize = new System.Drawing.Size(1990, 1190);
+            this.MinimumSize = new System.Drawing.Size(1890, 1060);
+            this.MaximumSize = new System.Drawing.Size(1890, 1060);
 
         }
 

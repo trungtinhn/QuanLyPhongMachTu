@@ -278,7 +278,9 @@ namespace QuanLyPhongMachTu
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
             this.siticonePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.siticonePanel1.Name = "siticonePanel1";
-            this.siticonePanel1.Size = new System.Drawing.Size(1426, 56);
+
+            this.siticonePanel1.Size = new System.Drawing.Size(1870, 69);
+
             this.siticonePanel1.TabIndex = 20;
             // 
             // siticonePanel2
@@ -298,7 +300,9 @@ namespace QuanLyPhongMachTu
             this.siticonePanel2.Location = new System.Drawing.Point(0, 56);
             this.siticonePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.siticonePanel2.Name = "siticonePanel2";
-            this.siticonePanel2.Size = new System.Drawing.Size(205, 734);
+
+            this.siticonePanel2.Size = new System.Drawing.Size(273, 939);
+
             this.siticonePanel2.TabIndex = 21;
             // 
             // u_loaiThuocThuoc
@@ -309,77 +313,86 @@ namespace QuanLyPhongMachTu
             this.u_loaiThuocThuoc.Location = new System.Drawing.Point(205, 56);
             this.u_loaiThuocThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_loaiThuocThuoc.Name = "u_loaiThuocThuoc";
-            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1221, 734);
+
+            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1597, 939);
+
             this.u_loaiThuocThuoc.TabIndex = 22;
             // 
             // u_thayDoiQuiDinh
             // 
             this.u_thayDoiQuiDinh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_thayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(205, 56);
-            this.u_thayDoiQuiDinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(0, 0);
             this.u_thayDoiQuiDinh.Name = "u_thayDoiQuiDinh";
-            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1221, 734);
+            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_thayDoiQuiDinh.TabIndex = 23;
             // 
             // u_donViCachDung
             // 
             this.u_donViCachDung.BackColor = System.Drawing.Color.PeachPuff;
             this.u_donViCachDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_donViCachDung.Location = new System.Drawing.Point(205, 56);
-            this.u_donViCachDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_donViCachDung.Location = new System.Drawing.Point(0, 0);
             this.u_donViCachDung.Name = "u_donViCachDung";
-            this.u_donViCachDung.Size = new System.Drawing.Size(1221, 734);
+            this.u_donViCachDung.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_donViCachDung.TabIndex = 24;
             // 
             // u_hoaDonThanhToan
             // 
             this.u_hoaDonThanhToan.BackColor = System.Drawing.Color.PeachPuff;
             this.u_hoaDonThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(205, 56);
-            this.u_hoaDonThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(0, 0);
             this.u_hoaDonThanhToan.Name = "u_hoaDonThanhToan";
-            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1221, 734);
+            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_hoaDonThanhToan.TabIndex = 25;
             // 
             // u_danhSachKhamBenh
             // 
             this.u_danhSachKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_danhSachKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_danhSachKhamBenh.Location = new System.Drawing.Point(205, 56);
-            this.u_danhSachKhamBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_danhSachKhamBenh.Location = new System.Drawing.Point(0, 0);
             this.u_danhSachKhamBenh.Name = "u_danhSachKhamBenh";
-            this.u_danhSachKhamBenh.Size = new System.Drawing.Size(1221, 734);
+            this.u_danhSachKhamBenh.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_danhSachKhamBenh.TabIndex = 26;
             // 
             // u_BenhLoaiBenh
             // 
             this.u_BenhLoaiBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_BenhLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(205, 56);
-            this.u_BenhLoaiBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(0, 0);
             this.u_BenhLoaiBenh.Name = "u_BenhLoaiBenh";
-            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1221, 734);
+            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_BenhLoaiBenh.TabIndex = 27;
             // 
             // u_PhieuKhamBenh
             // 
             this.u_PhieuKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_PhieuKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_PhieuKhamBenh.Location = new System.Drawing.Point(205, 56);
-            this.u_PhieuKhamBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_PhieuKhamBenh.Location = new System.Drawing.Point(0, 0);
             this.u_PhieuKhamBenh.Name = "u_PhieuKhamBenh";
-            this.u_PhieuKhamBenh.Size = new System.Drawing.Size(1221, 734);
+            this.u_PhieuKhamBenh.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_PhieuKhamBenh.TabIndex = 28;
             // 
             // u_nhapThuoc
             // 
             this.u_nhapThuoc.BackColor = System.Drawing.Color.PeachPuff;
             this.u_nhapThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_nhapThuoc.Location = new System.Drawing.Point(205, 56);
-            this.u_nhapThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+
+            this.u_nhapThuoc.Location = new System.Drawing.Point(0, 0);
             this.u_nhapThuoc.Name = "u_nhapThuoc";
-            this.u_nhapThuoc.Size = new System.Drawing.Size(1221, 734);
+            this.u_nhapThuoc.Size = new System.Drawing.Size(1870, 1008);
+
             this.u_nhapThuoc.TabIndex = 29;
             // 
             // Form1
@@ -387,7 +400,12 @@ namespace QuanLyPhongMachTu
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1426, 790);
+
+            this.ClientSize = new System.Drawing.Size(1870, 1008);
+            this.Controls.Add(this.u_loaiThuocThuoc);
+            this.Controls.Add(this.siticonePanel2);
+            this.Controls.Add(this.siticonePanel1);
+
             this.Controls.Add(this.u_nhapThuoc);
             this.Controls.Add(this.u_PhieuKhamBenh);
             this.Controls.Add(this.u_BenhLoaiBenh);
@@ -395,13 +413,11 @@ namespace QuanLyPhongMachTu
             this.Controls.Add(this.u_hoaDonThanhToan);
             this.Controls.Add(this.u_donViCachDung);
             this.Controls.Add(this.u_thayDoiQuiDinh);
-            this.Controls.Add(this.u_loaiThuocThuoc);
-            this.Controls.Add(this.siticonePanel2);
-            this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MaximumSize = new System.Drawing.Size(1496, 974);
-            this.MinimumSize = new System.Drawing.Size(1442, 829);
+
+            this.MaximumSize = new System.Drawing.Size(1910, 1060);
+            this.MinimumSize = new System.Drawing.Size(1890, 1000);
+
             this.Name = "Form1";
             this.Text = "Quản Lý Phòng Mạch ";
             this.Load += new System.EventHandler(this.Form1_Load);
