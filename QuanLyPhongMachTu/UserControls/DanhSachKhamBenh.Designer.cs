@@ -78,6 +78,7 @@
             // dgvThongTinBN
             // 
             this.dgvThongTinBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvThongTinBN.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvThongTinBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThongTinBN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBN,
@@ -341,6 +342,7 @@
             // dgvDanhSachHoaDon
             // 
             this.dgvDanhSachHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDanhSachHoaDon.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvDanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaKB,

@@ -15,6 +15,10 @@ namespace QuanLyPhongMachTu
         public Form1()
         {
             InitializeComponent();
+
+            this.MinimumSize = new System.Drawing.Size(1900, 1100);
+            this.MaximumSize = new System.Drawing.Size(1990, 1190);
+
         }
 
         private void btn_Benhnhan_Click(object sender, EventArgs e)

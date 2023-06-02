@@ -78,6 +78,7 @@
             // dgvLoaiBenh
             // 
             this.dgvLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLoaiBenh.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoaiBenh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLoaiBenh,
@@ -165,21 +166,23 @@
             // 
             // btnLuuLoaiBenh
             // 
+            this.btnLuuLoaiBenh.BackColor = System.Drawing.Color.LightGray;
             this.btnLuuLoaiBenh.Location = new System.Drawing.Point(513, 275);
             this.btnLuuLoaiBenh.Name = "btnLuuLoaiBenh";
             this.btnLuuLoaiBenh.Size = new System.Drawing.Size(88, 43);
             this.btnLuuLoaiBenh.TabIndex = 69;
             this.btnLuuLoaiBenh.Text = "Lưu";
-            this.btnLuuLoaiBenh.UseVisualStyleBackColor = true;
+            this.btnLuuLoaiBenh.UseVisualStyleBackColor = false;
             // 
             // btnCapNhatLoaiBenh
             // 
+            this.btnCapNhatLoaiBenh.BackColor = System.Drawing.Color.LightGray;
             this.btnCapNhatLoaiBenh.Location = new System.Drawing.Point(400, 275);
             this.btnCapNhatLoaiBenh.Name = "btnCapNhatLoaiBenh";
             this.btnCapNhatLoaiBenh.Size = new System.Drawing.Size(82, 43);
             this.btnCapNhatLoaiBenh.TabIndex = 70;
             this.btnCapNhatLoaiBenh.Text = "Cập nhật";
-            this.btnCapNhatLoaiBenh.UseVisualStyleBackColor = true;
+            this.btnCapNhatLoaiBenh.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -305,6 +308,7 @@
             // 
             this.dgvBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBenh.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvBenh.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBenh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBenh,
@@ -404,12 +408,13 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(-155, 409);
+            this.btnThem.BackColor = System.Drawing.Color.LightGray;
+            this.btnThem.Location = new System.Drawing.Point(280, 275);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(82, 43);
             this.btnThem.TabIndex = 90;
             this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.UseVisualStyleBackColor = false;
             // 
             // btnNapDSBenh
             // 
