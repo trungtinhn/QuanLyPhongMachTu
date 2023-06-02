@@ -70,5 +70,22 @@ namespace QuanLyPhongMachTu
         {
 
         }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Maximized || this.WindowState == FormWindowState.Normal)
+            {
+                if (this.Width > 1890)
+                    this.Width = 1890;
+                if (this.Height > 1030)
+                    this.Height =1030;
+
+                if (this.Width < 400)
+                    this.Width = 400;
+                if (this.Height < 300)
+                    this.Height = 300;
+            }
+
+        }
     }
 }
