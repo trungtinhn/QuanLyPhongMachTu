@@ -74,11 +74,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\DanhSachKB.cs">
+    <Compile Include="UserControls\DanhSachKhamBenh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\DanhSachKB.Designer.cs">
-      <DependentUpon>DanhSachKB.cs</DependentUpon>
+    <Compile Include="UserControls\DanhSachKhamBenh.Designer.cs">
+      <DependentUpon>DanhSachKhamBenh.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\DonViCachDung.cs">
       <SubType>UserControl</SubType>
@@ -130,8 +130,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\DanhSachKB.resx">
-      <DependentUpon>DanhSachKB.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\DanhSachKhamBenh.resx">
+      <DependentUpon>DanhSachKhamBenh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\DonViCachDung.resx">
       <DependentUpon>DonViCachDung.cs</DependentUpon>

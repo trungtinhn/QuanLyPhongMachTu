@@ -42,11 +42,11 @@
             this.lbl_HoVaTen_TD = new System.Windows.Forms.Label();
             this.lbl_dsThuoc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dgv_dsThuoc = new System.Windows.Forms.DataGridView();
+            this.btn_Xuat = new Guna.UI2.WinForms.Guna2Button();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CachDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_Xuat = new Guna.UI2.WinForms.Guna2Button();
             this.gbx_Hoadon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dsThuoc)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +56,7 @@
             this.lbl_Hoadonthanhtoan.AutoSize = false;
             this.lbl_Hoadonthanhtoan.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Hoadonthanhtoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Hoadonthanhtoan.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Hoadonthanhtoan.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_Hoadonthanhtoan.Location = new System.Drawing.Point(226, 43);
             this.lbl_Hoadonthanhtoan.Name = "lbl_Hoadonthanhtoan";
             this.lbl_Hoadonthanhtoan.Size = new System.Drawing.Size(463, 50);
@@ -178,8 +178,8 @@
             // 
             this.lbl_dsThuoc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dsThuoc.ForeColor = System.Drawing.Color.Red;
-            this.lbl_dsThuoc.Location = new System.Drawing.Point(388, 301);
+            this.lbl_dsThuoc.ForeColor = System.Drawing.Color.Salmon;
+            this.lbl_dsThuoc.Location = new System.Drawing.Point(385, 318);
             this.lbl_dsThuoc.Name = "lbl_dsThuoc";
             this.lbl_dsThuoc.Size = new System.Drawing.Size(148, 20);
             this.lbl_dsThuoc.TabIndex = 2;
@@ -187,6 +187,7 @@
             // 
             // dgv_dsThuoc
             // 
+            this.dgv_dsThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_dsThuoc.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgv_dsThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_dsThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -196,38 +197,11 @@
             this.CachDung});
             this.dgv_dsThuoc.Location = new System.Drawing.Point(143, 362);
             this.dgv_dsThuoc.Name = "dgv_dsThuoc";
+            this.dgv_dsThuoc.RowHeadersVisible = false;
             this.dgv_dsThuoc.RowHeadersWidth = 57;
             this.dgv_dsThuoc.RowTemplate.Height = 24;
             this.dgv_dsThuoc.Size = new System.Drawing.Size(619, 150);
             this.dgv_dsThuoc.TabIndex = 4;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.MinimumWidth = 7;
-            this.STT.Name = "STT";
-            this.STT.Width = 140;
-            // 
-            // Thuoc
-            // 
-            this.Thuoc.HeaderText = "Thuốc";
-            this.Thuoc.MinimumWidth = 7;
-            this.Thuoc.Name = "Thuoc";
-            this.Thuoc.Width = 140;
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.MinimumWidth = 7;
-            this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 140;
-            // 
-            // CachDung
-            // 
-            this.CachDung.HeaderText = "Cách Dùng";
-            this.CachDung.MinimumWidth = 7;
-            this.CachDung.Name = "CachDung";
-            this.CachDung.Width = 140;
             // 
             // btn_Xuat
             // 
@@ -245,11 +219,35 @@
             this.btn_Xuat.TabIndex = 5;
             this.btn_Xuat.Text = "Xuất";
             // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.MinimumWidth = 7;
+            this.STT.Name = "STT";
+            // 
+            // Thuoc
+            // 
+            this.Thuoc.HeaderText = "Thuốc";
+            this.Thuoc.MinimumWidth = 7;
+            this.Thuoc.Name = "Thuoc";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 7;
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // CachDung
+            // 
+            this.CachDung.HeaderText = "Cách Dùng";
+            this.CachDung.MinimumWidth = 7;
+            this.CachDung.Name = "CachDung";
+            // 
             // HoaDonThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.Controls.Add(this.btn_Xuat);
             this.Controls.Add(this.dgv_dsThuoc);
             this.Controls.Add(this.lbl_dsThuoc);
@@ -276,15 +274,15 @@
         private System.Windows.Forms.Label lbl_TenKham_TD;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl_dsThuoc;
         private System.Windows.Forms.DataGridView dgv_dsThuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thuoc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CachDung;
         private Guna.UI2.WinForms.Guna2Button btn_Xuat;
         private System.Windows.Forms.Label lbl_TongTien;
         private System.Windows.Forms.Label lbl_TienThuoc;
         private System.Windows.Forms.Label lbl_TienKham;
         private System.Windows.Forms.Label lbl_NgayKham;
         private System.Windows.Forms.Label lbl_HoVaTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thuoc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CachDung;
     }
 }

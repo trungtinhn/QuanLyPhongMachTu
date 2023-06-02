@@ -59,7 +59,7 @@
             this.btn_Capnhat_dv = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Luu_dv = new Guna.UI2.WinForms.Guna2Button();
             this.gbx_donvi = new System.Windows.Forms.GroupBox();
-            this.lbl_Thongtinloaithuoc = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
+            this.lbl_Thongtindonvi = new Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel();
             this.gbx_Thongtincachdung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CachDung)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DonVi)).BeginInit();
@@ -71,7 +71,7 @@
             this.lbl_ThongTinCachDung.AutoSize = false;
             this.lbl_ThongTinCachDung.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ThongTinCachDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ThongTinCachDung.ForeColor = System.Drawing.Color.Red;
+            this.lbl_ThongTinCachDung.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_ThongTinCachDung.Location = new System.Drawing.Point(332, 431);
             this.lbl_ThongTinCachDung.Name = "lbl_ThongTinCachDung";
             this.lbl_ThongTinCachDung.Size = new System.Drawing.Size(521, 56);
@@ -82,14 +82,14 @@
             // 
             this.txt_Tencachdung.Location = new System.Drawing.Point(195, 88);
             this.txt_Tencachdung.Name = "txt_Tencachdung";
-            this.txt_Tencachdung.Size = new System.Drawing.Size(121, 24);
+            this.txt_Tencachdung.Size = new System.Drawing.Size(157, 24);
             this.txt_Tencachdung.TabIndex = 3;
             // 
             // txt_Macachdung
             // 
             this.txt_Macachdung.Location = new System.Drawing.Point(195, 42);
             this.txt_Macachdung.Name = "txt_Macachdung";
-            this.txt_Macachdung.Size = new System.Drawing.Size(121, 24);
+            this.txt_Macachdung.Size = new System.Drawing.Size(157, 24);
             this.txt_Macachdung.TabIndex = 2;
             // 
             // lbl_Tencachdung
@@ -225,17 +225,16 @@
             this.TenCachDung.HeaderText = "Tên Cách ";
             this.TenCachDung.MinimumWidth = 7;
             this.TenCachDung.Name = "TenCachDung";
-            this.TenCachDung.Width = 140;
             // 
             // MaCachDung
             // 
             this.MaCachDung.HeaderText = "Mã Cách Dùng";
             this.MaCachDung.MinimumWidth = 7;
             this.MaCachDung.Name = "MaCachDung";
-            this.MaCachDung.Width = 140;
             // 
             // lbl_dsCachdung
             // 
+            this.lbl_dsCachdung.AutoSize = false;
             this.lbl_dsCachdung.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsCachdung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dsCachdung.Location = new System.Drawing.Point(859, 517);
@@ -246,12 +245,16 @@
             // 
             // dgv_CachDung
             // 
-            this.dgv_CachDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CachDung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_CachDung.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgv_CachDung.ColumnHeadersHeight = 32;
+            this.dgv_CachDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgv_CachDung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCachDung,
             this.TenCachDung});
             this.dgv_CachDung.Location = new System.Drawing.Point(796, 549);
             this.dgv_CachDung.Name = "dgv_CachDung";
+            this.dgv_CachDung.RowHeadersVisible = false;
             this.dgv_CachDung.RowHeadersWidth = 57;
             this.dgv_CachDung.RowTemplate.Height = 24;
             this.dgv_CachDung.Size = new System.Drawing.Size(344, 150);
@@ -259,6 +262,7 @@
             // 
             // lbl_dsdv
             // 
+            this.lbl_dsdv.AutoSize = false;
             this.lbl_dsdv.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsdv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_dsdv.Location = new System.Drawing.Point(859, 166);
@@ -272,23 +276,24 @@
             this.TenDonVi.HeaderText = "Tên Đơn Vị";
             this.TenDonVi.MinimumWidth = 7;
             this.TenDonVi.Name = "TenDonVi";
-            this.TenDonVi.Width = 140;
             // 
             // MaDonVi
             // 
             this.MaDonVi.HeaderText = "Mã Đơn Vị";
             this.MaDonVi.MinimumWidth = 7;
             this.MaDonVi.Name = "MaDonVi";
-            this.MaDonVi.Width = 140;
             // 
             // dgv_DonVi
             // 
+            this.dgv_DonVi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_DonVi.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_DonVi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_DonVi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDonVi,
             this.TenDonVi});
             this.dgv_DonVi.Location = new System.Drawing.Point(796, 198);
             this.dgv_DonVi.Name = "dgv_DonVi";
+            this.dgv_DonVi.RowHeadersVisible = false;
             this.dgv_DonVi.RowHeadersWidth = 57;
             this.dgv_DonVi.RowTemplate.Height = 24;
             this.dgv_DonVi.Size = new System.Drawing.Size(344, 150);
@@ -296,16 +301,16 @@
             // 
             // txt_TenDonVi
             // 
-            this.txt_TenDonVi.Location = new System.Drawing.Point(195, 88);
+            this.txt_TenDonVi.Location = new System.Drawing.Point(169, 88);
             this.txt_TenDonVi.Name = "txt_TenDonVi";
-            this.txt_TenDonVi.Size = new System.Drawing.Size(121, 24);
+            this.txt_TenDonVi.Size = new System.Drawing.Size(172, 24);
             this.txt_TenDonVi.TabIndex = 3;
             // 
             // txt_MaDonVi
             // 
-            this.txt_MaDonVi.Location = new System.Drawing.Point(195, 42);
+            this.txt_MaDonVi.Location = new System.Drawing.Point(169, 42);
             this.txt_MaDonVi.Name = "txt_MaDonVi";
-            this.txt_MaDonVi.Size = new System.Drawing.Size(121, 24);
+            this.txt_MaDonVi.Size = new System.Drawing.Size(172, 24);
             this.txt_MaDonVi.TabIndex = 2;
             // 
             // lbl_Tendonvi
@@ -436,22 +441,23 @@
             this.gbx_donvi.TabStop = false;
             this.gbx_donvi.Text = "Thông Tin Đơn Vị";
             // 
-            // lbl_Thongtinloaithuoc
+            // lbl_Thongtindonvi
             // 
-            this.lbl_Thongtinloaithuoc.AutoSize = false;
-            this.lbl_Thongtinloaithuoc.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Thongtinloaithuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Thongtinloaithuoc.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Thongtinloaithuoc.Location = new System.Drawing.Point(332, 80);
-            this.lbl_Thongtinloaithuoc.Name = "lbl_Thongtinloaithuoc";
-            this.lbl_Thongtinloaithuoc.Size = new System.Drawing.Size(521, 56);
-            this.lbl_Thongtinloaithuoc.TabIndex = 36;
-            this.lbl_Thongtinloaithuoc.Text = "THÔNG TIN LOẠI THUỐC";
+            this.lbl_Thongtindonvi.AutoSize = false;
+            this.lbl_Thongtindonvi.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Thongtindonvi.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Thongtindonvi.ForeColor = System.Drawing.Color.Salmon;
+            this.lbl_Thongtindonvi.Location = new System.Drawing.Point(332, 80);
+            this.lbl_Thongtindonvi.Name = "lbl_Thongtindonvi";
+            this.lbl_Thongtindonvi.Size = new System.Drawing.Size(521, 56);
+            this.lbl_Thongtindonvi.TabIndex = 36;
+            this.lbl_Thongtindonvi.Text = "THÔNG TIN ĐƠN VỊ";
             // 
             // DonViCachDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.Controls.Add(this.lbl_ThongTinCachDung);
             this.Controls.Add(this.btn_KhongLuu_Cachdung);
             this.Controls.Add(this.btn_NapDs_Cachdung);
@@ -471,7 +477,7 @@
             this.Controls.Add(this.btn_Capnhat_dv);
             this.Controls.Add(this.btn_Luu_dv);
             this.Controls.Add(this.gbx_donvi);
-            this.Controls.Add(this.lbl_Thongtinloaithuoc);
+            this.Controls.Add(this.lbl_Thongtindonvi);
             this.Name = "DonViCachDung";
             this.Size = new System.Drawing.Size(1277, 805);
             this.gbx_Thongtincachdung.ResumeLayout(false);
@@ -481,7 +487,6 @@
             this.gbx_donvi.ResumeLayout(false);
             this.gbx_donvi.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -518,6 +523,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_Capnhat_dv;
         private Guna.UI2.WinForms.Guna2Button btn_Luu_dv;
         private System.Windows.Forms.GroupBox gbx_donvi;
-        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel lbl_Thongtinloaithuoc;
+        private Siticone.Desktop.UI.WinForms.SiticoneHtmlLabel lbl_Thongtindonvi;
     }
 }
