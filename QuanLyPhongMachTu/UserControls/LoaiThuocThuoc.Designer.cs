@@ -306,7 +306,7 @@
             // 
             this.lbl_dsLoaithuoc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsLoaithuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dsLoaithuoc.Location = new System.Drawing.Point(780, 153);
+            this.lbl_dsLoaithuoc.Location = new System.Drawing.Point(750, 153);
             this.lbl_dsLoaithuoc.Name = "lbl_dsLoaithuoc";
             this.lbl_dsLoaithuoc.Size = new System.Drawing.Size(233, 26);
             this.lbl_dsLoaithuoc.TabIndex = 46;
@@ -447,16 +447,16 @@
             // 
             // txt_Tenloaithuoc
             // 
-            this.txt_Tenloaithuoc.Location = new System.Drawing.Point(216, 88);
+            this.txt_Tenloaithuoc.Location = new System.Drawing.Point(194, 88);
             this.txt_Tenloaithuoc.Name = "txt_Tenloaithuoc";
-            this.txt_Tenloaithuoc.Size = new System.Drawing.Size(121, 24);
+            this.txt_Tenloaithuoc.Size = new System.Drawing.Size(143, 24);
             this.txt_Tenloaithuoc.TabIndex = 3;
             // 
             // txt_Maloaithuoc
             // 
-            this.txt_Maloaithuoc.Location = new System.Drawing.Point(216, 42);
+            this.txt_Maloaithuoc.Location = new System.Drawing.Point(194, 42);
             this.txt_Maloaithuoc.Name = "txt_Maloaithuoc";
-            this.txt_Maloaithuoc.Size = new System.Drawing.Size(121, 24);
+            this.txt_Maloaithuoc.Size = new System.Drawing.Size(143, 24);
             this.txt_Maloaithuoc.TabIndex = 2;
             // 
             // lbl_Tenloaithuoc
@@ -551,7 +551,7 @@
             this.lbl_Thongtinthuoc.AutoSize = false;
             this.lbl_Thongtinthuoc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Thongtinthuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Thongtinthuoc.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Thongtinthuoc.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_Thongtinthuoc.Location = new System.Drawing.Point(186, 394);
             this.lbl_Thongtinthuoc.Name = "lbl_Thongtinthuoc";
             this.lbl_Thongtinthuoc.Size = new System.Drawing.Size(521, 56);
@@ -564,7 +564,7 @@
             this.dgv_Loaithuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLoaiThuoc,
             this.TenLoaiThuoc});
-            this.dgv_Loaithuoc.Location = new System.Drawing.Point(732, 185);
+            this.dgv_Loaithuoc.Location = new System.Drawing.Point(689, 185);
             this.dgv_Loaithuoc.Name = "dgv_Loaithuoc";
             this.dgv_Loaithuoc.RowHeadersWidth = 57;
             this.dgv_Loaithuoc.RowTemplate.Height = 24;
@@ -670,7 +670,7 @@
             this.lbl_Thongtinloaithuoc.AutoSize = false;
             this.lbl_Thongtinloaithuoc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Thongtinloaithuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Thongtinloaithuoc.ForeColor = System.Drawing.Color.Red;
+            this.lbl_Thongtinloaithuoc.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_Thongtinloaithuoc.Location = new System.Drawing.Point(186, 70);
             this.lbl_Thongtinloaithuoc.Name = "lbl_Thongtinloaithuoc";
             this.lbl_Thongtinloaithuoc.Size = new System.Drawing.Size(521, 56);
@@ -681,6 +681,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.Controls.Add(this.lbl_dsthuocsaphet);
             this.Controls.Add(this.dgv_dsThuocsaphet);
             this.Controls.Add(this.lbl_dsThuoc);

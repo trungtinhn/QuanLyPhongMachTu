@@ -26,5 +26,10 @@ namespace QuanLyPhongMachTu.UserControls
         {
 
         }
+
+        private void btnTraCuuBenh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -249,7 +249,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.Controls.Add(this.btn_Xuat);
             this.Controls.Add(this.dgv_dsThuoc);
             this.Controls.Add(this.lbl_dsThuoc);

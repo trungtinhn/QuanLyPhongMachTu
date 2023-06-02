@@ -82,14 +82,14 @@
             // 
             this.txt_Tencachdung.Location = new System.Drawing.Point(195, 88);
             this.txt_Tencachdung.Name = "txt_Tencachdung";
-            this.txt_Tencachdung.Size = new System.Drawing.Size(121, 24);
+            this.txt_Tencachdung.Size = new System.Drawing.Size(157, 24);
             this.txt_Tencachdung.TabIndex = 3;
             // 
             // txt_Macachdung
             // 
             this.txt_Macachdung.Location = new System.Drawing.Point(195, 42);
             this.txt_Macachdung.Name = "txt_Macachdung";
-            this.txt_Macachdung.Size = new System.Drawing.Size(121, 24);
+            this.txt_Macachdung.Size = new System.Drawing.Size(157, 24);
             this.txt_Macachdung.TabIndex = 2;
             // 
             // lbl_Tencachdung
@@ -296,16 +296,16 @@
             // 
             // txt_TenDonVi
             // 
-            this.txt_TenDonVi.Location = new System.Drawing.Point(195, 88);
+            this.txt_TenDonVi.Location = new System.Drawing.Point(169, 88);
             this.txt_TenDonVi.Name = "txt_TenDonVi";
-            this.txt_TenDonVi.Size = new System.Drawing.Size(121, 24);
+            this.txt_TenDonVi.Size = new System.Drawing.Size(172, 24);
             this.txt_TenDonVi.TabIndex = 3;
             // 
             // txt_MaDonVi
             // 
-            this.txt_MaDonVi.Location = new System.Drawing.Point(195, 42);
+            this.txt_MaDonVi.Location = new System.Drawing.Point(169, 42);
             this.txt_MaDonVi.Name = "txt_MaDonVi";
-            this.txt_MaDonVi.Size = new System.Drawing.Size(121, 24);
+            this.txt_MaDonVi.Size = new System.Drawing.Size(172, 24);
             this.txt_MaDonVi.TabIndex = 2;
             // 
             // lbl_Tendonvi
@@ -452,6 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.Controls.Add(this.lbl_ThongTinCachDung);
             this.Controls.Add(this.btn_KhongLuu_Cachdung);
             this.Controls.Add(this.btn_NapDs_Cachdung);

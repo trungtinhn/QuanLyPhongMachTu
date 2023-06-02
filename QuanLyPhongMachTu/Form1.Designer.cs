@@ -48,7 +48,7 @@ namespace QuanLyPhongMachTu
             // 
             // panel_top
             // 
-            this.panel_top.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel_top.BackColor = System.Drawing.Color.Wheat;
             this.panel_top.Controls.Add(this.lbl_QuanLyPhongMachTu);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_top.Location = new System.Drawing.Point(0, 0);
@@ -297,6 +297,7 @@ namespace QuanLyPhongMachTu
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Quản Lý Phòng Mạch ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel_top.ResumeLayout(false);
             this.panel_top.PerformLayout();
