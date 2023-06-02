@@ -49,9 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtTenLB = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtTenThuoc = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTenLoaiThuoc = new System.Windows.Forms.TextBox();
             this.dgvBenh = new System.Windows.Forms.DataGridView();
             this.MaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +67,8 @@
             this.btnKhongLuuBenh = new System.Windows.Forms.Button();
             this.gxb_Thongtinloaibenh = new System.Windows.Forms.GroupBox();
             this.gxb_Thontinbenh = new System.Windows.Forms.GroupBox();
+            this.cboTenThuoc = new System.Windows.Forms.ComboBox();
+            this.cboTenLoaiThuoc = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBenh)).BeginInit();
             this.gxb_Thongtinloaibenh.SuspendLayout();
@@ -118,7 +118,7 @@
             this.txtMaLoaiBenh.Location = new System.Drawing.Point(176, 32);
             this.txtMaLoaiBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaLoaiBenh.Name = "txtMaLoaiBenh";
-            this.txtMaLoaiBenh.Size = new System.Drawing.Size(164, 24);
+            this.txtMaLoaiBenh.Size = new System.Drawing.Size(164, 22);
             this.txtMaLoaiBenh.TabIndex = 66;
             // 
             // label10
@@ -127,7 +127,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(54, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 20);
+            this.label10.Size = new System.Drawing.Size(87, 16);
             this.label10.TabIndex = 65;
             this.label10.Text = "Mã loại bệnh:";
             // 
@@ -137,7 +137,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(54, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 20);
+            this.label1.Size = new System.Drawing.Size(92, 16);
             this.label1.TabIndex = 64;
             this.label1.Text = "Tên loại bệnh:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -147,7 +147,7 @@
             this.txtTenLoaiBenh.Location = new System.Drawing.Point(176, 72);
             this.txtTenLoaiBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtTenLoaiBenh.Name = "txtTenLoaiBenh";
-            this.txtTenLoaiBenh.Size = new System.Drawing.Size(164, 24);
+            this.txtTenLoaiBenh.Size = new System.Drawing.Size(164, 22);
             this.txtTenLoaiBenh.TabIndex = 63;
             // 
             // Title
@@ -157,7 +157,7 @@
             this.Title.ForeColor = System.Drawing.Color.Salmon;
             this.Title.Location = new System.Drawing.Point(475, 77);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(481, 46);
+            this.Title.Size = new System.Drawing.Size(416, 39);
             this.Title.TabIndex = 62;
             this.Title.Text = "THÔNG TIN LOẠI BỆNH";
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -188,7 +188,7 @@
             this.label2.ForeColor = System.Drawing.Color.Salmon;
             this.label2.Location = new System.Drawing.Point(531, 337);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(375, 46);
+            this.label2.Size = new System.Drawing.Size(324, 39);
             this.label2.TabIndex = 71;
             this.label2.Text = "THÔNG TIN BỆNH";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -198,7 +198,7 @@
             this.txtMaBenh.Location = new System.Drawing.Point(188, 28);
             this.txtMaBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaBenh.Name = "txtMaBenh";
-            this.txtMaBenh.Size = new System.Drawing.Size(164, 24);
+            this.txtMaBenh.Size = new System.Drawing.Size(164, 22);
             this.txtMaBenh.TabIndex = 75;
             // 
             // label3
@@ -207,7 +207,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(83, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 20);
+            this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 74;
             this.label3.Text = "Mã bệnh:";
             // 
@@ -217,7 +217,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(83, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 73;
             this.label4.Text = "Tên bệnh:";
             // 
@@ -226,7 +226,7 @@
             this.textBox2.Location = new System.Drawing.Point(188, 71);
             this.textBox2.Margin = new System.Windows.Forms.Padding(1);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 24);
+            this.textBox2.Size = new System.Drawing.Size(164, 22);
             this.textBox2.TabIndex = 72;
             // 
             // label5
@@ -235,7 +235,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(70, 112);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.Size = new System.Drawing.Size(80, 16);
             this.label5.TabIndex = 77;
             this.label5.Text = "Triệu chứng:";
             // 
@@ -244,7 +244,7 @@
             this.txtTrieuChungBenh.Location = new System.Drawing.Point(188, 112);
             this.txtTrieuChungBenh.Margin = new System.Windows.Forms.Padding(1);
             this.txtTrieuChungBenh.Name = "txtTrieuChungBenh";
-            this.txtTrieuChungBenh.Size = new System.Drawing.Size(164, 24);
+            this.txtTrieuChungBenh.Size = new System.Drawing.Size(164, 22);
             this.txtTrieuChungBenh.TabIndex = 76;
             // 
             // label6
@@ -253,7 +253,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(384, 114);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(92, 16);
             this.label6.TabIndex = 79;
             this.label6.Text = "Tên loại bệnh:";
             // 
@@ -262,7 +262,7 @@
             this.txtTenLB.Location = new System.Drawing.Point(501, 111);
             this.txtTenLB.Margin = new System.Windows.Forms.Padding(1);
             this.txtTenLB.Name = "txtTenLB";
-            this.txtTenLB.Size = new System.Drawing.Size(164, 24);
+            this.txtTenLB.Size = new System.Drawing.Size(164, 22);
             this.txtTenLB.TabIndex = 78;
             // 
             // label7
@@ -271,17 +271,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(408, 73);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 20);
+            this.label7.Size = new System.Drawing.Size(69, 16);
             this.label7.TabIndex = 81;
             this.label7.Text = "Tên thuốc:";
-            // 
-            // txtTenThuoc
-            // 
-            this.txtTenThuoc.Location = new System.Drawing.Point(501, 73);
-            this.txtTenThuoc.Margin = new System.Windows.Forms.Padding(1);
-            this.txtTenThuoc.Name = "txtTenThuoc";
-            this.txtTenThuoc.Size = new System.Drawing.Size(164, 24);
-            this.txtTenThuoc.TabIndex = 80;
             // 
             // label8
             // 
@@ -289,17 +281,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(385, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 20);
+            this.label8.Size = new System.Drawing.Size(94, 16);
             this.label8.TabIndex = 83;
             this.label8.Text = "Tên loại thuốc:";
-            // 
-            // txtTenLoaiThuoc
-            // 
-            this.txtTenLoaiThuoc.Location = new System.Drawing.Point(501, 28);
-            this.txtTenLoaiThuoc.Margin = new System.Windows.Forms.Padding(1);
-            this.txtTenLoaiThuoc.Name = "txtTenLoaiThuoc";
-            this.txtTenLoaiThuoc.Size = new System.Drawing.Size(164, 24);
-            this.txtTenLoaiThuoc.TabIndex = 82;
             // 
             // dgvBenh
             // 
@@ -458,6 +442,8 @@
             // 
             // gxb_Thontinbenh
             // 
+            this.gxb_Thontinbenh.Controls.Add(this.cboTenThuoc);
+            this.gxb_Thontinbenh.Controls.Add(this.cboTenLoaiThuoc);
             this.gxb_Thontinbenh.Controls.Add(this.label7);
             this.gxb_Thontinbenh.Controls.Add(this.textBox2);
             this.gxb_Thontinbenh.Controls.Add(this.label4);
@@ -467,8 +453,6 @@
             this.gxb_Thontinbenh.Controls.Add(this.label5);
             this.gxb_Thontinbenh.Controls.Add(this.txtTenLB);
             this.gxb_Thontinbenh.Controls.Add(this.label6);
-            this.gxb_Thontinbenh.Controls.Add(this.txtTenThuoc);
-            this.gxb_Thontinbenh.Controls.Add(this.txtTenLoaiThuoc);
             this.gxb_Thontinbenh.Controls.Add(this.label8);
             this.gxb_Thontinbenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gxb_Thontinbenh.Location = new System.Drawing.Point(222, 403);
@@ -477,6 +461,22 @@
             this.gxb_Thontinbenh.TabIndex = 96;
             this.gxb_Thontinbenh.TabStop = false;
             this.gxb_Thontinbenh.Text = "Thông Tin Bệnh";
+            // 
+            // cboTenThuoc
+            // 
+            this.cboTenThuoc.FormattingEnabled = true;
+            this.cboTenThuoc.Location = new System.Drawing.Point(501, 69);
+            this.cboTenThuoc.Name = "cboTenThuoc";
+            this.cboTenThuoc.Size = new System.Drawing.Size(164, 24);
+            this.cboTenThuoc.TabIndex = 114;
+            // 
+            // cboTenLoaiThuoc
+            // 
+            this.cboTenLoaiThuoc.FormattingEnabled = true;
+            this.cboTenLoaiThuoc.Location = new System.Drawing.Point(501, 25);
+            this.cboTenLoaiThuoc.Name = "cboTenLoaiThuoc";
+            this.cboTenLoaiThuoc.Size = new System.Drawing.Size(164, 24);
+            this.cboTenLoaiThuoc.TabIndex = 113;
             // 
             // TraCuuBenh
             // 
@@ -535,9 +535,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTenLB;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtTenThuoc;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTenLoaiThuoc;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiBenh;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiBenh;
         private System.Windows.Forms.DataGridView dgvBenh;
@@ -557,5 +555,7 @@
         private System.Windows.Forms.Button btnKhongLuuBenh;
         private System.Windows.Forms.GroupBox gxb_Thongtinloaibenh;
         private System.Windows.Forms.GroupBox gxb_Thontinbenh;
+        private System.Windows.Forms.ComboBox cboTenThuoc;
+        private System.Windows.Forms.ComboBox cboTenLoaiThuoc;
     }
 }
