@@ -59,9 +59,10 @@ namespace QuanLyPhongMachTu
             this.lbl_QuanLyPhongMachTu.AutoSize = true;
             this.lbl_QuanLyPhongMachTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.02985F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QuanLyPhongMachTu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(516, 9);
+            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(387, 7);
+            this.lbl_QuanLyPhongMachTu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_QuanLyPhongMachTu.Name = "lbl_QuanLyPhongMachTu";
-            this.lbl_QuanLyPhongMachTu.Size = new System.Drawing.Size(560, 47);
+            this.lbl_QuanLyPhongMachTu.Size = new System.Drawing.Size(407, 36);
             this.lbl_QuanLyPhongMachTu.TabIndex = 0;
             this.lbl_QuanLyPhongMachTu.Text = "QUẢN LÝ PHÒNG MẠCH TƯ";
             // 
@@ -78,11 +79,11 @@ namespace QuanLyPhongMachTu
             this.btn_Taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Taikhoan.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Taikhoan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Taikhoan.Location = new System.Drawing.Point(12, 671);
-            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Taikhoan.Location = new System.Drawing.Point(9, 545);
+            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Taikhoan.Name = "btn_Taikhoan";
-            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Taikhoan.Size = new System.Drawing.Size(247, 73);
+            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(45, 0, 15, 32);
+            this.btn_Taikhoan.Size = new System.Drawing.Size(185, 59);
             this.btn_Taikhoan.TabIndex = 19;
             this.btn_Taikhoan.Text = "Tài Khoản";
             this.btn_Taikhoan.Click += new System.EventHandler(this.btn_Taikhoan_Click);
@@ -100,11 +101,11 @@ namespace QuanLyPhongMachTu
             this.btn_Quidinh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Quidinh.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Quidinh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Quidinh.Location = new System.Drawing.Point(12, 594);
-            this.btn_Quidinh.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Quidinh.Location = new System.Drawing.Point(9, 483);
+            this.btn_Quidinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Quidinh.Name = "btn_Quidinh";
-            this.btn_Quidinh.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Quidinh.Size = new System.Drawing.Size(247, 73);
+            this.btn_Quidinh.Padding = new System.Windows.Forms.Padding(45, 0, 15, 32);
+            this.btn_Quidinh.Size = new System.Drawing.Size(185, 59);
             this.btn_Quidinh.TabIndex = 18;
             this.btn_Quidinh.Text = "Qui Định";
             this.btn_Quidinh.Click += new System.EventHandler(this.btn_Quidinh_Click);
@@ -122,11 +123,11 @@ namespace QuanLyPhongMachTu
             this.btn_Baocao.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Baocao.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Baocao.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Baocao.Location = new System.Drawing.Point(12, 517);
-            this.btn_Baocao.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Baocao.Location = new System.Drawing.Point(9, 420);
+            this.btn_Baocao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Baocao.Name = "btn_Baocao";
-            this.btn_Baocao.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Baocao.Size = new System.Drawing.Size(247, 73);
+            this.btn_Baocao.Padding = new System.Windows.Forms.Padding(45, 0, 15, 32);
+            this.btn_Baocao.Size = new System.Drawing.Size(185, 59);
             this.btn_Baocao.TabIndex = 17;
             this.btn_Baocao.Text = "Báo Cáo";
             this.btn_Baocao.Click += new System.EventHandler(this.btn_Baocao_Click);
@@ -144,11 +145,11 @@ namespace QuanLyPhongMachTu
             this.btn_Nhapthuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Nhapthuoc.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Nhapthuoc.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Nhapthuoc.Location = new System.Drawing.Point(12, 440);
-            this.btn_Nhapthuoc.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Nhapthuoc.Location = new System.Drawing.Point(9, 358);
+            this.btn_Nhapthuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Nhapthuoc.Name = "btn_Nhapthuoc";
-            this.btn_Nhapthuoc.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Nhapthuoc.Size = new System.Drawing.Size(247, 73);
+            this.btn_Nhapthuoc.Padding = new System.Windows.Forms.Padding(45, 0, 15, 32);
+            this.btn_Nhapthuoc.Size = new System.Drawing.Size(185, 59);
             this.btn_Nhapthuoc.TabIndex = 16;
             this.btn_Nhapthuoc.Text = "Nhập Thuốc";
             this.btn_Nhapthuoc.Click += new System.EventHandler(this.btn_Nhapthuoc_Click);
@@ -166,11 +167,11 @@ namespace QuanLyPhongMachTu
             this.btn_Donvi_Cachdung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Donvi_Cachdung.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Donvi_Cachdung.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donvi_Cachdung.Location = new System.Drawing.Point(12, 342);
-            this.btn_Donvi_Cachdung.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Donvi_Cachdung.Location = new System.Drawing.Point(9, 278);
+            this.btn_Donvi_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Donvi_Cachdung.Name = "btn_Donvi_Cachdung";
-            this.btn_Donvi_Cachdung.Padding = new System.Windows.Forms.Padding(60, 0, 20, 20);
-            this.btn_Donvi_Cachdung.Size = new System.Drawing.Size(247, 94);
+            this.btn_Donvi_Cachdung.Padding = new System.Windows.Forms.Padding(45, 0, 15, 16);
+            this.btn_Donvi_Cachdung.Size = new System.Drawing.Size(185, 76);
             this.btn_Donvi_Cachdung.TabIndex = 15;
             this.btn_Donvi_Cachdung.Text = "Đơn vị - Cách dùng";
             this.btn_Donvi_Cachdung.TextOffset = new System.Drawing.Point(0, -10);
@@ -189,11 +190,11 @@ namespace QuanLyPhongMachTu
             this.btn_Thuoc_LoaiThuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Thuoc_LoaiThuoc.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Thuoc_LoaiThuoc.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Thuoc_LoaiThuoc.Location = new System.Drawing.Point(12, 253);
-            this.btn_Thuoc_LoaiThuoc.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Thuoc_LoaiThuoc.Location = new System.Drawing.Point(9, 206);
+            this.btn_Thuoc_LoaiThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Thuoc_LoaiThuoc.Name = "btn_Thuoc_LoaiThuoc";
-            this.btn_Thuoc_LoaiThuoc.Padding = new System.Windows.Forms.Padding(60, 0, 20, 20);
-            this.btn_Thuoc_LoaiThuoc.Size = new System.Drawing.Size(247, 94);
+            this.btn_Thuoc_LoaiThuoc.Padding = new System.Windows.Forms.Padding(45, 0, 15, 16);
+            this.btn_Thuoc_LoaiThuoc.Size = new System.Drawing.Size(185, 76);
             this.btn_Thuoc_LoaiThuoc.TabIndex = 14;
             this.btn_Thuoc_LoaiThuoc.Text = "Thuốc - Loại Thuốc";
             this.btn_Thuoc_LoaiThuoc.TextOffset = new System.Drawing.Point(0, -10);
@@ -212,11 +213,11 @@ namespace QuanLyPhongMachTu
             this.btn_Benh_LoaiBenh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Benh_LoaiBenh.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Benh_LoaiBenh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Benh_LoaiBenh.Location = new System.Drawing.Point(12, 164);
-            this.btn_Benh_LoaiBenh.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Benh_LoaiBenh.Location = new System.Drawing.Point(9, 133);
+            this.btn_Benh_LoaiBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Benh_LoaiBenh.Name = "btn_Benh_LoaiBenh";
-            this.btn_Benh_LoaiBenh.Padding = new System.Windows.Forms.Padding(60, 0, 20, 20);
-            this.btn_Benh_LoaiBenh.Size = new System.Drawing.Size(247, 96);
+            this.btn_Benh_LoaiBenh.Padding = new System.Windows.Forms.Padding(45, 0, 15, 16);
+            this.btn_Benh_LoaiBenh.Size = new System.Drawing.Size(185, 78);
             this.btn_Benh_LoaiBenh.TabIndex = 13;
             this.btn_Benh_LoaiBenh.Text = "Bệnh - Loại Bệnh";
             this.btn_Benh_LoaiBenh.TextOffset = new System.Drawing.Point(0, -10);
@@ -235,11 +236,11 @@ namespace QuanLyPhongMachTu
             this.btn_Phieukhambenh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Phieukhambenh.ImageOffset = new System.Drawing.Point(0, 20);
             this.btn_Phieukhambenh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Phieukhambenh.Location = new System.Drawing.Point(12, 74);
-            this.btn_Phieukhambenh.Margin = new System.Windows.Forms.Padding(5, 1, 1, 1);
+            this.btn_Phieukhambenh.Location = new System.Drawing.Point(9, 60);
+            this.btn_Phieukhambenh.Margin = new System.Windows.Forms.Padding(4, 1, 1, 1);
             this.btn_Phieukhambenh.Name = "btn_Phieukhambenh";
-            this.btn_Phieukhambenh.Padding = new System.Windows.Forms.Padding(70, 0, 20, 20);
-            this.btn_Phieukhambenh.Size = new System.Drawing.Size(247, 86);
+            this.btn_Phieukhambenh.Padding = new System.Windows.Forms.Padding(52, 0, 15, 16);
+            this.btn_Phieukhambenh.Size = new System.Drawing.Size(185, 70);
             this.btn_Phieukhambenh.TabIndex = 12;
             this.btn_Phieukhambenh.Text = "Phiếu Khám Bệnh";
             this.btn_Phieukhambenh.TextOffset = new System.Drawing.Point(0, -10);
@@ -258,11 +259,11 @@ namespace QuanLyPhongMachTu
             this.btn_Benhnhan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Benhnhan.ImageOffset = new System.Drawing.Point(0, 25);
             this.btn_Benhnhan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Benhnhan.Location = new System.Drawing.Point(12, 0);
-            this.btn_Benhnhan.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.btn_Benhnhan.Location = new System.Drawing.Point(9, 0);
+            this.btn_Benhnhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 1);
             this.btn_Benhnhan.Name = "btn_Benhnhan";
-            this.btn_Benhnhan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 40);
-            this.btn_Benhnhan.Size = new System.Drawing.Size(247, 72);
+            this.btn_Benhnhan.Padding = new System.Windows.Forms.Padding(45, 0, 15, 32);
+            this.btn_Benhnhan.Size = new System.Drawing.Size(185, 58);
             this.btn_Benhnhan.TabIndex = 2;
             this.btn_Benhnhan.Text = "Bệnh Nhân";
             this.btn_Benhnhan.Click += new System.EventHandler(this.btn_Benhnhan_Click);
@@ -275,8 +276,9 @@ namespace QuanLyPhongMachTu
             this.siticonePanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
+            this.siticonePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.siticonePanel1.Name = "siticonePanel1";
-            this.siticonePanel1.Size = new System.Drawing.Size(1898, 69);
+            this.siticonePanel1.Size = new System.Drawing.Size(1426, 56);
             this.siticonePanel1.TabIndex = 20;
             // 
             // siticonePanel2
@@ -293,9 +295,10 @@ namespace QuanLyPhongMachTu
             this.siticonePanel2.Controls.Add(this.btn_Nhapthuoc);
             this.siticonePanel2.Controls.Add(this.btn_Phieukhambenh);
             this.siticonePanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.siticonePanel2.Location = new System.Drawing.Point(0, 69);
+            this.siticonePanel2.Location = new System.Drawing.Point(0, 56);
+            this.siticonePanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.siticonePanel2.Name = "siticonePanel2";
-            this.siticonePanel2.Size = new System.Drawing.Size(273, 965);
+            this.siticonePanel2.Size = new System.Drawing.Size(205, 734);
             this.siticonePanel2.TabIndex = 21;
             // 
             // u_loaiThuocThuoc
@@ -303,80 +306,88 @@ namespace QuanLyPhongMachTu
             this.u_loaiThuocThuoc.AutoScroll = true;
             this.u_loaiThuocThuoc.BackColor = System.Drawing.Color.PeachPuff;
             this.u_loaiThuocThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_loaiThuocThuoc.Location = new System.Drawing.Point(273, 69);
+            this.u_loaiThuocThuoc.Location = new System.Drawing.Point(205, 56);
+            this.u_loaiThuocThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_loaiThuocThuoc.Name = "u_loaiThuocThuoc";
-            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1625, 965);
+            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1221, 734);
             this.u_loaiThuocThuoc.TabIndex = 22;
             // 
             // u_thayDoiQuiDinh
             // 
             this.u_thayDoiQuiDinh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_thayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(273, 69);
+            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(205, 56);
+            this.u_thayDoiQuiDinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_thayDoiQuiDinh.Name = "u_thayDoiQuiDinh";
-            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1625, 965);
+            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1221, 734);
             this.u_thayDoiQuiDinh.TabIndex = 23;
             // 
             // u_donViCachDung
             // 
             this.u_donViCachDung.BackColor = System.Drawing.Color.PeachPuff;
             this.u_donViCachDung.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_donViCachDung.Location = new System.Drawing.Point(273, 69);
+            this.u_donViCachDung.Location = new System.Drawing.Point(205, 56);
+            this.u_donViCachDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_donViCachDung.Name = "u_donViCachDung";
-            this.u_donViCachDung.Size = new System.Drawing.Size(1625, 965);
+            this.u_donViCachDung.Size = new System.Drawing.Size(1221, 734);
             this.u_donViCachDung.TabIndex = 24;
             // 
             // u_hoaDonThanhToan
             // 
             this.u_hoaDonThanhToan.BackColor = System.Drawing.Color.PeachPuff;
             this.u_hoaDonThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(273, 69);
+            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(205, 56);
+            this.u_hoaDonThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_hoaDonThanhToan.Name = "u_hoaDonThanhToan";
-            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1625, 965);
+            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1221, 734);
             this.u_hoaDonThanhToan.TabIndex = 25;
             // 
             // u_danhSachKhamBenh
             // 
             this.u_danhSachKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_danhSachKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_danhSachKhamBenh.Location = new System.Drawing.Point(273, 69);
+            this.u_danhSachKhamBenh.Location = new System.Drawing.Point(205, 56);
+            this.u_danhSachKhamBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_danhSachKhamBenh.Name = "u_danhSachKhamBenh";
-            this.u_danhSachKhamBenh.Size = new System.Drawing.Size(1625, 965);
+            this.u_danhSachKhamBenh.Size = new System.Drawing.Size(1221, 734);
             this.u_danhSachKhamBenh.TabIndex = 26;
             // 
             // u_BenhLoaiBenh
             // 
             this.u_BenhLoaiBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_BenhLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(273, 69);
+            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(205, 56);
+            this.u_BenhLoaiBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_BenhLoaiBenh.Name = "u_BenhLoaiBenh";
-            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1625, 965);
+            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1221, 734);
             this.u_BenhLoaiBenh.TabIndex = 27;
             // 
             // u_PhieuKhamBenh
             // 
             this.u_PhieuKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
             this.u_PhieuKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_PhieuKhamBenh.Location = new System.Drawing.Point(273, 69);
+            this.u_PhieuKhamBenh.Location = new System.Drawing.Point(205, 56);
+            this.u_PhieuKhamBenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_PhieuKhamBenh.Name = "u_PhieuKhamBenh";
-            this.u_PhieuKhamBenh.Size = new System.Drawing.Size(1625, 965);
+            this.u_PhieuKhamBenh.Size = new System.Drawing.Size(1221, 734);
             this.u_PhieuKhamBenh.TabIndex = 28;
             // 
             // u_nhapThuoc
             // 
             this.u_nhapThuoc.BackColor = System.Drawing.Color.PeachPuff;
             this.u_nhapThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_nhapThuoc.Location = new System.Drawing.Point(273, 69);
+            this.u_nhapThuoc.Location = new System.Drawing.Point(205, 56);
+            this.u_nhapThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.u_nhapThuoc.Name = "u_nhapThuoc";
-            this.u_nhapThuoc.Size = new System.Drawing.Size(1625, 965);
+            this.u_nhapThuoc.Size = new System.Drawing.Size(1221, 734);
             this.u_nhapThuoc.TabIndex = 29;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1898, 1034);
+            this.ClientSize = new System.Drawing.Size(1426, 790);
             this.Controls.Add(this.u_nhapThuoc);
             this.Controls.Add(this.u_PhieuKhamBenh);
             this.Controls.Add(this.u_BenhLoaiBenh);
@@ -388,8 +399,9 @@ namespace QuanLyPhongMachTu
             this.Controls.Add(this.siticonePanel2);
             this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximumSize = new System.Drawing.Size(1990, 1190);
-            this.MinimumSize = new System.Drawing.Size(1918, 1011);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(1496, 974);
+            this.MinimumSize = new System.Drawing.Size(1442, 829);
             this.Name = "Form1";
             this.Text = "Quản Lý Phòng Mạch ";
             this.Load += new System.EventHandler(this.Form1_Load);
