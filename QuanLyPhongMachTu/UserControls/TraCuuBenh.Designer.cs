@@ -77,12 +77,13 @@
             // 
             // dgvLoaiBenh
             // 
+            this.dgvLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLoaiBenh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaLoaiBenh,
             this.TenLoaiBenh});
             this.dgvLoaiBenh.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dgvLoaiBenh.Location = new System.Drawing.Point(779, 143);
+            this.dgvLoaiBenh.Location = new System.Drawing.Point(839, 143);
             this.dgvLoaiBenh.Name = "dgvLoaiBenh";
             this.dgvLoaiBenh.RowHeadersVisible = false;
             this.dgvLoaiBenh.RowHeadersWidth = 49;
@@ -95,14 +96,12 @@
             this.MaLoaiBenh.HeaderText = "Mã loại bênh";
             this.MaLoaiBenh.MinimumWidth = 6;
             this.MaLoaiBenh.Name = "MaLoaiBenh";
-            this.MaLoaiBenh.Width = 90;
             // 
             // TenLoaiBenh
             // 
             this.TenLoaiBenh.HeaderText = "Tên loại bệnh";
             this.TenLoaiBenh.MinimumWidth = 50;
             this.TenLoaiBenh.Name = "TenLoaiBenh";
-            this.TenLoaiBenh.Width = 250;
             // 
             // btnTraCuuLoaiBenh
             // 
@@ -304,6 +303,7 @@
             // 
             // dgvBenh
             // 
+            this.dgvBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBenh.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBenh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -326,35 +326,30 @@
             this.MaBenh.HeaderText = "Mã bệnh";
             this.MaBenh.MinimumWidth = 6;
             this.MaBenh.Name = "MaBenh";
-            this.MaBenh.Width = 80;
             // 
             // TenBenh
             // 
             this.TenBenh.HeaderText = "Tên bệnh";
             this.TenBenh.MinimumWidth = 50;
             this.TenBenh.Name = "TenBenh";
-            this.TenBenh.Width = 250;
             // 
             // TrieuChungBenh
             // 
             this.TrieuChungBenh.HeaderText = "Triệu chứng bệnh";
             this.TrieuChungBenh.MinimumWidth = 6;
             this.TrieuChungBenh.Name = "TrieuChungBenh";
-            this.TrieuChungBenh.Width = 150;
             // 
             // Thuoc
             // 
             this.Thuoc.HeaderText = "Thuốc đặc trị";
             this.Thuoc.MinimumWidth = 6;
             this.Thuoc.Name = "Thuoc";
-            this.Thuoc.Width = 150;
             // 
             // TenLB
             // 
             this.TenLB.HeaderText = "Tên loại bệnh";
             this.TenLB.MinimumWidth = 6;
             this.TenLB.Name = "TenLB";
-            this.TenLB.Width = 140;
             // 
             // btnTraCuuBenh
             // 

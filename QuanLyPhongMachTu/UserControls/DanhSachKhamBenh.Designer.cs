@@ -66,9 +66,9 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnKhongLuu = new System.Windows.Forms.Button();
             this.gbx_Thongtinbenhnhan = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lbl_Thongtindangky = new System.Windows.Forms.Label();
             this.gxb_Dangky = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinBN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDon)).BeginInit();
             this.gbx_Thongtinbenhnhan.SuspendLayout();
@@ -77,6 +77,7 @@
             // 
             // dgvThongTinBN
             // 
+            this.dgvThongTinBN.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThongTinBN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThongTinBN.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaBN,
@@ -84,12 +85,12 @@
             this.GioiTinhBN,
             this.NgaysinhBN,
             this.DiaChiBN});
-            this.dgvThongTinBN.Location = new System.Drawing.Point(270, 481);
+            this.dgvThongTinBN.Location = new System.Drawing.Point(231, 481);
             this.dgvThongTinBN.Name = "dgvThongTinBN";
             this.dgvThongTinBN.RowHeadersVisible = false;
             this.dgvThongTinBN.RowHeadersWidth = 49;
             this.dgvThongTinBN.RowTemplate.Height = 24;
-            this.dgvThongTinBN.Size = new System.Drawing.Size(683, 145);
+            this.dgvThongTinBN.Size = new System.Drawing.Size(764, 145);
             this.dgvThongTinBN.TabIndex = 67;
             // 
             // MaBN
@@ -97,35 +98,30 @@
             this.MaBN.HeaderText = "Mã bệnh nhân";
             this.MaBN.MinimumWidth = 6;
             this.MaBN.Name = "MaBN";
-            this.MaBN.Width = 120;
             // 
             // HotenBN
             // 
             this.HotenBN.HeaderText = "Họ và tên";
             this.HotenBN.MinimumWidth = 6;
             this.HotenBN.Name = "HotenBN";
-            this.HotenBN.Width = 120;
             // 
             // GioiTinhBN
             // 
             this.GioiTinhBN.HeaderText = "Giới tính";
             this.GioiTinhBN.MinimumWidth = 6;
             this.GioiTinhBN.Name = "GioiTinhBN";
-            this.GioiTinhBN.Width = 60;
             // 
             // NgaysinhBN
             // 
             this.NgaysinhBN.HeaderText = "Ngày sinh";
             this.NgaysinhBN.MinimumWidth = 6;
             this.NgaysinhBN.Name = "NgaysinhBN";
-            this.NgaysinhBN.Width = 120;
             // 
             // DiaChiBN
             // 
             this.DiaChiBN.HeaderText = "Địa chỉ";
             this.DiaChiBN.MinimumWidth = 6;
             this.DiaChiBN.Name = "DiaChiBN";
-            this.DiaChiBN.Width = 250;
             // 
             // btnCapNhat
             // 
@@ -344,17 +340,18 @@
             // 
             // dgvDanhSachHoaDon
             // 
+            this.dgvDanhSachHoaDon.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaKB,
             this.HoTen,
             this.TongTien});
-            this.dgvDanhSachHoaDon.Location = new System.Drawing.Point(1131, 158);
+            this.dgvDanhSachHoaDon.Location = new System.Drawing.Point(1098, 158);
             this.dgvDanhSachHoaDon.Name = "dgvDanhSachHoaDon";
             this.dgvDanhSachHoaDon.RowHeadersVisible = false;
             this.dgvDanhSachHoaDon.RowHeadersWidth = 49;
             this.dgvDanhSachHoaDon.RowTemplate.Height = 24;
-            this.dgvDanhSachHoaDon.Size = new System.Drawing.Size(277, 450);
+            this.dgvDanhSachHoaDon.Size = new System.Drawing.Size(310, 450);
             this.dgvDanhSachHoaDon.TabIndex = 100;
             // 
             // MaKB
@@ -362,21 +359,18 @@
             this.MaKB.HeaderText = "Mã Khám bệnh";
             this.MaKB.MinimumWidth = 6;
             this.MaKB.Name = "MaKB";
-            this.MaKB.Width = 60;
             // 
             // HoTen
             // 
             this.HoTen.HeaderText = "Họ tên";
             this.HoTen.MinimumWidth = 6;
             this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 95;
             // 
             // TongTien
             // 
             this.TongTien.HeaderText = "Tổng tiền";
             this.TongTien.MinimumWidth = 6;
             this.TongTien.Name = "TongTien";
-            this.TongTien.Width = 80;
             // 
             // label6
             // 
@@ -436,6 +430,14 @@
             this.gbx_Thongtinbenhnhan.TabStop = false;
             this.gbx_Thongtinbenhnhan.Text = "Thông Tin Bệnh Nhân";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(200, 222);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 24);
+            this.dateTimePicker1.TabIndex = 104;
+            this.dateTimePicker1.Value = new System.DateTime(2023, 6, 1, 21, 30, 16, 0);
+            // 
             // lbl_Thongtindangky
             // 
             this.lbl_Thongtindangky.AutoSize = true;
@@ -460,14 +462,6 @@
             this.gxb_Dangky.TabIndex = 106;
             this.gxb_Dangky.TabStop = false;
             this.gxb_Dangky.Text = "Đăng Ký";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(200, 222);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 24);
-            this.dateTimePicker1.TabIndex = 104;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 6, 1, 21, 30, 16, 0);
             // 
             // DanhSachKhamBenh
             // 

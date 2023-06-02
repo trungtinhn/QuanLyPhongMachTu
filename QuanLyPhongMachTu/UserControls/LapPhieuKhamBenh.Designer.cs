@@ -101,6 +101,7 @@
             // 
             // dgvKB
             // 
+            this.dgvKB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,7 +123,7 @@
             this.dgvKB.RowHeadersVisible = false;
             this.dgvKB.RowHeadersWidth = 49;
             this.dgvKB.RowTemplate.Height = 24;
-            this.dgvKB.Size = new System.Drawing.Size(837, 158);
+            this.dgvKB.Size = new System.Drawing.Size(864, 158);
             this.dgvKB.TabIndex = 95;
             // 
             // STT
@@ -130,45 +131,40 @@
             this.STT.HeaderText = "STT";
             this.STT.MinimumWidth = 6;
             this.STT.Name = "STT";
-            this.STT.Width = 70;
             // 
             // NgayKB
             // 
             this.NgayKB.HeaderText = "Ngày khám bệnh";
             this.NgayKB.MinimumWidth = 6;
             this.NgayKB.Name = "NgayKB";
-            this.NgayKB.Width = 200;
             // 
             // MaBN
             // 
             this.MaBN.HeaderText = "Mã bệnh nhân";
             this.MaBN.MinimumWidth = 6;
             this.MaBN.Name = "MaBN";
-            this.MaBN.Width = 180;
             // 
             // MaBenh
             // 
             this.MaBenh.HeaderText = "Mã Bệnh";
             this.MaBenh.MinimumWidth = 6;
             this.MaBenh.Name = "MaBenh";
-            this.MaBenh.Width = 150;
             // 
             // MaThuoc
             // 
             this.MaThuoc.HeaderText = "Thuốc";
             this.MaThuoc.MinimumWidth = 6;
             this.MaThuoc.Name = "MaThuoc";
-            this.MaThuoc.Width = 120;
             // 
             // SoLuong
             // 
             this.SoLuong.HeaderText = "Số lượng";
             this.SoLuong.MinimumWidth = 6;
             this.SoLuong.Name = "SoLuong";
-            this.SoLuong.Width = 60;
             // 
             // dgvThuoc
             // 
+            this.dgvThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaThuocKho,
@@ -179,7 +175,7 @@
             this.dgvThuoc.RowHeadersVisible = false;
             this.dgvThuoc.RowHeadersWidth = 49;
             this.dgvThuoc.RowTemplate.Height = 24;
-            this.dgvThuoc.Size = new System.Drawing.Size(222, 155);
+            this.dgvThuoc.Size = new System.Drawing.Size(231, 155);
             this.dgvThuoc.TabIndex = 94;
             // 
             // MaThuocKho
@@ -187,21 +183,18 @@
             this.MaThuocKho.HeaderText = "Mã Thuốc";
             this.MaThuocKho.MinimumWidth = 6;
             this.MaThuocKho.Name = "MaThuocKho";
-            this.MaThuocKho.Width = 50;
             // 
             // TenThuocKho
             // 
             this.TenThuocKho.HeaderText = "Tên thuốc";
             this.TenThuocKho.MinimumWidth = 6;
             this.TenThuocKho.Name = "TenThuocKho";
-            this.TenThuocKho.Width = 90;
             // 
             // SoLuongThuocKho
             // 
             this.SoLuongThuocKho.HeaderText = "Số Lượng";
             this.SoLuongThuocKho.MinimumWidth = 6;
             this.SoLuongThuocKho.Name = "SoLuongThuocKho";
-            this.SoLuongThuocKho.Width = 60;
             // 
             // lbDanhSachThuoc
             // 
@@ -393,6 +386,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSo,
@@ -402,7 +396,7 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 49;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(181, 409);
+            this.dataGridView1.Size = new System.Drawing.Size(197, 409);
             this.dataGridView1.TabIndex = 100;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -411,14 +405,12 @@
             this.MaSo.HeaderText = "Mã số";
             this.MaSo.MinimumWidth = 6;
             this.MaSo.Name = "MaSo";
-            this.MaSo.Width = 50;
             // 
             // HoTenBN
             // 
             this.HoTenBN.HeaderText = "Họ tên";
             this.HoTenBN.MinimumWidth = 6;
             this.HoTenBN.Name = "HoTenBN";
-            this.HoTenBN.Width = 125;
             // 
             // label9
             // 

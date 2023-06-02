@@ -80,7 +80,6 @@
             this.SoPhieuNhapThuoc.HeaderText = "Số Phiếu Nhập Thuốc";
             this.SoPhieuNhapThuoc.MinimumWidth = 7;
             this.SoPhieuNhapThuoc.Name = "SoPhieuNhapThuoc";
-            this.SoPhieuNhapThuoc.Width = 140;
             // 
             // txt_ThanhTien
             // 
@@ -120,7 +119,7 @@
             // 
             this.dtp_NgayLap.Location = new System.Drawing.Point(226, 99);
             this.dtp_NgayLap.Name = "dtp_NgayLap";
-            this.dtp_NgayLap.Size = new System.Drawing.Size(200, 27);
+            this.dtp_NgayLap.Size = new System.Drawing.Size(214, 27);
             this.dtp_NgayLap.TabIndex = 9;
             // 
             // txt_TenThuoc
@@ -140,7 +139,7 @@
             this.txt_TenThuoc.PasswordChar = '\0';
             this.txt_TenThuoc.PlaceholderText = "";
             this.txt_TenThuoc.SelectedText = "";
-            this.txt_TenThuoc.Size = new System.Drawing.Size(200, 36);
+            this.txt_TenThuoc.Size = new System.Drawing.Size(214, 36);
             this.txt_TenThuoc.TabIndex = 8;
             // 
             // txt_SoPhieuNhapThuoc
@@ -160,7 +159,7 @@
             this.txt_SoPhieuNhapThuoc.PasswordChar = '\0';
             this.txt_SoPhieuNhapThuoc.PlaceholderText = "";
             this.txt_SoPhieuNhapThuoc.SelectedText = "";
-            this.txt_SoPhieuNhapThuoc.Size = new System.Drawing.Size(200, 33);
+            this.txt_SoPhieuNhapThuoc.Size = new System.Drawing.Size(214, 33);
             this.txt_SoPhieuNhapThuoc.TabIndex = 6;
             // 
             // NgayLap
@@ -168,44 +167,44 @@
             this.NgayLap.HeaderText = "Ngày Lập";
             this.NgayLap.MinimumWidth = 7;
             this.NgayLap.Name = "NgayLap";
-            this.NgayLap.Width = 140;
             // 
             // TenThuoc
             // 
             this.TenThuoc.HeaderText = "Tên Thuốc";
             this.TenThuoc.MinimumWidth = 7;
             this.TenThuoc.Name = "TenThuoc";
-            this.TenThuoc.Width = 140;
             // 
             // lbl_SoLuongNhap
             // 
             this.lbl_SoLuongNhap.AutoSize = true;
-            this.lbl_SoLuongNhap.Location = new System.Drawing.Point(449, 41);
+            this.lbl_SoLuongNhap.Location = new System.Drawing.Point(484, 43);
             this.lbl_SoLuongNhap.Name = "lbl_SoLuongNhap";
-            this.lbl_SoLuongNhap.Size = new System.Drawing.Size(115, 20);
+            this.lbl_SoLuongNhap.Size = new System.Drawing.Size(120, 20);
             this.lbl_SoLuongNhap.TabIndex = 5;
-            this.lbl_SoLuongNhap.Text = "Số lượng nhập";
+            this.lbl_SoLuongNhap.Text = "Số lượng nhập:";
             // 
             // lbl_ThanhTien
             // 
             this.lbl_ThanhTien.AutoSize = true;
-            this.lbl_ThanhTien.Location = new System.Drawing.Point(449, 146);
+            this.lbl_ThanhTien.Location = new System.Drawing.Point(484, 148);
             this.lbl_ThanhTien.Name = "lbl_ThanhTien";
-            this.lbl_ThanhTien.Size = new System.Drawing.Size(87, 20);
+            this.lbl_ThanhTien.Size = new System.Drawing.Size(92, 20);
             this.lbl_ThanhTien.TabIndex = 4;
-            this.lbl_ThanhTien.Text = "Thành tiền";
+            this.lbl_ThanhTien.Text = "Thành tiền:";
             // 
             // lbl_TenThuoc
             // 
             this.lbl_TenThuoc.AutoSize = true;
             this.lbl_TenThuoc.Location = new System.Drawing.Point(58, 155);
             this.lbl_TenThuoc.Name = "lbl_TenThuoc";
-            this.lbl_TenThuoc.Size = new System.Drawing.Size(88, 20);
+            this.lbl_TenThuoc.Size = new System.Drawing.Size(93, 20);
             this.lbl_TenThuoc.TabIndex = 2;
-            this.lbl_TenThuoc.Text = "Tên Thuốc";
+            this.lbl_TenThuoc.Text = "Tên Thuốc:";
             // 
             // dGV_NhapThuoc
             // 
+            this.dGV_NhapThuoc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dGV_NhapThuoc.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dGV_NhapThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGV_NhapThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SoPhieuNhapThuoc,
@@ -216,6 +215,7 @@
             this.ThanhTien});
             this.dGV_NhapThuoc.Location = new System.Drawing.Point(191, 400);
             this.dGV_NhapThuoc.Name = "dGV_NhapThuoc";
+            this.dGV_NhapThuoc.RowHeadersVisible = false;
             this.dGV_NhapThuoc.RowHeadersWidth = 57;
             this.dGV_NhapThuoc.RowTemplate.Height = 24;
             this.dGV_NhapThuoc.Size = new System.Drawing.Size(900, 162);
@@ -226,39 +226,36 @@
             this.SoLuongNhap.HeaderText = "Số Lượng Nhập";
             this.SoLuongNhap.MinimumWidth = 7;
             this.SoLuongNhap.Name = "SoLuongNhap";
-            this.SoLuongNhap.Width = 140;
             // 
             // DonGiaNhap
             // 
             this.DonGiaNhap.HeaderText = "Đơn Giá Nhập";
             this.DonGiaNhap.MinimumWidth = 7;
             this.DonGiaNhap.Name = "DonGiaNhap";
-            this.DonGiaNhap.Width = 140;
             // 
             // ThanhTien
             // 
             this.ThanhTien.HeaderText = "Thành Tiền";
             this.ThanhTien.MinimumWidth = 7;
             this.ThanhTien.Name = "ThanhTien";
-            this.ThanhTien.Width = 140;
             // 
             // lbl_DonGiaNhap
             // 
             this.lbl_DonGiaNhap.AutoSize = true;
-            this.lbl_DonGiaNhap.Location = new System.Drawing.Point(449, 95);
+            this.lbl_DonGiaNhap.Location = new System.Drawing.Point(484, 97);
             this.lbl_DonGiaNhap.Name = "lbl_DonGiaNhap";
-            this.lbl_DonGiaNhap.Size = new System.Drawing.Size(107, 20);
+            this.lbl_DonGiaNhap.Size = new System.Drawing.Size(112, 20);
             this.lbl_DonGiaNhap.TabIndex = 3;
-            this.lbl_DonGiaNhap.Text = "Đơn giá nhập";
+            this.lbl_DonGiaNhap.Text = "Đơn giá nhập:";
             // 
             // lbl_NgayLap
             // 
             this.lbl_NgayLap.AutoSize = true;
             this.lbl_NgayLap.Location = new System.Drawing.Point(58, 99);
             this.lbl_NgayLap.Name = "lbl_NgayLap";
-            this.lbl_NgayLap.Size = new System.Drawing.Size(74, 20);
+            this.lbl_NgayLap.Size = new System.Drawing.Size(79, 20);
             this.lbl_NgayLap.TabIndex = 1;
-            this.lbl_NgayLap.Text = "Ngày lập";
+            this.lbl_NgayLap.Text = "Ngày lập:";
             // 
             // btn_Them
             // 
@@ -297,9 +294,9 @@
             this.lbl_SoPhieuNhapThuoc.AutoSize = true;
             this.lbl_SoPhieuNhapThuoc.Location = new System.Drawing.Point(58, 41);
             this.lbl_SoPhieuNhapThuoc.Name = "lbl_SoPhieuNhapThuoc";
-            this.lbl_SoPhieuNhapThuoc.Size = new System.Drawing.Size(161, 20);
+            this.lbl_SoPhieuNhapThuoc.Size = new System.Drawing.Size(166, 20);
             this.lbl_SoPhieuNhapThuoc.TabIndex = 0;
-            this.lbl_SoPhieuNhapThuoc.Text = "Số phiếu nhập thuốc";
+            this.lbl_SoPhieuNhapThuoc.Text = "Số phiếu nhập thuốc:";
             // 
             // btn_Xoa
             // 

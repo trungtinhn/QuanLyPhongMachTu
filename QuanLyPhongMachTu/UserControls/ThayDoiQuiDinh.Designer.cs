@@ -42,8 +42,8 @@
             this.lbl_Thaydoiquidinh.AutoSize = false;
             this.lbl_Thaydoiquidinh.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Thaydoiquidinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Thaydoiquidinh.ForeColor = System.Drawing.Color.Red;
-            this.lbl_Thaydoiquidinh.Location = new System.Drawing.Point(167, 69);
+            this.lbl_Thaydoiquidinh.ForeColor = System.Drawing.Color.Salmon;
+            this.lbl_Thaydoiquidinh.Location = new System.Drawing.Point(431, 177);
             this.lbl_Thaydoiquidinh.Name = "lbl_Thaydoiquidinh";
             this.lbl_Thaydoiquidinh.Size = new System.Drawing.Size(394, 49);
             this.lbl_Thaydoiquidinh.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             this.lbl_Tienkham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_Tienkham.IsDerivedStyle = true;
-            this.lbl_Tienkham.Location = new System.Drawing.Point(147, 253);
+            this.lbl_Tienkham.Location = new System.Drawing.Point(411, 361);
             this.lbl_Tienkham.Name = "lbl_Tienkham";
             this.lbl_Tienkham.Size = new System.Drawing.Size(111, 23);
             this.lbl_Tienkham.Style = MetroSet_UI.Enums.Style.Light;
@@ -67,7 +67,7 @@
             // 
             this.lbl_Sobenhnhantoida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_Sobenhnhantoida.IsDerivedStyle = true;
-            this.lbl_Sobenhnhantoida.Location = new System.Drawing.Point(147, 169);
+            this.lbl_Sobenhnhantoida.Location = new System.Drawing.Point(411, 277);
             this.lbl_Sobenhnhantoida.Name = "lbl_Sobenhnhantoida";
             this.lbl_Sobenhnhantoida.Size = new System.Drawing.Size(196, 23);
             this.lbl_Sobenhnhantoida.Style = MetroSet_UI.Enums.Style.Light;
@@ -88,7 +88,7 @@
             this.txt_Sobenhnhantoida.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Sobenhnhantoida.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Sobenhnhantoida.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Sobenhnhantoida.Location = new System.Drawing.Point(364, 156);
+            this.txt_Sobenhnhantoida.Location = new System.Drawing.Point(628, 264);
             this.txt_Sobenhnhantoida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Sobenhnhantoida.Name = "txt_Sobenhnhantoida";
             this.txt_Sobenhnhantoida.PasswordChar = '\0';
@@ -108,7 +108,7 @@
             this.txt_Tienkham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Tienkham.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Tienkham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Tienkham.Location = new System.Drawing.Point(364, 236);
+            this.txt_Tienkham.Location = new System.Drawing.Point(628, 344);
             this.txt_Tienkham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Tienkham.Name = "txt_Tienkham";
             this.txt_Tienkham.PasswordChar = '\0';
@@ -127,7 +127,7 @@
             this.btn_Dongy.FillColor = System.Drawing.Color.LightGray;
             this.btn_Dongy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Dongy.ForeColor = System.Drawing.Color.Black;
-            this.btn_Dongy.Location = new System.Drawing.Point(364, 345);
+            this.btn_Dongy.Location = new System.Drawing.Point(628, 453);
             this.btn_Dongy.Name = "btn_Dongy";
             this.btn_Dongy.Size = new System.Drawing.Size(98, 45);
             this.btn_Dongy.TabIndex = 6;
@@ -143,7 +143,7 @@
             this.btn_Huybo.FillColor = System.Drawing.Color.LightGray;
             this.btn_Huybo.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Huybo.ForeColor = System.Drawing.Color.Black;
-            this.btn_Huybo.Location = new System.Drawing.Point(514, 345);
+            this.btn_Huybo.Location = new System.Drawing.Point(778, 453);
             this.btn_Huybo.Name = "btn_Huybo";
             this.btn_Huybo.Size = new System.Drawing.Size(98, 45);
             this.btn_Huybo.TabIndex = 7;
@@ -162,7 +162,7 @@
             this.Controls.Add(this.lbl_Tienkham);
             this.Controls.Add(this.lbl_Thaydoiquidinh);
             this.Name = "ThayDoiQuiDinh";
-            this.Size = new System.Drawing.Size(777, 451);
+            this.Size = new System.Drawing.Size(1310, 721);
             this.ResumeLayout(false);
 
         }
