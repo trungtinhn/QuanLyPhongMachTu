@@ -16,5 +16,10 @@ namespace QuanLyPhongMachTu.UserControls
         {
             InitializeComponent();
         }
+
+        private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
