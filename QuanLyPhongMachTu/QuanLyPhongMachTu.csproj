@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,27 @@
     <Compile Include="UserControls\TraCuuBenh.Designer.cs">
       <DependentUpon>TraCuuBenh.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\uBaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uBaoCao.Designer.cs">
+      <DependentUpon>uBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uTaiKhoancs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uTaiKhoancs.Designer.cs">
+      <DependentUpon>uTaiKhoancs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uTaiKhoanQLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
+      <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +180,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\TraCuuBenh.resx">
       <DependentUpon>TraCuuBenh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uBaoCao.resx">
+      <DependentUpon>uBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uTaiKhoancs.resx">
+      <DependentUpon>uTaiKhoancs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uTaiKhoanQLy.resx">
+      <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
