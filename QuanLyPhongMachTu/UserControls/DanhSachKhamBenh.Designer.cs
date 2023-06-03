@@ -57,7 +57,6 @@
             this.txtHotenBN = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.lbl_Thongtinbenhnhan = new System.Windows.Forms.Label();
-            this.dtbNgaySinhBN = new System.Windows.Forms.DateTimePicker();
             this.dgvDanhSachHoaDon = new System.Windows.Forms.DataGridView();
             this.MaKB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -169,7 +168,7 @@
             this.txtMaBNDK.Location = new System.Drawing.Point(168, 31);
             this.txtMaBNDK.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaBNDK.Name = "txtMaBNDK";
-            this.txtMaBNDK.Size = new System.Drawing.Size(137, 24);
+            this.txtMaBNDK.Size = new System.Drawing.Size(137, 22);
             this.txtMaBNDK.TabIndex = 62;
             // 
             // label12
@@ -179,7 +178,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(32, 33);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 20);
+            this.label12.Size = new System.Drawing.Size(94, 16);
             this.label12.TabIndex = 61;
             this.label12.Text = "Mã bệnh nhân:";
             // 
@@ -191,7 +190,7 @@
             this.txtSoBNtiepnhan.Location = new System.Drawing.Point(808, 232);
             this.txtSoBNtiepnhan.Name = "txtSoBNtiepnhan";
             this.txtSoBNtiepnhan.ReadOnly = true;
-            this.txtSoBNtiepnhan.Size = new System.Drawing.Size(131, 39);
+            this.txtSoBNtiepnhan.Size = new System.Drawing.Size(131, 35);
             this.txtSoBNtiepnhan.TabIndex = 60;
             // 
             // label11
@@ -210,7 +209,7 @@
             this.txtMaBN.Location = new System.Drawing.Point(200, 51);
             this.txtMaBN.Margin = new System.Windows.Forms.Padding(1);
             this.txtMaBN.Name = "txtMaBN";
-            this.txtMaBN.Size = new System.Drawing.Size(202, 24);
+            this.txtMaBN.Size = new System.Drawing.Size(202, 22);
             this.txtMaBN.TabIndex = 58;
             // 
             // label10
@@ -219,7 +218,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(75, 50);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(115, 20);
+            this.label10.Size = new System.Drawing.Size(94, 16);
             this.label10.TabIndex = 57;
             this.label10.Text = "Mã bệnh nhân:";
             // 
@@ -228,7 +227,7 @@
             this.btnNuBN.AutoSize = true;
             this.btnNuBN.Location = new System.Drawing.Point(274, 155);
             this.btnNuBN.Name = "btnNuBN";
-            this.btnNuBN.Size = new System.Drawing.Size(49, 22);
+            this.btnNuBN.Size = new System.Drawing.Size(43, 20);
             this.btnNuBN.TabIndex = 56;
             this.btnNuBN.Text = "Nữ";
             this.btnNuBN.UseVisualStyleBackColor = true;
@@ -238,7 +237,7 @@
             this.btnNamBN.AutoSize = true;
             this.btnNamBN.Location = new System.Drawing.Point(200, 156);
             this.btnNamBN.Name = "btnNamBN";
-            this.btnNamBN.Size = new System.Drawing.Size(62, 22);
+            this.btnNamBN.Size = new System.Drawing.Size(55, 20);
             this.btnNamBN.TabIndex = 55;
             this.btnNamBN.Text = "Nam";
             this.btnNamBN.UseVisualStyleBackColor = true;
@@ -259,7 +258,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(57, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 20);
+            this.label5.Size = new System.Drawing.Size(112, 16);
             this.label5.TabIndex = 44;
             this.label5.Text = "Ngày khám bệnh:";
             // 
@@ -269,7 +268,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(119, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 43;
             this.label4.Text = "Địa chỉ:";
             // 
@@ -279,7 +278,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(112, 156);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 42;
             this.label3.Text = "Giới tính:";
             // 
@@ -289,7 +288,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(15, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 20);
+            this.label2.Size = new System.Drawing.Size(146, 16);
             this.label2.TabIndex = 41;
             this.label2.Text = "Ngày/Tháng/Năm sinh:";
             // 
@@ -299,7 +298,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(102, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 20);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 40;
             this.label1.Text = "Họ và tên:";
             // 
@@ -308,7 +307,7 @@
             this.txtDiachiBN.Location = new System.Drawing.Point(200, 191);
             this.txtDiachiBN.Margin = new System.Windows.Forms.Padding(1);
             this.txtDiachiBN.Name = "txtDiachiBN";
-            this.txtDiachiBN.Size = new System.Drawing.Size(202, 24);
+            this.txtDiachiBN.Size = new System.Drawing.Size(202, 22);
             this.txtDiachiBN.TabIndex = 39;
             // 
             // txtHotenBN
@@ -316,7 +315,7 @@
             this.txtHotenBN.Location = new System.Drawing.Point(200, 84);
             this.txtHotenBN.Margin = new System.Windows.Forms.Padding(1);
             this.txtHotenBN.Name = "txtHotenBN";
-            this.txtHotenBN.Size = new System.Drawing.Size(202, 24);
+            this.txtHotenBN.Size = new System.Drawing.Size(202, 22);
             this.txtHotenBN.TabIndex = 37;
             // 
             // lbl_Thongtinbenhnhan
@@ -326,18 +325,10 @@
             this.lbl_Thongtinbenhnhan.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_Thongtinbenhnhan.Location = new System.Drawing.Point(188, 119);
             this.lbl_Thongtinbenhnhan.Name = "lbl_Thongtinbenhnhan";
-            this.lbl_Thongtinbenhnhan.Size = new System.Drawing.Size(381, 36);
+            this.lbl_Thongtinbenhnhan.Size = new System.Drawing.Size(334, 30);
             this.lbl_Thongtinbenhnhan.TabIndex = 36;
             this.lbl_Thongtinbenhnhan.Text = "THÔNG TIN BỆNH NHÂN";
             this.lbl_Thongtinbenhnhan.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // dtbNgaySinhBN
-            // 
-            this.dtbNgaySinhBN.Location = new System.Drawing.Point(200, 120);
-            this.dtbNgaySinhBN.Name = "dtbNgaySinhBN";
-            this.dtbNgaySinhBN.Size = new System.Drawing.Size(202, 24);
-            this.dtbNgaySinhBN.TabIndex = 99;
-            this.dtbNgaySinhBN.Value = new System.DateTime(2023, 6, 1, 21, 30, 16, 0);
             // 
             // dgvDanhSachHoaDon
             // 
@@ -380,7 +371,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(1229, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 20);
+            this.label6.Size = new System.Drawing.Size(123, 16);
             this.label6.TabIndex = 101;
             this.label6.Text = "Danh sách hóa đơn";
             // 
@@ -414,7 +405,6 @@
             this.gbx_Thongtinbenhnhan.Controls.Add(this.label1);
             this.gbx_Thongtinbenhnhan.Controls.Add(this.label2);
             this.gbx_Thongtinbenhnhan.Controls.Add(this.label3);
-            this.gbx_Thongtinbenhnhan.Controls.Add(this.dtbNgaySinhBN);
             this.gbx_Thongtinbenhnhan.Controls.Add(this.label4);
             this.gbx_Thongtinbenhnhan.Controls.Add(this.label5);
             this.gbx_Thongtinbenhnhan.Controls.Add(this.btnCapNhat);
@@ -436,7 +426,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(200, 222);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(202, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(202, 22);
             this.dateTimePicker1.TabIndex = 104;
             this.dateTimePicker1.Value = new System.DateTime(2023, 6, 1, 21, 30, 16, 0);
             // 
@@ -447,7 +437,7 @@
             this.lbl_Thongtindangky.ForeColor = System.Drawing.Color.Salmon;
             this.lbl_Thongtindangky.Location = new System.Drawing.Point(705, 119);
             this.lbl_Thongtindangky.Name = "lbl_Thongtindangky";
-            this.lbl_Thongtindangky.Size = new System.Drawing.Size(337, 36);
+            this.lbl_Thongtindangky.Size = new System.Drawing.Size(294, 30);
             this.lbl_Thongtindangky.TabIndex = 105;
             this.lbl_Thongtindangky.Text = "THÔNG TIN ĐĂNG KÝ";
             this.lbl_Thongtindangky.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -525,7 +515,6 @@
         private System.Windows.Forms.TextBox txtHotenBN;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Label lbl_Thongtinbenhnhan;
-        private System.Windows.Forms.DateTimePicker dtbNgaySinhBN;
         private System.Windows.Forms.DataGridView dgvDanhSachHoaDon;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKB;
