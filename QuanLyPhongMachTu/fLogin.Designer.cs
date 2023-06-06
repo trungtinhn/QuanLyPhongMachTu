@@ -164,7 +164,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1870, 978);
+            this.ClientSize = new System.Drawing.Size(1870, 783);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;

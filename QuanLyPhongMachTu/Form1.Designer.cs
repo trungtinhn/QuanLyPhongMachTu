@@ -434,7 +434,7 @@ namespace QuanLyPhongMachTu
             this.Controls.Add(this.u_thayDoiQuiDinh);
             this.Controls.Add(this.uTaiKhoanQLy);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(2513, 1280);
             this.MinimumSize = new System.Drawing.Size(1918, 1011);
