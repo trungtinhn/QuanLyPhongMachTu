@@ -35,11 +35,13 @@ namespace QuanLyPhongMachTu
 
         private void btn_Phieukhambenh_Click(object sender, EventArgs e)
         {
-            u_PhieuKhamBenh.BringToFront();
+            u_lapPhieuKhamBenh.BringToFront();
+           
         }
 
         private void btn_Benh_LoaiBenh_Click(object sender, EventArgs e)
         {
+            
             u_BenhLoaiBenh.BringToFront();
         }
 
@@ -76,7 +78,7 @@ namespace QuanLyPhongMachTu
             }
             else
             {
-                uTaiKhoanQLy.BringToFront();
+                uTaiKhoanQLy1.BringToFront();
             }
         }
 
