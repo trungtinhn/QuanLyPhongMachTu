@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4c72ce68ba8545b1b1d72ec9acfaa25d" Name="Diagram1">
+        <EntityTypeShape EntityType="ConnectModel.BC_DOANHTHU" Width="1.5" PointX="0.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.BC_SUDUNGTHUOC" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.BENH" Width="1.5" PointX="8.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.BENHNHAN" Width="1.5" PointX="11.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CACHDUNG" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CT_PHIEUKHAMBENH" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CT_PHIEUNHAP" Width="1.5" PointX="11.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CHITIETBCDOANHTHU" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CHITIETBCSUDUNGTHUOC" Width="1.5" PointX="8.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.CHUCNANG" Width="1.5" PointX="11.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.DONVI" Width="1.5" PointX="3.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.HOADON" Width="1.5" PointX="15.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.LOAIBENH" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.LOAITHUOC" Width="1.5" PointX="3.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.NGUOIDUNG" Width="1.5" PointX="16.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.NHOMNGUOIDUNG" Width="1.5" PointX="14" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.PHIEUKHAMBENH" Width="1.5" PointX="13.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.PHIEUNHAPTHUOC" Width="1.5" PointX="9" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.THAMSO" Width="1.5" PointX="2.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConnectModel.THUOC" Width="1.5" PointX="6" PointY="6.625" IsExpanded="true" />
+        <AssociationConnector Association="ConnectModel.FK__CHITIETBC__idMaB__7B5B524B" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CHITIETBC__idMaB__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__BENH__idMaLoaiBe__6A30C649" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__BENH__idMaThuocD__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__PHIEUKHAM__MaBen__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__PHIEUKHAM__idMaB__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CT_PHIEUK__idMaC__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__THUOC__idMaCachD__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CT_PHIEUK__idMaT__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CT_PHIEUK__SoPhi__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CT_PHIEUN__idMaT__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CT_PHIEUN__SoPhi__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__CHITIETBC__idMaT__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__THUOC__idMaDonVi__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__HOADON__SoPhieuK__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__THUOC__idMaLoaiT__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.FK__NGUOIDUNG__idNho__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="ConnectModel.PHANQUYEN" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
