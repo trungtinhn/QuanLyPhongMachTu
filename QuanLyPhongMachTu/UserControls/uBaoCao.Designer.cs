@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.vbButton1 = new CustomButton.VBButton();
-            this.btn_baocaodoanhthu = new CustomButton.VBButton();
             this.uBaoCaoTheoThang = new QuanLyPhongMachTu.UserControls.uBaoCaoTheoThang();
             this.uBaoCaoSDThuoc = new QuanLyPhongMachTu.UserControls.uBaoCaoSDThuoc();
+            this.vbButton1 = new CustomButton.VBButton();
+            this.btn_baocaodoanhthu = new CustomButton.VBButton();
             this.panel_tool = new System.Windows.Forms.Panel();
+            this.panel_first = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel_tool.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel_first);
             this.panel1.Controls.Add(this.uBaoCaoTheoThang);
             this.panel1.Controls.Add(this.uBaoCaoSDThuoc);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -48,10 +50,26 @@
             this.panel1.Size = new System.Drawing.Size(1148, 512);
             this.panel1.TabIndex = 0;
             // 
+            // uBaoCaoTheoThang
+            // 
+            this.uBaoCaoTheoThang.BackColor = System.Drawing.Color.PeachPuff;
+            this.uBaoCaoTheoThang.Location = new System.Drawing.Point(25, 3);
+            this.uBaoCaoTheoThang.Name = "uBaoCaoTheoThang";
+            this.uBaoCaoTheoThang.Size = new System.Drawing.Size(1106, 483);
+            this.uBaoCaoTheoThang.TabIndex = 0;
+            // 
+            // uBaoCaoSDThuoc
+            // 
+            this.uBaoCaoSDThuoc.BackColor = System.Drawing.Color.PeachPuff;
+            this.uBaoCaoSDThuoc.Location = new System.Drawing.Point(16, 3);
+            this.uBaoCaoSDThuoc.Name = "uBaoCaoSDThuoc";
+            this.uBaoCaoSDThuoc.Size = new System.Drawing.Size(1078, 456);
+            this.uBaoCaoSDThuoc.TabIndex = 1;
+            // 
             // vbButton1
             // 
-            this.vbButton1.BackColor = System.Drawing.Color.Maroon;
-            this.vbButton1.BackgroundColor = System.Drawing.Color.Maroon;
+            this.vbButton1.BackColor = System.Drawing.Color.DarkRed;
+            this.vbButton1.BackgroundColor = System.Drawing.Color.DarkRed;
             this.vbButton1.BorderColor = System.Drawing.Color.MediumVioletRed;
             this.vbButton1.BorderRadius = 20;
             this.vbButton1.BorderSize = 3;
@@ -70,8 +88,8 @@
             // 
             // btn_baocaodoanhthu
             // 
-            this.btn_baocaodoanhthu.BackColor = System.Drawing.Color.Maroon;
-            this.btn_baocaodoanhthu.BackgroundColor = System.Drawing.Color.Maroon;
+            this.btn_baocaodoanhthu.BackColor = System.Drawing.Color.DarkRed;
+            this.btn_baocaodoanhthu.BackgroundColor = System.Drawing.Color.DarkRed;
             this.btn_baocaodoanhthu.BorderColor = System.Drawing.Color.MediumVioletRed;
             this.btn_baocaodoanhthu.BorderRadius = 20;
             this.btn_baocaodoanhthu.BorderSize = 3;
@@ -88,22 +106,6 @@
             this.btn_baocaodoanhthu.UseVisualStyleBackColor = false;
             this.btn_baocaodoanhthu.Click += new System.EventHandler(this.btn_baocaodoanhthu_Click);
             // 
-            // uBaoCaoTheoThang
-            // 
-            this.uBaoCaoTheoThang.BackColor = System.Drawing.Color.PeachPuff;
-            this.uBaoCaoTheoThang.Location = new System.Drawing.Point(25, 3);
-            this.uBaoCaoTheoThang.Name = "uBaoCaoTheoThang";
-            this.uBaoCaoTheoThang.Size = new System.Drawing.Size(1106, 483);
-            this.uBaoCaoTheoThang.TabIndex = 0;
-            // 
-            // uBaoCaoSDThuoc
-            // 
-            this.uBaoCaoSDThuoc.BackColor = System.Drawing.Color.PeachPuff;
-            this.uBaoCaoSDThuoc.Location = new System.Drawing.Point(16, 3);
-            this.uBaoCaoSDThuoc.Name = "uBaoCaoSDThuoc";
-            this.uBaoCaoSDThuoc.Size = new System.Drawing.Size(1078, 456);
-            this.uBaoCaoSDThuoc.TabIndex = 1;
-            // 
             // panel_tool
             // 
             this.panel_tool.Controls.Add(this.vbButton1);
@@ -112,6 +114,13 @@
             this.panel_tool.Name = "panel_tool";
             this.panel_tool.Size = new System.Drawing.Size(458, 40);
             this.panel_tool.TabIndex = 2;
+            // 
+            // panel_first
+            // 
+            this.panel_first.Location = new System.Drawing.Point(103, 14);
+            this.panel_first.Name = "panel_first";
+            this.panel_first.Size = new System.Drawing.Size(961, 406);
+            this.panel_first.TabIndex = 3;
             // 
             // uBaoCao
             // 
@@ -136,5 +145,6 @@
         private uBaoCaoTheoThang uBaoCaoTheoThang;
         private uBaoCaoSDThuoc uBaoCaoSDThuoc;
         private System.Windows.Forms.Panel panel_tool;
+        private System.Windows.Forms.Panel panel_first;
     }
 }
