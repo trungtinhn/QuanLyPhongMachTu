@@ -73,6 +73,12 @@
     <Compile Include="fDoiMatKhau.Designer.cs">
       <DependentUpon>fDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="fDoiThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoiThongTin.Designer.cs">
+      <DependentUpon>fDoiThongTin.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,18 @@
     <Compile Include="UserControls\uBaoCao.Designer.cs">
       <DependentUpon>uBaoCao.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\uBaoCaoSDThuoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uBaoCaoSDThuoc.Designer.cs">
+      <DependentUpon>uBaoCaoSDThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uBaoCaoTheoThang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uBaoCaoTheoThang.Designer.cs">
+      <DependentUpon>uBaoCaoTheoThang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\uTaiKhoancs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -158,8 +176,17 @@
     <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
       <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="vButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="fDangKy.resx">
+      <DependentUpon>fDangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDoiMatKhau.resx">
       <DependentUpon>fDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDoiThongTin.resx">
+      <DependentUpon>fDoiThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
@@ -198,6 +225,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\uBaoCao.resx">
       <DependentUpon>uBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uBaoCaoSDThuoc.resx">
+      <DependentUpon>uBaoCaoSDThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uBaoCaoTheoThang.resx">
+      <DependentUpon>uBaoCaoTheoThang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\uTaiKhoancs.resx">
       <DependentUpon>uTaiKhoancs.cs</DependentUpon>

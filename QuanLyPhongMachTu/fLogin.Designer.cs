@@ -58,18 +58,20 @@
             // lbl_Password
             // 
             this.lbl_Password.AutoSize = true;
+            this.lbl_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password.Location = new System.Drawing.Point(287, 254);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(62, 16);
+            this.lbl_Password.Size = new System.Drawing.Size(79, 18);
             this.lbl_Password.TabIndex = 92;
             this.lbl_Password.Text = "Mật Khẩu";
             // 
             // lbl_Username
             // 
             this.lbl_Username.AutoSize = true;
+            this.lbl_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Username.Location = new System.Drawing.Point(287, 142);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(102, 16);
+            this.lbl_Username.Size = new System.Drawing.Size(124, 18);
             this.lbl_Username.TabIndex = 91;
             this.lbl_Username.Text = "Tên Đăng Nhập";
             // 
