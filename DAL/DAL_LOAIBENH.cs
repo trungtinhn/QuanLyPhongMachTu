@@ -1,0 +1,80 @@
+﻿using DTO;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DAL
+{
+
+    public class DAL_LOAIBENH
+    {
+        QLPMTEntities db;
+        DAL_BENH dBenhDAL;
+
+        public DAL_LOAIBENH()
+        {
+            db = new QLPMTEntities();
+            dBenhDAL = new DAL_BENH();  
+        }
+
+        public dynamic LayThongTinLoaiBenh()
+        {
+            var dsLoaiBenh = db.LOAIBENHs.Select(s => new
+            {
+                s.MaLoaiBenh,
+                s.TenLoaiBenh
+            }).ToList();
+
+            return dsLoaiBenh;
+        }
+
+        public string LayTenLoaiBenh(int maBenh)
+        {
+            LOAIBENH loaiBenh = db.LOAIBENHs.Find(maBenh);
+            return loaiBenh.TenLoaiBenh.ToString();
+        }
+
+        public void ThemLoaiBenh(LOAIBENH loaiBenh)
+        {
+            db.LOAIBENHs.Add(loaiBenh);
+            db.SaveChanges();
+        }
+        public bool KiemTraLoaiBenh(LOAIBENH loaiBenh)
+        {
+            try
+            {
+                LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public void CapNhatLoaiBenh(LOAIBENH loaiBenh)
+        {
+            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+            lb.TenLoaiBenh = loaiBenh.TenLoaiBenh;
+
+            db.SaveChanges();
+        }
+
+        public void XoaLoaiBenh(LOAIBENH loaiBenh)
+        {
+            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+
+            var benhs = db.BENHs.Where(p => p.idMaLoaiBenh == lb.id);
+
+            foreach(BENH benh in benhs)
+            {
+                dBenhDAL.XoaBenh(benh);
+            }
+
+            db.LOAIBENHs.Remove(lb);
+            db.SaveChanges();
+        }
+    }
+}
