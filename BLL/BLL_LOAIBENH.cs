@@ -18,9 +18,9 @@ namespace BLL
             dLoaiBenhDAL = new DAL_LOAIBENH();
         }
 
-        public dynamic LayThongTinLoaiBenh()
+        public dynamic LayDanhSachLoaiBenh()
         {
-            return dLoaiBenhDAL.LayThongTinLoaiBenh();
+            return dLoaiBenhDAL.LayDanhSachLoaiBenh();
            
         }
         public string LayTenLoaiBenh(int maBenh)
@@ -77,6 +77,9 @@ namespace BLL
             }else { return false; }
         }
 
-     
+        public LOAIBENH LayThongTinLoaiBenh(string tenLB)
+        {
+            return dLoaiBenhDAL.LayThongTinLoaiBenh(tenLB);
+        }
     }
 }

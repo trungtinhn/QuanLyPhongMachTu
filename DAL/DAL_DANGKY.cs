@@ -32,7 +32,6 @@ namespace DAL
                 BENHNHAN bn = db.BENHNHANs.SingleOrDefault(b => b.id == item.idMaBenhNhan);
                 result.Add(bn);
             }
-
             return result;
         }
 
@@ -41,7 +40,6 @@ namespace DAL
         {
             db.DANGKies.Add(dangKy);
             db.SaveChanges();
-
             var changedEntries = db.ChangeTracker.Entries<DANGKY>().Where(x => x.State != EntityState.Unchanged);
         }
     }

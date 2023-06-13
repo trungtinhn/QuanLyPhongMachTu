@@ -52,20 +52,39 @@ namespace QuanLyPhongMachTu.UserControls
 
         public void HienThiThongTinLoaiBenh()
         {
-            dgvLoaiBenh.DataSource = dLoaiBenhBLL.LayThongTinLoaiBenh();
-          
-            dgvLoaiBenh.Columns[0].HeaderText = "Mã loại bệnh";
-            dgvLoaiBenh.Columns[1].HeaderText = "Tên loại bệnh";
+            List<LOAIBENH> loaiBenhs = dLoaiBenhBLL.LayDanhSachLoaiBenh();
+
+            var dt = new DataTable();
+
+            dt.Columns.Add("STT");
+            dt.Columns.Add("Mã loại bệnh");
+            dt.Columns.Add("Tên loại bệnh");
+
+            int i = 0;
+
+            foreach(LOAIBENH lb in loaiBenhs)
+            {
+                i++;
+                dt.Rows.Add(i, lb.MaLoaiBenh, lb.TenLoaiBenh);
+            }
+
+            dgvLoaiBenh.DataSource = dt;
+
+
             dgvLoaiBenh.Columns[0].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvLoaiBenh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dgvLoaiBenh.Columns[0].Width =(int) (dgvLoaiBenh.Width * 0.3);
-            dgvLoaiBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.7);
+            dgvLoaiBenh.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgvLoaiBenh.Columns[0].Width =(int) (dgvLoaiBenh.Width * 0.2);
+            dgvLoaiBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.3);
+            dgvLoaiBenh.Columns[2].Width =(int)(dgvLoaiBenh.Width * 0.5);
         }
 
         public void HienThiThongTinBenh()
         {
             dgvBenh.DataSource =null;
             var dt = new DataTable();
+            dt.Columns.Add("STT");
             dt.Columns.Add("Mã bệnh");
             dt.Columns.Add("Tên bệnh");
             dt.Columns.Add("Triệu chứng");
@@ -73,12 +92,15 @@ namespace QuanLyPhongMachTu.UserControls
             dt.Columns.Add("Tên loại bệnh");
 
             List<BENH> benhs = dBenhBLL.LayThongTinBenh();
-
+            int i = 0;
             foreach(BENH benh in benhs)
             {
+                i++;
                 string tenLoaiBenh = dLoaiBenhBLL.LayTenLoaiBenh(benh.idMaLoaiBenh);
-                string tenThuoc = dThuocBLL.LayTenThuoc(benh.idMaThuocDacTri);
-                dt.Rows.Add(benh.MaBenh, benh.TenBenh, benh.TrieuChung, tenThuoc, tenLoaiBenh);
+
+                THUOC thuoc = dThuocBLL.LayTenThuoc(benh.idMaThuocDacTri);
+               
+                dt.Rows.Add(i, benh.MaBenh, benh.TenBenh, benh.TrieuChung, thuoc.TenThuoc, tenLoaiBenh);
             }
 
             dgvBenh.DataSource = dt;
@@ -88,12 +110,15 @@ namespace QuanLyPhongMachTu.UserControls
             dgvBenh.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvBenh.Columns[3].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvBenh.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvBenh.Columns[5].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvBenh.Columns[0].Width =(int)(dgvLoaiBenh.Width * 0.1);
-            dgvBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.2);
-            dgvBenh.Columns[2].Width =(int)(dgvLoaiBenh.Width * 0.3);
-            dgvBenh.Columns[3].Width =(int)(dgvLoaiBenh.Width * 0.1);
-            dgvBenh.Columns[4].Width =(int)(dgvLoaiBenh.Width * 0.3);
+            dgvBenh.Columns[0].Width =(int)(dgvLoaiBenh.Width * 0.05);
+            dgvBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.1);
+            dgvBenh.Columns[2].Width =(int)(dgvLoaiBenh.Width * 0.1);
+            dgvBenh.Columns[3].Width =(int)(dgvLoaiBenh.Width * 0.3);
+            dgvBenh.Columns[4].Width =(int)(dgvLoaiBenh.Width * 0.2);
+            dgvBenh.Columns[5].Width =(int)(dgvLoaiBenh.Width * 0.3);
+
 
 
         }
@@ -158,8 +183,8 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 DataGridViewRow row = dgvLoaiBenh.SelectedRows[0];
 
-                txtMaLoaiBenh.Text = row.Cells[0].Value.ToString();
-                txtTenLoaiBenh.Text = row.Cells[1].Value.ToString();
+                txtMaLoaiBenh.Text = row.Cells[1].Value.ToString();
+                txtTenLoaiBenh.Text = row.Cells[2].Value.ToString();
             }
         }
 
@@ -188,7 +213,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void HienThiComboBoxLoaiBenh()
         {
-            cboTenLoaiBenh.DataSource = dLoaiBenhBLL.LayThongTinLoaiBenh();
+            cboTenLoaiBenh.DataSource = dLoaiBenhBLL.LayDanhSachLoaiBenh();
             cboTenLoaiBenh.DisplayMember = "TenLoaiBenh";
             cboTenLoaiBenh.ValueMember ="MaLoaiBenh";
         }
@@ -237,14 +262,87 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 DataGridViewRow row = dgvBenh.SelectedRows[0];
 
-                txtMaBenh.Text = row.Cells[0].Value.ToString();
-                txtTenBenh.Text = row.Cells[1].Value.ToString();
-                txtTrieuChungBenh.Text = row.Cells[2].Value.ToString();
-                cboTenTHuoc.Text = row.Cells[3].Value.ToString();
-                cboTenLoaiBenh.Text = row.Cells[4].Value.ToString();
+                txtMaBenh.Text = row.Cells[1].Value.ToString();
+                txtTenBenh.Text = row.Cells[2].Value.ToString();
+                txtTrieuChungBenh.Text = row.Cells[3].Value.ToString();
+                cboTenTHuoc.Text = row.Cells[4].Value.ToString();
+                cboTenLoaiBenh.Text = row.Cells[5].Value.ToString();
 
-                int idLoaiThuoc = dThuocBLL.LayIdLoaiThuoc(row.Cells[3].Value.ToString());
-                cboTenLoaiThuoc.Text = dLoaiThuocBLL.LayTenLoaiThuoc(idLoaiThuoc);
+                THUOC thuoc = dThuocBLL.LayThongTinThuoc(row.Cells[4].Value.ToString());
+                cboTenLoaiThuoc.Text = dLoaiThuocBLL.LayTenLoaiThuoc(thuoc.idMaLoaiThuoc);
+            }
+        }
+
+        public bool KiemTraNhapLieuBenh()
+        {
+            if (string.IsNullOrEmpty(txtTenBenh.Text) || string.IsNullOrEmpty(txtTrieuChungBenh.Text)
+                    || string.IsNullOrEmpty(cboTenTHuoc.Text) || string.IsNullOrEmpty(cboTenLoaiBenh.Text)) { return false; }
+            else return true;
+        }
+
+        private void btnThemBenh_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraNhapLieuBenh())
+            {
+                MessageBox.Show("Vui lòng cung cấp đầy đủ thông tin!");
+                return;
+            }
+
+            BENH benh = new BENH();
+            benh.TenBenh = txtTenBenh.Text;
+            benh.TrieuChung = txtTrieuChungBenh.Text;
+
+            THUOC thuoc = dThuocBLL.LayThongTinThuoc(cboTenTHuoc.Text);
+            LOAIBENH loaiBenh = dLoaiBenhBLL.LayThongTinLoaiBenh(cboTenLoaiBenh.Text);
+            benh.idMaThuocDacTri = thuoc.id;
+            benh.idMaLoaiBenh = loaiBenh.id;
+
+            if (dBenhBLL.ThemBenh(benh))
+            {
+                MessageBox.Show("Thêm bệnh thành công!");
+                HienThiThongTinBenh();
+            }
+            else
+            {
+                MessageBox.Show("Thêm bệnh thất bại!");
+            }
+        }
+
+        private void btnKhongLuuBenh_Click(object sender, EventArgs e)
+        {
+            txtMaBenh.Text ="";
+            txtTenBenh.Text = "";
+            txtTrieuChungBenh.Text = "";
+
+            HienThiComboBoxLoaiThuoc();
+            HienThiComboBoxLoaiBenh();
+        }
+
+        private void btnCapNhatBenh_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraNhapLieuBenh())
+            {
+                MessageBox.Show("Vui lòng cung cấp đầy đủ thông tin!");
+                return;
+            }
+
+            BENH benh = new BENH();
+            benh.TenBenh = txtTenBenh.Text;
+            benh.TrieuChung = txtTrieuChungBenh.Text;
+
+            THUOC thuoc = dThuocBLL.LayThongTinThuoc(cboTenTHuoc.Text);
+            LOAIBENH loaiBenh = dLoaiBenhBLL.LayThongTinLoaiBenh(cboTenLoaiBenh.Text);
+            benh.idMaThuocDacTri = thuoc.id;
+            benh.idMaLoaiBenh = loaiBenh.id;
+
+            if (dBenhBLL.CapNhatBenh(benh))
+            {
+                MessageBox.Show("Cập nhật bệnh thành công!");
+                HienThiThongTinBenh();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật bệnh thất bại!");
             }
         }
     }

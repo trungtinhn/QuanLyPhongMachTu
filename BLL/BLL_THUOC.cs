@@ -26,14 +26,14 @@ namespace BLL
             return dThuocDAL.LayThuoc(maThuoc);
         }
 
-        public string LayTenThuoc(int idThuoc)
+        public THUOC LayTenThuoc(int idThuoc)
         {
             return dThuocDAL.LayTenThuoc(idThuoc);
         }
 
-        public int LayIdLoaiThuoc(string tenThuoc)
+        public THUOC LayThongTinThuoc(string tenThuoc)
         {
-            return dThuocDAL.LayIdLoaiThuoc(tenThuoc);
+            return dThuocDAL.LayThongTinThuoc(tenThuoc);
         }
 
     }
