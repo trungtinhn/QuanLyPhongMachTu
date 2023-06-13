@@ -27,16 +27,16 @@ namespace DAL
             return thuoc;
         }
 
-        public string LayTenThuoc(int idThuoc)
+        public THUOC LayTenThuoc(int idThuoc)
         {
             THUOC thuoc = db.THUOCs.Find(idThuoc);
-            return thuoc.TenThuoc;
+            return thuoc;
         }
 
-        public int LayIdLoaiThuoc(string tenThuoc)
+        public THUOC LayThongTinThuoc(string tenThuoc)
         {
             THUOC thuoc = db.THUOCs.FirstOrDefault(s => s.TenThuoc == tenThuoc);
-            return thuoc.idMaLoaiThuoc;
+            return thuoc;
         }
     }
 }

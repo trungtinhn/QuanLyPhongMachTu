@@ -19,8 +19,8 @@ namespace DAL
 
         public dynamic LayDanhSachDangKy()
         {
-
-            var ds = db.DANGKies.Select(s => new
+            DateTime date = DateTime.Now;
+            var ds = db.DANGKies.Where(p => p.NgayDangKy.Day == date.Day && p.NgayDangKy.Month == date.Month && p.NgayDangKy.Year == date.Year).Select(s => new
             {
                 s.idMaBenhNhan
             });

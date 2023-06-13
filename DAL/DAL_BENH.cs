@@ -40,5 +40,61 @@ namespace DAL
             db.BENHs.Remove(b);
             db.SaveChanges();
         }
+
+     
+
+        public void ThemBenh(BENH benh)
+        {
+            db.BENHs.Add(benh);
+            db.SaveChanges();
+        }
+
+        public void CapNhatBenh(BENH benh)
+        {
+            BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == benh.MaBenh);
+            
+            b.TenBenh = benh.TenBenh;
+            b.TrieuChung = benh.TrieuChung;
+            b.idMaThuocDacTri = benh.idMaThuocDacTri;
+            b.idMaLoaiBenh = benh.idMaLoaiBenh;
+            db.SaveChanges();
+        }
+
+        public bool KiemTraBenh(BENH benh)
+        {
+            try
+            {
+                BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == benh.MaBenh);
+                return true;
+            }catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public BENH LayBenh(string maBenh)
+        {
+            BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == maBenh);
+            return b;
+        }
+        public BENH LayBenh(int maBenh)
+        {
+            BENH b = db.BENHs.Find(maBenh);
+            return b;
+        }
+
+        public dynamic LocBenh(string kieuLoc, string giaTri)
+        {
+            List<BENH> benhs = new List<BENH>();
+            if (kieuLoc == "Mã bênh")
+            {
+                benhs = db.BENHs.Where(p => p.MaBenh.Contains(giaTri)).ToList();
+            }else if(kieuLoc == "Tên bệnh")
+            {
+                benhs = db.BENHs.Where(p => p.TenBenh.Contains(giaTri)).ToList();
+            }
+            return benhs;
+        }
+
     }
 }

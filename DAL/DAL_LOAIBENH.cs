@@ -19,13 +19,20 @@ namespace DAL
             dBenhDAL = new DAL_BENH();  
         }
 
-        public dynamic LayThongTinLoaiBenh()
+        public dynamic LayDanhSachLoaiBenh()
         {
-            var dsLoaiBenh = db.LOAIBENHs.Select(s => new
+            var ds = db.LOAIBENHs.Select(s => new
             {
-                s.MaLoaiBenh,
-                s.TenLoaiBenh
+                s.id
             }).ToList();
+
+            List<LOAIBENH> dsLoaiBenh = new List<LOAIBENH>();
+
+            foreach (var s in ds)
+            {
+                LOAIBENH lb = db.LOAIBENHs.Find(s.id);
+                dsLoaiBenh.Add(lb);
+            }
 
             return dsLoaiBenh;
         }
@@ -75,6 +82,12 @@ namespace DAL
 
             db.LOAIBENHs.Remove(lb);
             db.SaveChanges();
+        }
+
+        public LOAIBENH LayThongTinLoaiBenh(string tenLoaiBenh)
+        {
+            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.TenLoaiBenh == tenLoaiBenh);
+            return lb;
         }
     }
 }

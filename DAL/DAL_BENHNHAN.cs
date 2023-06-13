@@ -80,8 +80,30 @@ namespace DAL
             }
             return bn;
         }
+        public BENHNHAN LayThongTinBenhNhan(int idBenhNhan)
+        {
+            BENHNHAN bn = db.BENHNHANs.Find(idBenhNhan);
+            if (bn == null)
+            {
+                return null;
+            }
+            return bn;
+        }
 
-       
+        public dynamic LocBenhNhan(string kieuLoc, string giaTri)
+        {
+            List<BENHNHAN> danhSach = new List<BENHNHAN>();
+            if(kieuLoc == "Mã bệnh nhân")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.MaBenhNhan.Contains(giaTri)).ToList();
+            }else if(kieuLoc =="Tên bệnh nhân")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.HoTenBenhNhan.Contains(giaTri)).ToList();
+            }
+            return danhSach;
+        }
+
+
     }
 
    

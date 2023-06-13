@@ -86,5 +86,11 @@ namespace BLL
         {
             return dBenhNhanDAL.LayThongTinBenhNhan(MaBenhNhan);
         }
+
+        public BENHNHAN LayThongTinBenhNhan(int idBenhNhan)
+        {
+            return dBenhNhanDAL.LayThongTinBenhNhan(idBenhNhan);
+        }
+
     }
 }
