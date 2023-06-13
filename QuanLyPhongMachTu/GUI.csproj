@@ -171,6 +171,9 @@
     <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
       <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DoiThongTin.resx">
+      <DependentUpon>DoiThongTin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>

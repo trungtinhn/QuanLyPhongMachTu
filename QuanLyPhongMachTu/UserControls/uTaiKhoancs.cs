@@ -26,12 +26,36 @@ namespace QuanLyPhongMachTu.UserControls
     {
 
         public string UserName = fLogin.currentUserName;
-
+        
         QLPMTEntities db = new QLPMTEntities();
         public uTaiKhoancs()
         {
             InitializeComponent();
-            
+
+            // Đăng ký sự kiện ChinhSuaThongTinNguoiDungEvent
+        }
+
+        public void CapNhatThongTinNguoiDung(string userName)
+        {
+            using (var context = new QLPMTEntities())
+            {
+                var user = context.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == userName);
+                if (user != null)
+                {
+                    label1.Text = user.MaNguoiDung;
+                    label2.Text = user.SoDT;
+                    label3.Text = user.TenNguoiDung.ToString();
+                    DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
+
+                    String dy = datevalue.Day.ToString();
+                    String mn = datevalue.Month.ToString();
+                    String yy = datevalue.Year.ToString();
+
+                    label4.Text = dy + " / " + mn + " / " + yy;
+                    label5.Text = user.ChucVu;
+                    label6.Text = user.DiaChi;
+                }
+            }
         }
         private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -47,7 +71,7 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 MessageBox.Show("OKE");
                 label1.Text = user.MaNguoiDung;
-                label2.Text = user.idNhomNguoiDung.ToString();
+                label2.Text = user.SoDT;
                 label3.Text = user.TenNguoiDung.ToString();
                 DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
 
@@ -57,7 +81,7 @@ namespace QuanLyPhongMachTu.UserControls
                 
                 label4.Text = dy+ " / " + mn + " / "+ yy;  
                 label5.Text = user.ChucVu;
-                label6.Text = user.TenDangNhap.ToString();
+                label6.Text = user.DiaChi;
 
                 lbl_Name.Text = user.TenNguoiDung;
                 lbl_Job.Text = user.ChucVu;
@@ -154,6 +178,17 @@ namespace QuanLyPhongMachTu.UserControls
         {
             fDoiMatKhau doiMatKhau = new fDoiMatKhau();
             doiMatKhau.Show();
+        }
+
+        private void btn_Chinhsua_Click(object sender, EventArgs e)
+        {
+            fDoiThongTin f = new fDoiThongTin();
+            f.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CapNhatThongTinNguoiDung(UserName);
         }
     }
 }

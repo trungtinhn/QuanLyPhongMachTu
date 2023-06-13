@@ -54,7 +54,7 @@ namespace QuanLyPhongMachTu
             this.panel1.Controls.Add(this.lbl_Matkhauhientai);
             this.panel1.Controls.Add(this.lbl_Doimatkhau);
             this.panel1.Location = new System.Drawing.Point(165, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(363, 391);
             this.panel1.TabIndex = 0;
@@ -63,18 +63,19 @@ namespace QuanLyPhongMachTu
             // 
             this.btn_Huy.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btn_Huy.Location = new System.Drawing.Point(190, 315);
-            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Huy.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(88, 37);
             this.btn_Huy.TabIndex = 77;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.UseVisualStyleBackColor = false;
+            this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
             // 
             // btn_Luu
             // 
             this.btn_Luu.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btn_Luu.Location = new System.Drawing.Point(70, 315);
-            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(82, 37);
             this.btn_Luu.TabIndex = 76;
@@ -97,7 +98,7 @@ namespace QuanLyPhongMachTu
             this.txt_xacnhanmkmoi.IsDerivedStyle = true;
             this.txt_xacnhanmkmoi.Lines = null;
             this.txt_xacnhanmkmoi.Location = new System.Drawing.Point(47, 253);
-            this.txt_xacnhanmkmoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_xacnhanmkmoi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_xacnhanmkmoi.MaxLength = 32767;
             this.txt_xacnhanmkmoi.Multiline = false;
             this.txt_xacnhanmkmoi.Name = "txt_xacnhanmkmoi";
@@ -127,7 +128,7 @@ namespace QuanLyPhongMachTu
             this.txt_mkmoi.IsDerivedStyle = true;
             this.txt_mkmoi.Lines = null;
             this.txt_mkmoi.Location = new System.Drawing.Point(47, 201);
-            this.txt_mkmoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_mkmoi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_mkmoi.MaxLength = 32767;
             this.txt_mkmoi.Multiline = false;
             this.txt_mkmoi.Name = "txt_mkmoi";
@@ -157,7 +158,7 @@ namespace QuanLyPhongMachTu
             this.txt_mk.IsDerivedStyle = true;
             this.txt_mk.Lines = null;
             this.txt_mk.Location = new System.Drawing.Point(47, 115);
-            this.txt_mk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_mk.Margin = new System.Windows.Forms.Padding(2);
             this.txt_mk.MaxLength = 32767;
             this.txt_mk.Multiline = false;
             this.txt_mk.Name = "txt_mk";
@@ -213,7 +214,7 @@ namespace QuanLyPhongMachTu
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(700, 495);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fDoiMatKhau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDoiMatKhau";

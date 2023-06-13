@@ -51,6 +51,7 @@
             this.lbl_Delete = new System.Windows.Forms.Label();
             this.siticoneCirclePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
             this.pbx_Avatar = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).BeginInit();
@@ -142,7 +143,7 @@
             this.lbl_NhomND_TD.Name = "lbl_NhomND_TD";
             this.lbl_NhomND_TD.Size = new System.Drawing.Size(155, 39);
             this.lbl_NhomND_TD.TabIndex = 1;
-            this.lbl_NhomND_TD.Text = "Nhóm Người Dùng";
+            this.lbl_NhomND_TD.Text = "Số Điện Thoại";
             this.lbl_NhomND_TD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_MaNd_TD
@@ -222,7 +223,7 @@
             this.lbl_TenDN_TD.Name = "lbl_TenDN_TD";
             this.lbl_TenDN_TD.Size = new System.Drawing.Size(155, 44);
             this.lbl_TenDN_TD.TabIndex = 5;
-            this.lbl_TenDN_TD.Text = "Tên Đăng Nhập";
+            this.lbl_TenDN_TD.Text = "Địa chỉ";
             this.lbl_TenDN_TD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -325,6 +326,7 @@
             this.btn_Chinhsua.TabIndex = 90;
             this.btn_Chinhsua.Text = "CHỈNH SỬA";
             this.btn_Chinhsua.UseVisualStyleBackColor = false;
+            this.btn_Chinhsua.Click += new System.EventHandler(this.btn_Chinhsua_Click);
             // 
             // lbl_Thongtinnguoidung
             // 
@@ -393,11 +395,24 @@
             this.pbx_Avatar.TabIndex = 2;
             this.pbx_Avatar.TabStop = false;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Snow;
+            this.button2.Location = new System.Drawing.Point(902, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(83, 26);
+            this.button2.TabIndex = 94;
+            this.button2.Text = "REFRESH";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // uTaiKhoancs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lbl_Delete);
             this.Controls.Add(this.lbl_Job);
             this.Controls.Add(this.lbl_Name);
@@ -444,5 +459,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_Delete;
         private System.Windows.Forms.Button btn_loggout;
+        private System.Windows.Forms.Button button2;
     }
 }
