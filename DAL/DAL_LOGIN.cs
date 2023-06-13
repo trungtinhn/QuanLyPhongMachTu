@@ -20,7 +20,7 @@ namespace DAL
 
         public bool CheckUser(string username, string password)
         {
-            NGUOIDUNG user = db.NGUOIDUNG.FirstOrDefault(x => x.TenDangNhap== username && x.MatKhau == password);
+            var user = db.NGUOIDUNG.FirstOrDefault(x => x.TenDangNhap== username && x.MatKhau == password);
             if (user == null) return false;
             return true;
         }
