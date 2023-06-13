@@ -7,20 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL
+namespace DTO
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class CT_PHIEUNHAP
+    public partial class CHITIETBCDOANHTHU
     {
-        public int SoPhieuNhapThuoc { get; set; }
-        public int idMaThuoc { get; set; }
-        public int DonGiaNhap { get; set; }
-        public int ThanhTien { get; set; }
-        public int SoLuongNhap { get; set; }
+        public int idMaBCDoanhThu { get; set; }
+        public System.DateTime NgayKham { get; set; }
+        public float DoanhThu { get; set; }
+        public float TyLe { get; set; }
     
-        public virtual THUOC THUOC { get; set; }
-        public virtual PHIEUNHAPTHUOC PHIEUNHAPTHUOC { get; set; }
+        public virtual BC_DOANHTHU BC_DOANHTHU { get; set; }
     }
 }

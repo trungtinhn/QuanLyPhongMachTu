@@ -1012,7 +1012,7 @@
           <End Role="CHUCNANG" Type="Self.CHUCNANG" Multiplicity="*" />
           <End Role="NHOMNGUOIDUNG" Type="Self.NHOMNGUOIDUNG" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="ConnectEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QLPMTEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="BC_DOANHTHU" EntityType="Self.BC_DOANHTHU" />
           <EntitySet Name="BC_SUDUNGTHUOC" EntityType="Self.BC_SUDUNGTHUOC" />
           <EntitySet Name="BENH" EntityType="Self.BENH" />
@@ -1112,7 +1112,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ConnectModelStoreContainer" CdmEntityContainer="ConnectEntities">
+        <EntityContainerMapping StorageEntityContainer="ConnectModelStoreContainer" CdmEntityContainer="QLPMTEntities">
           <EntitySetMapping Name="BC_DOANHTHU">
             <EntityTypeMapping TypeName="ConnectModel.BC_DOANHTHU">
               <MappingFragment StoreEntitySet="BC_DOANHTHU">

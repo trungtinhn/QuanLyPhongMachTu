@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL
+namespace DTO
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ConnectEntities : DbContext
+    public partial class QLPMTEntities : DbContext
     {
-        public ConnectEntities()
-            : base("name=ConnectEntities")
+        public QLPMTEntities()
+            : base("name=QLPMTEntities")
         {
         }
     

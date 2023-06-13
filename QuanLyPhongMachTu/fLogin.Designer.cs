@@ -51,7 +51,7 @@
             this.panel1.Controls.Add(this.txt_UserName);
             this.panel1.Controls.Add(this.lbl_Login);
             this.panel1.Location = new System.Drawing.Point(357, 167);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 388);
             this.panel1.TabIndex = 0;
@@ -82,12 +82,13 @@
             // 
             this.btn_Login.BackColor = System.Drawing.Color.LightGray;
             this.btn_Login.Location = new System.Drawing.Point(297, 301);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(83, 35);
             this.btn_Login.TabIndex = 90;
             this.btn_Login.Text = "LOGIN";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // txt_Password
             // 
@@ -149,7 +150,7 @@
             this.siticonePanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
-            this.siticonePanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.siticonePanel1.Margin = new System.Windows.Forms.Padding(2);
             this.siticonePanel1.Name = "siticonePanel1";
             this.siticonePanel1.Size = new System.Drawing.Size(1402, 56);
             this.siticonePanel1.TabIndex = 21;
@@ -176,7 +177,7 @@
             this.ClientSize = new System.Drawing.Size(1402, 636);
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "fLogin";
             this.Text = "fLogin";

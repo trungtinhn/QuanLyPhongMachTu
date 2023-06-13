@@ -7,26 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL
+namespace DTO
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class BC_DOANHTHU
+    public partial class BC_SUDUNGTHUOC
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BC_DOANHTHU()
+        public BC_SUDUNGTHUOC()
         {
-            this.CHITIETBCDOANHTHU = new HashSet<CHITIETBCDOANHTHU>();
+            this.CHITIETBCSUDUNGTHUOC = new HashSet<CHITIETBCSUDUNGTHUOC>();
         }
     
         public int id { get; set; }
         public int Thang { get; set; }
         public int Nam { get; set; }
-        public float TongDoanhThu { get; set; }
-        public string MaBCDoanhThu { get; set; }
+        public string MaBCSuDungThuoc { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CHITIETBCDOANHTHU> CHITIETBCDOANHTHU { get; set; }
+        public virtual ICollection<CHITIETBCSUDUNGTHUOC> CHITIETBCSUDUNGTHUOC { get; set; }
     }
 }

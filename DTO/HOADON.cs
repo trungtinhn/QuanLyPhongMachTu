@@ -7,15 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL
+namespace DTO
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class THAMSO
+    public partial class HOADON
     {
-        public int id { get; set; }
-        public int SoBenhNhanToiDa { get; set; }
+        public int SoHoaDon { get; set; }
+        public Nullable<int> SoPhieuKhamBenh { get; set; }
         public int TienKham { get; set; }
+        public int TienThuoc { get; set; }
+    
+        public virtual PHIEUKHAMBENH PHIEUKHAMBENH { get; set; }
     }
 }

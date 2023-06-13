@@ -7,27 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DAL
+namespace DTO
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class BENHNHAN
+    public partial class NHOMNGUOIDUNG
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BENHNHAN()
+        public NHOMNGUOIDUNG()
         {
-            this.PHIEUKHAMBENH = new HashSet<PHIEUKHAMBENH>();
+            this.NGUOIDUNG = new HashSet<NGUOIDUNG>();
+            this.CHUCNANG = new HashSet<CHUCNANG>();
         }
     
         public int id { get; set; }
-        public string MaBenhNhan { get; set; }
-        public string HoTenBenhNhan { get; set; }
-        public string GioiTinh { get; set; }
-        public System.DateTime NgaySinh { get; set; }
-        public string DiaChi { get; set; }
+        public string MaNhomNguoiDung { get; set; }
+        public string TenNhomNguoiDung { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PHIEUKHAMBENH> PHIEUKHAMBENH { get; set; }
+        public virtual ICollection<NGUOIDUNG> NGUOIDUNG { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CHUCNANG> CHUCNANG { get; set; }
     }
 }
