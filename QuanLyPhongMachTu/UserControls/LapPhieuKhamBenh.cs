@@ -109,9 +109,15 @@ namespace QuanLyPhongMachTu.UserControls
             if(dgvDangKy.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvDangKy.SelectedRows[0];
+                try
+                {
+                    txtMaBN.Text = row.Cells[0].Value.ToString();
+                    txtHotenBN.Text = row.Cells[1].Value.ToString();
+                }
+                catch
+                {
 
-                txtMaBN.Text = row.Cells[0].Value.ToString();
-                txtHotenBN.Text = row.Cells[1].Value.ToString();
+                }                  
             }
         }
 

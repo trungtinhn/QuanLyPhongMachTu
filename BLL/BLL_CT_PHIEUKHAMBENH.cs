@@ -24,7 +24,7 @@ namespace BLL
             {
                 dCTPhieuKhamBenhAL.ThemCTPKB(cTPKB);
                 return true;
-            }catch (Exception ex)
+            }catch (Exception)
             {
                 //MessageBox.Show(ex.Message);
                 return false;

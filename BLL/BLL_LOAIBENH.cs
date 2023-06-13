@@ -34,7 +34,7 @@ namespace BLL
             {
                 dLoaiBenhDAL.ThemLoaiBenh(loaiBenh);
                 return true;
-            }catch(Exception ex)
+            }catch(Exception)
             {
                 return false;
             }

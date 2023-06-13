@@ -29,7 +29,7 @@ namespace BLL
             {
                 dBenhDAL.ThemBenh(benh);
                 return true;
-            }catch (Exception ex)
+            }catch (Exception)
             {
                 return false;
             }
@@ -43,7 +43,7 @@ namespace BLL
                 {
                     dBenhDAL.CapNhatBenh(benh);
                     return true;
-                }catch(Exception ex)
+                }catch(Exception)
                 {
                     return false;
                 }

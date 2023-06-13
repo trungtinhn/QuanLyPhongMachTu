@@ -66,7 +66,7 @@ namespace DAL
             {
                 BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == benh.MaBenh);
                 return true;
-            }catch (Exception ex)
+            }catch (Exception)
             {
                 return false;
             }

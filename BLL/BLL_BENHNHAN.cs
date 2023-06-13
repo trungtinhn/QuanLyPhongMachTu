@@ -34,7 +34,7 @@ namespace BLL
                 dBenhNhanDAL.ThemBenhNhan(benhNhan);
                 return true;
             }
-            catch(Exception ex) 
+            catch(Exception) 
             {
                 return false;
             }

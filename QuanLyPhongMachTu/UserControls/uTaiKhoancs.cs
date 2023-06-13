@@ -17,6 +17,8 @@ using System.Xml.Linq;
 using UserControl = System.Windows.Forms.UserControl;
 using System.Web.UI.WebControls;
 using static QuanLyPhongMachTu.fLogin;
+using System.IO;
+using System.Runtime.Remoting.Contexts;
 
 namespace QuanLyPhongMachTu.UserControls
 {
@@ -44,17 +46,114 @@ namespace QuanLyPhongMachTu.UserControls
             if (user != null)
             {
                 MessageBox.Show("OKE");
-                label1.Text = user.id.ToString();
-                label2.Text = user.MaNguoiDung;
+                label1.Text = user.MaNguoiDung;
+                label2.Text = user.idNhomNguoiDung.ToString();
                 label3.Text = user.TenNguoiDung.ToString();
-                label4.Text = user.NgaySinh.ToString();
-                label5.Text = user.TenDangNhap;
-                label6.Text = user.idNhomNguoiDung.ToString();
+                DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
+
+                String dy = datevalue.Day.ToString();
+                String mn = datevalue.Month.ToString();
+                String yy = datevalue.Year.ToString();
+                
+                label4.Text = dy+ " / " + mn + " / "+ yy;  
+                label5.Text = user.ChucVu;
+                label6.Text = user.TenDangNhap.ToString();
+
+                lbl_Name.Text = user.TenNguoiDung;
+                lbl_Job.Text = user.ChucVu;
             }    
             else
             {
                 MessageBox.Show("NOT OKE");
             }
+        }
+        private string ImageToBase64(System.Drawing.Image image)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                byte[] imageBytes = ms.ToArray();
+                return Convert.ToBase64String(imageBytes);
+            }
+        }
+
+        private void SaveImageToDatabase(System.Drawing.Image image)
+        {
+            try
+            {
+                using (var context = new QLPMTEntities())
+                {
+                    var user = context.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == UserName);
+                    if (user != null)
+                    {
+                        user.AnhDaiDien = ImageToBase64(image);
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        MessageBox.Show("SOMETHING WRONG");
+                    } 
+                        
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lưu ảnh: {ex.Message}");
+            }
+        }
+
+        private void siticoneCirclePictureBox1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.png; *.bmp)|*.jpg; *.jpeg; *.png; *.bmp";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbx_Avatar.Image = new Bitmap(openFileDialog.FileName);
+
+                // Lưu ảnh dưới dạng chuỗi vào cơ sở dữ liệu
+                SaveImageToDatabase(pbx_Avatar.Image);
+
+                // Hiển thị ảnh lên PictureBox
+                pbx_Avatar.ImageLocation = openFileDialog.FileName;
+            }
+        }
+
+
+        private void lbl_Delete_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa ảnh đại diện không?", "Xóa ảnh đại diện", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Thực hiện xóa ảnh đại diện của người dùng trong cơ sở dữ liệu
+                using (var db = new QLPMTEntities())
+                {
+                    var user = db.NGUOIDUNGs.FirstOrDefault(a => a.TenDangNhap == UserName);
+                    if (user != null)
+                    {
+                        user.AnhDaiDien = null;
+                        db.SaveChanges();
+                    }
+                }
+
+                // Load lại ảnh đại diện mặc định
+                pbx_Avatar.Image = Properties.Resources.boy;
+            }
+        }
+
+        private void btn_loggout_Click(object sender, EventArgs e)
+        {
+
+            // Hiển thị form đăng nhập
+            Application.Restart();
+          
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fDoiMatKhau doiMatKhau = new fDoiMatKhau();
+            doiMatKhau.Show();
         }
     }
 }

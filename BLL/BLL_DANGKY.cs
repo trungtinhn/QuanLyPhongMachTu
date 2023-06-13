@@ -29,7 +29,7 @@ namespace BLL
                 dDanhKyDAL.DangKyKhamBenh(dangKy);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
