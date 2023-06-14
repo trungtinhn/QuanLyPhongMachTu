@@ -48,9 +48,6 @@
     <Reference Include="MetroSet UI, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroSet_UI.2.0.0\lib\net45\MetroSet UI.dll</HintPath>
     </Reference>
-    <Reference Include="SipaaFramework, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SipaaFramework.1.1.0\lib\net46\SipaaFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
     </Reference>
@@ -71,6 +68,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiThongTin.Designer.cs">
+      <DependentUpon>DoiThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangKy.Designer.cs">
+      <DependentUpon>fDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +177,9 @@
     <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
       <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +281,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{1ed5c790-3ecb-4a04-abad-f7aa86cde9af}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{a29a3d8c-3214-4eea-9356-8d2ab387e09b}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{f9dd8f18-2e78-412d-a14c-9108b38b482d}</Project>

@@ -12,9 +12,11 @@ namespace DAL
     public class DAL_DANGKY
     {
         QLPMTEntities db;
+        DAL_THAMSO dThamSo;
         public DAL_DANGKY()
         {
             db = new QLPMTEntities();
+            dThamSo = new DAL_THAMSO(); 
         }
 
         public dynamic LayDanhSachDangKy()
@@ -44,5 +46,26 @@ namespace DAL
 
             var changedEntries = db.ChangeTracker.Entries<DANGKY>().Where(x => x.State != EntityState.Unchanged);
         }
+
+        public void XoaDangKy(DANGKY dangKy)
+        {
+            db.DANGKies.Remove(dangKy);
+            db.SaveChanges();
+        }
+
+        public DANGKY LayDangKy(int idBenhNhan)
+        {
+            return db.DANGKies.FirstOrDefault(s => s.idMaBenhNhan == idBenhNhan);
+        }
+
+
+        public int LaySoBenhNhanTiepNhan()
+        {
+            DateTime dateTime = DateTime.Now;
+            THAMSO thamSo = dThamSo.LayThamSo(1);
+            int SoNguoiDK = db.DANGKies.Where(p => p.NgayDangKy.Day == dateTime.Day && p.NgayDangKy.Month == dateTime.Month && p.NgayDangKy.Year == dateTime.Year).Count();
+            return thamSo.SoBenhNhanToiDa - SoNguoiDK;
+        }
+
     }
 }

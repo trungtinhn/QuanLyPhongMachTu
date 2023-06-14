@@ -20,6 +20,7 @@ namespace DTO
         public int TienThuoc { get; set; }
 
         public int idBenhNhan { get; set; }
+        public string TrangThai { get; set; }
 
         public virtual PHIEUKHAMBENH PHIEUKHAMBENH { get; set; }
         public virtual BENHNHAN BENHNHAN { get; set; }

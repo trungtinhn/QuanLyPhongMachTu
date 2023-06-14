@@ -14,20 +14,44 @@ namespace DAL
         {
             db = new QLPMTEntities();
         }
-        public dynamic LayDanhSachBenhNhan()
+        public dynamic LayDanhSachBenhNhan(string kieuLoc, string giaTri, DateTime ngaySinh)
         {
-            var danhsach = db.BENHNHANs.Select(s => new
-            {
- 
-                s.MaBenhNhan,
-                s.HoTenBenhNhan,
-                s.GioiTinh,
-                s.NgaySinh,
-                s.DiaChi,
-               
-            }).ToList();
 
-            return danhsach;
+            List<BENHNHAN> danhSach = new List<BENHNHAN>();
+            if(kieuLoc == "Tất cả")
+            {
+                danhSach = db.BENHNHANs.ToList();
+            }else if(kieuLoc == "Mã bệnh nhân")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.MaBenhNhan.Contains(giaTri)).ToList();
+            }else if(kieuLoc == "Tên bệnh nhân")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.HoTenBenhNhan.Contains(giaTri)).ToList();
+            }else if( kieuLoc == "Giới tính")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.GioiTinh.Contains(giaTri)).ToList();
+            }else if(kieuLoc =="Ngày sinh")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.NgaySinh.Day == ngaySinh.Day && p.NgaySinh.Month == ngaySinh.Month && p.NgaySinh.Year == ngaySinh.Year).ToList();
+            }else if (kieuLoc == "Địa chỉ")
+            {
+                danhSach = db.BENHNHANs.Where(p => p.DiaChi.Contains(giaTri)).ToList();
+            }
+
+
+
+            //var danhsach = db.BENHNHANs.Select(s => new
+            //{
+ 
+            //    s.MaBenhNhan,
+            //    s.HoTenBenhNhan,
+            //    s.GioiTinh,
+            //    s.NgaySinh,
+            //    s.DiaChi,
+               
+            //}).ToList();
+
+            return danhSach;
         }
 
         public void ThemBenhNhan(BENHNHAN benhNhan)

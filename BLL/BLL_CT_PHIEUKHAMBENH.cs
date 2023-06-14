@@ -61,5 +61,10 @@ namespace BLL
                 return false;
             }
         }
+
+        public dynamic LayTheoThuoc(int idThuoc)
+        {
+            return dCTPhieuKhamBenhAL.LayTheoThuoc(idThuoc);
+        }
     }
 }

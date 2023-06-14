@@ -22,6 +22,9 @@ namespace DTO
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
         public int idNhomNguoiDung { get; set; }
+        public string SoDT { get; set; }
+        public string AnhDaiDien { get; set; }
+        public string DiaChi { get; set; }
 
         public virtual NHOMNGUOIDUNG NHOMNGUOIDUNG { get; set; }
     }

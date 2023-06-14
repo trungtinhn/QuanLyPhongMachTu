@@ -16,30 +16,57 @@ namespace QuanLyPhongMachTu.UserControls
     {
         BLL_BENHNHAN dBenhNhanBLL;
         BLL_DANGKY dDangKyBLL;
+        BLL_HOADON dHoaDonBLL;
+        BLL_PHIEUKHAMBENH dPhieuKhamBenhBLL;
+
+      
       
         public DanhSachKhamBenh()
         {
             InitializeComponent();
             dBenhNhanBLL = new BLL_BENHNHAN();
             dDangKyBLL = new BLL_DANGKY();
-           
+            dHoaDonBLL = new BLL_HOADON();
+            dPhieuKhamBenhBLL = new BLL_PHIEUKHAMBENH();
         }
 
         private void DanhSachKhamBenh_Load(object sender, EventArgs e)
         {
 
             HienThiLenDGVBenhNhan();
+            HienThiDanhSachHoaDon();
+            HienThiSoNguoiConLaiDangKy();
+
+            dtimeNgaySinh.Format = DateTimePickerFormat.Custom;
+            dtimeNgaySinh.CustomFormat = "dd/MM/yyyy";
         }
 
         private void HienThiLenDGVBenhNhan()
         {
-            dgvThongTinBN.DataSource = null;
-            dBenhNhanBLL.LayDanhSachBenhNhan(dgvThongTinBN);
-            dgvThongTinBN.Columns[0].HeaderText = "Mã bệnh nhân";
-            dgvThongTinBN.Columns[1].HeaderText = "Họ tên";
-            dgvThongTinBN.Columns[2].HeaderText = "Giới tính";
-            dgvThongTinBN.Columns[3].HeaderText = "Ngày sinh";
-            dgvThongTinBN.Columns[4].HeaderText = "Địa chỉ";
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Mã bệnh nhân");
+            dt.Columns.Add("Họ tên");
+            dt.Columns.Add("Giới tính");
+            dt.Columns.Add("Ngày sinh");
+            dt.Columns.Add("Địa chỉ");
+
+
+            List<BENHNHAN> benhNhans = dBenhNhanBLL.LayDanhSachBenhNhan(cboTraCuu.Text, txtTraCuu.Text, dtimeTraCuu.Value);
+
+            foreach(BENHNHAN benhNhan in benhNhans)
+            {
+                DateTime date = (DateTime)benhNhan.NgaySinh;
+                dt.Rows.Add(benhNhan.MaBenhNhan, benhNhan.HoTenBenhNhan, benhNhan.GioiTinh, date.ToString("dd/MM/yyyy"), benhNhan.DiaChi);
+            }
+
+            dgvThongTinBN.DataSource = dt;
+            
+            //dgvThongTinBN.Columns[0].HeaderText = "Mã bệnh nhân";
+            //dgvThongTinBN.Columns[1].HeaderText = "Họ tên";
+            //dgvThongTinBN.Columns[2].HeaderText = "Giới tính";
+            //dgvThongTinBN.Columns[3].HeaderText = "Ngày sinh";
+            //dgvThongTinBN.Columns[4].HeaderText = "Địa chỉ";
         }
 
         private bool KiemTraNhapLieu()
@@ -141,12 +168,14 @@ namespace QuanLyPhongMachTu.UserControls
                     radNu.Checked = true;
                 }
 
-                dtimeNgaySinh.Value = (DateTime) row.Cells[3].Value;
+                //dtimeNgaySinh.Value = (DateTime) row.Cells[3].Value;
                 txtDiachiBN.Text = row.Cells[4].Value.ToString();
           
 
 
             }
+
+            HienThiDanhSachHoaDon();
             
         }
 
@@ -222,10 +251,90 @@ namespace QuanLyPhongMachTu.UserControls
             if (dDangKyBLL.DangKyKhamBenh(dangKy))
             {
                 MessageBox.Show("Đăng ký khám bênh thành công!");
+                HienThiSoNguoiConLaiDangKy();
                
             }else
             {
                 MessageBox.Show("Đăng ký khám bệnh thất bại!");
+            }
+        }
+
+        public void HienThiSoNguoiConLaiDangKy()
+        {
+            int soNguoi = dDangKyBLL.LaySoBenhNhanTiepNhan();
+            txtSoBNtiepnhan.Text = soNguoi.ToString();
+        }
+
+        public void HienThiDanhSachHoaDon()
+        {
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("STT");
+            dt.Columns.Add("Số PKB");
+            dt.Columns.Add("Ngày khám");
+            dt.Columns.Add("Tổng tiền");
+            dt.Columns.Add("Trạng thái");
+
+            BENHNHAN benhNhan = dBenhNhanBLL.LayThongTinBenhNhan(txtMaBN.Text);
+
+            List<HOADON> hoaDons = dHoaDonBLL.LayDanhSachHoaDon(benhNhan.id);
+
+            int i = 0;
+            foreach(HOADON hOADON in hoaDons)
+            {
+                i++;
+                PHIEUKHAMBENH pkb = dPhieuKhamBenhBLL.LayPhieuKhamBenh(hOADON.SoPhieuKhamBenh.Value);
+
+                dt.Rows.Add(i, hOADON.SoPhieuKhamBenh, pkb.NgayKham, hOADON.TienKham + hOADON.TienThuoc, hOADON.TrangThai); 
+
+
+            }
+
+            dgvDanhSachHoaDon.DataSource = dt;
+
+            dgvDanhSachHoaDon.Columns[0].Width = (int)(dgvDanhSachHoaDon.Width * 0.1);
+            dgvDanhSachHoaDon.Columns[1].Width = (int)(dgvDanhSachHoaDon.Width * 0.1);
+            dgvDanhSachHoaDon.Columns[2].Width = (int)(dgvDanhSachHoaDon.Width * 0.2);
+            dgvDanhSachHoaDon.Columns[3].Width = (int)(dgvDanhSachHoaDon.Width * 0.2);
+            dgvDanhSachHoaDon.Columns[4].Width = (int)(dgvDanhSachHoaDon.Width * 0.3);
+        }
+
+        private void dgvDanhSachHoaDon_DoubleClick(object sender, EventArgs e)
+        {
+            if(dgvDanhSachHoaDon.SelectedRows.Count > 0)
+            {
+
+                DataGridViewRow row = dgvDanhSachHoaDon.SelectedRows[0];
+
+                if (!string.IsNullOrEmpty(row.Cells[0].Value.ToString()))
+                {
+
+                    HOADON hoaDon = dHoaDonBLL.LayHoaDon(Int32.Parse(row.Cells[1].Value.ToString()));
+
+                    fHoaDon fhd = new fHoaDon(hoaDon);
+
+                    fhd.Show();
+                }
+                
+            }
+        }
+
+        private void btnTraCuu_Click(object sender, EventArgs e)
+        {
+            HienThiLenDGVBenhNhan();
+        }
+
+        private void cboTraCuu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboTraCuu.Text == "Ngày sinh")
+            {
+                dtimeTraCuu.Visible = true;
+                txtTraCuu.Visible = false;
+            }
+            else
+            {
+                dtimeTraCuu.Visible = false;
+                txtTraCuu.Visible = true;
             }
         }
     }

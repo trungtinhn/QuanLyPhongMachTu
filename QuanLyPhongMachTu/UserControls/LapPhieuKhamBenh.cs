@@ -22,6 +22,7 @@ namespace QuanLyPhongMachTu.UserControls
         BLL_BENHNHAN dBenhNhanBLL;
         BLL_PHIEUKHAMBENH dPhieuKhamBenhBLL;
         BLL_CT_PHIEUKHAMBENH dCTPhieuKhamBenhBLL;
+        BLL_HOADON dHoaDonBLL;
 
         List<CT_PHIEUKHAMBENH> phieuKhamBenh;
         public LapPhieuKhamBenh()
@@ -35,6 +36,7 @@ namespace QuanLyPhongMachTu.UserControls
             dBenhNhanBLL = new BLL_BENHNHAN();
             dPhieuKhamBenhBLL = new BLL_PHIEUKHAMBENH();
             dCTPhieuKhamBenhBLL = new BLL_CT_PHIEUKHAMBENH();
+            dHoaDonBLL = new BLL_HOADON();
         }
 
         private void LapPhieuKhamBenh_Load(object sender, EventArgs e)
@@ -122,6 +124,8 @@ namespace QuanLyPhongMachTu.UserControls
                
                
             }
+
+            txtPhieuKhamBenh.Text = "";
         }
 
 
@@ -306,8 +310,8 @@ namespace QuanLyPhongMachTu.UserControls
                 return;
             }
 
-            PHIEUKHAMBENH pkb = new PHIEUKHAMBENH();
-            pkb.SoPhieuKhamBenh = Int32.Parse(txtPhieuKhamBenh.Text);
+            PHIEUKHAMBENH pkb = dPhieuKhamBenhBLL.LayPhieuKhamBenh(Int32.Parse(txtPhieuKhamBenh.Text));
+           
 
             if (dPhieuKhamBenhBLL.LuuPhieuKhamBenh(pkb))
             {
@@ -318,6 +322,45 @@ namespace QuanLyPhongMachTu.UserControls
             else
             {
                 MessageBox.Show("Lưu phiếu khám bệnh không thành công!");
+            }
+
+
+            
+            HOADON hoaDon = new HOADON();
+            hoaDon.SoPhieuKhamBenh = Int32.Parse(txtPhieuKhamBenh.Text);
+
+            BENHNHAN benhNhan = dBenhNhanBLL.LayThongTinBenhNhan(txtMaBN.Text);
+
+            hoaDon.idBenhNhan = benhNhan.id;
+            hoaDon.TienThuoc = pkb.TongTien;
+            hoaDon.TrangThai = "Chưa thanh toán";
+
+            if (dHoaDonBLL.TaoHoaDon(hoaDon))
+            {
+                MessageBox.Show("Tạo hóa đơn thành công!");
+
+            }
+            else
+            {
+                MessageBox.Show("Tạo hóa đơn thất bại!");
+            }
+
+            List<CT_PHIEUKHAMBENH> listCTPKB = dCTPhieuKhamBenhBLL.LayDanhSachThuoc(hoaDon.SoPhieuKhamBenh.Value);
+
+            foreach(CT_PHIEUKHAMBENH chiTietPhieuKhamBenh in listCTPKB)
+            {
+                if(dThuocBLL.CapNhatSoLuongTon(chiTietPhieuKhamBenh.idMaThuoc, chiTietPhieuKhamBenh.SoLuong))
+                {
+
+                }
+                else
+                {
+                    THUOC thuoc = dThuocBLL.LayTenThuoc(chiTietPhieuKhamBenh.idMaThuoc);
+                    MessageBox.Show("Thuốc " + thuoc.TenThuoc + " không đủ số lượng!");
+
+                    dCTPhieuKhamBenhBLL.XoaCTPKB(chiTietPhieuKhamBenh);
+                }
+
             }
 
         }
@@ -352,6 +395,9 @@ namespace QuanLyPhongMachTu.UserControls
                 MessageBox.Show("Thêm phiếu khám bênh thất bại!");
             }
 
+         
+            
+
         }
 
         public void HienThiThongTinPhieuKhamBenh()
@@ -380,8 +426,6 @@ namespace QuanLyPhongMachTu.UserControls
 
                 if ((pkb.TrangThai == 1 && chkDaLuu.Checked) || (pkb.TrangThai == 0 && chkChuaLuu.Checked))
                 {
-
-                
                     BENHNHAN benhNhan = dBenhNhanBLL.LayThongTinBenhNhan(pkb.idMaBenhNhan);
                     BENH benh = dBenhBLL.LayBenh(pkb.MaBenh);
 
@@ -477,6 +521,18 @@ namespace QuanLyPhongMachTu.UserControls
                     {
                         PHIEUKHAMBENH pkb = dPhieuKhamBenhBLL.LayPhieuKhamBenh(Int32.Parse(txtPhieuKhamBenh.Text));
                         dtbNgayKB.Value =  pkb.NgayKham;
+                        if(pkb.TrangThai == 1)
+                        {
+                            btnThemThuoc.Enabled = false;
+                            btnXoaThuoc.Enabled = false;
+                            btnSuaThuoc.Enabled = false;
+                        }
+                        else
+                        {
+                            btnThemThuoc.Enabled = true;
+                            btnXoaThuoc.Enabled = true;
+                            btnSuaThuoc.Enabled = true;
+                        }
                     }
                     else
                     {
@@ -493,6 +549,8 @@ namespace QuanLyPhongMachTu.UserControls
                 
 
             }
+
+            
             HienThiDGVThuoc();
         }
 

@@ -47,6 +47,11 @@ namespace DAL
             db.CT_PHIEUKHAMBENH.Remove(chiTietPKB);
             db.SaveChanges();
         }
+
+        public dynamic LayTheoThuoc(int idThuoc)
+        {
+            return db.CT_PHIEUKHAMBENH.Where(s => s.idMaThuoc == idThuoc).ToList();
+        }
        
     }
 }

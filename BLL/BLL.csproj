@@ -66,11 +66,17 @@
   <ItemGroup>
     <Compile Include="BLL_BENH.cs" />
     <Compile Include="BLL_BENHNHAN.cs" />
+    <Compile Include="BLL_CACHDUNG.cs" />
     <Compile Include="BLL_CT_PHIEUKHAMBENH.cs" />
+    <Compile Include="BLL_CT_PHIEUNHAP.cs" />
     <Compile Include="BLL_DANGKY.cs" />
+    <Compile Include="BLL_DONVI.cs" />
+    <Compile Include="BLL_HOADON.cs" />
     <Compile Include="BLL_LOAIBENH.cs" />
     <Compile Include="BLL_LOAITHUOC.cs" />
+    <Compile Include="BLL_LOGIN.cs" />
     <Compile Include="BLL_PHIEUKHAMBENH.cs" />
+    <Compile Include="BLL_PHIEUNHAPTHUOC.cs" />
     <Compile Include="BLL_THUOC.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

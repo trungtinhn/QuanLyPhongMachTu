@@ -12,9 +12,11 @@ namespace BLL
     public class BLL_DANGKY
     {
         DAL_DANGKY dDanhKyDAL;
+      
         public BLL_DANGKY()
         {
             dDanhKyDAL = new DAL_DANGKY();
+           
         }
 
         public dynamic LayDanhSachDangKy()
@@ -33,6 +35,21 @@ namespace BLL
             {
                 return false;
             }
+        }
+
+        public void XoaDangKy(DANGKY dangKy)
+        {
+            dDanhKyDAL.XoaDangKy(dangKy);
+        }
+
+        public DANGKY LayDangKy(int idBenhNhan)
+        {
+            return dDanhKyDAL.LayDangKy(idBenhNhan);
+        }
+
+        public int LaySoBenhNhanTiepNhan()
+        {
+           return dDanhKyDAL.LaySoBenhNhanTiepNhan();
         }
     }
 }

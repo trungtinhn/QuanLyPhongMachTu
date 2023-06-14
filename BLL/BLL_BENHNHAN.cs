@@ -21,9 +21,9 @@ namespace BLL
             dBenhNhanDAL = new DAL_BENHNHAN();
         }
 
-        public void LayDanhSachBenhNhan(DataGridView dgv)
+        public dynamic LayDanhSachBenhNhan(string kieuLoc, string giaTri, DateTime ngaySinh)
         {
-            dgv.DataSource = dBenhNhanDAL.LayDanhSachBenhNhan();
+             return dBenhNhanDAL.LayDanhSachBenhNhan(kieuLoc, giaTri, ngaySinh);
 
         }
 

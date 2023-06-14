@@ -103,5 +103,12 @@ namespace DAL
             phieuKB.TrangThai = 1;
             db.SaveChanges();
         }
+
+        public dynamic ListTheoNgay(int ngay, int thang, int nam)
+        {
+            List<PHIEUKHAMBENH> phieus = db.PHIEUKHAMBENHs.Where(p => p.NgayKham.Day == ngay && p.NgayKham.Month == thang && p.NgayKham.Year == nam).ToList();
+
+            return phieus;
+        }
     }
 }
