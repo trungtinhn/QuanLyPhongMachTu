@@ -31,6 +31,10 @@ namespace QuanLyPhongMachTu
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            string DiaChi = txt_diachi.Text;
+            string SoDT = txt_SoDT.Text;
+            string hoTen = txt_Hoten.Text;
+            dtp_ngaysinh.CustomFormat = "dd/MM/yyyy";
             using (var context = new QLPMTEntities())
             {
                 var user = context.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == UserName);
@@ -39,36 +43,33 @@ namespace QuanLyPhongMachTu
                     // Xử lý lỗi: Không tìm thấy thông tin người dùng trong database
                     return;
                 }
-                string DiaChi = txt_diachi.Text;
-                string SoDT = txt_SoDT.Text;
-                string hoTen = txt_Hoten.Text;
-                
-                dtp_ngaysinh.CustomFormat = "dd/MM/yyyy";
-
-                if (!string.IsNullOrEmpty(hoTen))
+  
+                else
                 {
-                    user.TenNguoiDung = hoTen;
+                    if (!string.IsNullOrEmpty(hoTen))
+                    {
+                        user.TenNguoiDung = hoTen;
+                    }
+                    if (!string.IsNullOrEmpty(DiaChi))
+                    {
+                        user.DiaChi = DiaChi;
+                    }
+                    if (!string.IsNullOrEmpty(SoDT))
+                    {
+                        user.SoDT = SoDT;
+                    }
+                    if (dtp_ngaysinh.Value != null)
+                    {
+                        user.NgaySinh = dtp_ngaysinh.Value;
+                    }
                 }
-                if (!string.IsNullOrEmpty(DiaChi))
-                {
-                    user.DiaChi = DiaChi;
-                }
-                if (!string.IsNullOrEmpty(SoDT))
-                {
-                    user.SoDT = SoDT;
-                }
-                if (dtp_ngaysinh.Value != null)
-                {
-                    user.NgaySinh = dtp_ngaysinh.Value;
-                }
-
                 context.SaveChanges();
 
                 // Gọi sự kiện CapNhatThongTinKhachHangEvent để cập nhật lại thông tin người dùng ở form chính
                 MessageBox.Show("Cập nhật thông tin người dùng thành công!", "Thông báo");
-                this.Close();
+                
             }
-            
+            this.Close();
         }
 
     }

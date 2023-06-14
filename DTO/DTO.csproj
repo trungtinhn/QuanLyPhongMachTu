@@ -65,7 +65,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AVATAR.cs" />
     <Compile Include="BC_DOANHTHU.cs" />
     <Compile Include="BC_SUDUNGTHUOC.cs" />
     <Compile Include="BENH.cs" />

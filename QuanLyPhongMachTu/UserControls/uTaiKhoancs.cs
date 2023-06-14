@@ -68,7 +68,7 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 MessageBox.Show("OKE");
                 label1.Text = user.MaNguoiDung;
-                label2.Text = user.SoDT.ToString();
+                label2.Text = user.SoDT;
                 label3.Text = user.TenNguoiDung.ToString();
                 DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
 
@@ -78,7 +78,7 @@ namespace QuanLyPhongMachTu.UserControls
 
                 label4.Text = dy + " / " + mn + " / " + yy;
                 label5.Text = user.ChucVu;
-                label6.Text = user.DiaChi.ToString();
+                label6.Text = user.DiaChi;
 
                 lbl_Name.Text = user.TenNguoiDung;
                 lbl_Job.Text = user.ChucVu;

@@ -40,7 +40,6 @@ namespace DTO
         public virtual DbSet<LOAIBENH> LOAIBENHs { get; set; }
         public virtual DbSet<LOAITHUOC> LOAITHUOCs { get; set; }
         public virtual DbSet<NGUOIDUNG> NGUOIDUNGs { get; set; }
-        public virtual DbSet<AVATAR> AVATARs { get; set; }  
         public virtual DbSet<NHOMNGUOIDUNG> NHOMNGUOIDUNGs { get; set; }
         public virtual DbSet<PHIEUKHAMBENH> PHIEUKHAMBENHs { get; set; }
         public virtual DbSet<PHIEUNHAPTHUOC> PHIEUNHAPTHUOCs { get; set; }
