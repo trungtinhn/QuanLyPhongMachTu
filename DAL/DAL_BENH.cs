@@ -64,7 +64,7 @@ namespace DAL
         {
             try
             {
-                BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == benh.MaBenh);
+                BENH b = db.BENHs.FirstOrDefault(p => p.MaBenh == benh.MaBenh);
                 return true;
             }catch (Exception ex)
             {
@@ -74,7 +74,7 @@ namespace DAL
 
         public BENH LayBenh(string maBenh)
         {
-            BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == maBenh);
+            BENH b = db.BENHs.FirstOrDefault(p => p.MaBenh == maBenh);
             return b;
         }
         public BENH LayBenh(int maBenh)

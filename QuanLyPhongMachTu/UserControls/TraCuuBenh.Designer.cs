@@ -335,6 +335,7 @@
             this.btnXoaBenh.TabIndex = 87;
             this.btnXoaBenh.Text = "Xóa ";
             this.btnXoaBenh.UseVisualStyleBackColor = false;
+            this.btnXoaBenh.Click += new System.EventHandler(this.btnXoaBenh_Click);
             // 
             // btnKhongLuu
             // 

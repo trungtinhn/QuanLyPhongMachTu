@@ -8,7 +8,7 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL;
+using BLL;
 using DTO;
 using QuanLyPhongMachTu.UserControls;
 
@@ -36,7 +36,7 @@ namespace QuanLyPhongMachTu
             string username = txt_UserName.Text;
             string password = txt_Password.Text;
 
-            DAL_LOGIN account = new DAL_LOGIN();
+            BLL_LOGIN account = new BLL_LOGIN();
 
             bool isValid = account.Login(username, password);
             if (isValid)

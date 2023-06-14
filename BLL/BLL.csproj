@@ -77,6 +77,7 @@
     <Compile Include="BLL_LOGIN.cs" />
     <Compile Include="BLL_PHIEUKHAMBENH.cs" />
     <Compile Include="BLL_PHIEUNHAPTHUOC.cs" />
+    <Compile Include="BLL_THAMSO.cs" />
     <Compile Include="BLL_THUOC.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -63,7 +63,7 @@ namespace DAL
 
         public void CapNhatLoaiBenh(LOAIBENH loaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
             lb.TenLoaiBenh = loaiBenh.TenLoaiBenh;
 
             db.SaveChanges();
@@ -71,7 +71,7 @@ namespace DAL
 
         public void XoaLoaiBenh(LOAIBENH loaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(p => p.MaLoaiBenh == loaiBenh.MaLoaiBenh);
 
             var benhs = db.BENHs.Where(p => p.idMaLoaiBenh == lb.id);
 
@@ -86,7 +86,7 @@ namespace DAL
 
         public LOAIBENH LayThongTinLoaiBenh(string tenLoaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.TenLoaiBenh == tenLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(p => p.TenLoaiBenh == tenLoaiBenh);
             return lb;
         }
     }

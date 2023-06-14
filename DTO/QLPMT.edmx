@@ -202,6 +202,7 @@
           <Property Name="SoPhieuNhapThuoc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TongTien" Type="int" Nullable="false" />
           <Property Name="NgayNhap" Type="datetime" Nullable="false" />
+          <Property Name="TrangThai" Type="int" />
         </EntityType>
         <EntityType Name="THAMSO">
           <Key>
@@ -808,6 +809,7 @@
           <Property Name="TongTien" Type="Int32" Nullable="false" />
           <Property Name="NgayNhap" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="CT_PHIEUNHAP" Relationship="Self.FK__CT_PHIEUN__SoPhi__46E78A0C" FromRole="PHIEUNHAPTHUOC" ToRole="CT_PHIEUNHAP" />
+          <Property Name="TrangThai" Type="Int32" />
         </EntityType>
         <EntityType Name="THAMSO">
           <Key>
@@ -1381,6 +1383,7 @@
           <EntitySetMapping Name="PHIEUNHAPTHUOCs">
             <EntityTypeMapping TypeName="QLPMTModel.PHIEUNHAPTHUOC">
               <MappingFragment StoreEntitySet="PHIEUNHAPTHUOC">
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
                 <ScalarProperty Name="SoPhieuNhapThuoc" ColumnName="SoPhieuNhapThuoc" />
                 <ScalarProperty Name="TongTien" ColumnName="TongTien" />
                 <ScalarProperty Name="NgayNhap" ColumnName="NgayNhap" />

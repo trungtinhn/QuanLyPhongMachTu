@@ -567,6 +567,9 @@ namespace QuanLyPhongMachTu.UserControls
                 numSoLuong.Value = Int32.Parse(row.Cells[3].Value.ToString());
                 cboTenLoaiThuoc.Text = tenLoaiThuoc;
                 txtDonGiaThuoc.Text = thuoc.DonGia.ToString();
+                txtThanhtien.Text = (thuoc.DonGia * numSoLuong.Value).ToString();
+
+               // MessageBox.Show(row.Cells[3].Value.ToString());
             }
         }
 

@@ -11,16 +11,25 @@ namespace BLL
 {
     public class BLL_LOGIN
     {
-        private readonly DAL_LOGIN dalLogin;
+        private readonly NGUOIDUNG dalLogin;
 
         public BLL_LOGIN()
         {
-            dalLogin = new DAL_LOGIN();
+            dalLogin = new NGUOIDUNG();
         }
-
-        public bool Login(NGUOIDUNG account)
+        public bool Login(string username, string password)
         {
-            return dalLogin.Login(account.TenDangNhap, account.MatKhau);
+            using (QLPMTEntities dbContext = new QLPMTEntities())
+            {
+                return dbContext.NGUOIDUNGs.Any(a => a.TenDangNhap == username && a.MatKhau == password);
+            }
+        }
+        public bool Check(string username)
+        {
+            using (QLPMTEntities dbContext = new QLPMTEntities())
+            {
+                return dbContext.NGUOIDUNGs.Any(a => a.TenDangNhap == username);
+            }
         }
     }
 }

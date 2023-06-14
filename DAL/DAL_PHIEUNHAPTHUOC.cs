@@ -39,7 +39,12 @@ namespace DAL
             return result > 0;
         }
 
-
+        public void LuuPhieuNhapThuoc(PHIEUNHAPTHUOC pnt)
+        {
+            PHIEUNHAPTHUOC phieuNT = db.PHIEUNHAPTHUOCs.Find(pnt.SoPhieuNhapThuoc);
+            phieuNT.TrangThai = 1;
+            db.SaveChanges();
+        }
 
 
 

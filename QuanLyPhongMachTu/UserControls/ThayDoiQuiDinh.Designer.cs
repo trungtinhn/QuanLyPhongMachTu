@@ -34,7 +34,6 @@
             this.txt_Sobenhnhantoida = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Tienkham = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Dongy = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Huybo = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // lbl_Thaydoiquidinh
@@ -43,9 +42,10 @@
             this.lbl_Thaydoiquidinh.BackColor = System.Drawing.Color.Transparent;
             this.lbl_Thaydoiquidinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8806F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Thaydoiquidinh.ForeColor = System.Drawing.Color.Salmon;
-            this.lbl_Thaydoiquidinh.Location = new System.Drawing.Point(431, 177);
+            this.lbl_Thaydoiquidinh.Location = new System.Drawing.Point(323, 144);
+            this.lbl_Thaydoiquidinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbl_Thaydoiquidinh.Name = "lbl_Thaydoiquidinh";
-            this.lbl_Thaydoiquidinh.Size = new System.Drawing.Size(394, 49);
+            this.lbl_Thaydoiquidinh.Size = new System.Drawing.Size(296, 40);
             this.lbl_Thaydoiquidinh.TabIndex = 1;
             this.lbl_Thaydoiquidinh.Text = "THAY ĐỔI QUI ĐỊNH";
             // 
@@ -53,9 +53,10 @@
             // 
             this.lbl_Tienkham.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_Tienkham.IsDerivedStyle = true;
-            this.lbl_Tienkham.Location = new System.Drawing.Point(411, 361);
+            this.lbl_Tienkham.Location = new System.Drawing.Point(308, 293);
+            this.lbl_Tienkham.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Tienkham.Name = "lbl_Tienkham";
-            this.lbl_Tienkham.Size = new System.Drawing.Size(111, 23);
+            this.lbl_Tienkham.Size = new System.Drawing.Size(83, 19);
             this.lbl_Tienkham.Style = MetroSet_UI.Enums.Style.Light;
             this.lbl_Tienkham.StyleManager = null;
             this.lbl_Tienkham.TabIndex = 2;
@@ -67,9 +68,10 @@
             // 
             this.lbl_Sobenhnhantoida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_Sobenhnhantoida.IsDerivedStyle = true;
-            this.lbl_Sobenhnhantoida.Location = new System.Drawing.Point(411, 277);
+            this.lbl_Sobenhnhantoida.Location = new System.Drawing.Point(308, 225);
+            this.lbl_Sobenhnhantoida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Sobenhnhantoida.Name = "lbl_Sobenhnhantoida";
-            this.lbl_Sobenhnhantoida.Size = new System.Drawing.Size(196, 23);
+            this.lbl_Sobenhnhantoida.Size = new System.Drawing.Size(147, 19);
             this.lbl_Sobenhnhantoida.Style = MetroSet_UI.Enums.Style.Light;
             this.lbl_Sobenhnhantoida.StyleManager = null;
             this.lbl_Sobenhnhantoida.TabIndex = 3;
@@ -88,13 +90,13 @@
             this.txt_Sobenhnhantoida.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Sobenhnhantoida.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Sobenhnhantoida.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Sobenhnhantoida.Location = new System.Drawing.Point(628, 264);
-            this.txt_Sobenhnhantoida.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Sobenhnhantoida.Location = new System.Drawing.Point(471, 214);
+            this.txt_Sobenhnhantoida.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Sobenhnhantoida.Name = "txt_Sobenhnhantoida";
             this.txt_Sobenhnhantoida.PasswordChar = '\0';
             this.txt_Sobenhnhantoida.PlaceholderText = "";
             this.txt_Sobenhnhantoida.SelectedText = "";
-            this.txt_Sobenhnhantoida.Size = new System.Drawing.Size(257, 55);
+            this.txt_Sobenhnhantoida.Size = new System.Drawing.Size(193, 45);
             this.txt_Sobenhnhantoida.TabIndex = 4;
             // 
             // txt_Tienkham
@@ -108,13 +110,13 @@
             this.txt_Tienkham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Tienkham.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Tienkham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Tienkham.Location = new System.Drawing.Point(628, 344);
-            this.txt_Tienkham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Tienkham.Location = new System.Drawing.Point(471, 280);
+            this.txt_Tienkham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Tienkham.Name = "txt_Tienkham";
             this.txt_Tienkham.PasswordChar = '\0';
             this.txt_Tienkham.PlaceholderText = "";
             this.txt_Tienkham.SelectedText = "";
-            this.txt_Tienkham.Size = new System.Drawing.Size(257, 55);
+            this.txt_Tienkham.Size = new System.Drawing.Size(193, 45);
             this.txt_Tienkham.TabIndex = 5;
             // 
             // btn_Dongy
@@ -127,42 +129,29 @@
             this.btn_Dongy.FillColor = System.Drawing.Color.LightGray;
             this.btn_Dongy.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Dongy.ForeColor = System.Drawing.Color.Black;
-            this.btn_Dongy.Location = new System.Drawing.Point(628, 453);
+            this.btn_Dongy.Location = new System.Drawing.Point(590, 354);
+            this.btn_Dongy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_Dongy.Name = "btn_Dongy";
-            this.btn_Dongy.Size = new System.Drawing.Size(98, 45);
+            this.btn_Dongy.Size = new System.Drawing.Size(74, 37);
             this.btn_Dongy.TabIndex = 6;
             this.btn_Dongy.Text = "Đồng Ý";
-            // 
-            // btn_Huybo
-            // 
-            this.btn_Huybo.BorderThickness = 1;
-            this.btn_Huybo.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Huybo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Huybo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Huybo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Huybo.FillColor = System.Drawing.Color.LightGray;
-            this.btn_Huybo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_Huybo.ForeColor = System.Drawing.Color.Black;
-            this.btn_Huybo.Location = new System.Drawing.Point(778, 453);
-            this.btn_Huybo.Name = "btn_Huybo";
-            this.btn_Huybo.Size = new System.Drawing.Size(98, 45);
-            this.btn_Huybo.TabIndex = 7;
-            this.btn_Huybo.Text = "Hủy Bỏ";
+            this.btn_Dongy.Click += new System.EventHandler(this.btn_Dongy_Click);
             // 
             // ThayDoiQuiDinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.Controls.Add(this.btn_Huybo);
             this.Controls.Add(this.btn_Dongy);
             this.Controls.Add(this.txt_Tienkham);
             this.Controls.Add(this.txt_Sobenhnhantoida);
             this.Controls.Add(this.lbl_Sobenhnhantoida);
             this.Controls.Add(this.lbl_Tienkham);
             this.Controls.Add(this.lbl_Thaydoiquidinh);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ThayDoiQuiDinh";
-            this.Size = new System.Drawing.Size(1310, 721);
+            this.Size = new System.Drawing.Size(982, 586);
+            this.Load += new System.EventHandler(this.ThayDoiQuiDinh_Load);
             this.ResumeLayout(false);
 
         }
@@ -175,6 +164,5 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_Sobenhnhantoida;
         private Guna.UI2.WinForms.Guna2TextBox txt_Tienkham;
         private Guna.UI2.WinForms.Guna2Button btn_Dongy;
-        private Guna.UI2.WinForms.Guna2Button btn_Huybo;
     }
 }

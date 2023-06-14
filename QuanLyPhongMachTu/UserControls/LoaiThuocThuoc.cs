@@ -524,6 +524,18 @@ namespace QuanLyPhongMachTu.UserControls
         {
 
         }
+
+        private void btn_Khongluu_Loaithuoc_Click_1(object sender, EventArgs e)
+        {
+            txt_ID.Text = "";
+            txt_Maloaithuoc.Text = "";
+            txt_Tenloaithuoc.Text = "";
+        }
+
+        private void lbl_Huongdansudung_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

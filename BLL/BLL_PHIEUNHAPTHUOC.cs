@@ -57,5 +57,19 @@ namespace BLL
         {
             return dPhieuNhapThuoc.getTongtien(p);
         }
+
+
+        public bool LuuPhieuNhapThuoc(PHIEUNHAPTHUOC pnt)
+        {
+            try
+            {
+                dPhieuNhapThuoc.LuuPhieuNhapThuoc(pnt);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
