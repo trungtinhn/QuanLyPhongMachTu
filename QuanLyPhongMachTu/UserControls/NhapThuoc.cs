@@ -33,7 +33,7 @@ namespace QuanLyPhongMachTu.UserControls
         {
             LoadLoaiThuoc();
             LoadThuoc();
-            LoadPhieuNhap();
+        
             HienThiSoPhieuNhap();
             btnThem.Enabled = true;
             btn_Luu.Enabled = false;
@@ -52,11 +52,6 @@ namespace QuanLyPhongMachTu.UserControls
             cboTenThuocBox.DisplayMember = "TenThuoc";
         }
 
-        private void LoadPhieuNhap()
-        {
-            cbbPhieuNhap.DataSource = dPhieuNhapThuocBLL.GetData();
-            cbbPhieuNhap.DisplayMember = "SoPhieuNhapThuoc";
-        }
 
         private PHIEUNHAPTHUOC GetDataPhieu()
         {
@@ -70,7 +65,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         private CT_PHIEUNHAP GetDataChiTietPhieu()
         {
-            if (!string.IsNullOrEmpty(txt_SoPhieuNhapThuoc.Text) || !string.IsNullOrEmpty(txt_DonGia.Text))
+            if (!string.IsNullOrEmpty(txt_SoPhieuNhapThuoc.Text) || !string.IsNullOrEmpty(txt_DonGia.Text) || !string.IsNullOrEmpty(nup_SoLuongNhap.Value.ToString()))
             {
                 CT_PHIEUNHAP ct = new CT_PHIEUNHAP();
                 ct.SoPhieuNhapThuoc = int.Parse(txt_SoPhieuNhapThuoc.Text);
@@ -114,12 +109,16 @@ namespace QuanLyPhongMachTu.UserControls
         private void btnThem_Click(object sender, EventArgs e)
         {
             PHIEUNHAPTHUOC phieu = GetDataPhieu();
+            phieu.TrangThai = 0;
             dPhieuNhapThuocBLL.ThemPhieu(phieu);
+
 
             txt_SoPhieuNhapThuoc.Text = GetMaMax().ToString();
             btnThem.Enabled = false;
             btn_Luu.Enabled = true;
-            LoadPhieuNhap();
+
+            HienThiSoPhieuNhap();
+         
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
@@ -129,54 +128,45 @@ namespace QuanLyPhongMachTu.UserControls
             LoadDataGridViewThuoc();
         }
 
-        int vt = -1;
-        private void dgvThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            vt = e.RowIndex;
-            if (vt == -1)
-                return;
-            DataGridViewRow row = dgvThuoc.Rows[vt];
+      
+        //private void dgvThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    vt = e.RowIndex;
+        //    if (vt == -1)
+        //        return;
+        //    DataGridViewRow row = dgvThuoc.Rows[vt];
 
-            int idThuoc = int.Parse(row.Cells[0].Value.ToString());
-            THUOC thuoc = dThuocBLL.GetDataByMa(idThuoc);
-            foreach (LOAITHUOC loai in cboLoaiThuoc.Items)
-            {
-                if (loai.id == thuoc.idMaLoaiThuoc)
-                    cboLoaiThuoc.SelectedItem = loai;
-            }
-            foreach (THUOC item in cboTenThuocBox.Items)
-                if (item.id == thuoc.id)
-                    cboTenThuocBox.SelectedItem = item;
-            //cboLoaiThuoc.SelectedItem = thuoc.LOAITHUOC;
-            //cboTenThuocBox.SelectedItem = thuoc;
-            nup_SoLuongNhap.Value = int.Parse(row.Cells[2].Value.ToString());
-            txt_DonGia.Text = row.Cells[3].Value.ToString();
-        }
+        //    int idThuoc = int.Parse(row.Cells[0].Value.ToString());
+        //    THUOC thuoc = dThuocBLL.GetDataByMa(idThuoc);
+        //    foreach (LOAITHUOC loai in cboLoaiThuoc.Items)
+        //    {
+        //        if (loai.id == thuoc.idMaLoaiThuoc)
+        //            cboLoaiThuoc.SelectedItem = loai;
+        //    }
+        //    foreach (THUOC item in cboTenThuocBox.Items)
+        //        if (item.id == thuoc.id)
+        //            cboTenThuocBox.SelectedItem = item;
+        //    //cboLoaiThuoc.SelectedItem = thuoc.LOAITHUOC;
+        //    //cboTenThuocBox.SelectedItem = thuoc;
+        //    nup_SoLuongNhap.Value = int.Parse(row.Cells[2].Value.ToString());
+        //    txt_DonGia.Text = row.Cells[3].Value.ToString();
+        //}
 
         private void btn_CapNhatThuoc_Click(object sender, EventArgs e)
         {
-            if (vt == -1)
-                return;
+            //if (vt == -1)
+            //    return;
             CT_PHIEUNHAP ct = GetDataChiTietPhieu();
             dCTPNBLL.SuaChiTietPhieu(ct);
             LoadDataGridViewThuoc();
         }
 
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            int idPhieu = (cbbPhieuNhap.SelectedItem as PHIEUNHAPTHUOC).SoPhieuNhapThuoc;
-            PHIEUNHAPTHUOC phieu = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
-            txt_SoPhieuNhapThuoc.Text = idPhieu.ToString();
-            dtp_NgayLap.Text = phieu.NgayNhap.ToString("yyyy/MM/dd");
-            dgvThuoc.DataSource = dCTPNBLL.GetDataCTPhieuByMaPhieu(idPhieu);
-            btnThem.Enabled = false;
-            btn_Luu.Enabled = true;
-        }
+    
 
         private void btn_xoaThuoc_Click(object sender, EventArgs e)
         {
-            if (vt == -1)
-                return;
+            //if (vt == -1)
+            //    return;
             if (MessageBox.Show("Bạn có chắc muốn xóa loại mặt hàng này ra khỏi phiếu nhập?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 CT_PHIEUNHAP ct = GetDataChiTietPhieu();
@@ -189,17 +179,27 @@ namespace QuanLyPhongMachTu.UserControls
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc muốn xóa phiếu nhập?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
+            {  
                 PHIEUNHAPTHUOC phieu = GetDataPhieu();
                 dCTPNBLL.XoaAllChiTietPhieu(phieu.SoPhieuNhapThuoc);
-                dPhieuNhapThuocBLL.XoaPhieuNhap(phieu.SoPhieuNhapThuoc);
-                txt_SoPhieuNhapThuoc.Text = "";
-                nup_SoLuongNhap.Value = 0;
-                txt_DonGia.Text = "";
-                dgvThuoc.DataSource = "";
-                btnThem.Enabled = true;
-                btn_Luu.Enabled = false;
-                LoadPhieuNhap();
+                if (dPhieuNhapThuocBLL.XoaPhieuNhap(phieu.SoPhieuNhapThuoc))
+                {
+                    MessageBox.Show("Xóa phiếu nhập thuộc thành công!");
+                    HienThiSoPhieuNhap();
+                    txt_SoPhieuNhapThuoc.Text = "";
+                    nup_SoLuongNhap.Value = 0;
+                    txt_DonGia.Text = "";
+                    dgvThuoc.DataSource = "";
+                    btnThem.Enabled = true;
+                    btn_Luu.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Xóa phiếu nhập thuốc không thành công phiếu đang được sử dụng");
+                }
+               
+               
+         
             }
             HienThiSoPhieuNhap();
         }
@@ -233,13 +233,20 @@ namespace QuanLyPhongMachTu.UserControls
             dt.Columns.Add("Số Phiếu Nhập");
             dt.Columns.Add("Tổng tiền");
             dt.Columns.Add("Ngày Nhập");
+            dt.Columns.Add("Trạng thái");
+
+            dPhieuNhapThuocBLL = new BLL_PHIEUNHAPTHUOC();
 
             List<PHIEUNHAPTHUOC> tHUOCs = dPhieuNhapThuocBLL.GetData();
 
             foreach (PHIEUNHAPTHUOC t in tHUOCs)
             {
-                t.TongTien = (int)dPhieuNhapThuocBLL.TongTien(t.SoPhieuNhapThuoc);
-                dt.Rows.Add(t.SoPhieuNhapThuoc, t.TongTien, t.NgayNhap);
+                string trangThai = t.TrangThai == 1 ? "Đã hoàn thành" : "Chưa hoàn thành";
+                
+                    t.TongTien = (int)dPhieuNhapThuocBLL.TongTien(t.SoPhieuNhapThuoc);
+                    dt.Rows.Add(t.SoPhieuNhapThuoc, t.TongTien, t.NgayNhap, trangThai);
+                
+     
             }
 
             dgv_SoPhieuNhap.DataSource = dt;
@@ -258,21 +265,41 @@ namespace QuanLyPhongMachTu.UserControls
 
         }
 
-        //private void dgv_SoPhieuNhap_SelectionChanged(object sender, EventArgs e)
-        //{
-        //    if (dgv_SoPhieuNhap.SelectedRows.Count > 0 && txt_SoPhieuNhapThuoc.Text != null)
-        //    {
-        //        DataGridViewRow row = dgv_SoPhieuNhap.SelectedRows[0];
-        //        txt_SoPhieuNhapThuoc.Text = row.Cells[0].Value.ToString();
-        //        dtp_NgayLap.Value = Convert.ToDateTime(row.Cells[2].Value);
-        //        List<CT_PHIEUNHAP> s= PhieuNhapControllers.Instance.Getall(int.Parse(txt_SoPhieuNhapThuoc.Text));
+        private void dgv_SoPhieuNhap_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgv_SoPhieuNhap.SelectedRows.Count > 0 && txt_SoPhieuNhapThuoc.Text != null)
+            {
+                DataGridViewRow row = dgv_SoPhieuNhap.SelectedRows[0];
 
-        //        HienThiCTPhieuNhap(s);
-        //    }
-        //}
+                txt_SoPhieuNhapThuoc.Text = row.Cells[0].Value.ToString();
+                dtp_NgayLap.Value = Convert.ToDateTime(row.Cells[2].Value);
+                List<CT_PHIEUNHAP> s = dCTPNBLL.Getall(int.Parse(txt_SoPhieuNhapThuoc.Text));
+
+                int idPhieu = Int32.Parse(row.Cells[0].Value.ToString());
+
+                PHIEUNHAPTHUOC pnt = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
+
+                if(pnt.TrangThai == 1)
+                {
+                    btn_Luu.Enabled = false;
+                    btn_xoaThuoc.Enabled = false;
+                    btn_CapNhatThuoc.Enabled = false;
+                }else
+                {
+                    btn_Luu.Enabled = true;
+                    btn_xoaThuoc.Enabled = true;
+                    btn_CapNhatThuoc.Enabled = true;
+                }
+
+                dgvThuoc.DataSource = dCTPNBLL.GetDataCTPhieuByMaPhieu(idPhieu);
+
+                HienThiCTPhieuNhap(s);
+            }
+        }
         public void HienThiCTPhieuNhap(List<CT_PHIEUNHAP> ct)
         {
-            btn_Luu.Enabled = true;
+
+
             DataTable dt = new DataTable();
             dt.Columns.Add("Mã loại thuốc");
             dt.Columns.Add("Tên Thuốc");
@@ -281,6 +308,7 @@ namespace QuanLyPhongMachTu.UserControls
             dt.Columns.Add("Thành tiền");
             foreach (CT_PHIEUNHAP s in ct)
             {
+
                 THUOC lt = dThuocBLL.GetTenById(s.idMaThuoc);
                 dt.Rows.Add(s.idMaThuoc, lt.TenThuoc, s.SoLuongNhap, s.DonGiaNhap, s.ThanhTien);
             }
@@ -321,22 +349,53 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idPhieu = (cbbPhieuNhap.SelectedItem as PHIEUNHAPTHUOC).SoPhieuNhapThuoc;
-            PHIEUNHAPTHUOC phieu = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
-            if (phieu != null)
+            if(dgv_SoPhieuNhap.SelectedRows.Count > 0)
             {
-                int t = phieu.TongTien;
-                lbb_TONGTIEN.Text = t.ToString() + "VND";
-                List<CT_PHIEUNHAP> ct = dCTPNBLL.GetCTByMa(phieu.SoPhieuNhapThuoc);
-                foreach (CT_PHIEUNHAP s in ct)
+
+                DataGridViewRow row = dgv_SoPhieuNhap.SelectedRows[0];
+                int idPhieu = Int32.Parse(row.Cells[0].Value.ToString());
+                PHIEUNHAPTHUOC phieu = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
+                if (phieu != null)
                 {
-                    THUOC thuoc = dThuocBLL.GetThuocbyMa(s.idMaThuoc);
-                    thuoc.SoLuongTon = thuoc.SoLuongTon + s.SoLuongNhap;
-                    dThuocBLL.Luu(thuoc);
+                    int t = phieu.TongTien;
+                    lbb_TONGTIEN.Text = t.ToString() + "VND";
+                    List<CT_PHIEUNHAP> ct = dCTPNBLL.GetCTByMa(phieu.SoPhieuNhapThuoc);
+                    foreach (CT_PHIEUNHAP s in ct)
+                    {
+                        THUOC thuoc = dThuocBLL.GetThuocbyMa(s.idMaThuoc);
+                        thuoc.SoLuongTon = thuoc.SoLuongTon + s.SoLuongNhap;
+                        dThuocBLL.Luu(thuoc);
+                    }
+
+                    dPhieuNhapThuocBLL.LuuPhieuNhapThuoc(phieu);
+
+                    MessageBox.Show("Hoàn tất Phiếu Nhập Thuốc. Tổng tiền phải trả là " + t.ToString()+" !!!Dữ Liệu đã được cập nhật!!!");
                 }
-                MessageBox.Show("Hoàn tất Phiếu Nhập Thuốc. Tổng tiền phải trả là " + t.ToString()+" !!!Dữ Liệu đã được cập nhật!!!");
+                else return;
             }
-            else return;
+           
+
+            HienThiSoPhieuNhap();
+
+        }
+
+        private void lbb_TONGTIEN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboTenThuocBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_DonGiaNhap_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_DonGia_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

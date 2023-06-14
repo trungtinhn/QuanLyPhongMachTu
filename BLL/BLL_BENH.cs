@@ -81,5 +81,10 @@ namespace BLL
             return dBenhDAL.LayBenh(idBenh);
         }
 
+        public dynamic LocBenh(string kieuLoc, string giaTri)
+        {
+            return dBenhDAL.LocBenh(kieuLoc, giaTri);
+        }
+
     }
 }

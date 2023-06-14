@@ -245,7 +245,7 @@ namespace QuanLyPhongMachTu.UserControls
                 return;
             }
             DONVI cd = new DONVI();
-            if (bDonVi.Check(txt_Tencachdung.Text) == true)
+            if (bDonVi.Check(txt_TenDonVi.Text) == true)
             {
                 DialogResult result = MessageBox.Show("Tên đơn vị đã tồn tại. Bạn có chắc chắn muốn thêm không?", "Xác nhận xóa dữ liệu", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)

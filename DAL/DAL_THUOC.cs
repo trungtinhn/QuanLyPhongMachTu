@@ -10,9 +10,11 @@ namespace DAL
     public class DAL_THUOC
     {
         QLPMTEntities db;
+        DAL_THAMSO dThamSoDAL;
         public DAL_THUOC()
         {
             db = new QLPMTEntities();
+            dThamSoDAL = new DAL_THAMSO();
         }
         public dynamic LayDanhSach()
         {
@@ -146,7 +148,8 @@ namespace DAL
 
         public List<THUOC> getThuocSapHet()
         {
-            return db.THUOCs.Where(s => s.SoLuongTon < 10).ToList();
+            THAMSO thamso = dThamSoDAL.LayThamSo(1);
+            return db.THUOCs.Where(s => s.SoLuongTon <= thamso.SoLuongSapHet).ToList();
         }
 
         public bool CapNhatSoLuongTon(int idThuoc, int soLuongCapNhat) 
@@ -175,5 +178,10 @@ namespace DAL
         {
             return db.THUOCs.Find(idMaThuoc);
         }
+
+        //public dynamic LocThuoc(string giaTriTenThuoc)
+        //{
+        //    return db.THUOCs.Where(p => p.TenThuoc.Contains(giaTriTenThuoc)).ToList();
+        //}
     }
 }

@@ -10,9 +10,11 @@ namespace DAL
     public class DAL_BENH
     {
         QLPMTEntities db;
+   
         public DAL_BENH()
         {
             db = new QLPMTEntities();
+           
         }
 
         public dynamic LayThongTinBenh()
@@ -64,7 +66,7 @@ namespace DAL
         {
             try
             {
-                BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == benh.MaBenh);
+                BENH b = db.BENHs.FirstOrDefault(p => p.MaBenh == benh.MaBenh);
                 return true;
             }catch (Exception ex)
             {
@@ -74,7 +76,7 @@ namespace DAL
 
         public BENH LayBenh(string maBenh)
         {
-            BENH b = db.BENHs.SingleOrDefault(p => p.MaBenh == maBenh);
+            BENH b = db.BENHs.FirstOrDefault(p => p.MaBenh == maBenh);
             return b;
         }
         public BENH LayBenh(int maBenh)
@@ -85,14 +87,27 @@ namespace DAL
 
         public dynamic LocBenh(string kieuLoc, string giaTri)
         {
+
             List<BENH> benhs = new List<BENH>();
-            if (kieuLoc == "Mã bênh")
+
+            if (kieuLoc == "Tất cả")
+            {
+                benhs = db.BENHs.ToList();
+            }
+            if (kieuLoc == "Mã bệnh")
             {
                 benhs = db.BENHs.Where(p => p.MaBenh.Contains(giaTri)).ToList();
-            }else if(kieuLoc == "Tên bệnh")
+            }
+            else if(kieuLoc == "Tên bệnh")
             {
                 benhs = db.BENHs.Where(p => p.TenBenh.Contains(giaTri)).ToList();
             }
+
+            else if (kieuLoc == "Triệu chứng")
+            {
+                benhs = db.BENHs.Where(p => p.TrieuChung.Contains(giaTri)).ToList();
+            }
+
             return benhs;
         }
 

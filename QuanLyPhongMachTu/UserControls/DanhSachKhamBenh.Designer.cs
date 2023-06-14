@@ -60,10 +60,10 @@
             this.gxb_Dangky = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cboTraCuu = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTraCuu = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.txtSoBNtiepnhan = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dtimeTraCuu = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtTraCuu = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinBN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDon)).BeginInit();
             this.gbx_Thongtinbenhnhan.SuspendLayout();
@@ -450,25 +450,6 @@
             this.cboTraCuu.TabIndex = 108;
             this.cboTraCuu.SelectedIndexChanged += new System.EventHandler(this.cboTraCuu_SelectedIndexChanged);
             // 
-            // txtTraCuu
-            // 
-            this.txtTraCuu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTraCuu.DefaultText = "";
-            this.txtTraCuu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTraCuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTraCuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTraCuu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTraCuu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTraCuu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTraCuu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTraCuu.Location = new System.Drawing.Point(88, 426);
-            this.txtTraCuu.Name = "txtTraCuu";
-            this.txtTraCuu.PasswordChar = '\0';
-            this.txtTraCuu.PlaceholderText = "";
-            this.txtTraCuu.SelectedText = "";
-            this.txtTraCuu.Size = new System.Drawing.Size(200, 36);
-            this.txtTraCuu.TabIndex = 109;
-            // 
             // btnTraCuu
             // 
             this.btnTraCuu.BackColor = System.Drawing.Color.LightGray;
@@ -504,6 +485,25 @@
             this.dtimeTraCuu.TabIndex = 111;
             this.dtimeTraCuu.Value = new System.DateTime(2023, 6, 14, 6, 11, 29, 784);
             this.dtimeTraCuu.Visible = false;
+            // 
+            // txtTraCuu
+            // 
+            this.txtTraCuu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTraCuu.DefaultText = "";
+            this.txtTraCuu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTraCuu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTraCuu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTraCuu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuu.Location = new System.Drawing.Point(88, 426);
+            this.txtTraCuu.Name = "txtTraCuu";
+            this.txtTraCuu.PasswordChar = '\0';
+            this.txtTraCuu.PlaceholderText = "";
+            this.txtTraCuu.SelectedText = "";
+            this.txtTraCuu.Size = new System.Drawing.Size(200, 36);
+            this.txtTraCuu.TabIndex = 109;
             // 
             // DanhSachKhamBenh
             // 
@@ -576,7 +576,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cboTraCuu;
         private Guna.UI2.WinForms.Guna2TextBox txtTraCuu;
         private System.Windows.Forms.Button btnTraCuu;
-        private Guna.UI2.WinForms.Guna2HtmlLabel txtSoBNtiepnhan;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtimeTraCuu;
+        private Guna.UI2.WinForms.Guna2HtmlLabel txtSoBNtiepnhan;
     }
 }

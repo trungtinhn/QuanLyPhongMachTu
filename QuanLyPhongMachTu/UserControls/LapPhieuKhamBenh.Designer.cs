@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LapPhieuKhamBenh));
             this.dgvKB = new System.Windows.Forms.DataGridView();
             this.dgvThuoc = new System.Windows.Forms.DataGridView();
@@ -44,8 +44,6 @@
             this.Title = new System.Windows.Forms.Label();
             this.dtbNgayKB = new System.Windows.Forms.DateTimePicker();
             this.dgvDangKy = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtSoBNcho = new System.Windows.Forms.TextBox();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnLuuPKB = new System.Windows.Forms.Button();
             this.btnHuyPKB = new System.Windows.Forms.Button();
@@ -71,7 +69,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtLoc = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboLoc = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnTraCuu = new System.Windows.Forms.Button();
             this.chkChuaLuu = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -81,6 +78,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtimeEnd = new System.Windows.Forms.DateTimePicker();
             this.dtimeStart = new System.Windows.Forms.DateTimePicker();
+            this.txtLoc = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThuoc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDangKy)).BeginInit();
@@ -95,14 +93,14 @@
             // 
             this.dgvKB.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKB.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKB.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvKB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKB.Location = new System.Drawing.Point(36, 427);
             this.dgvKB.Margin = new System.Windows.Forms.Padding(2);
@@ -269,27 +267,6 @@
             this.dgvDangKy.Size = new System.Drawing.Size(226, 687);
             this.dgvDangKy.TabIndex = 100;
             this.dgvDangKy.SelectionChanged += new System.EventHandler(this.dgvDangKy_SelectionChanged);
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.139131F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(963, 14);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 33);
-            this.label13.TabIndex = 104;
-            this.label13.Text = "Số bệnh nhân đang chờ";
-            // 
-            // txtSoBNcho
-            // 
-            this.txtSoBNcho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtSoBNcho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtSoBNcho.Location = new System.Drawing.Point(1072, 14);
-            this.txtSoBNcho.Margin = new System.Windows.Forms.Padding(1);
-            this.txtSoBNcho.Multiline = true;
-            this.txtSoBNcho.Name = "txtSoBNcho";
-            this.txtSoBNcho.Size = new System.Drawing.Size(117, 34);
-            this.txtSoBNcho.TabIndex = 105;
             // 
             // btnCapNhat
             // 
@@ -607,26 +584,6 @@
             this.label16.Text = "DANH SÁCH ĐĂNG KÝ";
             this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtLoc
-            // 
-            this.txtLoc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLoc.DefaultText = "";
-            this.txtLoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtLoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLoc.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtLoc.IconLeft")));
-            this.txtLoc.Location = new System.Drawing.Point(36, 377);
-            this.txtLoc.Name = "txtLoc";
-            this.txtLoc.PasswordChar = '\0';
-            this.txtLoc.PlaceholderText = "";
-            this.txtLoc.SelectedText = "";
-            this.txtLoc.Size = new System.Drawing.Size(258, 36);
-            this.txtLoc.TabIndex = 112;
-            // 
             // cboLoc
             // 
             this.cboLoc.BackColor = System.Drawing.Color.Transparent;
@@ -753,6 +710,26 @@
             this.dtimeStart.Size = new System.Drawing.Size(108, 22);
             this.dtimeStart.TabIndex = 0;
             // 
+            // txtLoc
+            // 
+            this.txtLoc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLoc.DefaultText = "";
+            this.txtLoc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLoc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLoc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLoc.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtLoc.IconLeft")));
+            this.txtLoc.Location = new System.Drawing.Point(36, 377);
+            this.txtLoc.Name = "txtLoc";
+            this.txtLoc.PasswordChar = '\0';
+            this.txtLoc.PlaceholderText = "";
+            this.txtLoc.SelectedText = "";
+            this.txtLoc.Size = new System.Drawing.Size(258, 36);
+            this.txtLoc.TabIndex = 112;
+            // 
             // LapPhieuKhamBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -766,8 +743,6 @@
             this.Controls.Add(this.btnTraCuu);
             this.Controls.Add(this.gxb_Phieukhambenh);
             this.Controls.Add(this.btnCapNhat);
-            this.Controls.Add(this.txtSoBNcho);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.dgvDangKy);
             this.Controls.Add(this.dgvKB);
             this.Controls.Add(this.dataGridView1);
@@ -812,8 +787,6 @@
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.DateTimePicker dtbNgayKB;
         private System.Windows.Forms.DataGridView dgvDangKy;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtSoBNcho;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnLuuPKB;
         private System.Windows.Forms.Button btnHuyPKB;

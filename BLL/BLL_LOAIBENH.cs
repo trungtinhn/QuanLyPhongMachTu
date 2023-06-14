@@ -18,9 +18,9 @@ namespace BLL
             dLoaiBenhDAL = new DAL_LOAIBENH();
         }
 
-        public dynamic LayDanhSachLoaiBenh()
+        public dynamic LayDanhSachLoaiBenh(string kieuLoc, string giaTri)
         {
-            return dLoaiBenhDAL.LayDanhSachLoaiBenh();
+            return dLoaiBenhDAL.LayDanhSachLoaiBenh(kieuLoc, giaTri);
            
         }
         public string LayTenLoaiBenh(int maBenh)

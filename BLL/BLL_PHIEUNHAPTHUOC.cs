@@ -46,7 +46,13 @@ namespace BLL
 
         public bool XoaPhieuNhap(int soPhieu)
         {
-            return dPhieuNhapThuoc.XoaPhieuNhap(soPhieu);
+            try
+            {
+                dPhieuNhapThuoc.XoaPhieuNhap(soPhieu);
+                return true;
+            }
+            catch { return false; }
+           
         }
         public int TongTien(int i)
         {
@@ -56,6 +62,20 @@ namespace BLL
         public int getTongtien(PHIEUNHAPTHUOC p)
         {
             return dPhieuNhapThuoc.getTongtien(p);
+        }
+
+
+        public bool LuuPhieuNhapThuoc(PHIEUNHAPTHUOC pnt)
+        {
+            try
+            {
+                dPhieuNhapThuoc.LuuPhieuNhapThuoc(pnt);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

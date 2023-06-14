@@ -69,7 +69,7 @@ namespace QuanLyPhongMachTu.UserControls
         public bool KiemTraNhapLieu2()
         {
             if (string.IsNullOrWhiteSpace(txt_Tenthuoc.Text) || string.IsNullOrWhiteSpace(txt_congdung.Text) ||
-                string.IsNullOrWhiteSpace(txt_Huongdansudung.Text))
+                string.IsNullOrWhiteSpace(txt_Huongdansudung.Text) || Int32.Parse(txt_dongia.Text) <= 0)
             {
                 return false; // Không đủ thông tin, trả về false
             }
@@ -521,6 +521,18 @@ namespace QuanLyPhongMachTu.UserControls
         }
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Khongluu_Loaithuoc_Click_1(object sender, EventArgs e)
+        {
+            txt_ID.Text = "";
+            txt_Maloaithuoc.Text = "";
+            txt_Tenloaithuoc.Text = "";
+        }
+
+        private void lbl_Huongdansudung_Click(object sender, EventArgs e)
         {
 
         }

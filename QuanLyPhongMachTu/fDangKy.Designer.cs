@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_Chucvu = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.txt_xnmk = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.dtp_ngaysinh = new Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker();
             this.txt_mk = new MetroSet_UI.Controls.MetroSetTextBox();
             this.txt_tendangnhap = new MetroSet_UI.Controls.MetroSetTextBox();
@@ -45,9 +48,6 @@
             this.txt_Hoten = new MetroSet_UI.Controls.MetroSetTextBox();
             this.lbl_HoTen = new System.Windows.Forms.Label();
             this.lb_DangKy = new System.Windows.Forms.Label();
-            this.txt_xnmk = new MetroSet_UI.Controls.MetroSetTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_Chucvu = new MetroSet_UI.Controls.MetroSetTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,6 +78,77 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(434, 596);
             this.panel1.TabIndex = 1;
+            // 
+            // txt_Chucvu
+            // 
+            this.txt_Chucvu.AutoCompleteCustomSource = null;
+            this.txt_Chucvu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_Chucvu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_Chucvu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_Chucvu.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_Chucvu.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_Chucvu.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.txt_Chucvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txt_Chucvu.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.txt_Chucvu.Image = null;
+            this.txt_Chucvu.IsDerivedStyle = true;
+            this.txt_Chucvu.Lines = null;
+            this.txt_Chucvu.Location = new System.Drawing.Point(214, 185);
+            this.txt_Chucvu.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Chucvu.MaxLength = 32767;
+            this.txt_Chucvu.Multiline = false;
+            this.txt_Chucvu.Name = "txt_Chucvu";
+            this.txt_Chucvu.ReadOnly = false;
+            this.txt_Chucvu.Size = new System.Drawing.Size(139, 35);
+            this.txt_Chucvu.Style = MetroSet_UI.Enums.Style.Light;
+            this.txt_Chucvu.StyleManager = null;
+            this.txt_Chucvu.TabIndex = 96;
+            this.txt_Chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_Chucvu.ThemeAuthor = "Narwin";
+            this.txt_Chucvu.ThemeName = "MetroLite";
+            this.txt_Chucvu.UseSystemPasswordChar = false;
+            this.txt_Chucvu.WatermarkText = "";
+            // 
+            // txt_xnmk
+            // 
+            this.txt_xnmk.AutoCompleteCustomSource = null;
+            this.txt_xnmk.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_xnmk.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_xnmk.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_xnmk.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_xnmk.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_xnmk.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.txt_xnmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txt_xnmk.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.txt_xnmk.Image = null;
+            this.txt_xnmk.IsDerivedStyle = true;
+            this.txt_xnmk.Lines = null;
+            this.txt_xnmk.Location = new System.Drawing.Point(220, 492);
+            this.txt_xnmk.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_xnmk.MaxLength = 32767;
+            this.txt_xnmk.Multiline = false;
+            this.txt_xnmk.Name = "txt_xnmk";
+            this.txt_xnmk.ReadOnly = false;
+            this.txt_xnmk.Size = new System.Drawing.Size(134, 35);
+            this.txt_xnmk.Style = MetroSet_UI.Enums.Style.Light;
+            this.txt_xnmk.StyleManager = null;
+            this.txt_xnmk.TabIndex = 95;
+            this.txt_xnmk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_xnmk.ThemeAuthor = "Narwin";
+            this.txt_xnmk.ThemeName = "MetroLite";
+            this.txt_xnmk.UseSystemPasswordChar = false;
+            this.txt_xnmk.WatermarkText = "";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(222, 468);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 94;
+            this.label2.Text = "Loại Người Dùng";
             // 
             // dtp_ngaysinh
             // 
@@ -183,9 +254,9 @@
             this.Email.Location = new System.Drawing.Point(45, 303);
             this.Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(37, 13);
+            this.Email.Size = new System.Drawing.Size(83, 13);
             this.Email.TabIndex = 85;
-            this.Email.Text = "Email";
+            this.Email.Text = "Số điện thoại";
             // 
             // txt_email
             // 
@@ -355,77 +426,6 @@
             this.lb_DangKy.Size = new System.Drawing.Size(219, 24);
             this.lb_DangKy.TabIndex = 0;
             this.lb_DangKy.Text = "ĐĂNG KÝ NHÂN VIÊN";
-            // 
-            // txt_xnmk
-            // 
-            this.txt_xnmk.AutoCompleteCustomSource = null;
-            this.txt_xnmk.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_xnmk.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_xnmk.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.txt_xnmk.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txt_xnmk.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.txt_xnmk.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.txt_xnmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_xnmk.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.txt_xnmk.Image = null;
-            this.txt_xnmk.IsDerivedStyle = true;
-            this.txt_xnmk.Lines = null;
-            this.txt_xnmk.Location = new System.Drawing.Point(220, 492);
-            this.txt_xnmk.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_xnmk.MaxLength = 32767;
-            this.txt_xnmk.Multiline = false;
-            this.txt_xnmk.Name = "txt_xnmk";
-            this.txt_xnmk.ReadOnly = false;
-            this.txt_xnmk.Size = new System.Drawing.Size(134, 35);
-            this.txt_xnmk.Style = MetroSet_UI.Enums.Style.Light;
-            this.txt_xnmk.StyleManager = null;
-            this.txt_xnmk.TabIndex = 95;
-            this.txt_xnmk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_xnmk.ThemeAuthor = "Narwin";
-            this.txt_xnmk.ThemeName = "MetroLite";
-            this.txt_xnmk.UseSystemPasswordChar = false;
-            this.txt_xnmk.WatermarkText = "";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(222, 468);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 13);
-            this.label2.TabIndex = 94;
-            this.label2.Text = "Loại Người Dùng";
-            // 
-            // txt_Chucvu
-            // 
-            this.txt_Chucvu.AutoCompleteCustomSource = null;
-            this.txt_Chucvu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txt_Chucvu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txt_Chucvu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.txt_Chucvu.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txt_Chucvu.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.txt_Chucvu.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.txt_Chucvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txt_Chucvu.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.txt_Chucvu.Image = null;
-            this.txt_Chucvu.IsDerivedStyle = true;
-            this.txt_Chucvu.Lines = null;
-            this.txt_Chucvu.Location = new System.Drawing.Point(214, 185);
-            this.txt_Chucvu.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Chucvu.MaxLength = 32767;
-            this.txt_Chucvu.Multiline = false;
-            this.txt_Chucvu.Name = "txt_Chucvu";
-            this.txt_Chucvu.ReadOnly = false;
-            this.txt_Chucvu.Size = new System.Drawing.Size(139, 35);
-            this.txt_Chucvu.Style = MetroSet_UI.Enums.Style.Light;
-            this.txt_Chucvu.StyleManager = null;
-            this.txt_Chucvu.TabIndex = 96;
-            this.txt_Chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txt_Chucvu.ThemeAuthor = "Narwin";
-            this.txt_Chucvu.ThemeName = "MetroLite";
-            this.txt_Chucvu.UseSystemPasswordChar = false;
-            this.txt_Chucvu.WatermarkText = "";
             // 
             // fDangKy
             // 

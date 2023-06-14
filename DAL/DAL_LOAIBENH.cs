@@ -19,22 +19,37 @@ namespace DAL
             dBenhDAL = new DAL_BENH();  
         }
 
-        public dynamic LayDanhSachLoaiBenh()
+        public dynamic LayDanhSachLoaiBenh(string kieuLoc, string giaTri)
         {
-            var ds = db.LOAIBENHs.Select(s => new
-            {
-                s.id
-            }).ToList();
 
-            List<LOAIBENH> dsLoaiBenh = new List<LOAIBENH>();
+            List<LOAIBENH> danhSach = new List<LOAIBENH>();
 
-            foreach (var s in ds)
+            if (kieuLoc == "Tất cả")
             {
-                LOAIBENH lb = db.LOAIBENHs.Find(s.id);
-                dsLoaiBenh.Add(lb);
+                danhSach = db.LOAIBENHs.ToList();
+            }else if(kieuLoc == "Mã loại bệnh")
+            {
+                danhSach = db.LOAIBENHs.Where(p => p.MaLoaiBenh.Contains(giaTri)).ToList();
+            }else if (kieuLoc == "Tên loại bệnh")
+            {
+                danhSach = db.LOAIBENHs.Where(p => p.TenLoaiBenh.Contains(giaTri)).ToList();
             }
 
-            return dsLoaiBenh;
+
+            //var ds = db.LOAIBENHs.Select(s => new
+            //{
+            //    s.id
+            //}).ToList();
+
+            //List<LOAIBENH> dsLoaiBenh = new List<LOAIBENH>();
+
+            //foreach (var s in ds)
+            //{
+            //    LOAIBENH lb = db.LOAIBENHs.Find(s.id);
+            //    dsLoaiBenh.Add(lb);
+            //}
+
+            return danhSach;
         }
 
         public string LayTenLoaiBenh(int maBenh)
@@ -63,7 +78,7 @@ namespace DAL
 
         public void CapNhatLoaiBenh(LOAIBENH loaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(b => b.MaLoaiBenh == loaiBenh.MaLoaiBenh);
             lb.TenLoaiBenh = loaiBenh.TenLoaiBenh;
 
             db.SaveChanges();
@@ -71,7 +86,7 @@ namespace DAL
 
         public void XoaLoaiBenh(LOAIBENH loaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.MaLoaiBenh == loaiBenh.MaLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(p => p.MaLoaiBenh == loaiBenh.MaLoaiBenh);
 
             var benhs = db.BENHs.Where(p => p.idMaLoaiBenh == lb.id);
 
@@ -86,7 +101,7 @@ namespace DAL
 
         public LOAIBENH LayThongTinLoaiBenh(string tenLoaiBenh)
         {
-            LOAIBENH lb = db.LOAIBENHs.SingleOrDefault(p => p.TenLoaiBenh == tenLoaiBenh);
+            LOAIBENH lb = db.LOAIBENHs.FirstOrDefault(p => p.TenLoaiBenh == tenLoaiBenh);
             return lb;
         }
     }

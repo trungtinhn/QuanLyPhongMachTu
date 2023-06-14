@@ -202,6 +202,7 @@
           <Property Name="SoPhieuNhapThuoc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TongTien" Type="int" Nullable="false" />
           <Property Name="NgayNhap" Type="datetime" Nullable="false" />
+          <Property Name="TrangThai" Type="int" />
         </EntityType>
         <EntityType Name="THAMSO">
           <Key>
@@ -210,6 +211,7 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SoBenhNhanToiDa" Type="int" Nullable="false" />
           <Property Name="TienKham" Type="int" Nullable="false" />
+          <Property Name="SoLuongSapHet" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="THUOC">
           <Key>
@@ -808,6 +810,7 @@
           <Property Name="TongTien" Type="Int32" Nullable="false" />
           <Property Name="NgayNhap" Type="DateTime" Nullable="false" Precision="3" />
           <NavigationProperty Name="CT_PHIEUNHAP" Relationship="Self.FK__CT_PHIEUN__SoPhi__46E78A0C" FromRole="PHIEUNHAPTHUOC" ToRole="CT_PHIEUNHAP" />
+          <Property Name="TrangThai" Type="Int32" />
         </EntityType>
         <EntityType Name="THAMSO">
           <Key>
@@ -816,6 +819,7 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SoBenhNhanToiDa" Type="Int32" Nullable="false" />
           <Property Name="TienKham" Type="Int32" Nullable="false" />
+          <Property Name="SoLuongSapHet" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="THUOC">
           <Key>
@@ -1381,6 +1385,7 @@
           <EntitySetMapping Name="PHIEUNHAPTHUOCs">
             <EntityTypeMapping TypeName="QLPMTModel.PHIEUNHAPTHUOC">
               <MappingFragment StoreEntitySet="PHIEUNHAPTHUOC">
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
                 <ScalarProperty Name="SoPhieuNhapThuoc" ColumnName="SoPhieuNhapThuoc" />
                 <ScalarProperty Name="TongTien" ColumnName="TongTien" />
                 <ScalarProperty Name="NgayNhap" ColumnName="NgayNhap" />
@@ -1390,6 +1395,7 @@
           <EntitySetMapping Name="THAMSOes">
             <EntityTypeMapping TypeName="QLPMTModel.THAMSO">
               <MappingFragment StoreEntitySet="THAMSO">
+                <ScalarProperty Name="SoLuongSapHet" ColumnName="SoLuongSapHet" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="SoBenhNhanToiDa" ColumnName="SoBenhNhanToiDa" />
                 <ScalarProperty Name="TienKham" ColumnName="TienKham" />

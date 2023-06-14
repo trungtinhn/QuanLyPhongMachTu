@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TraCuuBenh));
             this.dgvLoaiBenh = new System.Windows.Forms.DataGridView();
-            this.btnTraCuuLoaiBenh = new System.Windows.Forms.Button();
             this.txtMaLoaiBenh = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,7 +48,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dgvBenh = new System.Windows.Forms.DataGridView();
-            this.btnTraCuuBenh = new System.Windows.Forms.Button();
             this.btnCapNhatBenh = new System.Windows.Forms.Button();
             this.btnXoaBenh = new System.Windows.Forms.Button();
             this.btnKhongLuu = new System.Windows.Forms.Button();
@@ -60,6 +59,12 @@
             this.cboTenLoaiBenh = new System.Windows.Forms.ComboBox();
             this.cboTenTHuoc = new System.Windows.Forms.ComboBox();
             this.cboTenLoaiThuoc = new System.Windows.Forms.ComboBox();
+            this.txtTraCuuLoaiBenh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cboTraCuuLoaiBenh = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnTraCuuLoaiBenh = new System.Windows.Forms.Button();
+            this.btnTraCuuBenh = new System.Windows.Forms.Button();
+            this.txtTraCuuBenh = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cboTraCuuBenh = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLoaiBenh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBenh)).BeginInit();
             this.gxb_Thongtinloaibenh.SuspendLayout();
@@ -83,17 +88,6 @@
             this.dgvLoaiBenh.Size = new System.Drawing.Size(913, 236);
             this.dgvLoaiBenh.TabIndex = 68;
             this.dgvLoaiBenh.SelectionChanged += new System.EventHandler(this.dgvLoaiBenh_SelectionChanged);
-            // 
-            // btnTraCuuLoaiBenh
-            // 
-            this.btnTraCuuLoaiBenh.BackColor = System.Drawing.Color.LightGray;
-            this.btnTraCuuLoaiBenh.Location = new System.Drawing.Point(1258, 83);
-            this.btnTraCuuLoaiBenh.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTraCuuLoaiBenh.Name = "btnTraCuuLoaiBenh";
-            this.btnTraCuuLoaiBenh.Size = new System.Drawing.Size(83, 30);
-            this.btnTraCuuLoaiBenh.TabIndex = 67;
-            this.btnTraCuuLoaiBenh.Text = "Tra cứu";
-            this.btnTraCuuLoaiBenh.UseVisualStyleBackColor = false;
             // 
             // txtMaLoaiBenh
             // 
@@ -298,19 +292,6 @@
             this.dgvBenh.TabIndex = 84;
             this.dgvBenh.SelectionChanged += new System.EventHandler(this.dgvBenh_SelectionChanged);
             // 
-            // btnTraCuuBenh
-            // 
-            this.btnTraCuuBenh.BackColor = System.Drawing.Color.LightGray;
-            this.btnTraCuuBenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTraCuuBenh.Location = new System.Drawing.Point(793, 565);
-            this.btnTraCuuBenh.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTraCuuBenh.Name = "btnTraCuuBenh";
-            this.btnTraCuuBenh.Size = new System.Drawing.Size(62, 29);
-            this.btnTraCuuBenh.TabIndex = 85;
-            this.btnTraCuuBenh.Text = "Tra cứu";
-            this.btnTraCuuBenh.UseVisualStyleBackColor = false;
-            this.btnTraCuuBenh.Click += new System.EventHandler(this.btnTraCuuBenh_Click);
-            // 
             // btnCapNhatBenh
             // 
             this.btnCapNhatBenh.BackColor = System.Drawing.Color.LightGray;
@@ -335,6 +316,7 @@
             this.btnXoaBenh.TabIndex = 87;
             this.btnXoaBenh.Text = "Xóa ";
             this.btnXoaBenh.UseVisualStyleBackColor = false;
+            this.btnXoaBenh.Click += new System.EventHandler(this.btnXoaBenh_Click);
             // 
             // btnKhongLuu
             // 
@@ -457,22 +439,135 @@
             this.cboTenLoaiThuoc.TabIndex = 117;
             this.cboTenLoaiThuoc.SelectedIndexChanged += new System.EventHandler(this.cboTenLoaiThuoc_SelectedIndexChanged);
             // 
+            // txtTraCuuLoaiBenh
+            // 
+            this.txtTraCuuLoaiBenh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTraCuuLoaiBenh.DefaultText = "";
+            this.txtTraCuuLoaiBenh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTraCuuLoaiBenh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTraCuuLoaiBenh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuuLoaiBenh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuuLoaiBenh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuuLoaiBenh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTraCuuLoaiBenh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuuLoaiBenh.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtTraCuuLoaiBenh.IconLeft")));
+            this.txtTraCuuLoaiBenh.Location = new System.Drawing.Point(674, 67);
+            this.txtTraCuuLoaiBenh.Name = "txtTraCuuLoaiBenh";
+            this.txtTraCuuLoaiBenh.PasswordChar = '\0';
+            this.txtTraCuuLoaiBenh.PlaceholderText = "Nhập loại bệnh";
+            this.txtTraCuuLoaiBenh.SelectedText = "";
+            this.txtTraCuuLoaiBenh.Size = new System.Drawing.Size(200, 36);
+            this.txtTraCuuLoaiBenh.TabIndex = 97;
+            // 
+            // cboTraCuuLoaiBenh
+            // 
+            this.cboTraCuuLoaiBenh.BackColor = System.Drawing.Color.Transparent;
+            this.cboTraCuuLoaiBenh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTraCuuLoaiBenh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTraCuuLoaiBenh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTraCuuLoaiBenh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTraCuuLoaiBenh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboTraCuuLoaiBenh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboTraCuuLoaiBenh.ItemHeight = 30;
+            this.cboTraCuuLoaiBenh.Items.AddRange(new object[] {
+            "Tất cả",
+            "Mã loại bệnh",
+            "Tên loại bệnh"});
+            this.cboTraCuuLoaiBenh.Location = new System.Drawing.Point(932, 67);
+            this.cboTraCuuLoaiBenh.Name = "cboTraCuuLoaiBenh";
+            this.cboTraCuuLoaiBenh.Size = new System.Drawing.Size(154, 36);
+            this.cboTraCuuLoaiBenh.StartIndex = 0;
+            this.cboTraCuuLoaiBenh.TabIndex = 98;
+            // 
+            // btnTraCuuLoaiBenh
+            // 
+            this.btnTraCuuLoaiBenh.BackColor = System.Drawing.Color.LightGray;
+            this.btnTraCuuLoaiBenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuuLoaiBenh.Location = new System.Drawing.Point(1156, 67);
+            this.btnTraCuuLoaiBenh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTraCuuLoaiBenh.Name = "btnTraCuuLoaiBenh";
+            this.btnTraCuuLoaiBenh.Size = new System.Drawing.Size(88, 36);
+            this.btnTraCuuLoaiBenh.TabIndex = 93;
+            this.btnTraCuuLoaiBenh.Text = "Tra Cứu";
+            this.btnTraCuuLoaiBenh.UseVisualStyleBackColor = false;
+            this.btnTraCuuLoaiBenh.Click += new System.EventHandler(this.btnTraCuuLoaiBenh_Click);
+            // 
+            // btnTraCuuBenh
+            // 
+            this.btnTraCuuBenh.BackColor = System.Drawing.Color.LightGray;
+            this.btnTraCuuBenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTraCuuBenh.Location = new System.Drawing.Point(631, 560);
+            this.btnTraCuuBenh.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTraCuuBenh.Name = "btnTraCuuBenh";
+            this.btnTraCuuBenh.Size = new System.Drawing.Size(88, 36);
+            this.btnTraCuuBenh.TabIndex = 93;
+            this.btnTraCuuBenh.Text = "Tra Cứu";
+            this.btnTraCuuBenh.UseVisualStyleBackColor = false;
+            this.btnTraCuuBenh.Click += new System.EventHandler(this.btnTraCuuBenh_Click_1);
+            // 
+            // txtTraCuuBenh
+            // 
+            this.txtTraCuuBenh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTraCuuBenh.DefaultText = "";
+            this.txtTraCuuBenh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTraCuuBenh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTraCuuBenh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuuBenh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTraCuuBenh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuuBenh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTraCuuBenh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTraCuuBenh.IconLeft = ((System.Drawing.Image)(resources.GetObject("txtTraCuuBenh.IconLeft")));
+            this.txtTraCuuBenh.Location = new System.Drawing.Point(149, 560);
+            this.txtTraCuuBenh.Name = "txtTraCuuBenh";
+            this.txtTraCuuBenh.PasswordChar = '\0';
+            this.txtTraCuuBenh.PlaceholderText = "Nhập thông tin bệnh";
+            this.txtTraCuuBenh.SelectedText = "";
+            this.txtTraCuuBenh.Size = new System.Drawing.Size(200, 36);
+            this.txtTraCuuBenh.TabIndex = 97;
+            // 
+            // cboTraCuuBenh
+            // 
+            this.cboTraCuuBenh.BackColor = System.Drawing.Color.Transparent;
+            this.cboTraCuuBenh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboTraCuuBenh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboTraCuuBenh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTraCuuBenh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cboTraCuuBenh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboTraCuuBenh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboTraCuuBenh.ItemHeight = 30;
+            this.cboTraCuuBenh.Items.AddRange(new object[] {
+            "Tất cả",
+            "Mã bệnh",
+            "Tên bệnh",
+            "Triệu chứng",
+            "Thuốc đặc trị",
+            "Tên loại bệnh"});
+            this.cboTraCuuBenh.Location = new System.Drawing.Point(422, 560);
+            this.cboTraCuuBenh.Name = "cboTraCuuBenh";
+            this.cboTraCuuBenh.Size = new System.Drawing.Size(154, 36);
+            this.cboTraCuuBenh.StartIndex = 0;
+            this.cboTraCuuBenh.TabIndex = 98;
+            // 
             // TraCuuBenh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
+            this.Controls.Add(this.cboTraCuuBenh);
+            this.Controls.Add(this.cboTraCuuLoaiBenh);
+            this.Controls.Add(this.txtTraCuuBenh);
+            this.Controls.Add(this.txtTraCuuLoaiBenh);
             this.Controls.Add(this.gxb_Thontinbenh);
             this.Controls.Add(this.gxb_Thongtinloaibenh);
+            this.Controls.Add(this.btnTraCuuBenh);
             this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnTraCuuLoaiBenh);
             this.Controls.Add(this.btnKhongLuuBenh);
             this.Controls.Add(this.btnThemBenh);
             this.Controls.Add(this.btnKhongLuu);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnXoaBenh);
             this.Controls.Add(this.btnCapNhatBenh);
-            this.Controls.Add(this.btnTraCuuLoaiBenh);
-            this.Controls.Add(this.btnTraCuuBenh);
             this.Controls.Add(this.dgvBenh);
             this.Controls.Add(this.btnCapNhatLoaiBenh);
             this.Controls.Add(this.label2);
@@ -496,7 +591,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLoaiBenh;
-        private System.Windows.Forms.Button btnTraCuuLoaiBenh;
         private System.Windows.Forms.TextBox txtMaLoaiBenh;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
@@ -515,7 +609,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgvBenh;
-        private System.Windows.Forms.Button btnTraCuuBenh;
         private System.Windows.Forms.Button btnCapNhatBenh;
         private System.Windows.Forms.Button btnXoaBenh;
         private System.Windows.Forms.Button btnKhongLuu;
@@ -527,5 +620,11 @@
         private System.Windows.Forms.ComboBox cboTenTHuoc;
         private System.Windows.Forms.ComboBox cboTenLoaiThuoc;
         private System.Windows.Forms.ComboBox cboTenLoaiBenh;
+        private Guna.UI2.WinForms.Guna2TextBox txtTraCuuLoaiBenh;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTraCuuLoaiBenh;
+        private System.Windows.Forms.Button btnTraCuuLoaiBenh;
+        private System.Windows.Forms.Button btnTraCuuBenh;
+        private Guna.UI2.WinForms.Guna2TextBox txtTraCuuBenh;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTraCuuBenh;
     }
 }

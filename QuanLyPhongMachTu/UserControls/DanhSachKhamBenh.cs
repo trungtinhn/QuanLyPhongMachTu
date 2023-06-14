@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongMachTu.UserControls
 {
+    
     public partial class DanhSachKhamBenh : UserControl
     {
         BLL_BENHNHAN dBenhNhanBLL;
@@ -19,7 +20,7 @@ namespace QuanLyPhongMachTu.UserControls
         BLL_HOADON dHoaDonBLL;
         BLL_PHIEUKHAMBENH dPhieuKhamBenhBLL;
 
-      
+       
       
         public DanhSachKhamBenh()
         {
@@ -277,6 +278,7 @@ namespace QuanLyPhongMachTu.UserControls
 
             BENHNHAN benhNhan = dBenhNhanBLL.LayThongTinBenhNhan(txtMaBN.Text);
 
+            dHoaDonBLL = new BLL_HOADON();
             List<HOADON> hoaDons = dHoaDonBLL.LayDanhSachHoaDon(benhNhan.id);
 
             int i = 0;

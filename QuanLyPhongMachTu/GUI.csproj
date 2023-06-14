@@ -177,6 +177,9 @@
     <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
       <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fDangKy.resx">
+      <DependentUpon>fDangKy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fHoaDon.resx">
       <DependentUpon>fHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,14 +285,13 @@
       <Project>{1ed5c790-3ecb-4a04-abad-f7aa86cde9af}</Project>
       <Name>BLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{a29a3d8c-3214-4eea-9356-8d2ab387e09b}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{f9dd8f18-2e78-412d-a14c-9108b38b482d}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -52,7 +52,10 @@ namespace QuanLyPhongMachTu.UserControls
 
         public void HienThiThongTinLoaiBenh()
         {
-            List<LOAIBENH> loaiBenhs = dLoaiBenhBLL.LayDanhSachLoaiBenh();
+            string kieuLoc = cboTraCuuLoaiBenh.Text;
+            string giaTri = txtTraCuuLoaiBenh.Text;
+
+            List<LOAIBENH> loaiBenhs = dLoaiBenhBLL.LayDanhSachLoaiBenh(kieuLoc, giaTri);
 
             var dt = new DataTable();
 
@@ -91,7 +94,11 @@ namespace QuanLyPhongMachTu.UserControls
             dt.Columns.Add("Thuốc đặc trị");
             dt.Columns.Add("Tên loại bệnh");
 
-            List<BENH> benhs = dBenhBLL.LayThongTinBenh();
+            string kieuLoc = cboTraCuuBenh.Text;
+            string giaTri = txtTraCuuBenh.Text;
+
+            List<BENH> benhs = dBenhBLL.LocBenh(kieuLoc, giaTri);
+           
             int i = 0;
             foreach(BENH benh in benhs)
             {
@@ -213,7 +220,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void HienThiComboBoxLoaiBenh()
         {
-            cboTenLoaiBenh.DataSource = dLoaiBenhBLL.LayDanhSachLoaiBenh();
+            cboTenLoaiBenh.DataSource = dLoaiBenhBLL.LayDanhSachLoaiBenh("Tất cả", "Mặc định");
             cboTenLoaiBenh.DisplayMember = "TenLoaiBenh";
             cboTenLoaiBenh.ValueMember ="MaLoaiBenh";
         }
@@ -344,6 +351,37 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 MessageBox.Show("Cập nhật bệnh thất bại!");
             }
+        }
+
+        private void btnXoaBenh_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraNhapLieuBenh())
+            {
+                MessageBox.Show("Vui lòng cung cấp đầy đủ thông tin!");
+                return;
+            }
+
+            BENH benh = dBenhBLL.LayBenh(txtMaBenh.Text);
+            
+            if (dBenhBLL.XoaBenh(benh))
+            {
+                MessageBox.Show("Xóa bệnh thành công!");
+                HienThiThongTinBenh();
+            }
+            else
+            {
+                MessageBox.Show("Xóa bệnh thất bại!");
+            }
+        }
+
+        private void btnTraCuuLoaiBenh_Click(object sender, EventArgs e)
+        {
+            HienThiThongTinLoaiBenh();
+        }
+
+        private void btnTraCuuBenh_Click_1(object sender, EventArgs e)
+        {
+            HienThiThongTinBenh();
         }
     }
 }
