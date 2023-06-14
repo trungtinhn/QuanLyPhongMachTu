@@ -23,7 +23,7 @@ namespace DAL
 
         public dynamic LayDanhSachThuoc(int soPhieuKhamBenh)
         {
-            var danhsach = db.CT_PHIEUKHAMBENH.Where(p => p.SoPhieuKhamBenh == soPhieuKhamBenh).ToList();
+            var danhsach = db.CT_PHIEUKHAMBENH.Where(p => (p.SoPhieuKhamBenh == soPhieuKhamBenh)).ToList();
 
             return danhsach;
         }
