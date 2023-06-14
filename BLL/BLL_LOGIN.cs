@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DTO.DTO_LOGIN;
+using DTO;
 
 namespace BLL
 {
@@ -17,7 +17,7 @@ namespace BLL
             dalLogin = new DAL_LOGIN();
         }
 
-        public bool Login(DTO_ACCOUNT account)
+        public bool Login(NGUOIDUNG account)
         {
             return dalLogin.Login(account.TenDangNhap, account.MatKhau);
         }
