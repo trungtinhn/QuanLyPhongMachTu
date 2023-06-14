@@ -37,9 +37,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         public void CapNhatThongTinNguoiDung(string userName)
         {
-            using (var context = new QLPMTEntities())
-            {
-                var user = context.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == userName);
+                var user = db.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == userName);
                 if (user != null)
                 {
                     label1.Text = user.MaNguoiDung;
@@ -55,7 +53,6 @@ namespace QuanLyPhongMachTu.UserControls
                     label5.Text = user.ChucVu;
                     label6.Text = user.DiaChi;
                 }
-            }
         }
         private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -71,17 +68,17 @@ namespace QuanLyPhongMachTu.UserControls
             {
                 MessageBox.Show("OKE");
                 label1.Text = user.MaNguoiDung;
-                label2.Text = user.SoDT;
+                label2.Text = user.SoDT.ToString();
                 label3.Text = user.TenNguoiDung.ToString();
                 DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
 
                 String dy = datevalue.Day.ToString();
                 String mn = datevalue.Month.ToString();
                 String yy = datevalue.Year.ToString();
-                
-                label4.Text = dy+ " / " + mn + " / "+ yy;  
+
+                label4.Text = dy + " / " + mn + " / " + yy;
                 label5.Text = user.ChucVu;
-                label6.Text = user.DiaChi;
+                label6.Text = user.DiaChi.ToString();
 
                 lbl_Name.Text = user.TenNguoiDung;
                 lbl_Job.Text = user.ChucVu;
@@ -189,6 +186,27 @@ namespace QuanLyPhongMachTu.UserControls
         private void button2_Click(object sender, EventArgs e)
         {
             CapNhatThongTinNguoiDung(UserName);
+        }
+
+        private void btn_rgt_Click(object sender, EventArgs e)
+        {
+            using (QLPMTEntities db = new QLPMTEntities())
+            {
+                var user = db.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == UserName);
+                if (user != null)
+                {
+                    if(user.idNhomNguoiDung == 1)
+                    {
+                        fDangKy dangKy = new fDangKy();
+                        dangKy.Show();
+                    }   
+                    else
+                    {
+                        MessageBox.Show("YOU DON'T HAVE PERMISSION TO DO THAT");
+                    }
+                }    
+            }
+            
         }
     }
 }

@@ -79,7 +79,7 @@
             // btn_Login
             // 
             this.btn_Login.BackColor = System.Drawing.Color.LightGray;
-            this.btn_Login.Location = new System.Drawing.Point(297, 301);
+            this.btn_Login.Location = new System.Drawing.Point(293, 317);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(83, 35);

@@ -52,6 +52,7 @@
             this.siticoneCirclePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
             this.pbx_Avatar = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn_rgt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).BeginInit();
@@ -407,11 +408,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btn_rgt
+            // 
+            this.btn_rgt.BackColor = System.Drawing.Color.Chocolate;
+            this.btn_rgt.Location = new System.Drawing.Point(902, 625);
+            this.btn_rgt.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_rgt.Name = "btn_rgt";
+            this.btn_rgt.Size = new System.Drawing.Size(83, 35);
+            this.btn_rgt.TabIndex = 94;
+            this.btn_rgt.Text = "REGISTER";
+            this.btn_rgt.UseVisualStyleBackColor = false;
+            this.btn_rgt.Click += new System.EventHandler(this.btn_rgt_Click);
+            // 
             // uTaiKhoancs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
+            this.Controls.Add(this.btn_rgt);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.lbl_Delete);
             this.Controls.Add(this.lbl_Job);
@@ -460,5 +474,6 @@
         private System.Windows.Forms.Label lbl_Delete;
         private System.Windows.Forms.Button btn_loggout;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_rgt;
     }
 }

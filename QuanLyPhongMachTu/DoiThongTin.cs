@@ -39,19 +39,19 @@ namespace QuanLyPhongMachTu
                     // Xử lý lỗi: Không tìm thấy thông tin người dùng trong database
                     return;
                 }
-
-                string hoTen = txt_Hoten.Text;
-                string diaChi = txt_diachi.Text;
+                string DiaChi = txt_diachi.Text;
                 string SoDT = txt_SoDT.Text;
+                string hoTen = txt_Hoten.Text;
+                
                 dtp_ngaysinh.CustomFormat = "dd/MM/yyyy";
 
                 if (!string.IsNullOrEmpty(hoTen))
                 {
                     user.TenNguoiDung = hoTen;
                 }
-                if (!string.IsNullOrEmpty(diaChi))
+                if (!string.IsNullOrEmpty(DiaChi))
                 {
-                    user.DiaChi = diaChi;
+                    user.DiaChi = DiaChi;
                 }
                 if (!string.IsNullOrEmpty(SoDT))
                 {
