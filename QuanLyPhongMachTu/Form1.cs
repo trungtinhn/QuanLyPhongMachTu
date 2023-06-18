@@ -14,19 +14,37 @@ namespace QuanLyPhongMachTu
 {
     public partial class Form1 : Form
     {
+        QLPMTEntities db;
+        public string UserName = fLogin.currentUserName;
         public Form1()
         {
             InitializeComponent();
 
             this.MinimumSize = new System.Drawing.Size(1890, 1060);
             this.MaximumSize = new System.Drawing.Size(1890, 1060);
+            db= new QLPMTEntities();    
 
         }
         Boolean check = true;
-
+        
+                
         private void btn_Benhnhan_Click(object sender, EventArgs e)
         {
             u_danhSachKhamBenh.BringToFront();
+            var user = db.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == UserName);
+            if (user.ChucVu == "Admin")
+            {
+                u_danhSachKhamBenh.SetPermissionsAdmin(true);
+            }
+            else if (user.ChucVu == "Bác sĩ")
+            {
+                
+                u_danhSachKhamBenh.SetPermissionBacSi(true);
+            }
+            else
+            { 
+                u_danhSachKhamBenh.SetPermissionNhanVien(true);
+            }
             ChangeNormalColorOnPanelLeft(sender);
         }
 
