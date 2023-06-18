@@ -18,6 +18,7 @@ namespace QuanLyPhongMachTu.UserControls
     {
         QLPMTEntities db;
         BLL_THAMSO dThamSoBLL;
+        BLL_THUOC dThuocBLL;
         public void SetPermissionsAdmin(bool isAdmin)
         {
             // Thiết lập quyền truy cập tương ứng cho các button, text box, DataGridView,...
@@ -54,11 +55,22 @@ namespace QuanLyPhongMachTu.UserControls
         {
             
             dThamSoBLL.ThayDoiQuyDinh(Int32.Parse(txt_Tienkham.Text),Int32.Parse(txt_Sobenhnhantoida.Text));
-
-            MessageBox.Show("Đã thay đổi quy định thành công!");
+            
             THAMSO thamSo = dThamSoBLL.LayThamSo(1);
             txt_Tienkham.Text = thamSo.TienKham.ToString();
             txt_Sobenhnhantoida.Text = thamSo.SoBenhNhanToiDa.ToString();
+            int limited;
+            if (Int32.TryParse(txt_thuocsaphet.Text, out limited))
+            {
+                // Thiết lập giá trị cho thuộc tính Limited của UserControl
+                LoaiThuocThuoc loaiThuocThuoc = new LoaiThuocThuoc();
+                loaiThuocThuoc.Limited = limited;
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập vào một số nguyên hợp lệ");
+            }
+            MessageBox.Show("Đã thay đổi quy định thành công!");
         }
 
         private void ThayDoiQuiDinh_Load(object sender, EventArgs e)

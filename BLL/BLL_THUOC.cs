@@ -119,9 +119,9 @@ namespace BLL
 
 
 
-        public List<THUOC> getThuocSapHet()
+        public List<THUOC> getThuocSapHet(int Limited)
         {
-            return dThuocDAL.getThuocSapHet();
+            return dThuocDAL.getThuocSapHet(Limited);
         }
 
         public bool CapNhatSoLuongTon(int idThuoc, int SoLuongCapNhat)

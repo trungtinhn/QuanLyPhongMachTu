@@ -144,9 +144,9 @@ namespace DAL
 
 
 
-        public List<THUOC> getThuocSapHet()
+        public List<THUOC> getThuocSapHet(int Limited)
         {
-            return db.THUOCs.Where(s => s.SoLuongTon < 10).ToList();
+            return db.THUOCs.Where(s => s.SoLuongTon < Limited).ToList();
         }
 
         public bool CapNhatSoLuongTon(int idThuoc, int soLuongCapNhat) 

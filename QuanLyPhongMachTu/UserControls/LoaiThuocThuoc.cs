@@ -158,7 +158,16 @@ namespace QuanLyPhongMachTu.UserControls
             }
         }
 
-
+        public int limited = 10;
+        public int Limited
+        {
+            get { return limited; }
+            set
+            {
+                limited = value;
+                HienThiDanhSachThuocSapHet();
+            }
+        }
         public void HienThiDanhSachThuocSapHet()
         {
             int selectedRowIndex = 0;
@@ -178,7 +187,7 @@ namespace QuanLyPhongMachTu.UserControls
 
 
 
-            List<THUOC> tHUOCs = dThuocBLL.getThuocSapHet();
+            List<THUOC> tHUOCs = dThuocBLL.getThuocSapHet(Limited);
 
             foreach (THUOC t in tHUOCs)
             {
@@ -563,6 +572,8 @@ namespace QuanLyPhongMachTu.UserControls
         {
 
         }
+
+
     }
 }
 

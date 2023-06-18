@@ -17,5 +17,7 @@ namespace DTO
         public int id { get; set; }
         public int SoBenhNhanToiDa { get; set; }
         public int TienKham { get; set; }
+
+        public int SoLuongTon { get; set; }
     }
 }

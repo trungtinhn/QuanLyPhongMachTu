@@ -119,6 +119,7 @@
             this.dgv_dsThuocsaphet.RowTemplate.Height = 24;
             this.dgv_dsThuocsaphet.Size = new System.Drawing.Size(288, 460);
             this.dgv_dsThuocsaphet.TabIndex = 49;
+            
             // 
             // lbl_Thongtinloaithuoc
             // 
