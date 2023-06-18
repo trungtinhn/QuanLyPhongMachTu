@@ -106,18 +106,24 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void dgvDangKy_SelectionChanged(object sender, EventArgs e)
         {
-            if(dgvDangKy.SelectedRows.Count > 0)
+            if (dgvDangKy.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvDangKy.SelectedRows[0];
                 try
                 {
-                    txtMaBN.Text = row.Cells[0].Value.ToString();
-                    txtHotenBN.Text = row.Cells[1].Value.ToString();
+                    if (row.Cells[0].Value != null)
+                    {
+                        txtMaBN.Text = row.Cells[0].Value.ToString();
+                    }
+                    if (row.Cells[1].Value != null)
+                    {
+                        txtHotenBN.Text = row.Cells[1].Value.ToString();
+                    }
                 }
-                catch
+                catch (Exception ex)
                 {
-
-                }                  
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
 

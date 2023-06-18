@@ -19,6 +19,7 @@ using System.Web.UI.WebControls;
 using static QuanLyPhongMachTu.fLogin;
 using System.IO;
 using System.Runtime.Remoting.Contexts;
+using System.Globalization;
 
 namespace QuanLyPhongMachTu.UserControls
 {
@@ -70,13 +71,20 @@ namespace QuanLyPhongMachTu.UserControls
                 label1.Text = user.MaNguoiDung;
                 label2.Text = user.SoDT;
                 label3.Text = user.TenNguoiDung.ToString();
-                DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
+                DateTime datevalue;
+                if (DateTime.TryParseExact(user.NgaySinh.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out datevalue))
+                {
+                    String dy = datevalue.Day.ToString();
+                    String mn = datevalue.Month.ToString();
+                    String yy = datevalue.Year.ToString();
+                    label4.Text = dy + " / " + mn + " / " + yy;
+                }
+                else
+                {
+                    label4.Text = "Ngày sinh không hợp lệ!";
+                }
 
-                String dy = datevalue.Day.ToString();
-                String mn = datevalue.Month.ToString();
-                String yy = datevalue.Year.ToString();
-
-                label4.Text = dy + " / " + mn + " / " + yy;
+            
                 label5.Text = user.ChucVu;
                 label6.Text = user.DiaChi;
 
