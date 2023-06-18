@@ -22,7 +22,7 @@ namespace DTO
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            //throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<BC_DOANHTHU> BC_DOANHTHU { get; set; }
