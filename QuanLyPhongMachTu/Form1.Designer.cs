@@ -305,26 +305,7 @@ namespace QuanLyPhongMachTu
             this.siticonePanel2.Name = "siticonePanel2";
             this.siticonePanel2.Size = new System.Drawing.Size(208, 798);
             this.siticonePanel2.TabIndex = 21;
-            // 
-            // siticonePanel3
-            // 
-            this.siticonePanel3.Controls.Add(this.u_BenhLoaiBenh);
-            this.siticonePanel3.Controls.Add(this.u_thayDoiQuiDinh);
-            this.siticonePanel3.Controls.Add(this.u_nhapThuoc);
-            this.siticonePanel3.Controls.Add(this.u_loaiThuocThuoc);
-            this.siticonePanel3.Controls.Add(this.u_lapPhieuKhamBenh);
-            this.siticonePanel3.Controls.Add(this.u_hoaDonThanhToan);
-            this.siticonePanel3.Controls.Add(this.u_danhSachKhamBenh);
-            this.siticonePanel3.Controls.Add(this.u_donViCachDung);
-            this.siticonePanel3.Controls.Add(this.uTaiKhoanQLy1);
-            this.siticonePanel3.Controls.Add(this.uTaiKhoancs);
-            this.siticonePanel3.Controls.Add(this.uBaoCao);
-            this.siticonePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.siticonePanel3.Location = new System.Drawing.Point(208, 57);
-            this.siticonePanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.siticonePanel3.Name = "siticonePanel3";
-            this.siticonePanel3.Size = new System.Drawing.Size(1235, 798);
-            this.siticonePanel3.TabIndex = 22;
+            
             // 
             // u_BenhLoaiBenh
             // 
@@ -437,6 +418,26 @@ namespace QuanLyPhongMachTu
             this.uBaoCao.Name = "uBaoCao";
             this.uBaoCao.Size = new System.Drawing.Size(1235, 798);
             this.uBaoCao.TabIndex = 8;
+            // 
+            // siticonePanel3
+            // 
+            this.siticonePanel3.Controls.Add(this.u_BenhLoaiBenh);
+            this.siticonePanel3.Controls.Add(this.u_thayDoiQuiDinh);
+            this.siticonePanel3.Controls.Add(this.u_nhapThuoc);
+            this.siticonePanel3.Controls.Add(this.u_loaiThuocThuoc);
+            this.siticonePanel3.Controls.Add(this.u_lapPhieuKhamBenh);
+            this.siticonePanel3.Controls.Add(this.u_hoaDonThanhToan);
+            this.siticonePanel3.Controls.Add(this.u_danhSachKhamBenh);
+            this.siticonePanel3.Controls.Add(this.u_donViCachDung);
+            this.siticonePanel3.Controls.Add(this.uTaiKhoanQLy1);
+            this.siticonePanel3.Controls.Add(this.uTaiKhoancs);
+            this.siticonePanel3.Controls.Add(this.uBaoCao);
+            this.siticonePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.siticonePanel3.Location = new System.Drawing.Point(208, 57);
+            this.siticonePanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.siticonePanel3.Name = "siticonePanel3";
+            this.siticonePanel3.Size = new System.Drawing.Size(1235, 798);
+            this.siticonePanel3.TabIndex = 22;
             // 
             // Form1
             // 

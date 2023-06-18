@@ -129,7 +129,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(321, 246);
             this.tableLayoutPanel.TabIndex = 91;
-            this.tableLayoutPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel_Paint);
+
             // 
             // lbl_NhomND_TD
             // 

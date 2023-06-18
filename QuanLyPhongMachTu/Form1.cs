@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
 using Guna.UI2.WinForms;
-
 namespace QuanLyPhongMachTu
 {
     public partial class Form1 : Form

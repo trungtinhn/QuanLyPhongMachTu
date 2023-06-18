@@ -37,46 +37,25 @@ namespace QuanLyPhongMachTu.UserControls
 
         public void CapNhatThongTinNguoiDung(string userName)
         {
-            var user = db.NGUOIDUNGs.FirstOrDefault(u => u.TenDangNhap == userName);
-            if (user != null)
-            {
-                label1.Text = user.MaNguoiDung;
-                label2.Text = user.SoDT;
-                label3.Text = user.TenNguoiDung.ToString();
-                DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
-
-                String dy = datevalue.Day.ToString();
-                String mn = datevalue.Month.ToString();
-                String yy = datevalue.Year.ToString();
-
-                label4.Text = dy + " / " + mn + " / " + yy;
-                label5.Text = user.ChucVu;
-                label6.Text = user.DiaChi;
-            }
-        }
-        private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void uTaiKhoancs_Load(object sender, EventArgs e)
-        {
-
             var user = db.NGUOIDUNGs.FirstOrDefault(a => a.TenDangNhap == UserName);
 
             if (user != null)
             {
-               
                 label1.Text = user.MaNguoiDung;
                 label2.Text = user.SoDT;
                 label3.Text = user.TenNguoiDung.ToString();
-                DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
 
-                String dy = datevalue.Day.ToString();
-                String mn = datevalue.Month.ToString();
-                String yy = datevalue.Year.ToString();
+                DateTime dateValue;
 
-                label4.Text = dy + " / " + mn + " / " + yy;
+                if (DateTime.TryParse(user.NgaySinh.ToString(), out dateValue))
+                {
+                    String dy = dateValue.Day.ToString();
+                    String mn = dateValue.Month.ToString();
+                    String yy = dateValue.Year.ToString();
+
+                    label4.Text = dy + " / " + mn + " / " + yy;
+                }
+
                 label5.Text = user.ChucVu;
                 label6.Text = user.DiaChi;
 
@@ -85,9 +64,44 @@ namespace QuanLyPhongMachTu.UserControls
             }
             else
             {
-                MessageBox.Show("NOT OKE");
+                MessageBox.Show("Not OKE");
             }
         }
+
+
+        private void uTaiKhoancs_Load(object sender, EventArgs e)
+        {
+            var user = db.NGUOIDUNGs.FirstOrDefault(a => a.TenDangNhap == UserName);
+
+            if (user != null)
+            {
+                label1.Text = user.MaNguoiDung;
+                label2.Text = user.SoDT;
+                label3.Text = user.TenNguoiDung.ToString();
+
+                DateTime dateValue;
+
+                if (DateTime.TryParse(user.NgaySinh.ToString(), out dateValue))
+                {
+                    String dy = dateValue.Day.ToString();
+                    String mn = dateValue.Month.ToString();
+                    String yy = dateValue.Year.ToString();
+
+                    label4.Text = dy + " / " + mn + " / " + yy;
+                }
+
+                label5.Text = user.ChucVu;
+                label6.Text = user.DiaChi;
+
+                lbl_Name.Text = user.TenNguoiDung;
+                lbl_Job.Text = user.ChucVu;
+            }
+            else
+            {
+                MessageBox.Show("Not OKE");
+            }
+        }
+
         private string ImageToBase64(System.Drawing.Image image)
         {
             using (MemoryStream ms = new MemoryStream())
