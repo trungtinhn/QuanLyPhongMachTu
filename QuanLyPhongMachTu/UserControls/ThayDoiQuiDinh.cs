@@ -67,5 +67,6 @@ namespace QuanLyPhongMachTu.UserControls
             txt_Tienkham.Text = thamSo.TienKham.ToString();
             txt_Sobenhnhantoida.Text = thamSo.SoBenhNhanToiDa.ToString();
         }
+
     }
 }
