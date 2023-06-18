@@ -98,11 +98,11 @@
     <Compile Include="DoiThongTin.Designer.cs">
       <DependentUpon>DoiThongTin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdminView.Designer.cs">
+      <DependentUpon>AdminView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,6 +177,9 @@
     <Compile Include="UserControls\uTaiKhoanQLy.Designer.cs">
       <DependentUpon>uTaiKhoanQLy.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminView.resx">
+      <DependentUpon>AdminView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiThongTin.resx">
       <DependentUpon>DoiThongTin.cs</DependentUpon>
     </EmbeddedResource>
