@@ -120,6 +120,7 @@
             this.txt_Tienkham.SelectedText = "";
             this.txt_Tienkham.Size = new System.Drawing.Size(193, 45);
             this.txt_Tienkham.TabIndex = 5;
+
             // 
             // btn_Dongy
             // 

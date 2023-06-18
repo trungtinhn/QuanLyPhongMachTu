@@ -8,13 +8,13 @@ using System.Web.UI;
 
 namespace PhanQuyen
 {
-    public class Admin
+    public class PhanQuyen
     {
         private string username;
         private string role;
 
         // constructor
-        public Admin(string username, string role)
+        public PhanQuyen(string username, string role)
         {
             this.username = username;
             this.role = role;

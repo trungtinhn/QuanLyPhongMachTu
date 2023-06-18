@@ -216,7 +216,7 @@ namespace QuanLyPhongMachTu.UserControls
                     }
                     else
                     {
-                        MessageBox.Show("YOU DON'T HAVE PERMISSION TO DO THAT");
+                        MessageBox.Show("BẠN KHÔNG CÓ QUYỀN CẤP TÀI KHOẢN");
                     }
                 }
             }

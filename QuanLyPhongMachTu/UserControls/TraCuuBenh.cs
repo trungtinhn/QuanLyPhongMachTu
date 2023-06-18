@@ -18,6 +18,32 @@ namespace QuanLyPhongMachTu.UserControls
         BLL_BENH dBenhBLL;
         BLL_LOAITHUOC dLoaiThuocBLL;
         BLL_THUOC dThuocBLL;
+        public void SetPermissionsAdmin(bool isAdmin)
+        {
+            // Thiết lập quyền truy cập tương ứng cho các button, text box, DataGridView,...
+            // Nếu isAdmin = true, cho bác sĩ được phép sử dụng các button, còn ngược lại thì ẩn các button
+            if (isAdmin)
+            {
+                this.Enabled = false;
+            }
+
+            // ...
+        }
+        public void SetPermissionBacSi(bool isBacSi)
+        {
+            if (isBacSi)
+            {
+                this.pnl_NhanVien1.Enabled = false;
+                this.pnl_NhanVien2.Enabled = false;
+            }
+        }
+        public void SetPermissionNhanVien(bool isNhanVien)
+        {
+            if (isNhanVien)
+            {
+                this.Enabled = true;
+            }
+        }
         public TraCuuBenh()
         {
             InitializeComponent();

@@ -35,14 +35,16 @@ namespace QuanLyPhongMachTu.UserControls
         {
             if (isBacSi)
             {
-                this.Visible = false;
+                this.dgvDanhSachHoaDon.Enabled = true;
+                this.flw_BacSi.Enabled = true;
+                pnl_NhanVien.Enabled = false;
             }
         }
-        public void SetPermissionNhanVien(bool isBacSi)
+        public void SetPermissionNhanVien(bool isNhanVien)
         {
-            if (isBacSi)
+            if (isNhanVien)
             {
-                this.Visible = true;
+                this.Enabled = true;
             }
         }
 
