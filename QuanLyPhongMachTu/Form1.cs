@@ -98,5 +98,21 @@ namespace QuanLyPhongMachTu
             }
 
         }
+
+        public void ChangeNormalColorOnPanelLeft(object sender)
+        {
+            Guna2TileButton btn = sender as Guna2TileButton;
+            btn.ForeColor = Color.IndianRed;
+            foreach (Guna2TileButton item in siticonePanel2.Controls)
+            {
+                if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
+                {
+                    Guna2TileButton btn1 = item as Guna2TileButton;
+                    btn1.ForeColor = Color.SaddleBrown;
+                }
+            }
+        }
+
+      
     }
 }

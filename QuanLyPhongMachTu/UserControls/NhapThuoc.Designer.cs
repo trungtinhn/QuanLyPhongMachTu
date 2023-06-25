@@ -335,6 +335,47 @@
             this.gbx_PhieNnhapThuoc.TabIndex = 13;
             this.gbx_PhieNnhapThuoc.TabStop = false;
             this.gbx_PhieNnhapThuoc.Text = "Phiếu Nhập Thuốc";
+            this.gbx_PhieNnhapThuoc.Enter += new System.EventHandler(this.gbx_PhieNnhapThuoc_Enter);
+            // 
+            // lbb_TONGTIEN
+            // 
+            this.lbb_TONGTIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbb_TONGTIEN.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lbb_TONGTIEN.Location = new System.Drawing.Point(211, 149);
+            this.lbb_TONGTIEN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbb_TONGTIEN.Name = "lbb_TONGTIEN";
+            this.lbb_TONGTIEN.Size = new System.Drawing.Size(166, 23);
+            this.lbb_TONGTIEN.TabIndex = 22;
+            // 
+            // btn_HT
+            // 
+            this.btn_HT.BorderThickness = 1;
+            this.btn_HT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_HT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_HT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_HT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_HT.FillColor = System.Drawing.Color.LightGray;
+            this.btn_HT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_HT.ForeColor = System.Drawing.Color.Black;
+            this.btn_HT.Location = new System.Drawing.Point(345, 184);
+            this.btn_HT.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_HT.Name = "btn_HT";
+            this.btn_HT.Size = new System.Drawing.Size(97, 39);
+            this.btn_HT.TabIndex = 17;
+            this.btn_HT.Text = "Hoàn Thành";
+            this.btn_HT.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label_tongtien
+            // 
+            this.label_tongtien.AutoSize = true;
+            this.label_tongtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_tongtien.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label_tongtien.Location = new System.Drawing.Point(59, 149);
+            this.label_tongtien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label_tongtien.Name = "label_tongtien";
+            this.label_tongtien.Size = new System.Drawing.Size(96, 17);
+            this.label_tongtien.TabIndex = 21;
+            this.label_tongtien.Text = "TỔNG TIỀN : ";
             // 
             // lbl_Phieunhapthuoc
             // 

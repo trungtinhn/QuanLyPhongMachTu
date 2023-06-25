@@ -525,6 +525,15 @@
         private System.Windows.Forms.GroupBox gbx_Thongtinbenhnhan;
         private System.Windows.Forms.Label lbl_Thongtindangky;
         private System.Windows.Forms.GroupBox gxb_Dangky;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtimeNgayDK;
+        private System.Windows.Forms.RadioButton radNam;
+        private System.Windows.Forms.DateTimePicker dtimeNgaySinh;
+        private System.Windows.Forms.RadioButton radNu;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2ComboBox cboTraCuu;
+        private Guna.UI2.WinForms.Guna2TextBox txtTraCuu;
+        private System.Windows.Forms.Button btnTraCuu;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtimeTraCuu;
+        public Guna.UI2.WinForms.Guna2HtmlLabel txtSoBNtiepnhan;
     }
 }
