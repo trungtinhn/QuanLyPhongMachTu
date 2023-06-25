@@ -85,16 +85,16 @@ namespace QuanLyPhongMachTu.UserControls
             // 
             // txt_Tencachdung
             // 
-            this.txt_Tencachdung.Location = new System.Drawing.Point(131, 117);
-            this.txt_Tencachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Tencachdung.Location = new System.Drawing.Point(243, 147);
+            this.txt_Tencachdung.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Tencachdung.Name = "txt_Tencachdung";
             this.txt_Tencachdung.Size = new System.Drawing.Size(189, 20);
             this.txt_Tencachdung.TabIndex = 3;
             // 
             // txt_Macachdung_Search
             // 
-            this.txt_Macachdung_Search.Location = new System.Drawing.Point(982, 811);
-            this.txt_Macachdung_Search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Macachdung_Search.Location = new System.Drawing.Point(1329, 1062);
+            this.txt_Macachdung_Search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Macachdung_Search.Name = "txt_Macachdung_Search";
             this.txt_Macachdung_Search.Size = new System.Drawing.Size(130, 20);
             this.txt_Macachdung_Search.TabIndex = 2;
@@ -103,8 +103,8 @@ namespace QuanLyPhongMachTu.UserControls
             // lbl_Tencachdung
             // 
             this.lbl_Tencachdung.AutoSize = true;
-            this.lbl_Tencachdung.Location = new System.Drawing.Point(33, 117);
-            this.lbl_Tencachdung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Tencachdung.Location = new System.Drawing.Point(65, 147);
+            this.lbl_Tencachdung.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Tencachdung.Name = "lbl_Tencachdung";
             this.lbl_Tencachdung.Size = new System.Drawing.Size(86, 13);
             this.lbl_Tencachdung.TabIndex = 1;
@@ -120,8 +120,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_KhongLuu_Cachdung.FillColor = System.Drawing.Color.LightGray;
             this.btn_KhongLuu_Cachdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_KhongLuu_Cachdung.ForeColor = System.Drawing.Color.Black;
-            this.btn_KhongLuu_Cachdung.Location = new System.Drawing.Point(647, 568);
-            this.btn_KhongLuu_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_KhongLuu_Cachdung.Location = new System.Drawing.Point(733, 783);
+            this.btn_KhongLuu_Cachdung.Margin = new System.Windows.Forms.Padding(4);
             this.btn_KhongLuu_Cachdung.Name = "btn_KhongLuu_Cachdung";
             this.btn_KhongLuu_Cachdung.Size = new System.Drawing.Size(117, 37);
             this.btn_KhongLuu_Cachdung.TabIndex = 53;
@@ -138,8 +138,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_xoa_Cachdung.FillColor = System.Drawing.Color.LightGray;
             this.btn_xoa_Cachdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_xoa_Cachdung.ForeColor = System.Drawing.Color.Black;
-            this.btn_xoa_Cachdung.Location = new System.Drawing.Point(490, 737);
-            this.btn_xoa_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_xoa_Cachdung.Location = new System.Drawing.Point(733, 1018);
+            this.btn_xoa_Cachdung.Margin = new System.Windows.Forms.Padding(4);
             this.btn_xoa_Cachdung.Name = "btn_xoa_Cachdung";
             this.btn_xoa_Cachdung.Size = new System.Drawing.Size(117, 37);
             this.btn_xoa_Cachdung.TabIndex = 52;
@@ -156,10 +156,10 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Tracuu_Cachdung.FillColor = System.Drawing.Color.LightGray;
             this.btn_Tracuu_Cachdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Tracuu_Cachdung.ForeColor = System.Drawing.Color.Black;
-            this.btn_Tracuu_Cachdung.Location = new System.Drawing.Point(1151, 798);
-            this.btn_Tracuu_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Tracuu_Cachdung.Location = new System.Drawing.Point(1176, 1121);
+            this.btn_Tracuu_Cachdung.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Tracuu_Cachdung.Name = "btn_Tracuu_Cachdung";
-            this.btn_Tracuu_Cachdung.Size = new System.Drawing.Size(99, 33);
+            this.btn_Tracuu_Cachdung.Size = new System.Drawing.Size(138, 44);
             this.btn_Tracuu_Cachdung.TabIndex = 51;
             this.btn_Tracuu_Cachdung.Text = "Tra Cứu";
             this.btn_Tracuu_Cachdung.Click += new System.EventHandler(this.btn_Tracuu_Cachdung_Click);
@@ -174,8 +174,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Them_Cachdung.FillColor = System.Drawing.Color.LightGray;
             this.btn_Them_Cachdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Them_Cachdung.ForeColor = System.Drawing.Color.Black;
-            this.btn_Them_Cachdung.Location = new System.Drawing.Point(647, 639);
-            this.btn_Them_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Them_Cachdung.Location = new System.Drawing.Point(733, 900);
+            this.btn_Them_Cachdung.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_Cachdung.Name = "btn_Them_Cachdung";
             this.btn_Them_Cachdung.Size = new System.Drawing.Size(117, 37);
             this.btn_Them_Cachdung.TabIndex = 50;
@@ -192,8 +192,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Capnhat_Cachdung.FillColor = System.Drawing.Color.LightGray;
             this.btn_Capnhat_Cachdung.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Capnhat_Cachdung.ForeColor = System.Drawing.Color.Black;
-            this.btn_Capnhat_Cachdung.Location = new System.Drawing.Point(328, 737);
-            this.btn_Capnhat_Cachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Capnhat_Cachdung.Location = new System.Drawing.Point(188, 1018);
+            this.btn_Capnhat_Cachdung.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Capnhat_Cachdung.Name = "btn_Capnhat_Cachdung";
             this.btn_Capnhat_Cachdung.Size = new System.Drawing.Size(109, 37);
             this.btn_Capnhat_Cachdung.TabIndex = 49;
@@ -209,11 +209,11 @@ namespace QuanLyPhongMachTu.UserControls
             this.gbx_Thongtincachdung.Controls.Add(this.label2);
             this.gbx_Thongtincachdung.Controls.Add(this.lbl_Tencachdung);
             this.gbx_Thongtincachdung.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbx_Thongtincachdung.Location = new System.Drawing.Point(277, 544);
-            this.gbx_Thongtincachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbx_Thongtincachdung.Location = new System.Drawing.Point(188, 783);
+            this.gbx_Thongtincachdung.Margin = new System.Windows.Forms.Padding(4);
             this.gbx_Thongtincachdung.Name = "gbx_Thongtincachdung";
-            this.gbx_Thongtincachdung.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbx_Thongtincachdung.Size = new System.Drawing.Size(350, 159);
+            this.gbx_Thongtincachdung.Padding = new System.Windows.Forms.Padding(4);
+            this.gbx_Thongtincachdung.Size = new System.Drawing.Size(512, 196);
             this.gbx_Thongtincachdung.TabIndex = 47;
             this.gbx_Thongtincachdung.TabStop = false;
             this.gbx_Thongtincachdung.Text = "Thông Tin Cách Dùng";
@@ -230,8 +230,8 @@ namespace QuanLyPhongMachTu.UserControls
             // 
             // txt_MaCachDung
             // 
-            this.txt_MaCachDung.Location = new System.Drawing.Point(135, 67);
-            this.txt_MaCachDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaCachDung.Location = new System.Drawing.Point(243, 95);
+            this.txt_MaCachDung.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaCachDung.Name = "txt_MaCachDung";
             this.txt_MaCachDung.ReadOnly = true;
             this.txt_MaCachDung.Size = new System.Drawing.Size(189, 20);
@@ -251,8 +251,8 @@ namespace QuanLyPhongMachTu.UserControls
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 69);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(65, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 0;
@@ -261,8 +261,8 @@ namespace QuanLyPhongMachTu.UserControls
             // lbl_Macachdung
             // 
             this.lbl_Macachdung.AutoSize = true;
-            this.lbl_Macachdung.Location = new System.Drawing.Point(846, 814);
-            this.lbl_Macachdung.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Macachdung.Location = new System.Drawing.Point(1171, 1062);
+            this.lbl_Macachdung.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Macachdung.Name = "lbl_Macachdung";
             this.lbl_Macachdung.Size = new System.Drawing.Size(82, 13);
             this.lbl_Macachdung.TabIndex = 0;
@@ -273,8 +273,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.lbl_dsCachdung.AutoSize = false;
             this.lbl_dsCachdung.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsCachdung.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dsCachdung.Location = new System.Drawing.Point(960, 544);
-            this.lbl_dsCachdung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbl_dsCachdung.Location = new System.Drawing.Point(1181, 776);
+            this.lbl_dsCachdung.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_dsCachdung.Name = "lbl_dsCachdung";
             this.lbl_dsCachdung.Size = new System.Drawing.Size(173, 21);
             this.lbl_dsCachdung.TabIndex = 55;
@@ -286,14 +286,14 @@ namespace QuanLyPhongMachTu.UserControls
             this.dgv_CachDung.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_CachDung.ColumnHeadersHeight = 32;
             this.dgv_CachDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgv_CachDung.Location = new System.Drawing.Point(825, 571);
-            this.dgv_CachDung.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_CachDung.Location = new System.Drawing.Point(1063, 824);
+            this.dgv_CachDung.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_CachDung.Name = "dgv_CachDung";
             this.dgv_CachDung.RowHeadersVisible = false;
             this.dgv_CachDung.RowHeadersWidth = 57;
             this.dgv_CachDung.RowTemplate.Height = 24;
             this.dgv_CachDung.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_CachDung.Size = new System.Drawing.Size(440, 212);
+            this.dgv_CachDung.Size = new System.Drawing.Size(552, 225);
             this.dgv_CachDung.TabIndex = 54;
             this.dgv_CachDung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CachDung_CellContentClick);
             this.dgv_CachDung.SelectionChanged += new System.EventHandler(this.dgv_CachDung_SelectionChanged);
@@ -303,8 +303,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.lbl_dsdv.AutoSize = false;
             this.lbl_dsdv.BackColor = System.Drawing.Color.Transparent;
             this.lbl_dsdv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_dsdv.Location = new System.Drawing.Point(982, 82);
-            this.lbl_dsdv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbl_dsdv.Location = new System.Drawing.Point(1225, 130);
+            this.lbl_dsdv.Margin = new System.Windows.Forms.Padding(4);
             this.lbl_dsdv.Name = "lbl_dsdv";
             this.lbl_dsdv.Size = new System.Drawing.Size(137, 21);
             this.lbl_dsdv.TabIndex = 45;
@@ -323,23 +323,23 @@ namespace QuanLyPhongMachTu.UserControls
             this.dgv_DonVi.RowHeadersWidth = 57;
             this.dgv_DonVi.RowTemplate.Height = 24;
             this.dgv_DonVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_DonVi.Size = new System.Drawing.Size(448, 225);
+            this.dgv_DonVi.Size = new System.Drawing.Size(540, 225);
             this.dgv_DonVi.TabIndex = 44;
             this.dgv_DonVi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DonVi_CellContentClick);
             this.dgv_DonVi.SelectionChanged += new System.EventHandler(this.dgv_DonVi_SelectionChanged);
             // 
             // txt_TenDonVi
             // 
-            this.txt_TenDonVi.Location = new System.Drawing.Point(128, 116);
-            this.txt_TenDonVi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_TenDonVi.Location = new System.Drawing.Point(232, 145);
+            this.txt_TenDonVi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenDonVi.Name = "txt_TenDonVi";
             this.txt_TenDonVi.Size = new System.Drawing.Size(195, 20);
             this.txt_TenDonVi.TabIndex = 3;
             // 
             // txt_MaDonVi_Tracuu
             // 
-            this.txt_MaDonVi_Tracuu.Location = new System.Drawing.Point(960, 383);
-            this.txt_MaDonVi_Tracuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaDonVi_Tracuu.Location = new System.Drawing.Point(1329, 468);
+            this.txt_MaDonVi_Tracuu.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaDonVi_Tracuu.Name = "txt_MaDonVi_Tracuu";
             this.txt_MaDonVi_Tracuu.Size = new System.Drawing.Size(130, 20);
             this.txt_MaDonVi_Tracuu.TabIndex = 2;
@@ -347,8 +347,8 @@ namespace QuanLyPhongMachTu.UserControls
             // lbl_Tendonvi
             // 
             this.lbl_Tendonvi.AutoSize = true;
-            this.lbl_Tendonvi.Location = new System.Drawing.Point(41, 118);
-            this.lbl_Tendonvi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_Tendonvi.Location = new System.Drawing.Point(74, 150);
+            this.lbl_Tendonvi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_Tendonvi.Name = "lbl_Tendonvi";
             this.lbl_Tendonvi.Size = new System.Drawing.Size(64, 13);
             this.lbl_Tendonvi.TabIndex = 1;
@@ -357,8 +357,8 @@ namespace QuanLyPhongMachTu.UserControls
             // lbl_MaDonVi
             // 
             this.lbl_MaDonVi.AutoSize = true;
-            this.lbl_MaDonVi.Location = new System.Drawing.Point(855, 390);
-            this.lbl_MaDonVi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_MaDonVi.Location = new System.Drawing.Point(1171, 468);
+            this.lbl_MaDonVi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_MaDonVi.Name = "lbl_MaDonVi";
             this.lbl_MaDonVi.Size = new System.Drawing.Size(60, 13);
             this.lbl_MaDonVi.TabIndex = 0;
@@ -374,8 +374,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Khongluu_dv.FillColor = System.Drawing.Color.LightGray;
             this.btn_Khongluu_dv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Khongluu_dv.ForeColor = System.Drawing.Color.Black;
-            this.btn_Khongluu_dv.Location = new System.Drawing.Point(647, 135);
-            this.btn_Khongluu_dv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Khongluu_dv.Location = new System.Drawing.Point(733, 212);
+            this.btn_Khongluu_dv.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Khongluu_dv.Name = "btn_Khongluu_dv";
             this.btn_Khongluu_dv.Size = new System.Drawing.Size(117, 36);
             this.btn_Khongluu_dv.TabIndex = 43;
@@ -392,10 +392,10 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Tracuu_dv.FillColor = System.Drawing.Color.LightGray;
             this.btn_Tracuu_dv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Tracuu_dv.ForeColor = System.Drawing.Color.Black;
-            this.btn_Tracuu_dv.Location = new System.Drawing.Point(1151, 371);
-            this.btn_Tracuu_dv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Tracuu_dv.Location = new System.Drawing.Point(1176, 517);
+            this.btn_Tracuu_dv.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Tracuu_dv.Name = "btn_Tracuu_dv";
-            this.btn_Tracuu_dv.Size = new System.Drawing.Size(99, 32);
+            this.btn_Tracuu_dv.Size = new System.Drawing.Size(138, 39);
             this.btn_Tracuu_dv.TabIndex = 41;
             this.btn_Tracuu_dv.Text = "Tra Cứu";
             this.btn_Tracuu_dv.Click += new System.EventHandler(this.btn_Tracuu_dv_Click);
@@ -410,8 +410,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Them_dv.FillColor = System.Drawing.Color.LightGray;
             this.btn_Them_dv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Them_dv.ForeColor = System.Drawing.Color.Black;
-            this.btn_Them_dv.Location = new System.Drawing.Point(647, 200);
-            this.btn_Them_dv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Them_dv.Location = new System.Drawing.Point(733, 313);
+            this.btn_Them_dv.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_dv.Name = "btn_Them_dv";
             this.btn_Them_dv.Size = new System.Drawing.Size(117, 32);
             this.btn_Them_dv.TabIndex = 40;
@@ -428,8 +428,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.btn_Capnhat_dv.FillColor = System.Drawing.Color.LightGray;
             this.btn_Capnhat_dv.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_Capnhat_dv.ForeColor = System.Drawing.Color.Black;
-            this.btn_Capnhat_dv.Location = new System.Drawing.Point(328, 295);
-            this.btn_Capnhat_dv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Capnhat_dv.Location = new System.Drawing.Point(188, 423);
+            this.btn_Capnhat_dv.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Capnhat_dv.Name = "btn_Capnhat_dv";
             this.btn_Capnhat_dv.Size = new System.Drawing.Size(117, 32);
             this.btn_Capnhat_dv.TabIndex = 39;
@@ -448,8 +448,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.gbx_donvi.Location = new System.Drawing.Point(269, 121);
             this.gbx_donvi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbx_donvi.Name = "gbx_donvi";
-            this.gbx_donvi.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gbx_donvi.Size = new System.Drawing.Size(350, 156);
+            this.gbx_donvi.Padding = new System.Windows.Forms.Padding(4);
+            this.gbx_donvi.Size = new System.Drawing.Size(537, 189);
             this.gbx_donvi.TabIndex = 37;
             this.gbx_donvi.TabStop = false;
             this.gbx_donvi.Text = "Thông Tin Đơn Vị";
@@ -465,8 +465,8 @@ namespace QuanLyPhongMachTu.UserControls
             // 
             // txt_MaDonVi
             // 
-            this.txt_MaDonVi.Location = new System.Drawing.Point(127, 75);
-            this.txt_MaDonVi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_MaDonVi.Location = new System.Drawing.Point(232, 100);
+            this.txt_MaDonVi.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaDonVi.Name = "txt_MaDonVi";
             this.txt_MaDonVi.ReadOnly = true;
             this.txt_MaDonVi.Size = new System.Drawing.Size(195, 20);
@@ -485,8 +485,8 @@ namespace QuanLyPhongMachTu.UserControls
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 77);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(82, 103);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 0;
@@ -515,8 +515,8 @@ namespace QuanLyPhongMachTu.UserControls
             this.guna2Button1.FillColor = System.Drawing.Color.LightGray;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(490, 293);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(733, 419);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(117, 35);
             this.guna2Button1.TabIndex = 43;

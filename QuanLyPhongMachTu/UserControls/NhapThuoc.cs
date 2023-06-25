@@ -398,5 +398,10 @@ namespace QuanLyPhongMachTu.UserControls
         {
 
         }
+
+        private void lbb_TONGTIEN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

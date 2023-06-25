@@ -383,5 +383,26 @@ namespace QuanLyPhongMachTu.UserControls
         {
             HienThiThongTinBenh();
         }
+
+        private void btnXoaBenh_Click(object sender, EventArgs e)
+        {
+            if (!KiemTraNhapLieuBenh())
+            {
+                MessageBox.Show("Vui lòng cung cấp đầy đủ thông tin!");
+                return;
+            }
+
+            BENH benh = dBenhBLL.LayBenh(txtMaBenh.Text);
+            
+            if (dBenhBLL.XoaBenh(benh))
+            {
+                MessageBox.Show("Xóa bệnh thành công!");
+                HienThiThongTinBenh();
+            }
+            else
+            {
+                MessageBox.Show("Xóa bệnh thất bại!");
+            }
+        }
     }
 }
