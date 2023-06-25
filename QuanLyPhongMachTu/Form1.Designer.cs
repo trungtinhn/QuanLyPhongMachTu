@@ -32,32 +32,32 @@ namespace QuanLyPhongMachTu
         {
             this.components = new System.ComponentModel.Container();
             this.lbl_QuanLyPhongMachTu = new System.Windows.Forms.Label();
-            this.btn_Taikhoan = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Quidinh = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Baocao = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Nhapthuoc = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Donvi_Cachdung = new Guna.UI2.WinForms.Guna2TileButton();
+            this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.panel_click = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.btn_Thuoc_LoaiThuoc = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Benh_LoaiBenh = new Guna.UI2.WinForms.Guna2TileButton();
-            this.btn_Phieukhambenh = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btn_Taikhoan = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btn_Donvi_Cachdung = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btn_Quidinh = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Benhnhan = new Guna.UI2.WinForms.Guna2TileButton();
-            this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.siticonePanel2 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.btn_Baocao = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btn_Nhapthuoc = new Guna.UI2.WinForms.Guna2TileButton();
+            this.btn_Phieukhambenh = new Guna.UI2.WinForms.Guna2TileButton();
             this.siticoneAnimateWindow1 = new Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow(this.components);
             this.siticonePanel3 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            this.u_BenhLoaiBenh = new QuanLyPhongMachTu.UserControls.TraCuuBenh();
+            this.u_thayDoiQuiDinh = new QuanLyPhongMachTu.UserControls.ThayDoiQuiDinh();
+            this.u_nhapThuoc = new QuanLyPhongMachTu.UserControls.NhapThuoc();
+            this.u_loaiThuocThuoc = new QuanLyPhongMachTu.UserControls.LoaiThuocThuoc();
+            this.u_lapPhieuKhamBenh = new QuanLyPhongMachTu.UserControls.LapPhieuKhamBenh();
+            this.u_hoaDonThanhToan = new QuanLyPhongMachTu.UserControls.HoaDonThanhToan();
             this.u_danhSachKhamBenh = new QuanLyPhongMachTu.UserControls.DanhSachKhamBenh();
             this.u_donViCachDung = new QuanLyPhongMachTu.UserControls.DonViCachDung();
-            this.u_hoaDonThanhToan = new QuanLyPhongMachTu.UserControls.HoaDonThanhToan();
-            this.u_lapPhieuKhamBenh = new QuanLyPhongMachTu.UserControls.LapPhieuKhamBenh();
-            this.u_loaiThuocThuoc = new QuanLyPhongMachTu.UserControls.LoaiThuocThuoc();
-            this.u_nhapThuoc = new QuanLyPhongMachTu.UserControls.NhapThuoc();
-            this.u_thayDoiQuiDinh = new QuanLyPhongMachTu.UserControls.ThayDoiQuiDinh();
-            this.u_BenhLoaiBenh = new QuanLyPhongMachTu.UserControls.TraCuuBenh();
-            this.uBaoCao = new QuanLyPhongMachTu.UserControls.uBaoCao();
-            this.uTaiKhoancs = new QuanLyPhongMachTu.UserControls.uTaiKhoancs();
             this.uTaiKhoanQLy1 = new QuanLyPhongMachTu.UserControls.uTaiKhoanQLy();
+            this.uTaiKhoancs = new QuanLyPhongMachTu.UserControls.uTaiKhoancs();
+            this.uBaoCao = new QuanLyPhongMachTu.UserControls.uBaoCao();
             this.siticonePanel1.SuspendLayout();
-            this.siticonePanel2.SuspendLayout();
+            this.panel_click.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,116 +72,38 @@ namespace QuanLyPhongMachTu
             this.lbl_QuanLyPhongMachTu.TabIndex = 0;
             this.lbl_QuanLyPhongMachTu.Text = "QUẢN LÝ PHÒNG MẠCH TƯ";
             // 
-            // btn_Taikhoan
+            // siticonePanel1
             // 
-            this.btn_Taikhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Taikhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Taikhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Taikhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Taikhoan.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Taikhoan.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Taikhoan.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Taikhoan.Image = global::QuanLyPhongMachTu.Properties.Resources.profile;
-            this.btn_Taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Taikhoan.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Taikhoan.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Taikhoan.Location = new System.Drawing.Point(12, 671);
-            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.btn_Taikhoan.Name = "btn_Taikhoan";
-            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
-            this.btn_Taikhoan.Size = new System.Drawing.Size(247, 73);
-            this.btn_Taikhoan.TabIndex = 19;
-            this.btn_Taikhoan.Text = "Tài Khoản";
-            this.btn_Taikhoan.Click += new System.EventHandler(this.btn_Taikhoan_Click);
+            this.siticonePanel1.BackColor = System.Drawing.Color.SandyBrown;
+            this.siticonePanel1.Controls.Add(this.lbl_QuanLyPhongMachTu);
+            this.siticonePanel1.CustomBorderColor = System.Drawing.Color.SaddleBrown;
+            this.siticonePanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
+            this.siticonePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.siticonePanel1.Name = "siticonePanel1";
+            this.siticonePanel1.Size = new System.Drawing.Size(1924, 70);
+            this.siticonePanel1.TabIndex = 20;
             // 
-            // btn_Quidinh
+            // panel_click
             // 
-            this.btn_Quidinh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Quidinh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Quidinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Quidinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Quidinh.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Quidinh.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Quidinh.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Quidinh.Image = global::QuanLyPhongMachTu.Properties.Resources.regulation;
-            this.btn_Quidinh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Quidinh.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Quidinh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Quidinh.Location = new System.Drawing.Point(12, 594);
-            this.btn_Quidinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.btn_Quidinh.Name = "btn_Quidinh";
-            this.btn_Quidinh.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
-            this.btn_Quidinh.Size = new System.Drawing.Size(247, 73);
-            this.btn_Quidinh.TabIndex = 18;
-            this.btn_Quidinh.Text = "Qui Định";
-            this.btn_Quidinh.Click += new System.EventHandler(this.btn_Quidinh_Click);
-            // 
-            // btn_Baocao
-            // 
-            this.btn_Baocao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Baocao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Baocao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Baocao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Baocao.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Baocao.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Baocao.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Baocao.Image = global::QuanLyPhongMachTu.Properties.Resources.report;
-            this.btn_Baocao.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Baocao.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Baocao.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Baocao.Location = new System.Drawing.Point(12, 517);
-            this.btn_Baocao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.btn_Baocao.Name = "btn_Baocao";
-            this.btn_Baocao.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
-            this.btn_Baocao.Size = new System.Drawing.Size(247, 73);
-            this.btn_Baocao.TabIndex = 17;
-            this.btn_Baocao.Text = "Báo Cáo";
-            this.btn_Baocao.Click += new System.EventHandler(this.btn_Baocao_Click);
-            // 
-            // btn_Nhapthuoc
-            // 
-            this.btn_Nhapthuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Nhapthuoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Nhapthuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Nhapthuoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Nhapthuoc.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Nhapthuoc.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Nhapthuoc.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Nhapthuoc.Image = global::QuanLyPhongMachTu.Properties.Resources.packaging;
-            this.btn_Nhapthuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Nhapthuoc.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Nhapthuoc.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Nhapthuoc.Location = new System.Drawing.Point(12, 441);
-            this.btn_Nhapthuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.btn_Nhapthuoc.Name = "btn_Nhapthuoc";
-            this.btn_Nhapthuoc.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
-            this.btn_Nhapthuoc.Size = new System.Drawing.Size(247, 73);
-            this.btn_Nhapthuoc.TabIndex = 16;
-            this.btn_Nhapthuoc.Text = "Nhập Thuốc";
-            this.btn_Nhapthuoc.Click += new System.EventHandler(this.btn_Nhapthuoc_Click);
-            // 
-            // btn_Donvi_Cachdung
-            // 
-            this.btn_Donvi_Cachdung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Donvi_Cachdung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Donvi_Cachdung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Donvi_Cachdung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Donvi_Cachdung.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Donvi_Cachdung.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Donvi_Cachdung.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Donvi_Cachdung.Image = global::QuanLyPhongMachTu.Properties.Resources.settings;
-            this.btn_Donvi_Cachdung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Donvi_Cachdung.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Donvi_Cachdung.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Donvi_Cachdung.Location = new System.Drawing.Point(12, 342);
-            this.btn_Donvi_Cachdung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.btn_Donvi_Cachdung.Name = "btn_Donvi_Cachdung";
-            this.btn_Donvi_Cachdung.Padding = new System.Windows.Forms.Padding(60, 0, 20, 20);
-            this.btn_Donvi_Cachdung.Size = new System.Drawing.Size(247, 94);
-            this.btn_Donvi_Cachdung.TabIndex = 15;
-            this.btn_Donvi_Cachdung.Text = "Đơn vị - Cách dùng";
-            this.btn_Donvi_Cachdung.TextOffset = new System.Drawing.Point(0, -10);
-            this.btn_Donvi_Cachdung.Click += new System.EventHandler(this.btn_Donvi_Cachdung_Click);
+            this.panel_click.AutoScroll = true;
+            this.panel_click.BackColor = System.Drawing.Color.BurlyWood;
+            this.panel_click.Controls.Add(this.btn_Thuoc_LoaiThuoc);
+            this.panel_click.Controls.Add(this.btn_Benh_LoaiBenh);
+            this.panel_click.Controls.Add(this.btn_Taikhoan);
+            this.panel_click.Controls.Add(this.btn_Donvi_Cachdung);
+            this.panel_click.Controls.Add(this.btn_Quidinh);
+            this.panel_click.Controls.Add(this.btn_Benhnhan);
+            this.panel_click.Controls.Add(this.btn_Baocao);
+            this.panel_click.Controls.Add(this.btn_Nhapthuoc);
+            this.panel_click.Controls.Add(this.btn_Phieukhambenh);
+            this.panel_click.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_click.Location = new System.Drawing.Point(0, 70);
+            this.panel_click.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel_click.Name = "panel_click";
+            this.panel_click.Size = new System.Drawing.Size(277, 982);
+            this.panel_click.TabIndex = 21;
             // 
             // btn_Thuoc_LoaiThuoc
             // 
@@ -229,28 +151,72 @@ namespace QuanLyPhongMachTu
             this.btn_Benh_LoaiBenh.TextOffset = new System.Drawing.Point(0, -10);
             this.btn_Benh_LoaiBenh.Click += new System.EventHandler(this.btn_Benh_LoaiBenh_Click);
             // 
-            // btn_Phieukhambenh
+            // btn_Taikhoan
             // 
-            this.btn_Phieukhambenh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Phieukhambenh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Phieukhambenh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Phieukhambenh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Phieukhambenh.FillColor = System.Drawing.Color.BurlyWood;
-            this.btn_Phieukhambenh.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Phieukhambenh.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_Phieukhambenh.Image = global::QuanLyPhongMachTu.Properties.Resources.phieukhambenh;
-            this.btn_Phieukhambenh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_Phieukhambenh.ImageOffset = new System.Drawing.Point(0, 20);
-            this.btn_Phieukhambenh.ImageSize = new System.Drawing.Size(40, 40);
-            this.btn_Phieukhambenh.Location = new System.Drawing.Point(12, 74);
-            this.btn_Phieukhambenh.Margin = new System.Windows.Forms.Padding(5, 1, 1, 1);
-            this.btn_Phieukhambenh.Name = "btn_Phieukhambenh";
-            this.btn_Phieukhambenh.Padding = new System.Windows.Forms.Padding(69, 0, 20, 20);
-            this.btn_Phieukhambenh.Size = new System.Drawing.Size(247, 86);
-            this.btn_Phieukhambenh.TabIndex = 12;
-            this.btn_Phieukhambenh.Text = "Phiếu Khám Bệnh";
-            this.btn_Phieukhambenh.TextOffset = new System.Drawing.Point(0, -10);
-            this.btn_Phieukhambenh.Click += new System.EventHandler(this.btn_Phieukhambenh_Click);
+            this.btn_Taikhoan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Taikhoan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Taikhoan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Taikhoan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Taikhoan.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Taikhoan.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Taikhoan.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Taikhoan.Image = global::QuanLyPhongMachTu.Properties.Resources.profile;
+            this.btn_Taikhoan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Taikhoan.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Taikhoan.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Taikhoan.Location = new System.Drawing.Point(12, 671);
+            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
+            this.btn_Taikhoan.Name = "btn_Taikhoan";
+            this.btn_Taikhoan.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
+            this.btn_Taikhoan.Size = new System.Drawing.Size(247, 73);
+            this.btn_Taikhoan.TabIndex = 19;
+            this.btn_Taikhoan.Text = "Tài Khoản";
+            this.btn_Taikhoan.Click += new System.EventHandler(this.btn_Taikhoan_Click);
+            // 
+            // btn_Donvi_Cachdung
+            // 
+            this.btn_Donvi_Cachdung.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Donvi_Cachdung.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Donvi_Cachdung.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Donvi_Cachdung.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Donvi_Cachdung.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Donvi_Cachdung.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Donvi_Cachdung.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Donvi_Cachdung.Image = global::QuanLyPhongMachTu.Properties.Resources.settings;
+            this.btn_Donvi_Cachdung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Donvi_Cachdung.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Donvi_Cachdung.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Donvi_Cachdung.Location = new System.Drawing.Point(12, 342);
+            this.btn_Donvi_Cachdung.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
+            this.btn_Donvi_Cachdung.Name = "btn_Donvi_Cachdung";
+            this.btn_Donvi_Cachdung.Padding = new System.Windows.Forms.Padding(60, 0, 20, 20);
+            this.btn_Donvi_Cachdung.Size = new System.Drawing.Size(247, 94);
+            this.btn_Donvi_Cachdung.TabIndex = 15;
+            this.btn_Donvi_Cachdung.Text = "Đơn vị - Cách dùng";
+            this.btn_Donvi_Cachdung.TextOffset = new System.Drawing.Point(0, -10);
+            this.btn_Donvi_Cachdung.Click += new System.EventHandler(this.btn_Donvi_Cachdung_Click);
+            // 
+            // btn_Quidinh
+            // 
+            this.btn_Quidinh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Quidinh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Quidinh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Quidinh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Quidinh.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Quidinh.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Quidinh.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Quidinh.Image = global::QuanLyPhongMachTu.Properties.Resources.regulation;
+            this.btn_Quidinh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Quidinh.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Quidinh.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Quidinh.Location = new System.Drawing.Point(12, 594);
+            this.btn_Quidinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
+            this.btn_Quidinh.Name = "btn_Quidinh";
+            this.btn_Quidinh.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
+            this.btn_Quidinh.Size = new System.Drawing.Size(247, 73);
+            this.btn_Quidinh.TabIndex = 18;
+            this.btn_Quidinh.Text = "Qui Định";
+            this.btn_Quidinh.Click += new System.EventHandler(this.btn_Quidinh_Click);
             // 
             // btn_Benhnhan
             // 
@@ -274,38 +240,72 @@ namespace QuanLyPhongMachTu
             this.btn_Benhnhan.Text = "Bệnh Nhân";
             this.btn_Benhnhan.Click += new System.EventHandler(this.btn_Benhnhan_Click);
             // 
-            // siticonePanel1
+            // btn_Baocao
             // 
-            this.siticonePanel1.BackColor = System.Drawing.Color.SandyBrown;
-            this.siticonePanel1.Controls.Add(this.lbl_QuanLyPhongMachTu);
-            this.siticonePanel1.CustomBorderColor = System.Drawing.Color.SaddleBrown;
-            this.siticonePanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
-            this.siticonePanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.siticonePanel1.Name = "siticonePanel1";
-            this.siticonePanel1.Size = new System.Drawing.Size(1924, 70);
-            this.siticonePanel1.TabIndex = 20;
+            this.btn_Baocao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Baocao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Baocao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Baocao.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Baocao.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Baocao.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Baocao.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Baocao.Image = global::QuanLyPhongMachTu.Properties.Resources.report;
+            this.btn_Baocao.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Baocao.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Baocao.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Baocao.Location = new System.Drawing.Point(12, 517);
+            this.btn_Baocao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
+            this.btn_Baocao.Name = "btn_Baocao";
+            this.btn_Baocao.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
+            this.btn_Baocao.Size = new System.Drawing.Size(247, 73);
+            this.btn_Baocao.TabIndex = 17;
+            this.btn_Baocao.Text = "Báo Cáo";
+            this.btn_Baocao.Click += new System.EventHandler(this.btn_Baocao_Click);
             // 
-            // siticonePanel2
+            // btn_Nhapthuoc
             // 
-            this.siticonePanel2.AutoScroll = true;
-            this.siticonePanel2.BackColor = System.Drawing.Color.BurlyWood;
-            this.siticonePanel2.Controls.Add(this.btn_Thuoc_LoaiThuoc);
-            this.siticonePanel2.Controls.Add(this.btn_Benh_LoaiBenh);
-            this.siticonePanel2.Controls.Add(this.btn_Taikhoan);
-            this.siticonePanel2.Controls.Add(this.btn_Donvi_Cachdung);
-            this.siticonePanel2.Controls.Add(this.btn_Quidinh);
-            this.siticonePanel2.Controls.Add(this.btn_Benhnhan);
-            this.siticonePanel2.Controls.Add(this.btn_Baocao);
-            this.siticonePanel2.Controls.Add(this.btn_Nhapthuoc);
-            this.siticonePanel2.Controls.Add(this.btn_Phieukhambenh);
-            this.siticonePanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.siticonePanel2.Location = new System.Drawing.Point(0, 70);
-            this.siticonePanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.siticonePanel2.Name = "siticonePanel2";
-            this.siticonePanel2.Size = new System.Drawing.Size(277, 982);
-            this.siticonePanel2.TabIndex = 21;
+            this.btn_Nhapthuoc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Nhapthuoc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Nhapthuoc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Nhapthuoc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Nhapthuoc.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Nhapthuoc.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Nhapthuoc.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Nhapthuoc.Image = global::QuanLyPhongMachTu.Properties.Resources.packaging;
+            this.btn_Nhapthuoc.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Nhapthuoc.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Nhapthuoc.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Nhapthuoc.Location = new System.Drawing.Point(12, 441);
+            this.btn_Nhapthuoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 1);
+            this.btn_Nhapthuoc.Name = "btn_Nhapthuoc";
+            this.btn_Nhapthuoc.Padding = new System.Windows.Forms.Padding(60, 0, 20, 39);
+            this.btn_Nhapthuoc.Size = new System.Drawing.Size(247, 73);
+            this.btn_Nhapthuoc.TabIndex = 16;
+            this.btn_Nhapthuoc.Text = "Nhập Thuốc";
+            this.btn_Nhapthuoc.Click += new System.EventHandler(this.btn_Nhapthuoc_Click);
+            // 
+            // btn_Phieukhambenh
+            // 
+            this.btn_Phieukhambenh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Phieukhambenh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Phieukhambenh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Phieukhambenh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Phieukhambenh.FillColor = System.Drawing.Color.BurlyWood;
+            this.btn_Phieukhambenh.Font = new System.Drawing.Font("Segoe UI", 11.8209F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Phieukhambenh.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.btn_Phieukhambenh.Image = global::QuanLyPhongMachTu.Properties.Resources.phieukhambenh;
+            this.btn_Phieukhambenh.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Phieukhambenh.ImageOffset = new System.Drawing.Point(0, 20);
+            this.btn_Phieukhambenh.ImageSize = new System.Drawing.Size(40, 40);
+            this.btn_Phieukhambenh.Location = new System.Drawing.Point(12, 74);
+            this.btn_Phieukhambenh.Margin = new System.Windows.Forms.Padding(5, 1, 1, 1);
+            this.btn_Phieukhambenh.Name = "btn_Phieukhambenh";
+            this.btn_Phieukhambenh.Padding = new System.Windows.Forms.Padding(69, 0, 20, 20);
+            this.btn_Phieukhambenh.Size = new System.Drawing.Size(247, 86);
+            this.btn_Phieukhambenh.TabIndex = 12;
+            this.btn_Phieukhambenh.Text = "Phiếu Khám Bệnh";
+            this.btn_Phieukhambenh.TextOffset = new System.Drawing.Point(0, -10);
+            this.btn_Phieukhambenh.Click += new System.EventHandler(this.btn_Phieukhambenh_Click);
             // 
             // siticonePanel3
             // 
@@ -326,6 +326,61 @@ namespace QuanLyPhongMachTu
             this.siticonePanel3.Size = new System.Drawing.Size(1647, 982);
             this.siticonePanel3.TabIndex = 22;
             // 
+            // u_BenhLoaiBenh
+            // 
+            this.u_BenhLoaiBenh.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_BenhLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(0, 0);
+            this.u_BenhLoaiBenh.Name = "u_BenhLoaiBenh";
+            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1647, 982);
+            this.u_BenhLoaiBenh.TabIndex = 7;
+            // 
+            // u_thayDoiQuiDinh
+            // 
+            this.u_thayDoiQuiDinh.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_thayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(0, 0);
+            this.u_thayDoiQuiDinh.Name = "u_thayDoiQuiDinh";
+            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1647, 982);
+            this.u_thayDoiQuiDinh.TabIndex = 6;
+            // 
+            // u_nhapThuoc
+            // 
+            this.u_nhapThuoc.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_nhapThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_nhapThuoc.Location = new System.Drawing.Point(0, 0);
+            this.u_nhapThuoc.Name = "u_nhapThuoc";
+            this.u_nhapThuoc.Size = new System.Drawing.Size(1647, 982);
+            this.u_nhapThuoc.TabIndex = 5;
+            // 
+            // u_loaiThuocThuoc
+            // 
+            this.u_loaiThuocThuoc.AutoScroll = true;
+            this.u_loaiThuocThuoc.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_loaiThuocThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_loaiThuocThuoc.Location = new System.Drawing.Point(0, 0);
+            this.u_loaiThuocThuoc.Name = "u_loaiThuocThuoc";
+            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1647, 982);
+            this.u_loaiThuocThuoc.TabIndex = 4;
+            // 
+            // u_lapPhieuKhamBenh
+            // 
+            this.u_lapPhieuKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_lapPhieuKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_lapPhieuKhamBenh.Location = new System.Drawing.Point(0, 0);
+            this.u_lapPhieuKhamBenh.Name = "u_lapPhieuKhamBenh";
+            this.u_lapPhieuKhamBenh.Size = new System.Drawing.Size(1647, 982);
+            this.u_lapPhieuKhamBenh.TabIndex = 3;
+            // 
+            // u_hoaDonThanhToan
+            // 
+            this.u_hoaDonThanhToan.BackColor = System.Drawing.Color.PeachPuff;
+            this.u_hoaDonThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(0, 0);
+            this.u_hoaDonThanhToan.Name = "u_hoaDonThanhToan";
+            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1647, 982);
+            this.u_hoaDonThanhToan.TabIndex = 2;
+            // 
             // u_danhSachKhamBenh
             // 
             this.u_danhSachKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
@@ -344,69 +399,14 @@ namespace QuanLyPhongMachTu
             this.u_donViCachDung.Size = new System.Drawing.Size(1647, 982);
             this.u_donViCachDung.TabIndex = 1;
             // 
-            // u_hoaDonThanhToan
+            // uTaiKhoanQLy1
             // 
-            this.u_hoaDonThanhToan.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_hoaDonThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_hoaDonThanhToan.Location = new System.Drawing.Point(0, 0);
-            this.u_hoaDonThanhToan.Name = "u_hoaDonThanhToan";
-            this.u_hoaDonThanhToan.Size = new System.Drawing.Size(1647, 982);
-            this.u_hoaDonThanhToan.TabIndex = 2;
-            // 
-            // u_lapPhieuKhamBenh
-            // 
-            this.u_lapPhieuKhamBenh.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_lapPhieuKhamBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_lapPhieuKhamBenh.Location = new System.Drawing.Point(0, 0);
-            this.u_lapPhieuKhamBenh.Name = "u_lapPhieuKhamBenh";
-            this.u_lapPhieuKhamBenh.Size = new System.Drawing.Size(1647, 982);
-            this.u_lapPhieuKhamBenh.TabIndex = 3;
-            // 
-            // u_loaiThuocThuoc
-            // 
-            this.u_loaiThuocThuoc.AutoScroll = true;
-            this.u_loaiThuocThuoc.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_loaiThuocThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_loaiThuocThuoc.Location = new System.Drawing.Point(0, 0);
-            this.u_loaiThuocThuoc.Name = "u_loaiThuocThuoc";
-            this.u_loaiThuocThuoc.Size = new System.Drawing.Size(1647, 982);
-            this.u_loaiThuocThuoc.TabIndex = 4;
-            // 
-            // u_nhapThuoc
-            // 
-            this.u_nhapThuoc.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_nhapThuoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_nhapThuoc.Location = new System.Drawing.Point(0, 0);
-            this.u_nhapThuoc.Name = "u_nhapThuoc";
-            this.u_nhapThuoc.Size = new System.Drawing.Size(1647, 982);
-            this.u_nhapThuoc.TabIndex = 5;
-            // 
-            // u_thayDoiQuiDinh
-            // 
-            this.u_thayDoiQuiDinh.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_thayDoiQuiDinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_thayDoiQuiDinh.Location = new System.Drawing.Point(0, 0);
-            this.u_thayDoiQuiDinh.Name = "u_thayDoiQuiDinh";
-            this.u_thayDoiQuiDinh.Size = new System.Drawing.Size(1647, 982);
-            this.u_thayDoiQuiDinh.TabIndex = 6;
-            // 
-            // u_BenhLoaiBenh
-            // 
-            this.u_BenhLoaiBenh.BackColor = System.Drawing.Color.PeachPuff;
-            this.u_BenhLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.u_BenhLoaiBenh.Location = new System.Drawing.Point(0, 0);
-            this.u_BenhLoaiBenh.Name = "u_BenhLoaiBenh";
-            this.u_BenhLoaiBenh.Size = new System.Drawing.Size(1647, 982);
-            this.u_BenhLoaiBenh.TabIndex = 7;
-            // 
-            // uBaoCao
-            // 
-            this.uBaoCao.BackColor = System.Drawing.Color.PeachPuff;
-            this.uBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uBaoCao.Location = new System.Drawing.Point(0, 0);
-            this.uBaoCao.Name = "uBaoCao";
-            this.uBaoCao.Size = new System.Drawing.Size(1647, 982);
-            this.uBaoCao.TabIndex = 8;
+            this.uTaiKhoanQLy1.BackColor = System.Drawing.Color.PeachPuff;
+            this.uTaiKhoanQLy1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uTaiKhoanQLy1.Location = new System.Drawing.Point(0, 0);
+            this.uTaiKhoanQLy1.Name = "uTaiKhoanQLy1";
+            this.uTaiKhoanQLy1.Size = new System.Drawing.Size(1647, 982);
+            this.uTaiKhoanQLy1.TabIndex = 10;
             // 
             // uTaiKhoancs
             // 
@@ -417,14 +417,14 @@ namespace QuanLyPhongMachTu
             this.uTaiKhoancs.Size = new System.Drawing.Size(1647, 982);
             this.uTaiKhoancs.TabIndex = 9;
             // 
-            // uTaiKhoanQLy1
+            // uBaoCao
             // 
-            this.uTaiKhoanQLy1.BackColor = System.Drawing.Color.PeachPuff;
-            this.uTaiKhoanQLy1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uTaiKhoanQLy1.Location = new System.Drawing.Point(0, 0);
-            this.uTaiKhoanQLy1.Name = "uTaiKhoanQLy1";
-            this.uTaiKhoanQLy1.Size = new System.Drawing.Size(1647, 982);
-            this.uTaiKhoanQLy1.TabIndex = 10;
+            this.uBaoCao.BackColor = System.Drawing.Color.PeachPuff;
+            this.uBaoCao.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uBaoCao.Location = new System.Drawing.Point(0, 0);
+            this.uBaoCao.Name = "uBaoCao";
+            this.uBaoCao.Size = new System.Drawing.Size(1647, 982);
+            this.uBaoCao.TabIndex = 8;
             // 
             // Form1
             // 
@@ -433,7 +433,7 @@ namespace QuanLyPhongMachTu
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1924, 1052);
             this.Controls.Add(this.siticonePanel3);
-            this.Controls.Add(this.siticonePanel2);
+            this.Controls.Add(this.panel_click);
             this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -446,7 +446,7 @@ namespace QuanLyPhongMachTu
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
-            this.siticonePanel2.ResumeLayout(false);
+            this.panel_click.ResumeLayout(false);
             this.siticonePanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -464,7 +464,7 @@ namespace QuanLyPhongMachTu
         private Guna.UI2.WinForms.Guna2TileButton btn_Quidinh;
         private Guna.UI2.WinForms.Guna2TileButton btn_Taikhoan;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
-        private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel2;
+        private Siticone.Desktop.UI.WinForms.SiticonePanel panel_click;
         private Siticone.Desktop.UI.WinForms.SiticoneAnimateWindow siticoneAnimateWindow1;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel3;
         private UserControls.HoaDonThanhToan u_hoaDonThanhToan;
