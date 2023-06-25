@@ -9,26 +9,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
+using Guna.UI2.WinForms;
+using BLL;
 
 namespace QuanLyPhongMachTu
 {
     public partial class Form1 : Form
     {
+
+        BLL_DANGKY dDangKyBLL;
         public Form1()
         {
             InitializeComponent();
 
             this.MinimumSize = new System.Drawing.Size(1890, 1060);
             this.MaximumSize = new System.Drawing.Size(1890, 1060);
+        
 
         }
         Boolean check = true;
 
         private void btn_Benhnhan_Click(object sender, EventArgs e)
         {
+            dDangKyBLL =  new BLL_DANGKY();
             u_danhSachKhamBenh.BringToFront();
 
-            //DoiMau
+           // u_danhSachKhamBenh.HienThiSoNguoiConLaiDangKy();
+
+            int soNguoi = dDangKyBLL.LaySoBenhNhanTiepNhan();
+            u_danhSachKhamBenh.txtSoBNtiepnhan.Text = soNguoi.ToString();
+          
+
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -41,7 +54,6 @@ namespace QuanLyPhongMachTu
         {
             u_lapPhieuKhamBenh.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
 
         }
@@ -51,7 +63,6 @@ namespace QuanLyPhongMachTu
             
             u_BenhLoaiBenh.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -59,7 +70,6 @@ namespace QuanLyPhongMachTu
         {
             u_loaiThuocThuoc.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -67,7 +77,6 @@ namespace QuanLyPhongMachTu
         {
             u_donViCachDung.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -75,7 +84,6 @@ namespace QuanLyPhongMachTu
         {
             u_nhapThuoc.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -83,7 +91,6 @@ namespace QuanLyPhongMachTu
         {
             uBaoCao.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -91,7 +98,6 @@ namespace QuanLyPhongMachTu
         {
             u_thayDoiQuiDinh.BringToFront();
 
-            //DoiMau
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -154,6 +160,6 @@ namespace QuanLyPhongMachTu
             }
         }
 
-      
+
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,17 @@ namespace QuanLyPhongMachTu.UserControls
 {
     public partial class TraCuuBenh : UserControl
     {
+        BLL_LOAIBENH dLoaiBenhBLL;
+        BLL_BENH dBenhBLL;
+        BLL_LOAITHUOC dLoaiThuocBLL;
+        BLL_THUOC dThuocBLL;
         public TraCuuBenh()
         {
             InitializeComponent();
+            dLoaiBenhBLL = new BLL_LOAIBENH();
+            dBenhBLL = new BLL_BENH();
+            dThuocBLL = new BLL_THUOC();
+            dLoaiThuocBLL = new BLL_LOAITHUOC();
         }
 
         private void Title_Click(object sender, EventArgs e)

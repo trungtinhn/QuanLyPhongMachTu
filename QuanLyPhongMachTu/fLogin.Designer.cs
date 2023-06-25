@@ -50,7 +50,9 @@
             this.panel1.Controls.Add(this.txt_Password);
             this.panel1.Controls.Add(this.txt_UserName);
             this.panel1.Controls.Add(this.lbl_Login);
-            this.panel1.Location = new System.Drawing.Point(357, 167);
+
+            this.panel1.Location = new System.Drawing.Point(646, 172);
+
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(656, 388);
@@ -59,22 +61,24 @@
             // lbl_Password
             // 
             this.lbl_Password.AutoSize = true;
-            this.lbl_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_Password.Location = new System.Drawing.Point(215, 206);
             this.lbl_Password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(61, 13);
+            this.lbl_Password.Size = new System.Drawing.Size(53, 13);
+
             this.lbl_Password.TabIndex = 92;
             this.lbl_Password.Text = "Mật Khẩu";
             // 
             // lbl_Username
             // 
             this.lbl_Username.AutoSize = true;
-            this.lbl_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_Username.Location = new System.Drawing.Point(215, 115);
             this.lbl_Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(97, 13);
+            this.lbl_Username.Size = new System.Drawing.Size(84, 13);
+
             this.lbl_Username.TabIndex = 91;
             this.lbl_Username.Text = "Tên Đăng Nhập";
             // 
@@ -88,6 +92,7 @@
             this.btn_Login.TabIndex = 90;
             this.btn_Login.Text = "LOGIN";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // txt_Password
             // 
@@ -151,16 +156,20 @@
             this.siticonePanel1.Location = new System.Drawing.Point(0, 0);
             this.siticonePanel1.Margin = new System.Windows.Forms.Padding(2);
             this.siticonePanel1.Name = "siticonePanel1";
-            this.siticonePanel1.Size = new System.Drawing.Size(1402, 56);
+
+            this.siticonePanel1.Size = new System.Drawing.Size(1620, 56);
+
             this.siticonePanel1.TabIndex = 21;
             // 
             // lbl_QuanLyPhongMachTu
             // 
+            this.lbl_QuanLyPhongMachTu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_QuanLyPhongMachTu.AutoSize = true;
-            this.lbl_QuanLyPhongMachTu.Dock = System.Windows.Forms.DockStyle.Left;
             this.lbl_QuanLyPhongMachTu.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.02985F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_QuanLyPhongMachTu.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(0, 0);
+
+            this.lbl_QuanLyPhongMachTu.Location = new System.Drawing.Point(663, 9);
+
             this.lbl_QuanLyPhongMachTu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_QuanLyPhongMachTu.Name = "lbl_QuanLyPhongMachTu";
             this.lbl_QuanLyPhongMachTu.Size = new System.Drawing.Size(407, 36);
@@ -173,7 +182,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(1402, 636);
+
+            this.ClientSize = new System.Drawing.Size(1620, 811);
+
             this.Controls.Add(this.siticonePanel1);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -193,11 +204,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_Login;
         private Siticone.Desktop.UI.WinForms.SiticonePanel siticonePanel1;
-        private System.Windows.Forms.Label lbl_QuanLyPhongMachTu;
         private Guna.UI2.WinForms.Guna2TextBox txt_Password;
         private Guna.UI2.WinForms.Guna2TextBox txt_UserName;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Label lbl_Password;
         private System.Windows.Forms.Label lbl_Username;
+        private System.Windows.Forms.Label lbl_QuanLyPhongMachTu;
     }
 }
