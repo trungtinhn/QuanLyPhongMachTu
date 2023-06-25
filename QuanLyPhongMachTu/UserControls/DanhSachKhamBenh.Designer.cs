@@ -577,6 +577,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtTraCuu;
         private System.Windows.Forms.Button btnTraCuu;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtimeTraCuu;
+
         private Guna.UI2.WinForms.Guna2HtmlLabel txtSoBNtiepnhan;
+
     }
 }

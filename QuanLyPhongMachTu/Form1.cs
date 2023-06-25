@@ -1,4 +1,5 @@
-﻿using QuanLyPhongMachTu.UserControls;
+﻿using Guna.UI2.WinForms;
+using QuanLyPhongMachTu.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,11 +34,13 @@ namespace QuanLyPhongMachTu
         {
             dDangKyBLL =  new BLL_DANGKY();
             u_danhSachKhamBenh.BringToFront();
+
            // u_danhSachKhamBenh.HienThiSoNguoiConLaiDangKy();
 
             int soNguoi = dDangKyBLL.LaySoBenhNhanTiepNhan();
             u_danhSachKhamBenh.txtSoBNtiepnhan.Text = soNguoi.ToString();
           
+
 
             ChangeNormalColorOnPanelLeft(sender);
         }
@@ -50,6 +53,7 @@ namespace QuanLyPhongMachTu
         private void btn_Phieukhambenh_Click(object sender, EventArgs e)
         {
             u_lapPhieuKhamBenh.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
 
         }
@@ -58,36 +62,42 @@ namespace QuanLyPhongMachTu
         {
             
             u_BenhLoaiBenh.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
         private void btn_Thuoc_LoaiThuoc_Click(object sender, EventArgs e)
         {
             u_loaiThuocThuoc.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
         private void btn_Donvi_Cachdung_Click(object sender, EventArgs e)
         {
             u_donViCachDung.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
         private void btn_Nhapthuoc_Click(object sender, EventArgs e)
         {
             u_nhapThuoc.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
         private void btn_Baocao_Click(object sender, EventArgs e)
         {
             uBaoCao.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
         private void btn_Quidinh_Click(object sender, EventArgs e)
         {
             u_thayDoiQuiDinh.BringToFront();
+
             ChangeNormalColorOnPanelLeft(sender);
         }
 
@@ -100,6 +110,22 @@ namespace QuanLyPhongMachTu
             else
             {
                 uTaiKhoanQLy1.BringToFront();
+            }
+
+            //DoiMau
+            ChangeNormalColorOnPanelLeft(sender);
+        }
+        public void ChangeNormalColorOnPanelLeft(object sender)
+        {
+            Guna2TileButton btn = sender as Guna2TileButton;
+            btn.ForeColor = Color.IndianRed;
+            foreach (Guna2TileButton item in panel_click.Controls)
+            {
+                if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
+                {
+                    Guna2TileButton btn1 = item as Guna2TileButton;
+                    btn1.ForeColor = Color.SaddleBrown;
+                }
             }
         }
 
@@ -134,18 +160,6 @@ namespace QuanLyPhongMachTu
             }
         }
 
-        public void ChangeNormalColorOnPanelLeft(object sender)
-        {
-            Guna2TileButton btn = sender as Guna2TileButton;
-            btn.ForeColor = Color.IndianRed;
-            foreach (Guna2TileButton item in siticonePanel2.Controls)
-            {
-                if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
-                {
-                    Guna2TileButton btn1 = item as Guna2TileButton;
-                    btn1.ForeColor = Color.SaddleBrown;
-                }
-            }
-        }
+
     }
 }

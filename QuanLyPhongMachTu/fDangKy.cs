@@ -1,5 +1,7 @@
+
 ﻿using DTO;
 using System;
+
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +19,7 @@ namespace QuanLyPhongMachTu
         {
             InitializeComponent();
         }
+
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
@@ -50,5 +53,6 @@ namespace QuanLyPhongMachTu
 
 
         }
+
     }
 }

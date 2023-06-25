@@ -263,6 +263,7 @@
             // 
             // lbb_TONGTIEN
             // 
+
             this.lbb_TONGTIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbb_TONGTIEN.ForeColor = System.Drawing.SystemColors.Highlight;
             this.lbb_TONGTIEN.Location = new System.Drawing.Point(211, 149);
@@ -302,6 +303,7 @@
             this.label_tongtien.TabIndex = 21;
             this.label_tongtien.Text = "TỔNG TIỀN : ";
             this.label_tongtien.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // lbl_Phieunhapthuoc
             // 

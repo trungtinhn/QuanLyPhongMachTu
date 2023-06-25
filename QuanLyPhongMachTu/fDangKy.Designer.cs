@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+
             this.txt_Chucvu = new MetroSet_UI.Controls.MetroSetTextBox();
             this.txt_xnmk = new MetroSet_UI.Controls.MetroSetTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtp_ngaysinh = new Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker();
             this.txt_mk = new MetroSet_UI.Controls.MetroSetTextBox();
             this.txt_tendangnhap = new MetroSet_UI.Controls.MetroSetTextBox();
+
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_TenDangNhap = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.Label();
@@ -48,16 +50,31 @@
             this.txt_Hoten = new MetroSet_UI.Controls.MetroSetTextBox();
             this.lbl_HoTen = new System.Windows.Forms.Label();
             this.lb_DangKy = new System.Windows.Forms.Label();
+
+            this.txt_tendangnhap = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.txt_mk = new MetroSet_UI.Controls.MetroSetTextBox();
+            this.lbl_Ngaydangky = new System.Windows.Forms.Label();
+            this.dtp_ngaydangky = new Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker();
+            this.dtp_ngaysinh = new Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker();
+            this.cbb_chucvu = new Guna.UI2.WinForms.Guna2ComboBox();
+
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Bisque;
+
             this.panel1.Controls.Add(this.txt_Chucvu);
             this.panel1.Controls.Add(this.txt_xnmk);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dtp_ngaysinh);
+
+            this.panel1.Controls.Add(this.cbb_chucvu);
+            this.panel1.Controls.Add(this.dtp_ngaysinh);
+            this.panel1.Controls.Add(this.dtp_ngaydangky);
+            this.panel1.Controls.Add(this.lbl_Ngaydangky);
+
             this.panel1.Controls.Add(this.txt_mk);
             this.panel1.Controls.Add(this.txt_tendangnhap);
             this.panel1.Controls.Add(this.label1);
@@ -73,6 +90,7 @@
             this.panel1.Controls.Add(this.txt_Hoten);
             this.panel1.Controls.Add(this.lbl_HoTen);
             this.panel1.Controls.Add(this.lb_DangKy);
+
             this.panel1.Location = new System.Drawing.Point(208, 49);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
@@ -225,14 +243,23 @@
             this.txt_tendangnhap.UseSystemPasswordChar = false;
             this.txt_tendangnhap.WatermarkText = "";
             // 
+
+            this.panel1.Location = new System.Drawing.Point(278, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(578, 733);
+            this.panel1.TabIndex = 1;
+            // 
+
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.label1.Location = new System.Drawing.Point(49, 468);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 13);
+
             this.label1.TabIndex = 87;
             this.label1.Text = "Mật Khẩu*";
             // 
@@ -240,10 +267,12 @@
             // 
             this.lbl_TenDangNhap.AutoSize = true;
             this.lbl_TenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_TenDangNhap.Location = new System.Drawing.Point(44, 397);
             this.lbl_TenDangNhap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TenDangNhap.Name = "lbl_TenDangNhap";
             this.lbl_TenDangNhap.Size = new System.Drawing.Size(102, 13);
+
             this.lbl_TenDangNhap.TabIndex = 86;
             this.lbl_TenDangNhap.Text = "Tên Đăng Nhập*";
             // 
@@ -251,12 +280,14 @@
             // 
             this.Email.AutoSize = true;
             this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.Email.Location = new System.Drawing.Point(45, 303);
             this.Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(83, 13);
             this.Email.TabIndex = 85;
             this.Email.Text = "Số điện thoại";
+
             // 
             // txt_email
             // 
@@ -272,13 +303,17 @@
             this.txt_email.Image = null;
             this.txt_email.IsDerivedStyle = true;
             this.txt_email.Lines = null;
+
             this.txt_email.Location = new System.Drawing.Point(47, 336);
             this.txt_email.Margin = new System.Windows.Forms.Padding(2);
+
             this.txt_email.MaxLength = 32767;
             this.txt_email.Multiline = false;
             this.txt_email.Name = "txt_email";
             this.txt_email.ReadOnly = false;
+
             this.txt_email.Size = new System.Drawing.Size(306, 35);
+
             this.txt_email.Style = MetroSet_UI.Enums.Style.Light;
             this.txt_email.StyleManager = null;
             this.txt_email.TabIndex = 84;
@@ -302,13 +337,17 @@
             this.txt_diachi.Image = null;
             this.txt_diachi.IsDerivedStyle = true;
             this.txt_diachi.Lines = null;
+
             this.txt_diachi.Location = new System.Drawing.Point(47, 253);
             this.txt_diachi.Margin = new System.Windows.Forms.Padding(2);
+
             this.txt_diachi.MaxLength = 32767;
             this.txt_diachi.Multiline = false;
             this.txt_diachi.Name = "txt_diachi";
             this.txt_diachi.ReadOnly = false;
+
             this.txt_diachi.Size = new System.Drawing.Size(306, 35);
+
             this.txt_diachi.Style = MetroSet_UI.Enums.Style.Light;
             this.txt_diachi.StyleManager = null;
             this.txt_diachi.TabIndex = 83;
@@ -322,10 +361,12 @@
             // 
             this.lbl_Diachi.AutoSize = true;
             this.lbl_Diachi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_Diachi.Location = new System.Drawing.Point(45, 228);
             this.lbl_Diachi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Diachi.Name = "lbl_Diachi";
             this.lbl_Diachi.Size = new System.Drawing.Size(48, 13);
+
             this.lbl_Diachi.TabIndex = 82;
             this.lbl_Diachi.Text = "Địa Chỉ";
             // 
@@ -333,10 +374,12 @@
             // 
             this.lbl_ChucVu.AutoSize = true;
             this.lbl_ChucVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_ChucVu.Location = new System.Drawing.Point(211, 164);
             this.lbl_ChucVu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_ChucVu.Name = "lbl_ChucVu";
             this.lbl_ChucVu.Size = new System.Drawing.Size(60, 13);
+
             this.lbl_ChucVu.TabIndex = 80;
             this.lbl_ChucVu.Text = "Chức Vụ*";
             // 
@@ -344,20 +387,24 @@
             // 
             this.lbl_Ngaysinh.AutoSize = true;
             this.lbl_Ngaysinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_Ngaysinh.Location = new System.Drawing.Point(45, 164);
             this.lbl_Ngaysinh.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Ngaysinh.Name = "lbl_Ngaysinh";
             this.lbl_Ngaysinh.Size = new System.Drawing.Size(70, 13);
+
             this.lbl_Ngaysinh.TabIndex = 78;
             this.lbl_Ngaysinh.Text = "Ngày Sinh*";
             // 
             // btn_Huy
             // 
             this.btn_Huy.BackColor = System.Drawing.SystemColors.AppWorkspace;
+
             this.btn_Huy.Location = new System.Drawing.Point(232, 546);
             this.btn_Huy.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.Size = new System.Drawing.Size(88, 37);
+
             this.btn_Huy.TabIndex = 77;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.UseVisualStyleBackColor = false;
@@ -365,6 +412,7 @@
             // btn_Luu
             // 
             this.btn_Luu.BackColor = System.Drawing.SystemColors.AppWorkspace;
+
             this.btn_Luu.Location = new System.Drawing.Point(90, 546);
             this.btn_Luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Luu.Name = "btn_Luu";
@@ -373,6 +421,7 @@
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.UseVisualStyleBackColor = false;
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
+
             // 
             // txt_Hoten
             // 
@@ -388,13 +437,17 @@
             this.txt_Hoten.Image = null;
             this.txt_Hoten.IsDerivedStyle = true;
             this.txt_Hoten.Lines = null;
+
             this.txt_Hoten.Location = new System.Drawing.Point(47, 115);
             this.txt_Hoten.Margin = new System.Windows.Forms.Padding(2);
+
             this.txt_Hoten.MaxLength = 32767;
             this.txt_Hoten.Multiline = false;
             this.txt_Hoten.Name = "txt_Hoten";
             this.txt_Hoten.ReadOnly = false;
+
             this.txt_Hoten.Size = new System.Drawing.Size(306, 35);
+
             this.txt_Hoten.Style = MetroSet_UI.Enums.Style.Light;
             this.txt_Hoten.StyleManager = null;
             this.txt_Hoten.TabIndex = 3;
@@ -408,10 +461,12 @@
             // 
             this.lbl_HoTen.AutoSize = true;
             this.lbl_HoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.lbl_HoTen.Location = new System.Drawing.Point(45, 90);
             this.lbl_HoTen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_HoTen.Name = "lbl_HoTen";
             this.lbl_HoTen.Size = new System.Drawing.Size(54, 13);
+
             this.lbl_HoTen.TabIndex = 1;
             this.lbl_HoTen.Text = "Họ Tên*";
             // 
@@ -420,21 +475,132 @@
             this.lb_DangKy.AutoSize = true;
             this.lb_DangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.97015F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_DangKy.ForeColor = System.Drawing.Color.IndianRed;
-            this.lb_DangKy.Location = new System.Drawing.Point(86, 32);
-            this.lb_DangKy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+
+            this.lb_DangKy.Location = new System.Drawing.Point(114, 40);
             this.lb_DangKy.Name = "lb_DangKy";
-            this.lb_DangKy.Size = new System.Drawing.Size(219, 24);
+            this.lb_DangKy.Size = new System.Drawing.Size(309, 31);
             this.lb_DangKy.TabIndex = 0;
             this.lb_DangKy.Text = "ĐĂNG KÝ NHÂN VIÊN";
             // 
+            // txt_tendangnhap
+            // 
+            this.txt_tendangnhap.AutoCompleteCustomSource = null;
+            this.txt_tendangnhap.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_tendangnhap.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_tendangnhap.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_tendangnhap.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_tendangnhap.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_tendangnhap.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.txt_tendangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txt_tendangnhap.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.txt_tendangnhap.Image = null;
+            this.txt_tendangnhap.IsDerivedStyle = true;
+            this.txt_tendangnhap.Lines = null;
+            this.txt_tendangnhap.Location = new System.Drawing.Point(63, 519);
+            this.txt_tendangnhap.MaxLength = 32767;
+            this.txt_tendangnhap.Multiline = false;
+            this.txt_tendangnhap.Name = "txt_tendangnhap";
+            this.txt_tendangnhap.ReadOnly = false;
+            this.txt_tendangnhap.Size = new System.Drawing.Size(179, 43);
+            this.txt_tendangnhap.Style = MetroSet_UI.Enums.Style.Light;
+            this.txt_tendangnhap.StyleManager = null;
+            this.txt_tendangnhap.TabIndex = 88;
+            this.txt_tendangnhap.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_tendangnhap.ThemeAuthor = "Narwin";
+            this.txt_tendangnhap.ThemeName = "MetroLite";
+            this.txt_tendangnhap.UseSystemPasswordChar = false;
+            this.txt_tendangnhap.WatermarkText = "";
+            // 
+            // txt_mk
+            // 
+            this.txt_mk.AutoCompleteCustomSource = null;
+            this.txt_mk.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txt_mk.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txt_mk.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_mk.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txt_mk.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.txt_mk.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            this.txt_mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txt_mk.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.txt_mk.Image = null;
+            this.txt_mk.IsDerivedStyle = true;
+            this.txt_mk.Lines = null;
+            this.txt_mk.Location = new System.Drawing.Point(292, 519);
+            this.txt_mk.MaxLength = 32767;
+            this.txt_mk.Multiline = false;
+            this.txt_mk.Name = "txt_mk";
+            this.txt_mk.ReadOnly = false;
+            this.txt_mk.Size = new System.Drawing.Size(179, 43);
+            this.txt_mk.Style = MetroSet_UI.Enums.Style.Light;
+            this.txt_mk.StyleManager = null;
+            this.txt_mk.TabIndex = 89;
+            this.txt_mk.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txt_mk.ThemeAuthor = "Narwin";
+            this.txt_mk.ThemeName = "MetroLite";
+            this.txt_mk.UseSystemPasswordChar = false;
+            this.txt_mk.WatermarkText = "";
+            // 
+            // lbl_Ngaydangky
+            // 
+            this.lbl_Ngaydangky.AutoSize = true;
+            this.lbl_Ngaydangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.059701F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Ngaydangky.Location = new System.Drawing.Point(67, 583);
+            this.lbl_Ngaydangky.Name = "lbl_Ngaydangky";
+            this.lbl_Ngaydangky.Size = new System.Drawing.Size(114, 18);
+            this.lbl_Ngaydangky.TabIndex = 90;
+            this.lbl_Ngaydangky.Text = "Ngày Đăng Ký";
+            // 
+            // dtp_ngaydangky
+            // 
+            this.dtp_ngaydangky.Checked = true;
+            this.dtp_ngaydangky.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.dtp_ngaydangky.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_ngaydangky.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_ngaydangky.Location = new System.Drawing.Point(63, 615);
+            this.dtp_ngaydangky.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_ngaydangky.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_ngaydangky.Name = "dtp_ngaydangky";
+            this.dtp_ngaydangky.Size = new System.Drawing.Size(200, 36);
+            this.dtp_ngaydangky.TabIndex = 91;
+            this.dtp_ngaydangky.Value = new System.DateTime(2023, 6, 12, 1, 24, 52, 962);
+            // 
+            // dtp_ngaysinh
+            // 
+            this.dtp_ngaysinh.Checked = true;
+            this.dtp_ngaysinh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.dtp_ngaysinh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_ngaysinh.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtp_ngaysinh.Location = new System.Drawing.Point(63, 235);
+            this.dtp_ngaysinh.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_ngaysinh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_ngaysinh.Name = "dtp_ngaysinh";
+            this.dtp_ngaysinh.Size = new System.Drawing.Size(200, 36);
+            this.dtp_ngaysinh.TabIndex = 92;
+            this.dtp_ngaysinh.Value = new System.DateTime(2023, 6, 12, 1, 24, 52, 962);
+            // 
+            // cbb_chucvu
+            // 
+            this.cbb_chucvu.BackColor = System.Drawing.Color.Transparent;
+            this.cbb_chucvu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb_chucvu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_chucvu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb_chucvu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb_chucvu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbb_chucvu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbb_chucvu.ItemHeight = 30;
+            this.cbb_chucvu.Location = new System.Drawing.Point(284, 235);
+            this.cbb_chucvu.Name = "cbb_chucvu";
+            this.cbb_chucvu.Size = new System.Drawing.Size(187, 36);
+            this.cbb_chucvu.TabIndex = 93;
+            // 
             // fDangKy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(842, 678);
+            this.ClientSize = new System.Drawing.Size(1122, 835);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+
             this.Name = "fDangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDangKy";
@@ -462,9 +628,11 @@
         private System.Windows.Forms.Label label1;
         private MetroSet_UI.Controls.MetroSetTextBox txt_mk;
         private MetroSet_UI.Controls.MetroSetTextBox txt_tendangnhap;
+
         private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dtp_ngaysinh;
         private MetroSet_UI.Controls.MetroSetTextBox txt_Chucvu;
         private MetroSet_UI.Controls.MetroSetTextBox txt_xnmk;
         private System.Windows.Forms.Label label2;
+
     }
 }
