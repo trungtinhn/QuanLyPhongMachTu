@@ -119,7 +119,7 @@ namespace QuanLyPhongMachTu
         {
             Guna2TileButton btn = sender as Guna2TileButton;
             btn.ForeColor = Color.IndianRed;
-            foreach (Guna2TileButton item in panel_click.Controls)
+            foreach (Guna2TileButton item in siticonePanel3.Controls)
             {
                 if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
                 {
@@ -144,20 +144,6 @@ namespace QuanLyPhongMachTu
                     this.Height = 300;
             }
 
-        }
-
-        public void ChangeNormalColorOnPanelLeft(object sender)
-        {
-            Guna2TileButton btn = sender as Guna2TileButton;
-            btn.ForeColor = Color.IndianRed;
-            foreach (Guna2TileButton item in siticonePanel2.Controls)
-            {
-                if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
-                {
-                    Guna2TileButton btn1 = item as Guna2TileButton;
-                    btn1.ForeColor = Color.SaddleBrown;
-                }
-            }
         }
 
 

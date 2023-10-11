@@ -32,7 +32,7 @@ namespace QuanLyPhongMachTu
         {
             this.lbl_QuanLyPhongMachTu = new System.Windows.Forms.Label();
             this.siticonePanel1 = new Siticone.Desktop.UI.WinForms.SiticonePanel();
-            this.panel_click = new Siticone.Desktop.UI.WinForms.SiticonePanel();
+            //this.panel_click = new Siticone.Desktop.UI.WinForms.SiticonePanel();
             this.btn_Thuoc_LoaiThuoc = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Benh_LoaiBenh = new Guna.UI2.WinForms.Guna2TileButton();
             this.btn_Taikhoan = new Guna.UI2.WinForms.Guna2TileButton();
@@ -60,7 +60,7 @@ namespace QuanLyPhongMachTu
             this.uTaiKhoancs = new QuanLyPhongMachTu.UserControls.uTaiKhoancs();
             this.uBaoCao = new QuanLyPhongMachTu.UserControls.uBaoCao();
             this.siticonePanel1.SuspendLayout();
-            this.panel_click.SuspendLayout();
+            //this.panel_click.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,23 +91,7 @@ namespace QuanLyPhongMachTu
             // 
             // panel_click
             // 
-            this.panel_click.AutoScroll = true;
-            this.panel_click.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel_click.Controls.Add(this.btn_Thuoc_LoaiThuoc);
-            this.panel_click.Controls.Add(this.btn_Benh_LoaiBenh);
-            this.panel_click.Controls.Add(this.btn_Taikhoan);
-            this.panel_click.Controls.Add(this.btn_Donvi_Cachdung);
-            this.panel_click.Controls.Add(this.btn_Quidinh);
-            this.panel_click.Controls.Add(this.btn_Benhnhan);
-            this.panel_click.Controls.Add(this.btn_Baocao);
-            this.panel_click.Controls.Add(this.btn_Nhapthuoc);
-            this.panel_click.Controls.Add(this.btn_Phieukhambenh);
-            this.panel_click.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel_click.Location = new System.Drawing.Point(0, 70);
-            this.panel_click.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel_click.Name = "panel_click";
-            this.panel_click.Size = new System.Drawing.Size(277, 982);
-            this.panel_click.TabIndex = 21;
+           
             // 
             // btn_Thuoc_LoaiThuoc
             // 
@@ -596,7 +580,7 @@ namespace QuanLyPhongMachTu
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1443, 855);
             this.Controls.Add(this.siticonePanel3);
-            this.Controls.Add(this.panel_click);
+            //this.Controls.Add(this.panel_click);
             this.Controls.Add(this.siticonePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -608,7 +592,6 @@ namespace QuanLyPhongMachTu
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.siticonePanel1.ResumeLayout(false);
             this.siticonePanel1.PerformLayout();
-            this.panel_click.ResumeLayout(false);
             this.siticonePanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 

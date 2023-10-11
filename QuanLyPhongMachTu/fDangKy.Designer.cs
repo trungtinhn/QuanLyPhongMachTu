@@ -630,9 +630,12 @@
         private MetroSet_UI.Controls.MetroSetTextBox txt_tendangnhap;
 
         private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dtp_ngaysinh;
+        private Siticone.Desktop.UI.WinForms.SiticoneDateTimePicker dtp_ngaydangky;
         private MetroSet_UI.Controls.MetroSetTextBox txt_Chucvu;
         private MetroSet_UI.Controls.MetroSetTextBox txt_xnmk;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_Ngaydangky;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb_chucvu;
 
     }
 }

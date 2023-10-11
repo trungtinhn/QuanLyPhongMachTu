@@ -65,7 +65,7 @@ namespace QuanLyPhongMachTu.UserControls
 
             int i = 0;
 
-            foreach(LOAIBENH lb in loaiBenhs)
+            foreach (LOAIBENH lb in loaiBenhs)
             {
                 i++;
                 dt.Rows.Add(i, lb.MaLoaiBenh, lb.TenLoaiBenh);
@@ -78,14 +78,14 @@ namespace QuanLyPhongMachTu.UserControls
             dgvLoaiBenh.Columns[1].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvLoaiBenh.Columns[2].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvLoaiBenh.Columns[0].Width =(int) (dgvLoaiBenh.Width * 0.2);
-            dgvLoaiBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.3);
-            dgvLoaiBenh.Columns[2].Width =(int)(dgvLoaiBenh.Width * 0.5);
+            dgvLoaiBenh.Columns[0].Width = (int)(dgvLoaiBenh.Width * 0.2);
+            dgvLoaiBenh.Columns[1].Width = (int)(dgvLoaiBenh.Width * 0.3);
+            dgvLoaiBenh.Columns[2].Width = (int)(dgvLoaiBenh.Width * 0.5);
         }
 
         public void HienThiThongTinBenh()
         {
-            dgvBenh.DataSource =null;
+            dgvBenh.DataSource = null;
             var dt = new DataTable();
             dt.Columns.Add("STT");
             dt.Columns.Add("Mã bệnh");
@@ -98,15 +98,15 @@ namespace QuanLyPhongMachTu.UserControls
             string giaTri = txtTraCuuBenh.Text;
 
             List<BENH> benhs = dBenhBLL.LocBenh(kieuLoc, giaTri);
-           
+
             int i = 0;
-            foreach(BENH benh in benhs)
+            foreach (BENH benh in benhs)
             {
                 i++;
                 string tenLoaiBenh = dLoaiBenhBLL.LayTenLoaiBenh(benh.idMaLoaiBenh);
 
                 THUOC thuoc = dThuocBLL.LayTenThuoc(benh.idMaThuocDacTri);
-               
+
                 dt.Rows.Add(i, benh.MaBenh, benh.TenBenh, benh.TrieuChung, thuoc.TenThuoc, tenLoaiBenh);
             }
 
@@ -119,12 +119,12 @@ namespace QuanLyPhongMachTu.UserControls
             dgvBenh.Columns[4].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvBenh.Columns[5].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-            dgvBenh.Columns[0].Width =(int)(dgvLoaiBenh.Width * 0.05);
-            dgvBenh.Columns[1].Width =(int)(dgvLoaiBenh.Width * 0.1);
-            dgvBenh.Columns[2].Width =(int)(dgvLoaiBenh.Width * 0.1);
-            dgvBenh.Columns[3].Width =(int)(dgvLoaiBenh.Width * 0.3);
-            dgvBenh.Columns[4].Width =(int)(dgvLoaiBenh.Width * 0.2);
-            dgvBenh.Columns[5].Width =(int)(dgvLoaiBenh.Width * 0.3);
+            dgvBenh.Columns[0].Width = (int)(dgvLoaiBenh.Width * 0.05);
+            dgvBenh.Columns[1].Width = (int)(dgvLoaiBenh.Width * 0.1);
+            dgvBenh.Columns[2].Width = (int)(dgvLoaiBenh.Width * 0.1);
+            dgvBenh.Columns[3].Width = (int)(dgvLoaiBenh.Width * 0.3);
+            dgvBenh.Columns[4].Width = (int)(dgvLoaiBenh.Width * 0.2);
+            dgvBenh.Columns[5].Width = (int)(dgvLoaiBenh.Width * 0.3);
 
 
 
@@ -186,7 +186,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void dgvLoaiBenh_SelectionChanged(object sender, EventArgs e)
         {
-            if(dgvLoaiBenh.SelectedRows.Count > 0)
+            if (dgvLoaiBenh.SelectedRows.Count > 0)
             {
                 DataGridViewRow row = dgvLoaiBenh.SelectedRows[0];
 
@@ -198,7 +198,7 @@ namespace QuanLyPhongMachTu.UserControls
         private void btnKhongLuu_Click(object sender, EventArgs e)
         {
             txtMaLoaiBenh.Text = "";
-            txtTenLoaiBenh.Text  = "";
+            txtTenLoaiBenh.Text = "";
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -212,7 +212,8 @@ namespace QuanLyPhongMachTu.UserControls
                 MessageBox.Show("Xóa loại bệnh thành công!");
                 HienThiThongTinLoaiBenh();
                 HienThiThongTinBenh();
-            }else
+            }
+            else
             {
                 MessageBox.Show("Xóa loại bệnh thất bại!");
             }
@@ -222,7 +223,7 @@ namespace QuanLyPhongMachTu.UserControls
         {
             cboTenLoaiBenh.DataSource = dLoaiBenhBLL.LayDanhSachLoaiBenh("Tất cả", "Mặc định");
             cboTenLoaiBenh.DisplayMember = "TenLoaiBenh";
-            cboTenLoaiBenh.ValueMember ="MaLoaiBenh";
+            cboTenLoaiBenh.ValueMember = "MaLoaiBenh";
         }
         public void HienThiComboBoxLoaiThuoc()
         {
@@ -248,7 +249,7 @@ namespace QuanLyPhongMachTu.UserControls
                 if (cboTenTHuoc.Items.Count == 0)
                 {
                     cboTenTHuoc.ResetText();
-                  
+
                 }
 
                 cboTenTHuoc.DisplayMember = "TenThuoc";
@@ -317,7 +318,7 @@ namespace QuanLyPhongMachTu.UserControls
 
         private void btnKhongLuuBenh_Click(object sender, EventArgs e)
         {
-            txtMaBenh.Text ="";
+            txtMaBenh.Text = "";
             txtTenBenh.Text = "";
             txtTrieuChungBenh.Text = "";
 
@@ -362,7 +363,7 @@ namespace QuanLyPhongMachTu.UserControls
             }
 
             BENH benh = dBenhBLL.LayBenh(txtMaBenh.Text);
-            
+
             if (dBenhBLL.XoaBenh(benh))
             {
                 MessageBox.Show("Xóa bệnh thành công!");
@@ -384,5 +385,5 @@ namespace QuanLyPhongMachTu.UserControls
             HienThiThongTinBenh();
         }
 
-
+    }
 }
