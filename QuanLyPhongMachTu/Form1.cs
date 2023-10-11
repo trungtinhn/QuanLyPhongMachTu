@@ -119,7 +119,7 @@ namespace QuanLyPhongMachTu
         {
             Guna2TileButton btn = sender as Guna2TileButton;
             btn.ForeColor = Color.IndianRed;
-            foreach (Guna2TileButton item in siticonePanel3.Controls)
+            foreach (Guna2TileButton item in siticonePanel2.Controls)
             {
                 if (item.Name != btn.Name && item.ForeColor != Color.SaddleBrown)
                 {

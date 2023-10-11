@@ -70,13 +70,24 @@ namespace QuanLyPhongMachTu.UserControls
                 label1.Text = user.MaNguoiDung;
                 label2.Text = user.SoDT;
                 label3.Text = user.TenNguoiDung.ToString();
-                DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
+                //DateTime datevalue = (Convert.ToDateTime(user.NgaySinh.ToString()));
+                DateTime? nullableDate = user.NgaySinh;
+                if (nullableDate.HasValue)
+                {
+                    //DateTime datevalue = (DateTime)nullableDate;
+                    DateTime datevalue = nullableDate.Value;
+                    // Tiếp tục sử dụng datevalue
+                    String dy = datevalue.Day.ToString();
+                    String mn = datevalue.Month.ToString();
+                    String yy = datevalue.Year.ToString();
 
-                String dy = datevalue.Day.ToString();
-                String mn = datevalue.Month.ToString();
-                String yy = datevalue.Year.ToString();
-
-                label4.Text = dy + " / " + mn + " / " + yy;
+                    label4.Text = dy + " / " + mn + " / " + yy;
+                }
+                else
+                {
+                    // Xử lý trường hợp khi NgaySinh là null
+                }
+                
                 label5.Text = user.ChucVu;
                 label6.Text = user.DiaChi;
 

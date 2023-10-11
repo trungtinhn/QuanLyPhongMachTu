@@ -271,30 +271,33 @@ namespace QuanLyPhongMachTu.UserControls
             if (dgv_SoPhieuNhap.SelectedRows.Count > 0 && txt_SoPhieuNhapThuoc.Text != null)
             {
                 DataGridViewRow row = dgv_SoPhieuNhap.SelectedRows[0];
-
-                txt_SoPhieuNhapThuoc.Text = row.Cells[0].Value.ToString();
-                dtp_NgayLap.Value = Convert.ToDateTime(row.Cells[2].Value);
-                List<CT_PHIEUNHAP> s = dCTPNBLL.Getall(int.Parse(txt_SoPhieuNhapThuoc.Text));
-
-                int idPhieu = Int32.Parse(row.Cells[0].Value.ToString());
-
-                PHIEUNHAPTHUOC pnt = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
-
-                if(pnt.TrangThai == 1)
+                if (row != null && row.Cells.Count > 0 && row.Cells[0].Value != null)
                 {
-                    btn_Luu.Enabled = false;
-                    btn_xoaThuoc.Enabled = false;
-                    btn_CapNhatThuoc.Enabled = false;
-                }else
-                {
-                    btn_Luu.Enabled = true;
-                    btn_xoaThuoc.Enabled = true;
-                    btn_CapNhatThuoc.Enabled = true;
+                    txt_SoPhieuNhapThuoc.Text = row.Cells[0].Value.ToString();
+                    dtp_NgayLap.Value = Convert.ToDateTime(row.Cells[2].Value);
+                    List<CT_PHIEUNHAP> s = dCTPNBLL.Getall(int.Parse(txt_SoPhieuNhapThuoc.Text));
+
+                    int idPhieu = Int32.Parse(row.Cells[0].Value.ToString());
+
+                    PHIEUNHAPTHUOC pnt = dPhieuNhapThuocBLL.GetDataByMa(idPhieu);
+
+                    if (pnt.TrangThai == 1)
+                    {
+                        btn_Luu.Enabled = false;
+                        btn_xoaThuoc.Enabled = false;
+                        btn_CapNhatThuoc.Enabled = false;
+                    }
+                    else
+                    {
+                        btn_Luu.Enabled = true;
+                        btn_xoaThuoc.Enabled = true;
+                        btn_CapNhatThuoc.Enabled = true;
+                    }
+
+                    dgvThuoc.DataSource = dCTPNBLL.GetDataCTPhieuByMaPhieu(idPhieu);
+
+                    HienThiCTPhieuNhap(s);
                 }
-
-                dgvThuoc.DataSource = dCTPNBLL.GetDataCTPhieuByMaPhieu(idPhieu);
-
-                HienThiCTPhieuNhap(s);
             }
         }
         public void HienThiCTPhieuNhap(List<CT_PHIEUNHAP> ct)
